@@ -1,0 +1,389 @@
+{
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "samples": 32,
+  "denoising": true,
+  "threads": 3,
+  "color_management": {
+    "view_transform": "AgX",
+    "look": "AgX - Punchy"
+  },
+  "collections": {
+    "Cafe_Set": [
+      "Back_Wall",
+      "Chair_Back",
+      "Chair_Post.-2",
+      "Chair_Post.2",
+      "Counter",
+      "Floor",
+      "Jar.0.0",
+      "Jar.0.1",
+      "Jar.0.2",
+      "Jar.0.3",
+      "Jar.0.4",
+      "Jar.0.5",
+      "Jar.0.6",
+      "Jar.0.7",
+      "Jar.0.8",
+      "Jar.1.0",
+      "Jar.1.1",
+      "Jar.1.2",
+      "Jar.1.3",
+      "Jar.1.4",
+      "Jar.1.5",
+      "Jar.1.6",
+      "Jar.1.7",
+      "Jar.1.8",
+      "Jar.2.0",
+      "Jar.2.1",
+      "Jar.2.2",
+      "Jar.2.3",
+      "Jar.2.4",
+      "Jar.2.5",
+      "Jar.2.6",
+      "Jar.2.7",
+      "Jar.2.8",
+      "Plant_Leaves.0",
+      "Plant_Leaves.1",
+      "Plant_Leaves.2",
+      "Plant_Trunk.0",
+      "Plant_Trunk.1",
+      "Plant_Trunk.2",
+      "Planter.0",
+      "Planter.1",
+      "Planter.2",
+      "Right_Wall",
+      "Shelf.0",
+      "Shelf.1",
+      "Shelf.2",
+      "Table_Leg.0",
+      "Table_Leg.1",
+      "Table_Leg.2",
+      "Table_Top.0",
+      "Table_Top.1",
+      "Table_Top.2",
+      "Table_Top.near",
+      "Vase",
+      "Vase_Flowers",
+      "Vase_Leaves",
+      "Window_Light",
+      "Window_Mullion.0",
+      "Window_Mullion.1",
+      "Window_Mullion.2",
+      "Window_Mullion.3"
+    ],
+    "Cameras": [
+      "Cam_Beauty",
+      "Cam_back",
+      "Cam_front",
+      "Cam_side",
+      "Cam_three-quarter",
+      "Focus_Target"
+    ],
+    "Character": [
+      "Body_Skin",
+      "Finger.L.0",
+      "Finger.L.1",
+      "Finger.L.2",
+      "Finger.L.3",
+      "Finger.R.0",
+      "Finger.R.1",
+      "Finger.R.2",
+      "Finger.R.3",
+      "Hand_Palm.L",
+      "Hand_Palm.R",
+      "Nail.L.0",
+      "Nail.L.1",
+      "Nail.L.2",
+      "Nail.L.3",
+      "Nail.R.0",
+      "Nail.R.1",
+      "Nail.R.2",
+      "Nail.R.3",
+      "Phone",
+      "Thumb.L",
+      "Thumb.R"
+    ],
+    "Clothing": [
+      "Sweater",
+      "Sweater_Collar"
+    ],
+    "Eyes": [
+      "Cornea.L",
+      "Cornea.R",
+      "Eyeball.L",
+      "Eyeball.R"
+    ],
+    "Hair": [
+      "Eyebrows",
+      "Eyelashes",
+      "Hair_Bangs",
+      "Hair_Strands"
+    ],
+    "Lighting": [
+      "Cafe_Ceiling",
+      "Catchlight",
+      "Diag_Fill_Back",
+      "Fill_Front",
+      "Key_Window",
+      "Rim_Back",
+      "Rim_Back_R"
+    ]
+  },
+  "important_objects": [
+    "Body_Skin",
+    "Eyeball.L",
+    "Eyeball.R",
+    "Cornea.L",
+    "Cornea.R",
+    "Eyelashes",
+    "Eyebrows",
+    "Hair_Strands",
+    "Hair_Bangs",
+    "Sweater",
+    "Sweater_Collar",
+    "Hand_Palm.L",
+    "Hand_Palm.R",
+    "Phone",
+    "Cam_Beauty",
+    "Cam_front",
+    "Cam_three-quarter",
+    "Cam_side",
+    "Cam_back"
+  ],
+  "materials": [
+    "Brow_Hair",
+    "Cafe_Ceramic",
+    "Cafe_Flower",
+    "Cafe_Glass",
+    "Cafe_Leaf",
+    "Cafe_Oak",
+    "Cafe_Steel",
+    "Cafe_Wall",
+    "Cafe_Walnut",
+    "Cafe_Window_Glow",
+    "Eye_Cornea",
+    "Eye_Sclera_Iris",
+    "Hair_Chestnut",
+    "Knit_DustyPink",
+    "Lash_Hair",
+    "Nail",
+    "Phone_Case",
+    "Skin",
+    "Skin_Hands"
+  ],
+  "packed_images": [
+    "Knit_Rib_Height",
+    "Knit_Stockinette_Height"
+  ],
+  "textures": [
+    {
+      "name": "Knit_Stockinette_Height",
+      "size": [
+        1024,
+        1024
+      ],
+      "kind": "procedurally generated in numpy by build.py (packed)",
+      "description": "tileable stockinette V-stitch height map, 8x8 stitches"
+    },
+    {
+      "name": "Knit_Rib_Height",
+      "size": [
+        1024,
+        1024
+      ],
+      "kind": "procedurally generated in numpy by build.py (packed)",
+      "description": "tileable 1x1 rib height map, 8x8 stitches"
+    }
+  ],
+  "notes": [],
+  "base_mesh": {
+    "vertices": 6093,
+    "faces": 6044
+  },
+  "hair": {
+    "guides": 1887,
+    "strands_main": 27878,
+    "strands_bangs": 1369,
+    "points": 932101
+  },
+  "lashes": 384,
+  "brow_hairs": 840,
+  "objects": {
+    "Body_Skin": {
+      "base_vertices": 17676,
+      "evaluated_vertices": 70599,
+      "evaluated_faces": 70496
+    },
+    "Phone": {
+      "base_vertices": 152,
+      "evaluated_vertices": 152,
+      "evaluated_faces": 150
+    },
+    "Hand_Palm.L": {
+      "base_vertices": 362,
+      "evaluated_vertices": 1490,
+      "evaluated_faces": 1488
+    },
+    "Finger.L.0": {
+      "base_vertices": 352,
+      "evaluated_vertices": 1430,
+      "evaluated_faces": 1428
+    },
+    "Nail.L.0": {
+      "base_vertices": 146,
+      "evaluated_vertices": 610,
+      "evaluated_faces": 608
+    },
+    "Finger.L.1": {
+      "base_vertices": 352,
+      "evaluated_vertices": 1430,
+      "evaluated_faces": 1428
+    },
+    "Nail.L.1": {
+      "base_vertices": 146,
+      "evaluated_vertices": 610,
+      "evaluated_faces": 608
+    },
+    "Finger.L.2": {
+      "base_vertices": 352,
+      "evaluated_vertices": 1430,
+      "evaluated_faces": 1428
+    },
+    "Nail.L.2": {
+      "base_vertices": 146,
+      "evaluated_vertices": 610,
+      "evaluated_faces": 608
+    },
+    "Finger.L.3": {
+      "base_vertices": 352,
+      "evaluated_vertices": 1430,
+      "evaluated_faces": 1428
+    },
+    "Nail.L.3": {
+      "base_vertices": 146,
+      "evaluated_vertices": 610,
+      "evaluated_faces": 608
+    },
+    "Thumb.L": {
+      "base_vertices": 352,
+      "evaluated_vertices": 1430,
+      "evaluated_faces": 1428
+    },
+    "Hand_Palm.R": {
+      "base_vertices": 362,
+      "evaluated_vertices": 1490,
+      "evaluated_faces": 1488
+    },
+    "Finger.R.0": {
+      "base_vertices": 352,
+      "evaluated_vertices": 1430,
+      "evaluated_faces": 1428
+    },
+    "Nail.R.0": {
+      "base_vertices": 146,
+      "evaluated_vertices": 610,
+      "evaluated_faces": 608
+    },
+    "Finger.R.1": {
+      "base_vertices": 352,
+      "evaluated_vertices": 1430,
+      "evaluated_faces": 1428
+    },
+    "Nail.R.1": {
+      "base_vertices": 146,
+      "evaluated_vertices": 610,
+      "evaluated_faces": 608
+    },
+    "Finger.R.2": {
+      "base_vertices": 352,
+      "evaluated_vertices": 1430,
+      "evaluated_faces": 1428
+    },
+    "Nail.R.2": {
+      "base_vertices": 146,
+      "evaluated_vertices": 610,
+      "evaluated_faces": 608
+    },
+    "Finger.R.3": {
+      "base_vertices": 352,
+      "evaluated_vertices": 1430,
+      "evaluated_faces": 1428
+    },
+    "Nail.R.3": {
+      "base_vertices": 146,
+      "evaluated_vertices": 610,
+      "evaluated_faces": 608
+    },
+    "Thumb.R": {
+      "base_vertices": 352,
+      "evaluated_vertices": 1430,
+      "evaluated_faces": 1428
+    },
+    "Hair_Strands": {
+      "curves": 27878,
+      "control_points": 919154
+    },
+    "Hair_Bangs": {
+      "curves": 1369,
+      "control_points": 12947
+    },
+    "Eyelashes": {
+      "curves": 384,
+      "control_points": 2304
+    },
+    "Eyebrows": {
+      "curves": 840,
+      "control_points": 3360
+    },
+    "Sweater": {
+      "base_vertices": 32036,
+      "evaluated_vertices": 127594,
+      "evaluated_faces": 127040
+    },
+    "Sweater_Collar": {
+      "base_vertices": 8320,
+      "evaluated_vertices": 33280,
+      "evaluated_faces": 33280
+    },
+    "Eyeball.L": {
+      "base_vertices": 3010,
+      "evaluated_vertices": 3010,
+      "evaluated_faces": 3072
+    },
+    "Cornea.L": {
+      "base_vertices": 6050,
+      "evaluated_vertices": 6050,
+      "evaluated_faces": 6144
+    },
+    "Eyeball.R": {
+      "base_vertices": 3010,
+      "evaluated_vertices": 3010,
+      "evaluated_faces": 3072
+    },
+    "Cornea.R": {
+      "base_vertices": 6050,
+      "evaluated_vertices": 6050,
+      "evaluated_faces": 6144
+    }
+  },
+  "character_evaluated_mesh_vertices": 271905,
+  "character_bounds_m": {
+    "min": [
+      -0.27,
+      -0.6096,
+      0.9171
+    ],
+    "max": [
+      0.2335,
+      0.1379,
+      1.7179
+    ],
+    "size": [
+      0.5035,
+      0.7475,
+      0.8008
+    ]
+  }
+}

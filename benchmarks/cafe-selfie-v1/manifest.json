@@ -1,0 +1,54 @@
+{
+  "case_id": "cafe-selfie-v1",
+  "source_experiment_date": "2026-10-14",
+  "files": [
+    {
+      "path": "inputs/reference.png",
+      "bytes": 2392839,
+      "sha256": "de6fee4cffe83bd5aec30647c318cd0da7ee42e0f99d81547d0f49119493a3fa"
+    },
+    {
+      "path": "inputs/base.obj",
+      "bytes": 1749303,
+      "sha256": "8e761e6624b8f54536409135d1636da63b32486a90d4897f84e121d144f6fb4c"
+    },
+    {
+      "path": "inputs/upper-body.obj",
+      "bytes": 350138,
+      "sha256": "4a2babcfe92c0b753c83c626c4b6deefddff6f549695a5cb756cc937026b10d5"
+    },
+    {
+      "path": "inputs/ASSET-LICENSE.md",
+      "bytes": 472,
+      "sha256": "184de9bc357d547acd006dc975f9ddb014ac29946b69b70d7814cd23a95a195f"
+    },
+    {
+      "path": "inputs/environment.json",
+      "bytes": 12886,
+      "sha256": "e02a7f801315b4cd0ec687360ffcee356094cc41f02bb1a65c527272af0c02ab"
+    },
+    {
+      "path": "prompts/01-procedural.md",
+      "bytes": 6095,
+      "sha256": "8dab300d7beafc5425b63b63ad067ec4cecb827cc5f5cc9b5000a9208bfb1105"
+    },
+    {
+      "path": "prompts/02-photo-textured.md",
+      "bytes": 6220,
+      "sha256": "7a0704e8596e2a35f2b0cc304d0e224c8e890478b728c042eadca879db971b34"
+    }
+  ],
+  "reference_image": {
+    "path": "inputs/reference.png",
+    "width": 1205,
+    "height": 1306,
+    "copy_policy": "Original bytes, no resize or recompression"
+  },
+  "model_ids_at_run": {
+    "argon": "gemini-4-argon-high",
+    "sol": "gpt-6.1-sol",
+    "opus": "claude-opus-5-5",
+    "grok": "grok-4.7-high"
+  },
+  "note": "Immutable historical inputs and main task prompts. These files do not include complete provider transcripts or recovery prompts."
+}

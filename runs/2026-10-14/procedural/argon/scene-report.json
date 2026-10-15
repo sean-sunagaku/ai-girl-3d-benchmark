@@ -1,0 +1,110 @@
+{
+  "blenderVersion": "5.1.1",
+  "renderEngine": "CYCLES",
+  "renderDevice": "CPU",
+  "samples": 32,
+  "denoiser": "OPENIMAGEDENOISE",
+  "importantObjectNames": [
+    "CharacterHead",
+    "Cornea_L",
+    "Cornea_R",
+    "EyeTearline_L",
+    "EyeTearline_R",
+    "Eyeball_L",
+    "Eyeball_R",
+    "Eyebrows_L",
+    "Eyebrows_R",
+    "Eyelashes_L",
+    "Eyelashes_R",
+    "HairScalpCap",
+    "HairStrands_Bangs",
+    "HairStrands_FaceFraming",
+    "HairStrands_Main",
+    "HairVolumeLocks",
+    "SweaterBody",
+    "SweaterCollar"
+  ],
+  "characterBounds": {
+    "min": [
+      -0.3156,
+      -0.2516,
+      0.947
+    ],
+    "max": [
+      0.2963,
+      0.1709,
+      1.6752
+    ],
+    "dimensions": [
+      0.6119,
+      0.4225,
+      0.7281
+    ]
+  },
+  "meshCounts": {
+    "baseVertices": 162384,
+    "baseFaces": 39898,
+    "evaluatedVertices": 234401,
+    "evaluatedFaces": 111464
+  },
+  "generatedTextures": [
+    {
+      "name": "SkinAlbedoTex",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "colorspace": "sRGB",
+      "description": "Procedural fair warm facial & neck skin albedo with cheek blush, nose warmth, upper lash liner, double-eyelid crease, and natural rose-pink lips."
+    },
+    {
+      "name": "SkinRoughBumpTex",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "colorspace": "Non-Color",
+      "description": "Packed procedural skin detail map: R=micro-pore and vertical lip groove height, G=spatially varying roughness, B=subsurface weight mask."
+    },
+    {
+      "name": "EyeIrisTex",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB",
+      "description": "Procedural warm chestnut-brown iris texture with radial stroma fibers, collarette highlights, dark limbal ring, pupil, and warm sclera."
+    },
+    {
+      "name": "SweaterKnitHeightTex",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "colorspace": "Non-Color",
+      "description": "Procedural tileable chunky moss/seed stitch knit heightmap with interlocking V-loops, purl crowns, and 3-ply twisted yarn micro-relief."
+    },
+    {
+      "name": "SweaterKnitAlbedoTex",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "colorspace": "sRGB",
+      "description": "Procedural dusty pink knitted yarn albedo map with stitch-crevice ambient occlusion and subtle yarn heathering."
+    }
+  ],
+  "renderedFilenames": [
+    "renders/beauty.png",
+    "renders/front.png",
+    "renders/three-quarter.png",
+    "renders/side.png",
+    "renders/back.png"
+  ],
+  "limitations": [
+    "Single-image reference means exact side profile, back hair arrangement, back sweater drapery, and unseen lower torso/hands are anatomically inferred.",
+    "Facial likeness is sculpted by deforming the CC0 MakeHuman hm08 topology rather than a 3D scan of the subject.",
+    "Hair combines sculpted 3D volumetric wave locks with ~4,500 procedural HairCurves strands rather than ~100,000 individual scalp follicles to stay well within the <1M evaluated vertex and CPU render budget.",
+    "Cafe background is a stylized 3D geometric representation (window, plants, wooden tables, counter, and jars) rendered with shallow depth of field."
+  ]
+}

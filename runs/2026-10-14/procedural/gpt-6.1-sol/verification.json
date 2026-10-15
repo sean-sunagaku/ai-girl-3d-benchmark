@@ -1,0 +1,333 @@
+{
+  "final_saved_scene_reopened": true,
+  "blender_version": "5.1.1",
+  "engine": "CYCLES",
+  "device": "CPU",
+  "samples": 32,
+  "threads": 3,
+  "beauty_camera_restored": true,
+  "cafe_restored": true,
+  "packed_images": [
+    {
+      "name": "Procedural knit stitch | 256px loop and twisted yarn",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true
+    }
+  ],
+  "render_files": {
+    "renders/beauty.png": {
+      "size": [
+        960,
+        1040
+      ],
+      "bytes": 1505723
+    },
+    "renders/front.png": {
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 734615
+    },
+    "renders/three-quarter.png": {
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 721621
+    },
+    "renders/side.png": {
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 733220
+    },
+    "renders/back.png": {
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 737643
+    }
+  },
+  "evaluated_vertices": 893837,
+  "evaluated_polygons": 834278,
+  "character_bounds_m": {
+    "min": [
+      -0.42831385135650635,
+      -0.5658501386642456,
+      0.9305031895637512
+    ],
+    "max": [
+      0.4264988303184509,
+      0.14636284112930298,
+      1.6853774785995483
+    ]
+  },
+  "per_object_counts": {
+    "Continuous sculpt | face ears neck": {
+      "evaluated_vertices": 69885,
+      "evaluated_polygons": 69760,
+      "mesh_control_vertices": 4392,
+      "curve_control_points": null,
+      "curve_splines": null
+    },
+    "Upper eyelashes R": {
+      "evaluated_vertices": 1344,
+      "evaluated_polygons": 1008,
+      "mesh_control_vertices": null,
+      "curve_control_points": 252,
+      "curve_splines": 42
+    },
+    "Lower fine lashes R": {
+      "evaluated_vertices": 288,
+      "evaluated_polygons": 144,
+      "mesh_control_vertices": null,
+      "curve_control_points": 36,
+      "curve_splines": 18
+    },
+    "Natural eyebrow hairs R": {
+      "evaluated_vertices": 4000,
+      "evaluated_polygons": 2400,
+      "mesh_control_vertices": null,
+      "curve_control_points": 600,
+      "curve_splines": 200
+    },
+    "Upper eyelashes L": {
+      "evaluated_vertices": 1344,
+      "evaluated_polygons": 1008,
+      "mesh_control_vertices": null,
+      "curve_control_points": 252,
+      "curve_splines": 42
+    },
+    "Lower fine lashes L": {
+      "evaluated_vertices": 288,
+      "evaluated_polygons": 144,
+      "mesh_control_vertices": null,
+      "curve_control_points": 36,
+      "curve_splines": 18
+    },
+    "Natural eyebrow hairs L": {
+      "evaluated_vertices": 4000,
+      "evaluated_polygons": 2400,
+      "mesh_control_vertices": null,
+      "curve_control_points": 600,
+      "curve_splines": 200
+    },
+    "Upper eyelid sculpt fold R": {
+      "evaluated_vertices": 128,
+      "evaluated_polygons": 120,
+      "mesh_control_vertices": null,
+      "curve_control_points": 30,
+      "curve_splines": 1
+    },
+    "Upper eyelid sculpt fold L": {
+      "evaluated_vertices": 128,
+      "evaluated_polygons": 120,
+      "mesh_control_vertices": null,
+      "curve_control_points": 30,
+      "curve_splines": 1
+    },
+    "Closed mouth fine smile crease": {
+      "evaluated_vertices": 252,
+      "evaluated_polygons": 244,
+      "mesh_control_vertices": null,
+      "curve_control_points": 61,
+      "curve_splines": 1
+    },
+    "Eyeball R": {
+      "evaluated_vertices": 1986,
+      "evaluated_polygons": 2048,
+      "mesh_control_vertices": 1986,
+      "curve_control_points": null,
+      "curve_splines": null
+    },
+    "Limbal ring R": {
+      "evaluated_vertices": 864,
+      "evaluated_polygons": 768,
+      "mesh_control_vertices": 864,
+      "curve_control_points": null,
+      "curve_splines": null
+    },
+    "Radial brown iris R": {
+      "evaluated_vertices": 864,
+      "evaluated_polygons": 768,
+      "mesh_control_vertices": 864,
+      "curve_control_points": null,
+      "curve_splines": null
+    },
+    "Deep pupil R": {
+      "evaluated_vertices": 864,
+      "evaluated_polygons": 768,
+      "mesh_control_vertices": 864,
+      "curve_control_points": null,
+      "curve_splines": null
+    },
+    "Corneal curved cap R": {
+      "evaluated_vertices": 864,
+      "evaluated_polygons": 768,
+      "mesh_control_vertices": 864,
+      "curve_control_points": null,
+      "curve_splines": null
+    },
+    "Eyeball L": {
+      "evaluated_vertices": 1986,
+      "evaluated_polygons": 2048,
+      "mesh_control_vertices": 1986,
+      "curve_control_points": null,
+      "curve_splines": null
+    },
+    "Limbal ring L": {
+      "evaluated_vertices": 864,
+      "evaluated_polygons": 768,
+      "mesh_control_vertices": 864,
+      "curve_control_points": null,
+      "curve_splines": null
+    },
+    "Radial brown iris L": {
+      "evaluated_vertices": 864,
+      "evaluated_polygons": 768,
+      "mesh_control_vertices": 864,
+      "curve_control_points": null,
+      "curve_splines": null
+    },
+    "Deep pupil L": {
+      "evaluated_vertices": 864,
+      "evaluated_polygons": 768,
+      "mesh_control_vertices": 864,
+      "curve_control_points": null,
+      "curve_splines": null
+    },
+    "Corneal curved cap L": {
+      "evaluated_vertices": 864,
+      "evaluated_polygons": 768,
+      "mesh_control_vertices": 864,
+      "curve_control_points": null,
+      "curve_splines": null
+    },
+    "Hair | fitted continuous scalp foundation": {
+      "evaluated_vertices": 3300,
+      "evaluated_polygons": 3200,
+      "mesh_control_vertices": 3300,
+      "curve_control_points": null,
+      "curve_splines": null
+    },
+    "Hair | layered wave lock volumes": {
+      "evaluated_vertices": 19360,
+      "evaluated_polygons": 18480,
+      "mesh_control_vertices": 19360,
+      "curve_control_points": null,
+      "curve_splines": null
+    },
+    "Hair | fine chestnut strands 0": {
+      "evaluated_vertices": 148804,
+      "evaluated_polygons": 139080,
+      "mesh_control_vertices": null,
+      "curve_control_points": 37045,
+      "curve_splines": 1261
+    },
+    "Hair | fine chestnut strands 1": {
+      "evaluated_vertices": 120000,
+      "evaluated_polygons": 112040,
+      "mesh_control_vertices": null,
+      "curve_control_points": 30510,
+      "curve_splines": 1045
+    },
+    "Hair | fine chestnut strands 2": {
+      "evaluated_vertices": 62884,
+      "evaluated_polygons": 58520,
+      "mesh_control_vertices": null,
+      "curve_control_points": 16905,
+      "curve_splines": 591
+    },
+    "Hair | fine chestnut strands 3": {
+      "evaluated_vertices": 78640,
+      "evaluated_polygons": 73320,
+      "mesh_control_vertices": null,
+      "curve_control_points": 20380,
+      "curve_splines": 706
+    },
+    "Hair | fine chestnut strands 4": {
+      "evaluated_vertices": 16256,
+      "evaluated_polygons": 15240,
+      "mesh_control_vertices": null,
+      "curve_control_points": 3810,
+      "curve_splines": 127
+    },
+    "Hair | fine frontal crown fibers": {
+      "evaluated_vertices": 37440,
+      "evaluated_polygons": 34560,
+      "mesh_control_vertices": null,
+      "curve_control_points": 8640,
+      "curve_splines": 360
+    },
+    "Bangs | separated wisps 0": {
+      "evaluated_vertices": 12032,
+      "evaluated_polygons": 11280,
+      "mesh_control_vertices": null,
+      "curve_control_points": 2820,
+      "curve_splines": 94
+    },
+    "Bangs | separated wisps 1": {
+      "evaluated_vertices": 12800,
+      "evaluated_polygons": 12000,
+      "mesh_control_vertices": null,
+      "curve_control_points": 3000,
+      "curve_splines": 100
+    },
+    "Bangs | separated wisps 2": {
+      "evaluated_vertices": 13440,
+      "evaluated_polygons": 12600,
+      "mesh_control_vertices": null,
+      "curve_control_points": 3150,
+      "curve_splines": 105
+    },
+    "Bangs | separated wisps 3": {
+      "evaluated_vertices": 12928,
+      "evaluated_polygons": 12120,
+      "mesh_control_vertices": null,
+      "curve_control_points": 3030,
+      "curve_splines": 101
+    },
+    "Hair | fine loose flyaways": {
+      "evaluated_vertices": 6460,
+      "evaluated_polygons": 5700,
+      "mesh_control_vertices": null,
+      "curve_control_points": 1425,
+      "curve_splines": 95
+    },
+    "Sweater | unified shoulders and selfie sleeves": {
+      "evaluated_vertices": 168552,
+      "evaluated_polygons": 168550,
+      "mesh_control_vertices": 42202,
+      "curve_control_points": null,
+      "curve_splines": null
+    },
+    "Crew neck | ribbed knitted band": {
+      "evaluated_vertices": 4160,
+      "evaluated_polygons": 4160,
+      "mesh_control_vertices": 2080,
+      "curve_control_points": null,
+      "curve_splines": null
+    },
+    "Crew neck raised rib yarn": {
+      "evaluated_vertices": 5760,
+      "evaluated_polygons": 4800,
+      "mesh_control_vertices": null,
+      "curve_control_points": 1200,
+      "curve_splines": 120
+    },
+    "Front fabric | individually formed knit V loops": {
+      "evaluated_vertices": 78480,
+      "evaluated_polygons": 61040,
+      "mesh_control_vertices": null,
+      "curve_control_points": 15260,
+      "curve_splines": 2180
+    }
+  },
+  "folder_bytes": 19009727
+}

@@ -1,0 +1,91 @@
+{
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "samples": 32,
+  "denoising": true,
+  "view_transform": "AgX",
+  "objects": [
+    "Body",
+    "Sweater",
+    "HairCap",
+    "HairStrands",
+    "HairFlyaways",
+    "LashesBrows",
+    "Eye_L",
+    "Cornea_L",
+    "Eye_R",
+    "Cornea_R"
+  ],
+  "important_objects": [
+    "Body",
+    "Sweater",
+    "Eye_L",
+    "Eye_R",
+    "Cornea_L",
+    "Cornea_R",
+    "LashesBrows",
+    "HairCap",
+    "HairStrands",
+    "HairFlyaways",
+    "BeautyCamera",
+    "Cam_Front",
+    "Cam_ThreeQuarter",
+    "Cam_Side",
+    "Cam_Back"
+  ],
+  "character_bounds_m": {
+    "min": [
+      -0.3895,
+      -0.3882,
+      0.9034
+    ],
+    "max": [
+      0.3958,
+      0.1008,
+      1.632
+    ]
+  },
+  "base_mesh_vertices": 6093,
+  "base_mesh_faces": 6044,
+  "body_cage_vertices": 6093,
+  "evaluated_vertices_total": 241011,
+  "evaluated_vertices_by_object": {
+    "Body": 96903,
+    "Sweater": 56452,
+    "HairCap": 6256,
+    "HairStrands": 45780,
+    "HairFlyaways": 32676,
+    "LashesBrows": 608,
+    "Eye_L": 686,
+    "Cornea_L": 482,
+    "Eye_R": 686,
+    "Cornea_R": 482
+  },
+  "generated_textures": [
+    {
+      "name": "KnitHeight",
+      "size": 1024,
+      "description": "Procedural stockinette knit height map packed into the blend, used as sweater displacement and bump. Not from the reference photo."
+    }
+  ],
+  "renders": [
+    "renders/beauty.png",
+    "renders/front.png",
+    "renders/three-quarter.png",
+    "renders/side.png",
+    "renders/back.png"
+  ],
+  "reference_image_accessed": true,
+  "reference_note": "The reference photograph was opened with an image reader and its decoded pixels were visible (cafe selfie, chestnut hair, dusty pink knit). It is not used as a texture.",
+  "limitations": [
+    "Likeness is a sculpt on the neutral MakeHuman hm08 cage, not a scan or photogrammetry reconstruction.",
+    "Side and back of the head, hair mass behind the shoulders, ears, and the sweater's unseen folds are inferred.",
+    "Hands keep MakeHuman topology with a scripted curl and are only partly shown in the beauty frame.",
+    "Hair is a scalp shell plus about a thousand bevel curves. The shell can still read as a smooth cap at the hairline, and the strands are thinner and straighter than the reference waves. It is not a groom of hundreds of thousands of strands.",
+    "Knit structure is a procedural height map and displacement, so individual yarn fibers are stylized.",
+    "The cafe is a handful of primitive shapes for lighting context, not the photographed room.",
+    "Eyes are modeled spheres with a procedural iris; they approximate the photo's warm brown irises and catchlights.",
+    "No facial rig beyond the baked selfie pose. The meshes, materials, and modifiers remain editable."
+  ]
+}

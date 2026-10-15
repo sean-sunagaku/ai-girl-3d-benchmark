@@ -1,0 +1,122 @@
+{
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "threads": 3,
+  "samples": 32,
+  "denoising": true,
+  "view_transform": "AgX",
+  "objects": [
+    "Body",
+    "Sweater",
+    "HairCap",
+    "HairStrands",
+    "HairFlyaways",
+    "LashesBrows",
+    "Eye_L",
+    "Cornea_L",
+    "Eye_R",
+    "Cornea_R"
+  ],
+  "important_objects": [
+    "Body",
+    "Sweater",
+    "Eye_L",
+    "Eye_R",
+    "Cornea_L",
+    "Cornea_R",
+    "LashesBrows",
+    "HairCap",
+    "HairStrands",
+    "HairFlyaways",
+    "BeautyCamera",
+    "Cam_Front",
+    "Cam_ThreeQuarter",
+    "Cam_Side",
+    "Cam_Back"
+  ],
+  "character_bounds_m": {
+    "min": [
+      -0.2343,
+      -0.3991,
+      0.9575
+    ],
+    "max": [
+      0.3427,
+      0.1305,
+      1.6372
+    ]
+  },
+  "base_mesh_vertices": 6093,
+  "base_mesh_faces": 6044,
+  "body_cage_vertices": 6093,
+  "evaluated_vertices_total": 254965,
+  "evaluated_vertices_by_object": {
+    "Body": 96903,
+    "Sweater": 56452,
+    "HairCap": 5594,
+    "HairStrands": 73500,
+    "HairFlyaways": 19572,
+    "LashesBrows": 608,
+    "Eye_L": 686,
+    "Cornea_L": 482,
+    "Eye_R": 686,
+    "Cornea_R": 482
+  },
+  "hair_curves_native": {
+    "HairStrands": {
+      "splines": 915,
+      "points": 12250,
+      "bevel_depth_m": 0.001449999981559813
+    },
+    "HairFlyaways": {
+      "splines": 273,
+      "points": 3262,
+      "bevel_depth_m": 0.00031999999191612005,
+      "note": "Native poly curve points. Beveled evaluated meshes are also listed under evaluated_vertices_by_object."
+    }
+  },
+  "generated_textures": [
+    {
+      "name": "KnitHeight",
+      "size": 1024,
+      "source": "procedural",
+      "projection": "sweater UVMap, repeat",
+      "description": "Procedural stockinette height, packed, drives sweater displacement and bump."
+    },
+    {
+      "name": "KnitColor",
+      "size": 1024,
+      "source": "input/reference.png crop x=780 y=860 w=160 h=160",
+      "projection": "sweater UVMap with mapping scale (3.2, 8.0, 1), repeat",
+      "description": "Dusty-pink knit patch. Hair-colored pixels replaced, low-frequency photo light divided out, edges feathered for tiling."
+    },
+    {
+      "name": "SkinColor",
+      "size": null,
+      "source": "input/reference.png",
+      "projection": "hidden ProjCamera solved to eye, nose and mouth landmarks; vertex colors on Body, not a UV image",
+      "description": "Front-facing skin samples with hair, sweater and eye-socket pixels rejected, luminance flattened toward a cheek albedo. Sides, ears, neck and scalp use the sampled cheek color. Lips use the sampled lip color."
+    }
+  ],
+  "renders": [
+    "renders/beauty.png",
+    "renders/front.png",
+    "renders/three-quarter.png",
+    "renders/side.png",
+    "renders/back.png"
+  ],
+  "reference_image_accessed": true,
+  "reference_note": "input/reference.png was opened as a decoded image (direct visual read of the cafe selfie, plus numerical pixel sampling of eyes, lips, cheek and knit). Colors and a masked projection come from that file. It is not a background plate.",
+  "projection_mean_error_px": 18.49645629525184,
+  "limitations": [
+    "Not a scan. The head is a sculpt on MakeHuman hm08 with a masked, lighting-flattened projection of the reference onto front-facing skin vertices.",
+    "Eye alignment of that projection is about 5 pixels; the mouth landmark is about 50 pixels off, so lip color is mostly the sampled average rather than a pasted mouth.",
+    "The scalp cap is still a smooth surface under the strands and reads as a wig base. Hair is about a thousand beveled curves, not a full groom, and the waves are inferred.",
+    "Eyes are spheres sunk into sculpted lids, with a procedural iris using colors sampled from the photograph. Photo eyelids are not projected, to avoid double eyes.",
+    "Side, back, ears, and sweater folds away from the camera are inferred. Hands stay MakeHuman topology.",
+    "The sweater color is a feathered crop of the reference knit; stitch relief is a procedural height map. The shoulder and neck boundaries can show gaps.",
+    "The cafe is a few primitives, not the photographed room, and is hidden in the turnaround views.",
+    "The portrait is still visibly CG."
+  ]
+}

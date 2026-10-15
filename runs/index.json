@@ -1,0 +1,104 @@
+{
+  "experiment_date": "2026-10-14",
+  "publication_date": "2026-10-15",
+  "appearance_evaluation": false,
+  "new_artifact_validation_performed": false,
+  "runs": [
+    {
+      "id": "argon",
+      "stage": "procedural",
+      "model": "argon",
+      "path": "runs/2026-10-14/procedural/argon",
+      "requested_model": "gemini-4-argon-high",
+      "recorded_process_exit_code": 0,
+      "recorded_process_finished_at": "2026-10-14T03:40:53.359509+00:00",
+      "recorded_attempt_count": 5,
+      "publication_policy": "Current files copied as-is; no rerender, repair, or revalidation for publication.",
+      "existing_web_glb": true
+    },
+    {
+      "id": "gpt-6.1-sol",
+      "stage": "procedural",
+      "model": "gpt-6.1-sol",
+      "path": "runs/2026-10-14/procedural/gpt-6.1-sol",
+      "requested_model": "gpt-6.1-sol",
+      "recorded_process_exit_code": 0,
+      "recorded_process_finished_at": "2026-10-14T02:38:42.666078+00:00",
+      "recorded_attempt_count": 1,
+      "publication_policy": "Current files copied as-is; no rerender, repair, or revalidation for publication.",
+      "existing_web_glb": true
+    },
+    {
+      "id": "opus-5.5",
+      "stage": "procedural",
+      "model": "opus-5.5",
+      "path": "runs/2026-10-14/procedural/opus-5.5",
+      "requested_model": "claude-opus-5-5",
+      "recorded_process_exit_code": 0,
+      "recorded_process_finished_at": "2026-10-14T03:41:10.653192+00:00",
+      "recorded_attempt_count": 1,
+      "publication_policy": "Current files copied as-is; no rerender, repair, or revalidation for publication.",
+      "existing_web_glb": true
+    },
+    {
+      "id": "grok",
+      "stage": "procedural",
+      "model": "grok",
+      "path": "runs/2026-10-14/procedural/grok",
+      "requested_model": "grok-4.7-high",
+      "recorded_process_exit_code": 0,
+      "recorded_process_finished_at": "2026-10-14T03:01:32.062224+00:00",
+      "recorded_attempt_count": 1,
+      "publication_policy": "Current files copied as-is; no rerender, repair, or revalidation for publication.",
+      "existing_web_glb": true
+    },
+    {
+      "id": "textured/argon",
+      "stage": "photo-textured",
+      "model": "argon",
+      "path": "runs/2026-10-14/photo-textured/argon",
+      "requested_model": "gemini-4-argon-high",
+      "recorded_process_exit_code": 0,
+      "recorded_process_finished_at": "2026-10-14T05:17:40.067737+00:00",
+      "recorded_attempt_count": 3,
+      "publication_policy": "Current files copied as-is; no rerender, repair, or revalidation for publication.",
+      "existing_web_glb": false
+    },
+    {
+      "id": "textured/gpt-6.1-sol",
+      "stage": "photo-textured",
+      "model": "gpt-6.1-sol",
+      "path": "runs/2026-10-14/photo-textured/gpt-6.1-sol",
+      "requested_model": "gpt-6.1-sol",
+      "recorded_process_exit_code": 0,
+      "recorded_process_finished_at": "2026-10-14T03:29:15.195847+00:00",
+      "recorded_attempt_count": 1,
+      "publication_policy": "Current files copied as-is; no rerender, repair, or revalidation for publication.",
+      "existing_web_glb": true
+    },
+    {
+      "id": "textured/opus-5.5",
+      "stage": "photo-textured",
+      "model": "opus-5.5",
+      "path": "runs/2026-10-14/photo-textured/opus-5.5",
+      "requested_model": "claude-opus-5-5",
+      "recorded_process_exit_code": 0,
+      "recorded_process_finished_at": "2026-10-14T05:14:26.808658+00:00",
+      "recorded_attempt_count": 1,
+      "publication_policy": "Current files copied as-is; no rerender, repair, or revalidation for publication.",
+      "existing_web_glb": false
+    },
+    {
+      "id": "textured/grok",
+      "stage": "photo-textured",
+      "model": "grok",
+      "path": "runs/2026-10-14/photo-textured/grok",
+      "requested_model": "grok-4.7-high",
+      "recorded_process_exit_code": 0,
+      "recorded_process_finished_at": "2026-10-14T03:37:23.362571+00:00",
+      "recorded_attempt_count": 1,
+      "publication_policy": "Current files copied as-is; no rerender, repair, or revalidation for publication.",
+      "existing_web_glb": true
+    }
+  ]
+}

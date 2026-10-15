@@ -1,0 +1,41 @@
+{
+  "release_tag": "as-published-2026-10-15",
+  "policy": "Current files packaged without regeneration, rerendering, repairs, or new model validation.",
+  "assets": [
+    {
+      "filename": "blender-scenes.zip",
+      "bytes": 257490752,
+      "download_url": "https://github.com/sean-sunagaku/ai-girl-3d-benchmark/releases/download/as-published-2026-10-15/blender-scenes.zip"
+    },
+    {
+      "filename": "photo-textured-gpt-6.1-sol.glb",
+      "bytes": 93984920,
+      "download_url": "https://github.com/sean-sunagaku/ai-girl-3d-benchmark/releases/download/as-published-2026-10-15/photo-textured-gpt-6.1-sol.glb"
+    },
+    {
+      "filename": "photo-textured-grok.glb",
+      "bytes": 51880504,
+      "download_url": "https://github.com/sean-sunagaku/ai-girl-3d-benchmark/releases/download/as-published-2026-10-15/photo-textured-grok.glb"
+    },
+    {
+      "filename": "procedural-argon.glb",
+      "bytes": 38285200,
+      "download_url": "https://github.com/sean-sunagaku/ai-girl-3d-benchmark/releases/download/as-published-2026-10-15/procedural-argon.glb"
+    },
+    {
+      "filename": "procedural-gpt-6.1-sol.glb",
+      "bytes": 93584944,
+      "download_url": "https://github.com/sean-sunagaku/ai-girl-3d-benchmark/releases/download/as-published-2026-10-15/procedural-gpt-6.1-sol.glb"
+    },
+    {
+      "filename": "procedural-grok.glb",
+      "bytes": 38286152,
+      "download_url": "https://github.com/sean-sunagaku/ai-girl-3d-benchmark/releases/download/as-published-2026-10-15/procedural-grok.glb"
+    },
+    {
+      "filename": "procedural-opus-5.5.glb",
+      "bytes": 216918296,
+      "download_url": "https://github.com/sean-sunagaku/ai-girl-3d-benchmark/releases/download/as-published-2026-10-15/procedural-opus-5.5.glb"
+    }
+  ]
+}

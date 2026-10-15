@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.log
+*.blend
+*.blend1
+*.glb
+.env
+.env.*
+.work/
+.downloads/
+.release-assets/
+planning/
+PUBLICATION_PLAN.md
+

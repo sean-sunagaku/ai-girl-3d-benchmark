@@ -1,0 +1,400 @@
+{
+  "saved_scene_independently_reopened": true,
+  "engine": "CYCLES",
+  "device": "CPU",
+  "threads": 3,
+  "samples": 32,
+  "denoising": true,
+  "saved_camera": "Beauty | selfie portrait",
+  "compositor_enabled": false,
+  "geometry": {
+    "evaluated_vertices_excluding_native_hair": 598205,
+    "evaluated_polygons_excluding_native_hair": 566642,
+    "native_hair_curves": 3600,
+    "native_hair_points": 106400
+  },
+  "bounds_m": {
+    "min": [
+      -0.4459432065486908,
+      -0.5658501386642456,
+      0.9101456999778748
+    ],
+    "max": [
+      0.40809735655784607,
+      0.14633864164352417,
+      1.6728918552398682
+    ]
+  },
+  "per_object_counts": {
+    "Closed mouth fine smile crease": {
+      "type": "CURVE",
+      "evaluated_vertices": 252,
+      "evaluated_polygons": 244,
+      "control_vertices": null,
+      "curve_splines": 1,
+      "curve_points": 61
+    },
+    "Continuous sculpt | face ears neck": {
+      "type": "MESH",
+      "evaluated_vertices": 69885,
+      "evaluated_polygons": 69760,
+      "control_vertices": 4392,
+      "curve_splines": null,
+      "curve_points": null
+    },
+    "Corneal curved cap L": {
+      "type": "MESH",
+      "evaluated_vertices": 864,
+      "evaluated_polygons": 768,
+      "control_vertices": 864,
+      "curve_splines": null,
+      "curve_points": null
+    },
+    "Corneal curved cap R": {
+      "type": "MESH",
+      "evaluated_vertices": 864,
+      "evaluated_polygons": 768,
+      "control_vertices": 864,
+      "curve_splines": null,
+      "curve_points": null
+    },
+    "Crew neck raised rib yarn": {
+      "type": "CURVE",
+      "evaluated_vertices": 5760,
+      "evaluated_polygons": 4800,
+      "control_vertices": null,
+      "curve_splines": 120,
+      "curve_points": 1200
+    },
+    "Crew neck | ribbed knitted band": {
+      "type": "MESH",
+      "evaluated_vertices": 4160,
+      "evaluated_polygons": 4160,
+      "control_vertices": 2080,
+      "curve_splines": null,
+      "curve_points": null
+    },
+    "Deep pupil L": {
+      "type": "MESH",
+      "evaluated_vertices": 864,
+      "evaluated_polygons": 768,
+      "control_vertices": 864,
+      "curve_splines": null,
+      "curve_points": null
+    },
+    "Deep pupil R": {
+      "type": "MESH",
+      "evaluated_vertices": 864,
+      "evaluated_polygons": 768,
+      "control_vertices": 864,
+      "curve_splines": null,
+      "curve_points": null
+    },
+    "Eyeball L": {
+      "type": "MESH",
+      "evaluated_vertices": 1986,
+      "evaluated_polygons": 2048,
+      "control_vertices": 1986,
+      "curve_splines": null,
+      "curve_points": null
+    },
+    "Eyeball R": {
+      "type": "MESH",
+      "evaluated_vertices": 1986,
+      "evaluated_polygons": 2048,
+      "control_vertices": 1986,
+      "curve_splines": null,
+      "curve_points": null
+    },
+    "Hair | editable tubular hanging fibers 0": {
+      "type": "CURVE",
+      "evaluated_vertices": 108340,
+      "evaluated_polygons": 99508,
+      "control_vertices": null,
+      "curve_splines": 1104,
+      "curve_points": 24877
+    },
+    "Hair | editable tubular hanging fibers 1": {
+      "type": "CURVE",
+      "evaluated_vertices": 86352,
+      "evaluated_polygons": 79336,
+      "control_vertices": null,
+      "curve_splines": 877,
+      "curve_points": 19834
+    },
+    "Hair | editable tubular hanging fibers 2": {
+      "type": "CURVE",
+      "evaluated_vertices": 41944,
+      "evaluated_polygons": 38536,
+      "control_vertices": null,
+      "curve_splines": 426,
+      "curve_points": 9634
+    },
+    "Hair | editable tubular hanging fibers 3": {
+      "type": "CURVE",
+      "evaluated_vertices": 53520,
+      "evaluated_polygons": 49152,
+      "control_vertices": null,
+      "curve_splines": 546,
+      "curve_points": 12288
+    },
+    "Hair | editable tubular hanging fibers 4": {
+      "type": "CURVE",
+      "evaluated_vertices": 12428,
+      "evaluated_polygons": 11412,
+      "control_vertices": null,
+      "curve_splines": 127,
+      "curve_points": 2853
+    },
+    "Hair | fitted scalp beneath native fibers": {
+      "type": "MESH",
+      "evaluated_vertices": 5248,
+      "evaluated_polygons": 5120,
+      "control_vertices": 5248,
+      "curve_splines": null,
+      "curve_points": null
+    },
+    "Hair | native chestnut fibers 0": {
+      "type": "native hair",
+      "curves": 1548,
+      "points": 45736
+    },
+    "Hair | native chestnut fibers 1": {
+      "type": "native hair",
+      "curves": 988,
+      "points": 29178
+    },
+    "Hair | native chestnut fibers 2": {
+      "type": "native hair",
+      "curves": 811,
+      "points": 24014
+    },
+    "Hair | native chestnut fibers 3": {
+      "type": "native hair",
+      "curves": 253,
+      "points": 7472
+    },
+    "Hair | overlapping sculpted wave depth": {
+      "type": "MESH",
+      "evaluated_vertices": 19360,
+      "evaluated_polygons": 18480,
+      "control_vertices": 19360,
+      "curve_splines": null,
+      "curve_points": null
+    },
+    "Limbal ring L": {
+      "type": "MESH",
+      "evaluated_vertices": 864,
+      "evaluated_polygons": 768,
+      "control_vertices": 864,
+      "curve_splines": null,
+      "curve_points": null
+    },
+    "Limbal ring R": {
+      "type": "MESH",
+      "evaluated_vertices": 864,
+      "evaluated_polygons": 768,
+      "control_vertices": 864,
+      "curve_splines": null,
+      "curve_points": null
+    },
+    "Lower fine lashes L": {
+      "type": "CURVE",
+      "evaluated_vertices": 288,
+      "evaluated_polygons": 144,
+      "control_vertices": null,
+      "curve_splines": 18,
+      "curve_points": 36
+    },
+    "Lower fine lashes R": {
+      "type": "CURVE",
+      "evaluated_vertices": 288,
+      "evaluated_polygons": 144,
+      "control_vertices": null,
+      "curve_splines": 18,
+      "curve_points": 36
+    },
+    "Natural eyebrow hairs L": {
+      "type": "CURVE",
+      "evaluated_vertices": 4000,
+      "evaluated_polygons": 2400,
+      "control_vertices": null,
+      "curve_splines": 200,
+      "curve_points": 600
+    },
+    "Natural eyebrow hairs R": {
+      "type": "CURVE",
+      "evaluated_vertices": 4000,
+      "evaluated_polygons": 2400,
+      "control_vertices": null,
+      "curve_splines": 200,
+      "curve_points": 600
+    },
+    "Radial brown iris L": {
+      "type": "MESH",
+      "evaluated_vertices": 864,
+      "evaluated_polygons": 768,
+      "control_vertices": 864,
+      "curve_splines": null,
+      "curve_points": null
+    },
+    "Radial brown iris R": {
+      "type": "MESH",
+      "evaluated_vertices": 864,
+      "evaluated_polygons": 768,
+      "control_vertices": 864,
+      "curve_splines": null,
+      "curve_points": null
+    },
+    "Sweater | unified shoulders and selfie sleeves": {
+      "type": "MESH",
+      "evaluated_vertices": 168552,
+      "evaluated_polygons": 168550,
+      "control_vertices": 42202,
+      "curve_splines": null,
+      "curve_points": null
+    },
+    "Upper eyelashes L": {
+      "type": "CURVE",
+      "evaluated_vertices": 1344,
+      "evaluated_polygons": 1008,
+      "control_vertices": null,
+      "curve_splines": 42,
+      "curve_points": 252
+    },
+    "Upper eyelashes R": {
+      "type": "CURVE",
+      "evaluated_vertices": 1344,
+      "evaluated_polygons": 1008,
+      "control_vertices": null,
+      "curve_splines": 42,
+      "curve_points": 252
+    },
+    "Upper eyelid sculpt fold L": {
+      "type": "CURVE",
+      "evaluated_vertices": 128,
+      "evaluated_polygons": 120,
+      "control_vertices": null,
+      "curve_splines": 1,
+      "curve_points": 30
+    },
+    "Upper eyelid sculpt fold R": {
+      "type": "CURVE",
+      "evaluated_vertices": 128,
+      "evaluated_polygons": 120,
+      "control_vertices": null,
+      "curve_splines": 1,
+      "curve_points": 30
+    }
+  },
+  "packed_images": [
+    {
+      "name": "Procedural knit stitch | 256px loop and twisted yarn",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "Reference brown iris | isolated and source glint removed",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "Reference crown hair | masked anatomical projection",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "Reference hair | inferred-side source strand tile",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "Reference knit | yarn relief from normalized luminance",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true,
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "Reference sweater | normalized seamless mirror knit tile",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "Reference-derived face | masked de-lit frontal UV atlas",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true,
+      "colorspace": "sRGB"
+    }
+  ],
+  "render_sizes_and_hashes": {
+    "renders/beauty.png": {
+      "size": [
+        960,
+        1040
+      ],
+      "bytes": 1489092,
+      "sha256": "14ad64204badca935b241ee76be6904dadc7ef700d4d7f6ba1cf7c57c2ea72b9"
+    },
+    "renders/front.png": {
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 714247,
+      "sha256": "6b0e8c4ad2c81fd15095956e5afb29b7dcc677deb8d19ec3892e1ef09e09a679"
+    },
+    "renders/three-quarter.png": {
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 702342,
+      "sha256": "8a5ea6b520c6ac6022f71b1a218e505841ca994e651685fef1beaa58bbd0bbc1"
+    },
+    "renders/side.png": {
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 701048,
+      "sha256": "f1ce010588d64105861fc62371d7c82caf0e34b8a8ba1174a18d17a0db303cec"
+    },
+    "renders/back.png": {
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 713753,
+      "sha256": "494765c9b89fd082314f3212f5e059f7623cf24887ac0ff2637d0ea63c42ccfa"
+    }
+  },
+  "folder_bytes": 39501138,
+  "stable_source_sha256": "0a040e82a7ae3e0a6c90e5830db61d021a473068d39578e72432a95aeda43d8e",
+  "final_views_directly_visually_inspected": true
+}

@@ -1,0 +1,161 @@
+{
+  "blenderVersion": "5.1.1",
+  "renderEngine": "CYCLES",
+  "renderDevice": "CPU",
+  "threads": 3,
+  "samples": 32,
+  "denoiser": "OPENIMAGEDENOISE",
+  "importantObjectNames": [
+    "CharacterHead",
+    "Cornea_L",
+    "Cornea_R",
+    "EyeTearline_L",
+    "EyeTearline_R",
+    "Eyeball_L",
+    "Eyeball_R",
+    "Eyebrows_L",
+    "Eyebrows_R",
+    "Eyelashes_L",
+    "Eyelashes_R",
+    "HairScalpCap",
+    "HairStrands_Bangs",
+    "HairStrands_FaceFraming",
+    "HairStrands_Main",
+    "HairVolumeLocks",
+    "SweaterBody",
+    "SweaterCollar"
+  ],
+  "characterBounds": {
+    "min": [
+      -0.3024,
+      -0.2311,
+      0.9471
+    ],
+    "max": [
+      0.3024,
+      0.1638,
+      1.6739
+    ],
+    "dimensions": [
+      0.6047,
+      0.3949,
+      0.7268
+    ]
+  },
+  "meshCounts": {
+    "baseVertices": 47527,
+    "baseFaces": 44180,
+    "evaluatedVertices": 133321,
+    "evaluatedFaces": 129384,
+    "evaluatedVerticesPlusCurveControlPoints": 287981
+  },
+  "hairCurveCounts": {
+    "totalCurveObjects": 3,
+    "totalCurves": 5700,
+    "totalControlPoints": 154660,
+    "objects": [
+      {
+        "name": "HairStrands_Bangs",
+        "curves": 380,
+        "controlPoints": 5700
+      },
+      {
+        "name": "HairStrands_FaceFraming",
+        "curves": 1120,
+        "controlPoints": 31360
+      },
+      {
+        "name": "HairStrands_Main",
+        "curves": 4200,
+        "controlPoints": 117600
+      }
+    ]
+  },
+  "generatedTextures": [
+    {
+      "name": "SkinAlbedoTex",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "colorspace": "sRGB",
+      "packed": true,
+      "source": "Hybrid: input/reference.png facial photograph + procedural skin synthesis",
+      "mappingMethod": "25-landmark Thin-Plate Spline (TPS) warp onto canonical FaceCylUV with 80th-percentile local skin envelope de-hairing (removing forehead/cheek hair wisps), 68% low-frequency delighting, strict eye-aperture exclusion, and cosine-feathered blending into 360-degree color-matched procedural skin on forehead, temples, ears, neck, and back of head.",
+      "uvMap": "FaceCylUV"
+    },
+    {
+      "name": "SkinRoughBumpTex",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "colorspace": "Non-Color",
+      "packed": true,
+      "source": "Hybrid: input/reference.png high-pass facial micro-relief + procedural micro-pores & lip grooves",
+      "mappingMethod": "Packed channel map on FaceCylUV: R = TPS-warped photographic high-pass skin/lip relief + procedural pores & lip grooves, G = spatially varying roughness (0.32 lips/nose tip, 0.43 cheeks/forehead, 0.48 neck), B = subsurface scattering weight.",
+      "uvMap": "FaceCylUV"
+    },
+    {
+      "name": "EyeIrisTex",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB",
+      "packed": true,
+      "source": "Calibrated from input/reference.png iris pixel sampling + procedural radial iris synthesis",
+      "mappingMethod": "Planar polar UV mapping on Eyeball_L / Eyeball_R (r_iris=0.365, r_pupil=0.152) with warm chestnut stroma fibers, collarette ring, dark limbal ring, catchlights, and warm off-white sclera.",
+      "uvMap": "UVMap"
+    },
+    {
+      "name": "HairStrandTex",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB",
+      "packed": true,
+      "source": "Calibrated from input/reference.png espresso root, warm chestnut mid-shaft, and copper-brown highlight pixels",
+      "mappingMethod": "Longitudinal UV mapping along HairVolumeLocks and ScalpCap with multi-frequency fibrous strand striations and root-to-tip tonal gradient.",
+      "uvMap": "UVMap"
+    },
+    {
+      "name": "SweaterKnitHeightTex",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "colorspace": "Non-Color",
+      "packed": true,
+      "source": "Hybrid: unoccluded sweater patch (x in [0.63,0.77], y in [0.59,0.73]) from input/reference.png + procedural seed/waffle stitch heightmap",
+      "mappingMethod": "2x2 mirror-tiled delighted photographic yarn relief combined with 64x80 interlocking seed/waffle stitch heightmap on KnitUV, driving both Subdivision+Displace modifier and shader Bump.",
+      "uvMap": "KnitUV"
+    },
+    {
+      "name": "SweaterKnitAlbedoTex",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "colorspace": "sRGB",
+      "packed": true,
+      "source": "Hybrid: input/reference.png dusty-pink sweater chromaticity & mirror-tiled yarn grain + procedural stitch crevice AO",
+      "mappingMethod": "Seamless UV mapping on KnitUV across torso, shoulders, and sleeves with physically calibrated dusty-rose yarn chromaticity.",
+      "uvMap": "KnitUV"
+    }
+  ],
+  "renderedFilenames": [
+    "renders/beauty.png",
+    "renders/front.png",
+    "renders/three-quarter.png",
+    "renders/side.png",
+    "renders/back.png"
+  ],
+  "limitations": [
+    "Single-image reference means exact side profile, back hair arrangement, back sweater drapery, and unseen lower torso/hands are anatomically inferred.",
+    "Facial likeness is sculpted by deforming the CC0 MakeHuman hm08 base topology combined with landmark-registered TPS photographic albedo projection rather than a multi-camera 3D photogrammetry scan.",
+    "Hair combines 78 fluted 8-sided 3D wave locks with 5,700 native 3D HairCurves strands (including 380 see-through bang and curtain-hairline curves) rather than >100,000 individual scalp follicles to stay well within the <1M evaluated vertex and CPU render budget.",
+    "Cafe background is a stylized 3D geometric representation (window, plants, wooden tables, counter, and jars) rendered with shallow depth of field."
+  ]
+}

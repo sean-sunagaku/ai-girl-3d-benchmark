@@ -1,0 +1,790 @@
+{
+  "blender_version": "5.1.1",
+  "files": {
+    "scene": "character.blend",
+    "build_script": "build.py",
+    "helpers": [
+      "photo_fit.py",
+      "photo_texture.py",
+      "render.py",
+      "scene_report.py"
+    ],
+    "renders": [
+      "renders/beauty.png",
+      "renders/front.png",
+      "renders/three-quarter.png",
+      "renders/side.png",
+      "renders/back.png"
+    ],
+    "previous_first_pass_scene_kept_unmodified": "source-character.blend (not read by build.py)"
+  },
+  "reopen_check": {
+    "file": "character.blend",
+    "objects": 106,
+    "scene_camera": "Cam_Beauty",
+    "images_not_packed": [],
+    "skin_photo_texture_packed": true,
+    "file_size_mb": 23.2
+  },
+  "render": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "threads": 3,
+    "threads_mode": "FIXED",
+    "samples": 32,
+    "denoising": true,
+    "denoiser": "OPENIMAGEDENOISE",
+    "view_transform": "Khronos PBR Neutral",
+    "look": "None",
+    "exposure": -0.25,
+    "beauty_resolution": [
+      960,
+      1040
+    ],
+    "turntable_resolution": [
+      768,
+      768
+    ]
+  },
+  "cameras": {
+    "Cam_back": {
+      "lens_mm": 95.0,
+      "location": [
+        0.0,
+        2.23,
+        1.5
+      ]
+    },
+    "Cam_Beauty": {
+      "lens_mm": 26.0,
+      "location": [
+        0.0182,
+        -0.4668,
+        1.69
+      ]
+    },
+    "Cam_front": {
+      "lens_mm": 95.0,
+      "location": [
+        0.0,
+        -2.67,
+        3.04
+      ]
+    },
+    "Cam_side": {
+      "lens_mm": 95.0,
+      "location": [
+        2.45,
+        -0.22,
+        1.48
+      ]
+    },
+    "Cam_three-quarter": {
+      "lens_mm": 95.0,
+      "location": [
+        1.7324,
+        -1.9524,
+        2.19
+      ]
+    }
+  },
+  "collections": {
+    "Cafe_Set": [
+      "Back_Wall",
+      "Chair_Back",
+      "Chair_Post.-2",
+      "Chair_Post.2",
+      "Counter",
+      "Floor",
+      "Jar.0.0",
+      "Jar.0.1",
+      "Jar.0.2",
+      "Jar.0.3",
+      "Jar.0.4",
+      "Jar.0.5",
+      "Jar.0.6",
+      "Jar.0.7",
+      "Jar.0.8",
+      "Jar.1.0",
+      "Jar.1.1",
+      "Jar.1.2",
+      "Jar.1.3",
+      "Jar.1.4",
+      "Jar.1.5",
+      "Jar.1.6",
+      "Jar.1.7",
+      "Jar.1.8",
+      "Jar.2.0",
+      "Jar.2.1",
+      "Jar.2.2",
+      "Jar.2.3",
+      "Jar.2.4",
+      "Jar.2.5",
+      "Jar.2.6",
+      "Jar.2.7",
+      "Jar.2.8",
+      "Plant_Leaves.0",
+      "Plant_Leaves.1",
+      "Plant_Leaves.2",
+      "Plant_Trunk.0",
+      "Plant_Trunk.1",
+      "Plant_Trunk.2",
+      "Planter.0",
+      "Planter.1",
+      "Planter.2",
+      "Right_Wall",
+      "Shelf.0",
+      "Shelf.1",
+      "Shelf.2",
+      "Table_Leg.0",
+      "Table_Leg.1",
+      "Table_Leg.2",
+      "Table_Top.0",
+      "Table_Top.1",
+      "Table_Top.2",
+      "Table_Top.near",
+      "Vase",
+      "Vase_Flowers",
+      "Vase_Leaves",
+      "Window_Light",
+      "Window_Mullion.0",
+      "Window_Mullion.1",
+      "Window_Mullion.2",
+      "Window_Mullion.3"
+    ],
+    "Cameras": [
+      "Cam_Beauty",
+      "Cam_back",
+      "Cam_front",
+      "Cam_side",
+      "Cam_three-quarter",
+      "Focus_Target"
+    ],
+    "Character": [
+      "Body_Skin",
+      "Finger.L.0",
+      "Finger.L.1",
+      "Finger.L.2",
+      "Finger.L.3",
+      "Finger.R.0",
+      "Finger.R.1",
+      "Finger.R.2",
+      "Finger.R.3",
+      "Hand_Palm.L",
+      "Hand_Palm.R",
+      "Nail.L.0",
+      "Nail.L.1",
+      "Nail.L.2",
+      "Nail.L.3",
+      "Nail.R.0",
+      "Nail.R.1",
+      "Nail.R.2",
+      "Nail.R.3",
+      "Phone",
+      "Thumb.L",
+      "Thumb.R"
+    ],
+    "Clothing": [
+      "Sweater",
+      "Sweater_Collar"
+    ],
+    "Eyes": [
+      "Cornea.L",
+      "Cornea.R",
+      "Eyeball.L",
+      "Eyeball.R"
+    ],
+    "Hair": [
+      "Eyebrows",
+      "Eyelashes",
+      "Hair_Bangs",
+      "Hair_Strands"
+    ],
+    "Lighting": [
+      "Cafe_Ceiling",
+      "Catchlight",
+      "Diag_Fill_Back",
+      "Fill_Front",
+      "Key_Window",
+      "Rim_Back",
+      "Rim_Back_R"
+    ]
+  },
+  "character_bounds_m": {
+    "min": [
+      -0.2539,
+      -0.5885,
+      0.9198
+    ],
+    "max": [
+      0.2172,
+      0.1123,
+      1.7124
+    ],
+    "size": [
+      0.4711,
+      0.7009,
+      0.7927
+    ]
+  },
+  "geometry_counts": {
+    "character_evaluated_mesh_vertices": 272455,
+    "character_evaluated_mesh_faces": 272054,
+    "whole_scene_evaluated_mesh_vertices_incl_cafe": 304431,
+    "native_hair_curves_total": 42347,
+    "native_hair_control_points_total": 1339026,
+    "per_object": {
+      "Body_Skin": {
+        "type": "MESH",
+        "base_vertices": 17851,
+        "evaluated_vertices": 71281,
+        "evaluated_faces": 71160,
+        "uv_maps": [
+          "SkinUV"
+        ],
+        "materials": [
+          "Skin"
+        ]
+      },
+      "Cornea.L": {
+        "type": "MESH",
+        "base_vertices": 6050,
+        "evaluated_vertices": 6050,
+        "evaluated_faces": 6144,
+        "uv_maps": [],
+        "materials": [
+          "Eye_Cornea"
+        ]
+      },
+      "Cornea.R": {
+        "type": "MESH",
+        "base_vertices": 6050,
+        "evaluated_vertices": 6050,
+        "evaluated_faces": 6144,
+        "uv_maps": [],
+        "materials": [
+          "Eye_Cornea"
+        ]
+      },
+      "Eyeball.L": {
+        "type": "MESH",
+        "base_vertices": 3010,
+        "evaluated_vertices": 3010,
+        "evaluated_faces": 3072,
+        "uv_maps": [],
+        "materials": [
+          "Eye_Sclera_Iris.L"
+        ]
+      },
+      "Eyeball.R": {
+        "type": "MESH",
+        "base_vertices": 3010,
+        "evaluated_vertices": 3010,
+        "evaluated_faces": 3072,
+        "uv_maps": [],
+        "materials": [
+          "Eye_Sclera_Iris.R"
+        ]
+      },
+      "Eyebrows": {
+        "type": "CURVES (native hair)",
+        "curves": 840,
+        "control_points": 3360,
+        "materials": [
+          "Brow_Hair"
+        ]
+      },
+      "Eyelashes": {
+        "type": "CURVES (native hair)",
+        "curves": 528,
+        "control_points": 3168,
+        "materials": [
+          "Lash_Hair"
+        ]
+      },
+      "Finger.L.0": {
+        "type": "MESH",
+        "base_vertices": 352,
+        "evaluated_vertices": 1430,
+        "evaluated_faces": 1428,
+        "uv_maps": [],
+        "materials": [
+          "Skin_Hands"
+        ]
+      },
+      "Finger.L.1": {
+        "type": "MESH",
+        "base_vertices": 352,
+        "evaluated_vertices": 1430,
+        "evaluated_faces": 1428,
+        "uv_maps": [],
+        "materials": [
+          "Skin_Hands"
+        ]
+      },
+      "Finger.L.2": {
+        "type": "MESH",
+        "base_vertices": 352,
+        "evaluated_vertices": 1430,
+        "evaluated_faces": 1428,
+        "uv_maps": [],
+        "materials": [
+          "Skin_Hands"
+        ]
+      },
+      "Finger.L.3": {
+        "type": "MESH",
+        "base_vertices": 352,
+        "evaluated_vertices": 1430,
+        "evaluated_faces": 1428,
+        "uv_maps": [],
+        "materials": [
+          "Skin_Hands"
+        ]
+      },
+      "Finger.R.0": {
+        "type": "MESH",
+        "base_vertices": 352,
+        "evaluated_vertices": 1430,
+        "evaluated_faces": 1428,
+        "uv_maps": [],
+        "materials": [
+          "Skin_Hands"
+        ]
+      },
+      "Finger.R.1": {
+        "type": "MESH",
+        "base_vertices": 352,
+        "evaluated_vertices": 1430,
+        "evaluated_faces": 1428,
+        "uv_maps": [],
+        "materials": [
+          "Skin_Hands"
+        ]
+      },
+      "Finger.R.2": {
+        "type": "MESH",
+        "base_vertices": 352,
+        "evaluated_vertices": 1430,
+        "evaluated_faces": 1428,
+        "uv_maps": [],
+        "materials": [
+          "Skin_Hands"
+        ]
+      },
+      "Finger.R.3": {
+        "type": "MESH",
+        "base_vertices": 352,
+        "evaluated_vertices": 1430,
+        "evaluated_faces": 1428,
+        "uv_maps": [],
+        "materials": [
+          "Skin_Hands"
+        ]
+      },
+      "Hair_Bangs": {
+        "type": "CURVES (native hair)",
+        "curves": 2340,
+        "control_points": 23513,
+        "materials": [
+          "Hair_Chestnut"
+        ]
+      },
+      "Hair_Strands": {
+        "type": "CURVES (native hair)",
+        "curves": 38639,
+        "control_points": 1308985,
+        "materials": [
+          "Hair_Chestnut"
+        ]
+      },
+      "Hand_Palm.L": {
+        "type": "MESH",
+        "base_vertices": 362,
+        "evaluated_vertices": 1490,
+        "evaluated_faces": 1488,
+        "uv_maps": [],
+        "materials": [
+          "Skin_Hands"
+        ]
+      },
+      "Hand_Palm.R": {
+        "type": "MESH",
+        "base_vertices": 362,
+        "evaluated_vertices": 1490,
+        "evaluated_faces": 1488,
+        "uv_maps": [],
+        "materials": [
+          "Skin_Hands"
+        ]
+      },
+      "Nail.L.0": {
+        "type": "MESH",
+        "base_vertices": 146,
+        "evaluated_vertices": 610,
+        "evaluated_faces": 608,
+        "uv_maps": [],
+        "materials": [
+          "Nail"
+        ]
+      },
+      "Nail.L.1": {
+        "type": "MESH",
+        "base_vertices": 146,
+        "evaluated_vertices": 610,
+        "evaluated_faces": 608,
+        "uv_maps": [],
+        "materials": [
+          "Nail"
+        ]
+      },
+      "Nail.L.2": {
+        "type": "MESH",
+        "base_vertices": 146,
+        "evaluated_vertices": 610,
+        "evaluated_faces": 608,
+        "uv_maps": [],
+        "materials": [
+          "Nail"
+        ]
+      },
+      "Nail.L.3": {
+        "type": "MESH",
+        "base_vertices": 146,
+        "evaluated_vertices": 610,
+        "evaluated_faces": 608,
+        "uv_maps": [],
+        "materials": [
+          "Nail"
+        ]
+      },
+      "Nail.R.0": {
+        "type": "MESH",
+        "base_vertices": 146,
+        "evaluated_vertices": 610,
+        "evaluated_faces": 608,
+        "uv_maps": [],
+        "materials": [
+          "Nail"
+        ]
+      },
+      "Nail.R.1": {
+        "type": "MESH",
+        "base_vertices": 146,
+        "evaluated_vertices": 610,
+        "evaluated_faces": 608,
+        "uv_maps": [],
+        "materials": [
+          "Nail"
+        ]
+      },
+      "Nail.R.2": {
+        "type": "MESH",
+        "base_vertices": 146,
+        "evaluated_vertices": 610,
+        "evaluated_faces": 608,
+        "uv_maps": [],
+        "materials": [
+          "Nail"
+        ]
+      },
+      "Nail.R.3": {
+        "type": "MESH",
+        "base_vertices": 146,
+        "evaluated_vertices": 610,
+        "evaluated_faces": 608,
+        "uv_maps": [],
+        "materials": [
+          "Nail"
+        ]
+      },
+      "Phone": {
+        "type": "MESH",
+        "base_vertices": 152,
+        "evaluated_vertices": 152,
+        "evaluated_faces": 150,
+        "uv_maps": [],
+        "materials": [
+          "Phone_Case"
+        ]
+      },
+      "Sweater": {
+        "type": "MESH",
+        "base_vertices": 32002,
+        "evaluated_vertices": 127462,
+        "evaluated_faces": 126912,
+        "uv_maps": [
+          "KnitUV"
+        ],
+        "materials": [
+          "Knit_DustyPink"
+        ]
+      },
+      "Sweater_Collar": {
+        "type": "MESH",
+        "base_vertices": 8320,
+        "evaluated_vertices": 33280,
+        "evaluated_faces": 33280,
+        "uv_maps": [
+          "KnitUV"
+        ],
+        "materials": [
+          "Knit_DustyPink"
+        ]
+      },
+      "Thumb.L": {
+        "type": "MESH",
+        "base_vertices": 352,
+        "evaluated_vertices": 1430,
+        "evaluated_faces": 1428,
+        "uv_maps": [],
+        "materials": [
+          "Skin_Hands"
+        ]
+      },
+      "Thumb.R": {
+        "type": "MESH",
+        "base_vertices": 352,
+        "evaluated_vertices": 1430,
+        "evaluated_faces": 1428,
+        "uv_maps": [],
+        "materials": [
+          "Skin_Hands"
+        ]
+      }
+    }
+  },
+  "base_mesh": {
+    "source": "input/upper-body.obj (MakeHuman hm08 base mesh, CC0)",
+    "vertices": 6093,
+    "faces": 6044
+  },
+  "photo_fit": {
+    "landmark_error_px_start": 95.7,
+    "collar_residual_px": 59.9,
+    "landmark_error_px_rigid": 10.4,
+    "landmark_error_px_eyes0": 7.58,
+    "landmark_error_px_nm0": 7.27,
+    "landmark_error_px_iter1": 2.33,
+    "landmark_error_px_eyes1": 2.5,
+    "landmark_error_px_nm1": 2.39,
+    "landmark_error_px_iter2": 2.35,
+    "landmark_error_px_eyes2": 1.82,
+    "landmark_error_px_nm2": 1.82,
+    "landmark_error_px_iter3": 1.82,
+    "landmark_error_px_eyes3": 1.42,
+    "landmark_error_px_final": 1.53,
+    "camera_location": [
+      0.0182,
+      -0.4668,
+      1.69
+    ],
+    "lens_mm": 26.0,
+    "landmarks": [
+      "eye_R_outer",
+      "eye_R_inner",
+      "eye_R_upper",
+      "eye_R_lower",
+      "eye_R_iris",
+      "eye_L_outer",
+      "eye_L_inner",
+      "eye_L_upper",
+      "eye_L_lower",
+      "eye_L_iris",
+      "nose_tip",
+      "nostril_L",
+      "nostril_R",
+      "mouth_L",
+      "mouth_R",
+      "lip_top",
+      "lip_seam",
+      "lip_bottom",
+      "chin"
+    ],
+    "silhouette_points": {
+      "cheek_contour": [
+        [
+          450,
+          450
+        ],
+        [
+          470,
+          475
+        ],
+        [
+          495,
+          500
+        ],
+        [
+          525,
+          525
+        ],
+        [
+          560,
+          550
+        ]
+      ],
+      "ear_L": [
+        803,
+        262
+      ],
+      "earlobe_L": [
+        800,
+        326
+      ]
+    },
+    "collar_check_point": [
+      750,
+      660
+    ],
+    "landmark_source": "picked by eye on magnified, pixel-gridded crops of input/reference.png"
+  },
+  "hair": {
+    "guides": 1889,
+    "strands_main": 38639,
+    "strands_bangs": 2340,
+    "points": 1332498
+  },
+  "eyelashes": 528,
+  "brow_hairs": 840,
+  "textures": [
+    {
+      "name": "Knit_Stockinette_Height",
+      "size": [
+        1024,
+        1024
+      ],
+      "kind": "procedurally generated in numpy by build.py (packed)",
+      "source": "procedural (no photo pixels)",
+      "uv_map": "KnitUV on Sweater / Sweater_Collar (analytic around/along-body and arm UVs)",
+      "description": "tileable stockinette V-stitch height map, 8x8 stitches; drives the colour ramp (photo-sampled dusty pink) and bump"
+    },
+    {
+      "name": "Knit_Rib_Height",
+      "size": [
+        1024,
+        1024
+      ],
+      "kind": "procedurally generated in numpy by build.py (packed)",
+      "source": "procedural (no photo pixels)",
+      "uv_map": "KnitUV on Sweater / Sweater_Collar (analytic around/along-body and arm UVs)",
+      "description": "tileable 1x1 rib height map, 8x8 stitches; drives the colour ramp (photo-sampled dusty pink) and bump"
+    },
+    {
+      "name": "Skin_Photo_RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "uv_map": "SkinUV (Smart UV Project, 62 deg, packed in .blend)",
+      "source": "input/reference.png projected through Cam_Beauty (camera fitted to 19 photo landmarks)",
+      "method": "Cycles-baked world position/normal per texel -> perspective projection into the photo -> thin-plate landmark morph -> bilinear sample of the cleaned photo (hair/eyes/sweater masked and pull-push filled, low-frequency lighting partly divided out). Alpha = facing x visibility x face-region confidence; alpha-0 texels show the procedural skin layer.",
+      "texels_from_photo": 430030
+    },
+    {
+      "name": "Iris_Photo.L",
+      "size": [
+        512,
+        512
+      ],
+      "uv_map": "none - object-space planar mapping along the eyeball's gaze axis (Mapping node)",
+      "source": "input/reference.png iris pixels projected through Cam_Beauty with the landmark morph",
+      "method": "catchlight pixels removed and pull-push filled; alpha = visible iris inside the photo eye opening; the procedural iris/sclera shows elsewhere"
+    },
+    {
+      "name": "Iris_Photo.R",
+      "size": [
+        512,
+        512
+      ],
+      "uv_map": "none - object-space planar mapping along the eyeball's gaze axis (Mapping node)",
+      "source": "input/reference.png iris pixels projected through Cam_Beauty with the landmark morph",
+      "method": "catchlight pixels removed and pull-push filled; alpha = visible iris inside the photo eye opening; the procedural iris/sclera shows elsewhere"
+    }
+  ],
+  "procedural_layers": "Skin: per-vertex colour/roughness attributes (procedural layer, tinted to the photo median) + noise mottling, Voronoi pores and fine bump, lash tight-line attribute; Iris/sclera: procedural fibres/limbal ring/sclera gradient + AO contact shadow, photo iris mixed on top; Hair: Principled Hair (Chiang) melanin model; Knit: generated height tiles + photo-sampled colour ramp; Cafe: simple procedural materials.",
+  "images_in_blend": [
+    {
+      "name": "Iris_Photo.L",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "Iris_Photo.R",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "Knit_Rib_Height",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true,
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "Knit_Stockinette_Height",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true,
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "Skin_Photo_RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "colorspace": "sRGB"
+    }
+  ],
+  "materials": [
+    "Brow_Hair",
+    "Cafe_Ceramic",
+    "Cafe_Flower",
+    "Cafe_Glass",
+    "Cafe_Leaf",
+    "Cafe_Oak",
+    "Cafe_Steel",
+    "Cafe_Wall",
+    "Cafe_Walnut",
+    "Cafe_Window_Glow",
+    "Eye_Cornea",
+    "Eye_Sclera_Iris.L",
+    "Eye_Sclera_Iris.R",
+    "Hair_Chestnut",
+    "Knit_DustyPink",
+    "Lash_Hair",
+    "Nail",
+    "Phone_Case",
+    "Skin",
+    "Skin_Hands"
+  ],
+  "notes": [
+    "knit base colour sampled from photo region x760-1000,y760-1000: sRGB [231, 169, 165]",
+    "procedural skin layer tinted by [0.784, 0.833, 0.924] to match the photo complexion"
+  ],
+  "remaining_limitations": [
+    "Not a scan and not an exact likeness: a CC0 MakeHuman base sculpted by hand-tuned deformations and then warped to 19 hand-picked photo landmarks + 5 cheek-contour points + the visible ear, as seen from one camera. Depth (nose/cheek/jaw/skull profile) is inferred, so the profile and back are plausible guesses.",
+    "The face texture comes from one bright, beauty-filtered selfie: it is smooth, partly de-lit (low-frequency division only), and some photo shading/makeup remains baked in. Areas the photo never saw (sides/back of head, ears, under the chin, scalp) use a procedural skin layer tinted to the photo's median complexion.",
+    "Eyes: the right (far) eye still sits a few pixels off the photo; iris colour comes from the photo but the sclera/cornea are procedural; the eyes read slightly larger and more 'doll-like' than in the photo.",
+    "Hair is a procedural guide/child Curves groom (not photo-textured): bangs, ear tuck and waves are approximations, the crown reads a little flat and dark, strand clumping is more regular than real hair, and a white-ish backlit tuft over the left ear plus a few stray strands show in the turntable views.",
+    "The 26 mm selfie perspective makes the torso smaller relative to the head than in the reference (hem visible). The torso/collar sits about 60 px (in the 1205 px photo) away from the photographed collar; solving an extra neck rotation for it broke the hair at the nape, so it was not applied.",
+    "Sweater is a displaced shell from the posed body (no cloth simulation); knit is a generated height tile with a photo-sampled base colour, not the photographed knit.",
+    "Hands/fingers are simple tube + ellipsoid geometry; they are outside the selfie frame (as in the photo) but visible and crude in the turntable views. No production rig.",
+    "Turntable views hide the cafe set and use a grey world + one back fill light; the character is identical.",
+    "The result is still visibly CG at close inspection (skin micro-detail, eye wetness, hair)."
+  ]
+}
