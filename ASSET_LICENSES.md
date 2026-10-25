@@ -15,3 +15,12 @@ https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e7
 
 シーンを開くためのBlenderや、制作時に使用されたAIサービスそのものは、このリポジトリから配布していません。
 
+## HTML viewer dependency
+
+`viewer/vendor/model-viewer.min.js` is Google model-viewer 4.1.0, distributed under
+Apache License 2.0. The full license is included at
+`viewer/vendor/MODEL-VIEWER-LICENSE.txt`. Source project:
+https://github.com/google/model-viewer/tree/v4.1.0 . The vendored file was obtained
+from the official Google Hosted Libraries distribution:
+https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js .
+

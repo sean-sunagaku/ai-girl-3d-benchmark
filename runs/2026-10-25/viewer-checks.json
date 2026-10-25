@@ -1,0 +1,56 @@
+{
+  "checked_on_jst": "2026-10-25",
+  "method": "Codex in-app browser through cua_repl; native drag, wheel and Playwright button actions",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 375,
+      "height": 850,
+      "document_scroll_width": 360,
+      "horizontal_overflow": false
+    }
+  ],
+  "passed": [
+    "Actual exported GLB loads and renders in WebGL.",
+    "Native drag rotates the 3D model from front to back; live announcement updates.",
+    "Native wheel changes the model zoom; reset restores the front framing.",
+    "All five render buttons display the corresponding real PNG with the required natural dimensions.",
+    "Mobile side-view selection loads the real 768x768 side image.",
+    "Photo-textured stage is disabled and its not-executed reason is visible.",
+    "Reference image, metadata and download/source links are readable without horizontal scrolling.",
+    "All 13 referenced artifact URLs return HTTP 200 with matching Content-Length.",
+    "No browser console errors or warnings in the interaction check.",
+    "Missing results.json was observed to show a visible error with controls disabled during pre-artifact testing.",
+    "After the diagnostic framing correction, the updated front image still loads at 768x768 with no page overflow."
+  ],
+  "visual_comparison": {
+    "baseline": "Written HTML result-display requirements; explicit HTML request, no image mockup",
+    "inspected_points": [
+      "Exact model name, reference-source role and stage labels",
+      "Two-column desktop layout and stacked mobile layout",
+      "Typography, date line breaks and readable controls",
+      "Actual reference, five Blender renders and rotatable 3D geometry",
+      "Color preservation from the source material swatch in the GLB export",
+      "Model framing without clipping hands at mobile default zoom",
+      "No horizontal overflow, working native orbit/zoom/reset",
+      "Visible distinction between completed and unexecuted stages"
+    ],
+    "fixed": [
+      "Unsupported procedural sweater color graph exported as white; GLB now retains the Kimi-authored base swatch.",
+      "Mobile subtitle/date wrapping was corrected.",
+      "Mobile default orbit was widened to keep hands in frame.",
+      "Diagnostic camera projection now contains every evaluated character vertex in all four views; original camera directions and beauty composition were kept."
+    ],
+    "intentional_limits": [
+      "Photo-textured stage is not executed because of the official daily token quota.",
+      "GLB uses simplified material/lighting representation; Blender/PNG remain the original rendering reference.",
+      "375px responsive viewport was checked on the Mac browser, not a physical phone."
+    ]
+  },
+  "implementation_screenshot": "viewer-preview.png",
+  "view_image_inspected": true
+}

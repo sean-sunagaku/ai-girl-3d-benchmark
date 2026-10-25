@@ -1,0 +1,24 @@
+{
+  "model": "Kimi K3.1 Pro",
+  "model_id": "kimi-k3.1-pro",
+  "stages": {
+    "procedural": {
+      "glb": "../runs/2026-10-25/procedural/kimi-k3.1-pro/character.glb",
+      "blend": "../runs/2026-10-25/procedural/kimi-k3.1-pro/character.blend",
+      "code": "../runs/2026-10-25/procedural/kimi-k3.1-pro/build.py",
+      "readme": "../runs/2026-10-25/procedural/kimi-k3.1-pro/README.md",
+      "validation": "../runs/2026-10-25/procedural/kimi-k3.1-pro/validation.json",
+      "renders": {
+        "beauty": "../runs/2026-10-25/procedural/kimi-k3.1-pro/renders/beauty.png",
+        "front": "../runs/2026-10-25/procedural/kimi-k3.1-pro/renders/front.png",
+        "three-quarter": "../runs/2026-10-25/procedural/kimi-k3.1-pro/renders/three-quarter.png",
+        "side": "../runs/2026-10-25/procedural/kimi-k3.1-pro/renders/side.png",
+        "back": "../runs/2026-10-25/procedural/kimi-k3.1-pro/renders/back.png"
+      },
+      "camera_orbit": "0deg 80deg 80%"
+    }
+  },
+  "run_record": "../runs/2026-10-25/run.json",
+  "pending_note": "写真テクスチャ許可版は、Kimi公式APIの日次トークン上限に達したため未実行です。",
+  "cost_note": "追加購入なし。今回のAPI利用上限は、これまでの実行分を含めて$5。"
+}

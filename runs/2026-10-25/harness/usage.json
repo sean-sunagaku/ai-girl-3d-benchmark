@@ -1,0 +1,1125 @@
+{
+  "model": "kimi-k3.1-pro",
+  "base_url": "https://api.moonshot.ai/v1",
+  "cap_usd": 5.0,
+  "conservative_committed_usd": 1.8230356,
+  "requests": [
+    {
+      "started_at_utc": "2026-10-24T23:46:07Z",
+      "estimated_input_tokens": 9588,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.370128,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "dbdb1ed8a85b8f8d75f8b6112cfe3c9401326a7c294db22315287dc8251c5b9d",
+      "usage": {
+        "prompt_tokens": 9588,
+        "completion_tokens": 412,
+        "total_tokens": 10000,
+        "completion_tokens_details": {
+          "reasoning_tokens": 212
+        },
+        "prompt_tokens_details": {
+          "cache_write_tokens": 9472
+        }
+      },
+      "conservative_cost_usd": 0.042472,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:46:16Z",
+      "estimated_input_tokens": 1822,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.339064,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "283c149bffc06c283cf3f1f33d6001d23274aadaa6493b91f5730dc64c1a08fa",
+      "usage": {
+        "prompt_tokens": 1822,
+        "completion_tokens": 751,
+        "total_tokens": 2573,
+        "completion_tokens_details": {
+          "reasoning_tokens": 730
+        },
+        "prompt_tokens_details": {
+          "cache_write_tokens": 1792
+        }
+      },
+      "conservative_cost_usd": 0.014798,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:46:28Z",
+      "estimated_input_tokens": 1822,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.339064,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "283c149bffc06c283cf3f1f33d6001d23274aadaa6493b91f5730dc64c1a08fa",
+      "usage": {
+        "prompt_tokens": 1822,
+        "completion_tokens": 202,
+        "total_tokens": 2024,
+        "cached_tokens": 1792,
+        "completion_tokens_details": {
+          "reasoning_tokens": 181
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 1792,
+          "cache_write_tokens": 0
+        }
+      },
+      "conservative_cost_usd": 0.0024984,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:46:32Z",
+      "estimated_input_tokens": 10234,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.372712,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "538a027b42e8249406a5ff5f6f5193a61f632b05c833d69517bb224741111a61",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-24T23:46:35Z",
+      "estimated_input_tokens": 10234,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.372712,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "538a027b42e8249406a5ff5f6f5193a61f632b05c833d69517bb224741111a61",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-24T23:46:39Z",
+      "estimated_input_tokens": 10234,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.372712,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "538a027b42e8249406a5ff5f6f5193a61f632b05c833d69517bb224741111a61",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-24T23:46:47Z",
+      "estimated_input_tokens": 10234,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.372712,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "538a027b42e8249406a5ff5f6f5193a61f632b05c833d69517bb224741111a61",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-24T23:47:04Z",
+      "estimated_input_tokens": 10234,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.372712,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "538a027b42e8249406a5ff5f6f5193a61f632b05c833d69517bb224741111a61",
+      "usage": {
+        "prompt_tokens": 10234,
+        "completion_tokens": 297,
+        "total_tokens": 10531,
+        "cached_tokens": 9472,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 9472,
+          "cache_write_tokens": 512
+        }
+      },
+      "conservative_cost_usd": 0.0079124,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:47:11Z",
+      "estimated_input_tokens": 20355,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.413196,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "4d21bae7dcf0467cc4ee69dcbf230756222768a03f7fb0d407f9abc723f8720a",
+      "usage": {
+        "prompt_tokens": 20355,
+        "completion_tokens": 710,
+        "total_tokens": 21065,
+        "cached_tokens": 9984,
+        "completion_tokens_details": {
+          "reasoning_tokens": 123
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 9984,
+          "cache_write_tokens": 10240
+        }
+      },
+      "conservative_cost_usd": 0.0505808,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:47:34Z",
+      "estimated_input_tokens": 23093,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.424148,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "2ab1c4f2e29135ff3a780a46c899c8093a07d7a4c0ad4d16d2f5118ab51083f1",
+      "usage": {
+        "prompt_tokens": 23093,
+        "completion_tokens": 487,
+        "total_tokens": 23580,
+        "cached_tokens": 20224,
+        "completion_tokens_details": {
+          "reasoning_tokens": 214
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 20224,
+          "cache_write_tokens": 2816
+        }
+      },
+      "conservative_cost_usd": 0.0203908,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:47:47Z",
+      "estimated_input_tokens": 23695,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.426556,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "2cf16b907caef688177fd9676a49dacafb8961d9ab1f1301ff24806de21b314d",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-24T23:47:51Z",
+      "estimated_input_tokens": 23695,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.426556,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "2cf16b907caef688177fd9676a49dacafb8961d9ab1f1301ff24806de21b314d",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-24T23:47:56Z",
+      "estimated_input_tokens": 23695,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.426556,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "2cf16b907caef688177fd9676a49dacafb8961d9ab1f1301ff24806de21b314d",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-24T23:48:06Z",
+      "estimated_input_tokens": 23695,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.426556,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "2cf16b907caef688177fd9676a49dacafb8961d9ab1f1301ff24806de21b314d",
+      "usage": {
+        "prompt_tokens": 23695,
+        "completion_tokens": 705,
+        "total_tokens": 24400,
+        "cached_tokens": 23040,
+        "completion_tokens_details": {
+          "reasoning_tokens": 515
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 23040,
+          "cache_write_tokens": 512
+        }
+      },
+      "conservative_cost_usd": 0.014278,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:48:24Z",
+      "estimated_input_tokens": 24433,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.429508,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "b61f2f2b4c1030a0fdfea6f50d0b0258ee206e6323498d059f3e57a308dc8597",
+      "usage": {
+        "prompt_tokens": 24433,
+        "completion_tokens": 671,
+        "total_tokens": 25104,
+        "cached_tokens": 23552,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 23552,
+          "cache_write_tokens": 768
+        }
+      },
+      "conservative_cost_usd": 0.0149444,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:48:40Z",
+      "estimated_input_tokens": 25135,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.432316,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "efa0843794b57d21835deb9f85b770e415601f6aa94ef26c94ef8db682908aa5",
+      "usage": {
+        "prompt_tokens": 25135,
+        "completion_tokens": 162,
+        "total_tokens": 25297,
+        "cached_tokens": 24320,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 24320,
+          "cache_write_tokens": 768
+        }
+      },
+      "conservative_cost_usd": 0.009744,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:48:49Z",
+      "estimated_input_tokens": 26164,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.436432,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "94669b275c8368b04747dce7d9f403cec199fb95f1a0f3c8b9d2665fdbc1df2d",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-24T23:48:53Z",
+      "estimated_input_tokens": 26164,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.436432,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "94669b275c8368b04747dce7d9f403cec199fb95f1a0f3c8b9d2665fdbc1df2d",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-24T23:48:58Z",
+      "estimated_input_tokens": 26164,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.436432,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "94669b275c8368b04747dce7d9f403cec199fb95f1a0f3c8b9d2665fdbc1df2d",
+      "usage": {
+        "prompt_tokens": 26164,
+        "completion_tokens": 179,
+        "total_tokens": 26343,
+        "cached_tokens": 25088,
+        "completion_tokens_details": {
+          "reasoning_tokens": 24
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 25088,
+          "cache_write_tokens": 1024
+        }
+      },
+      "conservative_cost_usd": 0.0111116,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:49:06Z",
+      "estimated_input_tokens": 27412,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.441424,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "f2dbfecdd5037aace42d121e87ae0d67354a0d76af4208c5eebd93fe0eead0b9",
+      "usage": {
+        "prompt_tokens": 27412,
+        "completion_tokens": 598,
+        "total_tokens": 28010,
+        "cached_tokens": 26112,
+        "completion_tokens_details": {
+          "reasoning_tokens": 324
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 26112,
+          "cache_write_tokens": 1280
+        }
+      },
+      "conservative_cost_usd": 0.0164024,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:49:21Z",
+      "estimated_input_tokens": 28040,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.443936,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "a89382bf8ecaf30d251444b2c83162baf41b94a4b5acebc8f1d0cd351a562abe",
+      "usage": {
+        "prompt_tokens": 28040,
+        "completion_tokens": 163,
+        "total_tokens": 28203,
+        "cached_tokens": 27392,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 27392,
+          "cache_write_tokens": 512
+        }
+      },
+      "conservative_cost_usd": 0.0097004,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:49:31Z",
+      "estimated_input_tokens": 29055,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.447996,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "3f01819e81e1b24ad5a0b616b8dd15d3d1fe9aaede0f53ba41e6948b270ffb5a",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-24T23:49:34Z",
+      "estimated_input_tokens": 29055,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.447996,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "3f01819e81e1b24ad5a0b616b8dd15d3d1fe9aaede0f53ba41e6948b270ffb5a",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-24T23:49:39Z",
+      "estimated_input_tokens": 29055,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.447996,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "3f01819e81e1b24ad5a0b616b8dd15d3d1fe9aaede0f53ba41e6948b270ffb5a",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-24T23:49:48Z",
+      "estimated_input_tokens": 29055,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.447996,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "3f01819e81e1b24ad5a0b616b8dd15d3d1fe9aaede0f53ba41e6948b270ffb5a",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-24T23:50:06Z",
+      "estimated_input_tokens": 29055,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.447996,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "3f01819e81e1b24ad5a0b616b8dd15d3d1fe9aaede0f53ba41e6948b270ffb5a",
+      "usage": {
+        "prompt_tokens": 29055,
+        "completion_tokens": 156,
+        "total_tokens": 29211,
+        "cached_tokens": 27904,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 27904,
+          "cache_write_tokens": 1024
+        }
+      },
+      "conservative_cost_usd": 0.0117448,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:50:13Z",
+      "estimated_input_tokens": 30280,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.452896,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "5d0680edc94b15db8b353cfb1bcefa23bce42a133a45e9f20224952ec5d50a8a",
+      "usage": {
+        "prompt_tokens": 30280,
+        "completion_tokens": 1682,
+        "total_tokens": 31962,
+        "cached_tokens": 28928,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1420
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 28928,
+          "cache_write_tokens": 1280
+        }
+      },
+      "conservative_cost_usd": 0.0280136,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:50:55Z",
+      "estimated_input_tokens": 33287,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.464924,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "fb07746be3973539e43a6c9350abd0bd62e6b9aaf3a7fc794b1162566673198b",
+      "usage": {
+        "prompt_tokens": 33287,
+        "completion_tokens": 2668,
+        "total_tokens": 35955,
+        "cached_tokens": 30208,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2171
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 30208,
+          "cache_write_tokens": 3072
+        }
+      },
+      "conservative_cost_usd": 0.0450376,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:51:53Z",
+      "estimated_input_tokens": 36159,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.476412,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "7d276d938e9fe5204bc815d129af373db7ba580efd524ae8e0eb4f5adf8c70b0",
+      "usage": {
+        "prompt_tokens": 36159,
+        "completion_tokens": 1672,
+        "total_tokens": 37831,
+        "cached_tokens": 33280,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1354
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 33280,
+          "cache_write_tokens": 2816
+        }
+      },
+      "conservative_cost_usd": 0.034892,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:52:33Z",
+      "estimated_input_tokens": 37861,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.48322,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "cdc91c4ca75871a03be59ff61193a432db4db2f5170d746b37b9888057dd4275",
+      "usage": {
+        "prompt_tokens": 37861,
+        "completion_tokens": 164,
+        "total_tokens": 38025,
+        "cached_tokens": 36096,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 36096,
+          "cache_write_tokens": 1536
+        }
+      },
+      "conservative_cost_usd": 0.0159192,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:52:43Z",
+      "estimated_input_tokens": 38997,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.487764,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "87bd8a7a412f09b10fe54c6a001f57c556662e81c7dbf730a2a331c1d7a6302d",
+      "usage": {
+        "prompt_tokens": 38997,
+        "completion_tokens": 89,
+        "total_tokens": 39086,
+        "cached_tokens": 37632,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 37632,
+          "cache_write_tokens": 1280
+        }
+      },
+      "conservative_cost_usd": 0.0138764,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:52:48Z",
+      "estimated_input_tokens": 39624,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.490272,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "f711034cd8e592a63e55258bde8e6969147f07da28fcdac742843af4223eb3d5",
+      "usage": {
+        "prompt_tokens": 39624,
+        "completion_tokens": 355,
+        "total_tokens": 39979,
+        "cached_tokens": 38912,
+        "completion_tokens_details": {
+          "reasoning_tokens": 203
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 38912,
+          "cache_write_tokens": 582
+        }
+      },
+      "conservative_cost_usd": 0.0141804,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:53:01Z",
+      "estimated_input_tokens": 40009,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.491812,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "e88943293ad18e7957163f39c1310635bf8dda292f77550f6872b5ad2692c644",
+      "usage": {
+        "prompt_tokens": 40009,
+        "completion_tokens": 163,
+        "total_tokens": 40172,
+        "cached_tokens": 39494,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 39494,
+          "cache_write_tokens": 442
+        }
+      },
+      "conservative_cost_usd": 0.0115888,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:53:13Z",
+      "estimated_input_tokens": 41144,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.496352,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "32074a61963810590812b5861441d3b5ea347d916272caa58a079ef1619072de",
+      "usage": {
+        "prompt_tokens": 41144,
+        "completion_tokens": 89,
+        "total_tokens": 41233,
+        "cached_tokens": 39936,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 39936,
+          "cache_write_tokens": 1024
+        }
+      },
+      "conservative_cost_usd": 0.0137092,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:53:20Z",
+      "estimated_input_tokens": 41771,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.49886,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "699e805338f3eae877f805f0c9e7dce7128004190012dd7eecd460489e67d171",
+      "usage": {
+        "prompt_tokens": 41771,
+        "completion_tokens": 360,
+        "total_tokens": 42131,
+        "cached_tokens": 40960,
+        "completion_tokens_details": {
+          "reasoning_tokens": 207
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 40960,
+          "cache_write_tokens": 768
+        }
+      },
+      "conservative_cost_usd": 0.015036,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:53:33Z",
+      "estimated_input_tokens": 42161,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.50042,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "cb09c4a392cc2dc75017d45e6637cbbf49655371fb87a87a301f906341573ad2",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-24T23:53:37Z",
+      "estimated_input_tokens": 42161,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.50042,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "cb09c4a392cc2dc75017d45e6637cbbf49655371fb87a87a301f906341573ad2",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-24T23:53:42Z",
+      "estimated_input_tokens": 42161,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.50042,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "cb09c4a392cc2dc75017d45e6637cbbf49655371fb87a87a301f906341573ad2",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-24T23:53:51Z",
+      "estimated_input_tokens": 42161,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.50042,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "cb09c4a392cc2dc75017d45e6637cbbf49655371fb87a87a301f906341573ad2",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-24T23:54:09Z",
+      "estimated_input_tokens": 42161,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.50042,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "cb09c4a392cc2dc75017d45e6637cbbf49655371fb87a87a301f906341573ad2",
+      "usage": {
+        "prompt_tokens": 42161,
+        "completion_tokens": 161,
+        "total_tokens": 42322,
+        "cached_tokens": 41728,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 41728,
+          "cache_write_tokens": 256
+        }
+      },
+      "conservative_cost_usd": 0.0116876,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:54:19Z",
+      "estimated_input_tokens": 43294,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.504952,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "8595b55e7129703701a3170f3ded993ee931790b29cd7256949973f635599127",
+      "usage": {
+        "prompt_tokens": 43294,
+        "completion_tokens": 89,
+        "total_tokens": 43383,
+        "cached_tokens": 41984,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 41984,
+          "cache_write_tokens": 1280
+        }
+      },
+      "conservative_cost_usd": 0.0145268,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:54:27Z",
+      "estimated_input_tokens": 43921,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.50746,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "e62d1d93087619ea42e0c843bcb4c07cd2b8f7c2c032b6451067d52777813efc",
+      "usage": {
+        "prompt_tokens": 43921,
+        "completion_tokens": 4603,
+        "total_tokens": 48524,
+        "cached_tokens": 43264,
+        "completion_tokens_details": {
+          "reasoning_tokens": 4169
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 43264,
+          "cache_write_tokens": 527
+        }
+      },
+      "conservative_cost_usd": 0.0573108,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:56:11Z",
+      "estimated_input_tokens": 56966,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.55964,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "3aa73892d92f46457fc2484f282a0ee395c0d6ad2d0d1dfcad342d14ab288be3",
+      "status": "interrupted_reservation_retained",
+      "error_type": "BrokenPipeError"
+    },
+    {
+      "started_at_utc": "2026-10-24T23:58:04Z",
+      "estimated_input_tokens": 59154,
+      "maximum_output_tokens": 8192,
+      "reservation_usd": 0.322632,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "13393e869f75ff7f9a48af19eb5f83bc61bc9b357c36a9feab5a48bc0a270287",
+      "usage": {
+        "prompt_tokens": 59154,
+        "completion_tokens": 6332,
+        "total_tokens": 65486,
+        "cached_tokens": 56832,
+        "completion_tokens_details": {
+          "reasoning_tokens": 6132
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 56832,
+          "cache_write_tokens": 2304
+        }
+      },
+      "conservative_cost_usd": 0.0839744,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-25T00:00:25Z",
+      "estimated_input_tokens": 807,
+      "maximum_output_tokens": 8192,
+      "reservation_usd": 0.089244,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "2c6ee34ae9faafbc915e8327d9755ffe104f02ee064b46a511ee95e4a7b1d261",
+      "usage": {
+        "prompt_tokens": 807,
+        "completion_tokens": 394,
+        "total_tokens": 1201,
+        "completion_tokens_details": {
+          "reasoning_tokens": 368
+        },
+        "prompt_tokens_details": {
+          "cache_write_tokens": 768
+        }
+      },
+      "conservative_cost_usd": 0.007168,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-25T00:00:33Z",
+      "estimated_input_tokens": 807,
+      "maximum_output_tokens": 8192,
+      "reservation_usd": 0.089244,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "2c6ee34ae9faafbc915e8327d9755ffe104f02ee064b46a511ee95e4a7b1d261",
+      "usage": {
+        "prompt_tokens": 807,
+        "completion_tokens": 663,
+        "total_tokens": 1470,
+        "cached_tokens": 768,
+        "completion_tokens_details": {
+          "reasoning_tokens": 636
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0
+        }
+      },
+      "conservative_cost_usd": 0.0069396,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-25T00:00:45Z",
+      "estimated_input_tokens": 65720,
+      "maximum_output_tokens": 8192,
+      "reservation_usd": 0.348896,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "a0c23f36528b31bc164b9c007c3bd38729ad7188c1ed87dcbf7ce40d4fdcbac6",
+      "usage": {
+        "prompt_tokens": 65720,
+        "completion_tokens": 8192,
+        "total_tokens": 73912,
+        "cached_tokens": 59136,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1863
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 59136,
+          "cache_write_tokens": 6400
+        }
+      },
+      "conservative_cost_usd": 0.1200832,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-25T00:05:57Z",
+      "estimated_input_tokens": 80928,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.655488,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "fe224ddf58b005446c970b6ea05abcde721a6858d240b232abf65be786f2cbef",
+      "usage": {
+        "prompt_tokens": 80929,
+        "completion_tokens": 381,
+        "total_tokens": 81310,
+        "cached_tokens": 6144,
+        "completion_tokens_details": {
+          "reasoning_tokens": 272
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 6144,
+          "cache_write_tokens": 74752
+        }
+      },
+      "conservative_cost_usd": 0.3041788,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-25T00:06:15Z",
+      "estimated_input_tokens": 851,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.33518,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "66f470f5e571075d2c5f28c6a080b0eaf891b0d8a3debb5d09a0c6b2b046a227",
+      "usage": {
+        "prompt_tokens": 852,
+        "completion_tokens": 331,
+        "total_tokens": 1183,
+        "completion_tokens_details": {
+          "reasoning_tokens": 309
+        },
+        "prompt_tokens_details": {
+          "cache_write_tokens": 768
+        }
+      },
+      "conservative_cost_usd": 0.006718,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-25T00:06:21Z",
+      "estimated_input_tokens": 851,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.33518,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "66f470f5e571075d2c5f28c6a080b0eaf891b0d8a3debb5d09a0c6b2b046a227",
+      "usage": {
+        "prompt_tokens": 852,
+        "completion_tokens": 173,
+        "total_tokens": 1025,
+        "cached_tokens": 768,
+        "completion_tokens_details": {
+          "reasoning_tokens": 153
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0
+        }
+      },
+      "conservative_cost_usd": 0.0022196,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-25T00:06:27Z",
+      "estimated_input_tokens": 88304,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.684992,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "857b693607580210f1e838b4ba45c2ed91e60a2e23e9b79e44f66ec7acbff184",
+      "usage": {
+        "prompt_tokens": 88305,
+        "completion_tokens": 1565,
+        "total_tokens": 89870,
+        "cached_tokens": 80896,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1397
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 80896,
+          "cache_write_tokens": 7168
+        }
+      },
+      "conservative_cost_usd": 0.0614652,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-25T00:07:04Z",
+      "estimated_input_tokens": 89895,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.691356,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "cb5fbd0d507f9ac7a3128fe85851b0af5e4df88091b05533a3250a37ec7d354f",
+      "usage": {
+        "prompt_tokens": 89896,
+        "completion_tokens": 4223,
+        "total_tokens": 94119,
+        "cached_tokens": 88064,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 88064,
+          "cache_write_tokens": 1792
+        }
+      },
+      "conservative_cost_usd": 0.0671708,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-25T00:08:18Z",
+      "estimated_input_tokens": 94196,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.70856,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "abd6fd7cd4d33b14677de4c3dea7e783958c15d88eae332196cd56120dcc3dd4",
+      "usage": {
+        "prompt_tokens": 94197,
+        "completion_tokens": 167,
+        "total_tokens": 94364,
+        "cached_tokens": 89856,
+        "completion_tokens_details": {
+          "reasoning_tokens": 52
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 89856,
+          "cache_write_tokens": 4096
+        }
+      },
+      "conservative_cost_usd": 0.0370052,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-25T00:08:28Z",
+      "estimated_input_tokens": 94630,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.710296,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "6c5fa65c896ea406a108957f245993a3f52c6823743578c33328f38195f085a7",
+      "usage": {
+        "prompt_tokens": 94631,
+        "completion_tokens": 4261,
+        "total_tokens": 98892,
+        "cached_tokens": 93952,
+        "completion_tokens_details": {
+          "reasoning_tokens": 68
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 93952,
+          "cache_write_tokens": 512
+        }
+      },
+      "conservative_cost_usd": 0.0641164,
+      "response_model": "kimi-k3.1-pro",
+      "status": "complete"
+    },
+    {
+      "started_at_utc": "2026-10-25T00:09:31Z",
+      "estimated_input_tokens": 98921,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.72746,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "f899e44af7927e1a7d4374cb2479e117374f1d24464df39add2b8c15e29b709a",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-25T00:09:35Z",
+      "estimated_input_tokens": 98921,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.72746,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "f899e44af7927e1a7d4374cb2479e117374f1d24464df39add2b8c15e29b709a",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-25T00:09:41Z",
+      "estimated_input_tokens": 98921,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.72746,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "f899e44af7927e1a7d4374cb2479e117374f1d24464df39add2b8c15e29b709a",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-25T00:09:51Z",
+      "estimated_input_tokens": 98921,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.72746,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "f899e44af7927e1a7d4374cb2479e117374f1d24464df39add2b8c15e29b709a",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-25T00:10:09Z",
+      "estimated_input_tokens": 98921,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.72746,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "f899e44af7927e1a7d4374cb2479e117374f1d24464df39add2b8c15e29b709a",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-25T00:10:43Z",
+      "estimated_input_tokens": 98921,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.72746,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "f899e44af7927e1a7d4374cb2479e117374f1d24464df39add2b8c15e29b709a",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-25T00:11:49Z",
+      "estimated_input_tokens": 98921,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.72746,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "f899e44af7927e1a7d4374cb2479e117374f1d24464df39add2b8c15e29b709a",
+      "status": "upstream_error",
+      "http_status": 429
+    },
+    {
+      "started_at_utc": "2026-10-25T00:13:59Z",
+      "estimated_input_tokens": 98921,
+      "maximum_output_tokens": 32768,
+      "reservation_usd": 0.72746,
+      "model": "kimi-k3.1-pro",
+      "request_sha256": "f899e44af7927e1a7d4374cb2479e117374f1d24464df39add2b8c15e29b709a",
+      "status": "upstream_error",
+      "http_status": 429
+    }
+  ],
+  "billing_note": "Upper bound: uncached input at USD 4/MTok (input + default cache write), cache hits at USD 0.20/MTok, output including reasoning at USD 10/MTok. Each prospective request reserves all input as uncached plus maximum output; uncertain completions retain full reservation. Provider billing is authoritative."
+}

@@ -1,0 +1,122 @@
+{
+  "issue": "SUN-1521",
+  "date_jst": "2026-10-25",
+  "status": "procedural_completed_photo_textured_not_executed_provider_daily_quota",
+  "source_repository": "https://github.com/sean-sunagaku/ai-girl-3d-benchmark",
+  "source_commit": "ce05cce522ec9192827ee07d23af2501f6de02f4",
+  "requested_model": "Kimi K3.1 Pro",
+  "api_model": "kimi-k3.1-pro",
+  "provider": "Kimi official Open Platform",
+  "api_base_url": "https://api.moonshot.ai/v1",
+  "harness": "OpenCode 1.1.20",
+  "blender": "5.1.1 b70da489d7f4",
+  "stages": {
+    "procedural": {
+      "status": "complete",
+      "path": "procedural/kimi-k3.1-pro"
+    },
+    "photo-textured": {
+      "status": "not_executed",
+      "reason": "Official provider daily token quota reached",
+      "own_previous_workspace_prepared_locally": true
+    }
+  },
+  "generation": {
+    "initial_reasoning_effort": "max",
+    "initial_max_output_tokens": 32768,
+    "temporary_recovery_max_output_tokens": 8192,
+    "last_reasoning_effort": "high",
+    "last_max_output_tokens": 32768,
+    "adaptations": [
+      "Operational recovery prompts retained separately; original task prompt remains byte-identical.",
+      "Recovered complete Python lines from truncated Kimi write payload; decoded newline escapes only.",
+      "Coordinator renamed one unsupported Principled BSDF input from Anisotropic IOR Level to Anisotropic; original generated code retained.",
+      "Coordinator ran preview and final Blender builds, reopened scenes, visually inspected all resulting images, and performed technical inspection/export.",
+      "Kimi did not finish its own final-character-image review loop before provider quota exhaustion.",
+      "Coordinator widened the four diagnostic orthographic cameras uniformly from actual evaluated vertices with 8% margin, preserving camera directions, beauty composition, vertices and materials."
+    ],
+    "external_image_or_3d_generation": false,
+    "additional_agents": false,
+    "other_model_reruns": false
+  },
+  "input_checks": [
+    {
+      "path": "inputs/reference.png",
+      "sha256_matches": true
+    },
+    {
+      "path": "inputs/base.obj",
+      "sha256_matches": true
+    },
+    {
+      "path": "inputs/upper-body.obj",
+      "sha256_matches": true
+    },
+    {
+      "path": "inputs/ASSET-LICENSE.md",
+      "sha256_matches": true
+    },
+    {
+      "path": "inputs/environment.json",
+      "sha256_matches": true
+    },
+    {
+      "path": "prompts/01-procedural.md",
+      "sha256_matches": true
+    },
+    {
+      "path": "prompts/02-photo-textured.md",
+      "sha256_matches": true
+    }
+  ],
+  "same_procedural_prompt_bytes": true,
+  "provider_requests": {
+    "recorded_count": 62,
+    "status_counts": {
+      "complete": 36,
+      "upstream_error": 25,
+      "interrupted_reservation_retained": 1
+    },
+    "completed_reported_tokens": 1339776
+  },
+  "quota_stop": {
+    "type": "rate_limit_reached_error",
+    "metric": "TPD",
+    "reported_current": 1505814,
+    "limit": 1500000
+  },
+  "budget": {
+    "cap_usd": 5,
+    "additional_purchases": 0,
+    "new_subscriptions": 0,
+    "conservative_upper_including_unknown_requests_usd": 1.8230356,
+    "observed_api_consumption_usd": 1.022421,
+    "consumption_confirmed_in_official_console": true,
+    "note": "Run cost only. Personal account balances, funding details and payment information are not included in this public artifact. Unknown requests retain their full maximum reservation."
+  },
+  "credentials": {
+    "temporary_key_created_with_user_approval": true,
+    "one_replacement_with_separate_user_approval": true,
+    "old_key_revoked": true,
+    "secret_values_saved_to_chat_code_logs_git_or_opencode_auth": false,
+    "inference_processes_stopped": true
+  },
+  "verification": {
+    "appearance_scoring": false,
+    "independent_scene_report": "procedural/kimi-k3.1-pro/validation.json",
+    "raw_render_views": [
+      "beauty",
+      "front",
+      "three-quarter",
+      "side",
+      "back"
+    ],
+    "html_browser_checks": "viewer-checks.json",
+    "browser_checks_passed": true,
+    "diagnostic_cameras_all_vertices_in_frame": true
+  },
+  "publication": {
+    "requested": "push review branch; no merge or deployment",
+    "branch": "codex/sun-1521-kimi-benchmark"
+  }
+}
