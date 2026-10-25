@@ -5,6 +5,8 @@ __pycache__/
 *.blend
 *.blend1
 *.glb
+!runs/2026-10-25/procedural/kimi-k3.1-pro/character.blend
+!runs/2026-10-25/procedural/kimi-k3.1-pro/character.glb
 .env
 .env.*
 .work/

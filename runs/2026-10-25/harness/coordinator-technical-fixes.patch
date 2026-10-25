@@ -1,0 +1,42 @@
+--- build.kimi-original.py
++++ build.py
+@@ -58,7 +58,7 @@
+ tex=node(skin,'ShaderNodeTexNoise','Fine pores at submillimeter scale'); tex.inputs['Scale'].default_value=1450; tex.inputs['Detail'].default_value=2.2; bump=node(skin,'ShaderNodeBump','Restrained pore relief'); bump.inputs['Strength'].default_value=.19; bump.inputs['Distance'].default_value=.00013; skin.node_tree.links.new(tex.outputs['Fac'],bump.inputs['Height']); skin.node_tree.links.new(bump.outputs['Normal'],bs.inputs['Normal'])
+ hair_m=[]
+ for i,h in enumerate(['#281711','#382117','#482B1E','#5A3827','#6B4632']):
+- m,b=material('Chestnut hair • shade %02d'%i,h,.31+(i%2)*.035); b.inputs['Anisotropic IOR Level'].default_value=.62; b.inputs['Coat Weight'].default_value=.16; b.inputs['Coat Roughness'].default_value=.3; hair_m.append(m)
++ m,b=material('Chestnut hair • shade %02d'%i,h,.31+(i%2)*.035); b.inputs['Anisotropic'].default_value=.62; b.inputs['Coat Weight'].default_value=.16; b.inputs['Coat Roughness'].default_value=.3; hair_m.append(m)
+ knit,kb=material('Sweater • dusty rose knitted wool','#C88E91',.83); kb.inputs['Sheen Weight'].default_value=.38; kb.inputs['Sheen Roughness'].default_value=.72
+ knitcolor=node(knit,'ShaderNodeTexNoise','Soft wool color variation'); knitcolor.inputs['Scale'].default_value=95; knitcolor.inputs['Detail'].default_value=3
+ ramp=node(knit,'ShaderNodeValToRGB','Dusty pink yarn palette'); ramp.color_ramp.elements[0].position=.15; ramp.color_ramp.elements[0].color=rgb('#B97C82'); ramp.color_ramp.elements[1].position=.85; ramp.color_ramp.elements[1].color=rgb('#D9A3A4'); knit.node_tree.links.new(knitcolor.outputs['Fac'],ramp.inputs[0]); knit.node_tree.links.new(ramp.outputs[0],kb.inputs['Base Color'])
+@@ -288,6 +288,21 @@
+ except: pass
+ scene.render.filepath=os.path.join(ROOT,'renders','beauty.png'); scene['Reference use']='Visually inspected decoded reference; no photographic pixels or image planes used in scene.'; scene['Unseen geometry']='Back hair, side silhouette, sweater construction and posed hands are inferred from supplied CC0 topology and procedural design.'; scene['Build command']='Blender --background --factory-startup --threads 3 --python build.py'
+ def char_objects(): return [o for o in bpy.data.objects if any(c.name.startswith(('01 •','02 •','03 •','04 •')) for c in o.users_collection)]
++def frame_diagnostic_cameras():
++ # Coordinator technical framing fix: retain every authored vertex/material
++ # and camera direction; use one shared orthographic scale that fits the full
++ # evaluated upper-body asset in all four diagnostic views, with 8% margin.
++ bpy.context.view_layer.update(); deps=bpy.context.evaluated_depsgraph_get(); points=[]
++ for o in char_objects():
++  ev=o.evaluated_get(deps); me=ev.to_mesh()
++  if me:
++   points.extend(ev.matrix_world@v.co for v in me.vertices); ev.to_mesh_clear()
++ scale=0.0
++ for cam in (frontcam,threecam,sidecam,backcam):
++  inv=cam.matrix_world.inverted()
++  for point in points:
++   p=inv@point; scale=max(scale,abs(p.x)*2,abs(p.y)*2)
++ for cam in (frontcam,threecam,sidecam,backcam): cam.data.ortho_scale=scale*1.08
+ def write_report():
+  deps=bpy.context.evaluated_depsgraph_get(); counts={}; totalv=totalf=0; points=[]
+  for o in char_objects():
+@@ -326,7 +341,7 @@
+ MakeHuman **hm08**, CC0, pinned commit `a8bc2d54ff0ac92e78ff71431b1023eda42bf482`. Source supplied in `input/base.obj`; prepared topology in `input/upper-body.obj`. Source: https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/3dobjs/base.obj . The original header names Data Collection AB, Joel Palmius and Jonas Hauquier at the CC0 release. Geometry was cropped to the clothed upper body/hands, sculpted, reposed and supplemented here with original procedural hair, eyes, clothing, materials and set geometry. No additional models or textures were downloaded.
+ '''
+ with open('README.md','w') as f: f.write(readme)
+-write_report(); bpy.ops.file.pack_all(); bpy.ops.wm.save_as_mainfile(filepath=os.path.join(ROOT,'character.blend')); bpy.ops.wm.open_mainfile(filepath=os.path.join(ROOT,'character.blend'))
++frame_diagnostic_cameras(); write_report(); bpy.ops.file.pack_all(); bpy.ops.wm.save_as_mainfile(filepath=os.path.join(ROOT,'character.blend')); bpy.ops.wm.open_mainfile(filepath=os.path.join(ROOT,'character.blend'))
+ assert bpy.data.objects.get('Camera • beauty selfie') and bpy.data.objects.get('Woman • continuous sculpted head neck torso and posed hands')
+ scene=bpy.context.scene; scene.render.engine='CYCLES'; scene.cycles.device='CPU'; scene.render.threads_mode='FIXED'; scene.render.threads=3; scene.cycles.use_denoising=True; cafe=bpy.data.collections.get('05 • cafe geometry'); bg=scene.world.node_tree.nodes.get('Background')
+ def render(camera_name,path,w,h,samples):

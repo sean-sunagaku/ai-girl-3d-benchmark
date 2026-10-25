@@ -1,0 +1,24 @@
+{
+  "checks": [
+    {
+      "route": "/v1/chat/completions",
+      "expected_status": 400,
+      "actual_status": 400,
+      "passed": true
+    },
+    {
+      "route": "/v1/responses",
+      "expected_status": 404,
+      "actual_status": 404,
+      "passed": true
+    },
+    {
+      "route": "/purchase",
+      "expected_status": 404,
+      "actual_status": 404,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "note": "Only local invalid requests; no valid model generation was requested by these checks."
+}

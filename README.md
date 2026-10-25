@@ -11,6 +11,22 @@
 - [実験条件と収録範囲](docs/PROTOCOL.md)
 - [AI向けの制作・閲覧手順スキル](skills/blender-character-benchmark/SKILL.md)
 
+## Kimi K3.1 Pro の追加実行（2026-10-25）
+
+同じ元写真・共通ベース・初回プロンプトを使ったKimiの追加結果を収録しました。
+[制作記録と5方向の画像](runs/2026-10-25/README.md)、
+[編集可能なBlenderシーン](runs/2026-10-25/procedural/kimi-k3.1-pro/character.blend)、
+[閲覧用GLB](runs/2026-10-25/procedural/kimi-k3.1-pro/character.glb) を取得できます。
+
+[HTMLビューアー](viewer/index.html)では元写真、回転・拡大できるGLB、5方向のPNGを表示します。
+リポジトリのルートで `python3 -m http.server 8765 --bind 127.0.0.1` を実行し、
+`http://127.0.0.1:8765/viewer/` を開いてください。手順は [viewer/README.md](viewer/README.md) にあります。
+
+**完成しているのは初回の写真テクスチャ禁止版です。写真テクスチャ許可版はAPIの日次トークン上限で未実行です。**
+OpenCodeでの継続指示、コード回収、Blender API互換修正、コーディネーターによる実行・検査は
+[今回の記録](runs/2026-10-25/README.md) に明記しています。追加課金・他モデルの再実行は行っていません。
+以下の4モデル・2026-10-14の公開済み成果物は、そのまま保持しています。
+
 ## 元の参照写真
 
 <img src="benchmarks/cafe-selfie-v1/inputs/reference.png" alt="茶色の長い髪とピンクのニットの人物を写した参照写真" width="420">

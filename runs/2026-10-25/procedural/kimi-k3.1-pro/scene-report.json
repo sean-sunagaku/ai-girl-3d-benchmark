@@ -1,0 +1,239 @@
+{
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "cpu_threads": 3,
+  "samples": 32,
+  "denoising": true,
+  "important_objects": [
+    "Bangs • light diagonal wispy strands",
+    "Eyebrows • fine combed individual hairs",
+    "Eyelashes • individually tapered upper lashes",
+    "Hair • 560 scalp-combed fine strands",
+    "Hair • 960 surface-following chestnut fibers",
+    "Hair • fitted scalp volume",
+    "Hair • restrained fine flyaways",
+    "Hair • sculpted long wavy lock volumes",
+    "Left cornea • transparent cap",
+    "Left eye • complete scleral globe",
+    "Left eyelids • sphere-wrapped almond aperture",
+    "Left iris • radial chestnut fibers",
+    "Left pupil",
+    "Left sleeve • ribbed wrist cuff",
+    "Right cornea • transparent cap",
+    "Right eye • complete scleral globe",
+    "Right eyelids • sphere-wrapped almond aperture",
+    "Right iris • radial chestnut fibers",
+    "Right pupil",
+    "Right sleeve • ribbed wrist cuff",
+    "Smile • delicate closed lip seam",
+    "Sweater • continuous loose torso and bent sleeves",
+    "Sweater • ribbed crew-neck collar",
+    "Sweater • soft lower rib hem",
+    "Woman • continuous sculpted head neck torso and posed hands"
+  ],
+  "character_bounds": {
+    "min": [
+      -1.0866284370422363,
+      -1.1486023664474487,
+      0.46284806728363037
+    ],
+    "max": [
+      1.0110447406768799,
+      1.0492932796478271,
+      2.6510958671569824
+    ],
+    "units": "meters"
+  },
+  "base_mesh_source_vertices": 9549,
+  "base_mesh_source_polygons": 9524,
+  "evaluated_character_vertices": 566137,
+  "evaluated_character_polygons": 522936,
+  "object_mesh_counts": {
+    "Bangs • light diagonal wispy strands": {
+      "base_vertices": null,
+      "base_polygons": null,
+      "evaluated_vertices": 24320,
+      "evaluated_polygons": 23560
+    },
+    "Eyebrows • fine combed individual hairs": {
+      "base_vertices": null,
+      "base_polygons": null,
+      "evaluated_vertices": 1840,
+      "evaluated_polygons": 920
+    },
+    "Eyelashes • individually tapered upper lashes": {
+      "base_vertices": null,
+      "base_polygons": null,
+      "evaluated_vertices": 888,
+      "evaluated_polygons": 592
+    },
+    "Hair • 560 scalp-combed fine strands": {
+      "base_vertices": null,
+      "base_polygons": null,
+      "evaluated_vertices": 62720,
+      "evaluated_polygons": 60480
+    },
+    "Hair • 960 surface-following chestnut fibers": {
+      "base_vertices": null,
+      "base_polygons": null,
+      "evaluated_vertices": 99840,
+      "evaluated_polygons": 96000
+    },
+    "Hair • fitted scalp volume": {
+      "base_vertices": 9549,
+      "base_polygons": 420,
+      "evaluated_vertices": 32040,
+      "evaluated_polygons": 13896
+    },
+    "Hair • restrained fine flyaways": {
+      "base_vertices": null,
+      "base_polygons": null,
+      "evaluated_vertices": 5700,
+      "evaluated_polygons": 5320
+    },
+    "Hair • sculpted long wavy lock volumes": {
+      "base_vertices": 24960,
+      "base_polygons": 24480,
+      "evaluated_vertices": 98880,
+      "evaluated_polygons": 97920
+    },
+    "Left cornea • transparent cap": {
+      "base_vertices": 505,
+      "base_polygons": 504,
+      "evaluated_vertices": 505,
+      "evaluated_polygons": 504
+    },
+    "Left eye • complete scleral globe": {
+      "base_vertices": 1986,
+      "base_polygons": 2048,
+      "evaluated_vertices": 1986,
+      "evaluated_polygons": 2048
+    },
+    "Left eyelids • sphere-wrapped almond aperture": {
+      "base_vertices": 504,
+      "base_polygons": 432,
+      "evaluated_vertices": 1872,
+      "evaluated_polygons": 1728
+    },
+    "Left iris • radial chestnut fibers": {
+      "base_vertices": 505,
+      "base_polygons": 504,
+      "evaluated_vertices": 505,
+      "evaluated_polygons": 504
+    },
+    "Left pupil": {
+      "base_vertices": 505,
+      "base_polygons": 504,
+      "evaluated_vertices": 505,
+      "evaluated_polygons": 504
+    },
+    "Left sleeve • ribbed wrist cuff": {
+      "base_vertices": 960,
+      "base_polygons": 960,
+      "evaluated_vertices": 960,
+      "evaluated_polygons": 960
+    },
+    "Right cornea • transparent cap": {
+      "base_vertices": 505,
+      "base_polygons": 504,
+      "evaluated_vertices": 505,
+      "evaluated_polygons": 504
+    },
+    "Right eye • complete scleral globe": {
+      "base_vertices": 1986,
+      "base_polygons": 2048,
+      "evaluated_vertices": 1986,
+      "evaluated_polygons": 2048
+    },
+    "Right eyelids • sphere-wrapped almond aperture": {
+      "base_vertices": 504,
+      "base_polygons": 432,
+      "evaluated_vertices": 1872,
+      "evaluated_polygons": 1728
+    },
+    "Right iris • radial chestnut fibers": {
+      "base_vertices": 505,
+      "base_polygons": 504,
+      "evaluated_vertices": 505,
+      "evaluated_polygons": 504
+    },
+    "Right pupil": {
+      "base_vertices": 505,
+      "base_polygons": 504,
+      "evaluated_vertices": 505,
+      "evaluated_polygons": 504
+    },
+    "Right sleeve • ribbed wrist cuff": {
+      "base_vertices": 960,
+      "base_polygons": 960,
+      "evaluated_vertices": 960,
+      "evaluated_polygons": 960
+    },
+    "Smile • delicate closed lip seam": {
+      "base_vertices": null,
+      "base_polygons": null,
+      "evaluated_vertices": 140,
+      "evaluated_polygons": 136
+    },
+    "Sweater • continuous loose torso and bent sleeves": {
+      "base_vertices": 9549,
+      "base_polygons": 1770,
+      "evaluated_vertices": 72702,
+      "evaluated_polygons": 57312
+    },
+    "Sweater • ribbed crew-neck collar": {
+      "base_vertices": 960,
+      "base_polygons": 960,
+      "evaluated_vertices": 960,
+      "evaluated_polygons": 960
+    },
+    "Sweater • soft lower rib hem": {
+      "base_vertices": 960,
+      "base_polygons": 960,
+      "evaluated_vertices": 960,
+      "evaluated_polygons": 960
+    },
+    "Woman • continuous sculpted head neck torso and posed hands": {
+      "base_vertices": 9549,
+      "base_polygons": 9524,
+      "evaluated_vertices": 152481,
+      "evaluated_polygons": 152384
+    }
+  },
+  "generated_texture_descriptions": [
+    "No photographic or external textures. Skin uses editable point colors for warm skin, cheek blush and lip tint; procedural Noise drives restrained pore bump.",
+    "Chestnut locks and fine hair are editable meshes and beveled 3D splines with five procedural material shades.",
+    "Dusty-pink wool uses procedural Noise color variation and crossed Wave textures for knit bump; collar, cuffs and hem are ribbed geometry.",
+    "Brown irises use editable radial vertex colors, separate pupils, scleral globes and clear corneal caps."
+  ],
+  "rendered_files": {
+    "renders/beauty.png": {
+      "exists": true,
+      "bytes": 1150615
+    },
+    "renders/front.png": {
+      "exists": true,
+      "bytes": 543644
+    },
+    "renders/three-quarter.png": {
+      "exists": true,
+      "bytes": 543143
+    },
+    "renders/side.png": {
+      "exists": true,
+      "bytes": 532963
+    },
+    "renders/back.png": {
+      "exists": true,
+      "bytes": 559540
+    }
+  },
+  "limitations": [
+    "Likeness is a procedural interpretation, not a scan or exact reconstruction.",
+    "Facial expression, eye/lid transition, hair locks and knit relief remain approximate at close inspection.",
+    "Unseen side/back anatomy, back hairstyle and sweater construction are inferred.",
+    "Hands use reposed CC0 MakeHuman topology and are not a production rig; no legs or animation rig are supplied.",
+    "The cafe is deliberately simple 3D set dressing with optical depth of field."
+  ]
+}

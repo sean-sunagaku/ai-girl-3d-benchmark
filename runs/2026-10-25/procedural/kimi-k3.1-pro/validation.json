@@ -1,0 +1,1311 @@
+{
+  "scene": "character.blend",
+  "source_sha256_before": "ebea808a5eeb52ed41fe9a483a23a7ddc84a5380d905b8efe4c2cbdf1ad41ac5",
+  "reopened_successfully": true,
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "cycles_device": "CPU",
+  "threads_mode": "FIXED",
+  "threads": 3,
+  "samples": 32,
+  "denoising": true,
+  "camera": "Camera \u2022 beauty selfie",
+  "cameras": [
+    {
+      "name": "Camera \u2022 beauty selfie",
+      "type": "PERSP",
+      "ortho_scale": null
+    },
+    {
+      "name": "Camera \u2022 diagnostic 0 front",
+      "type": "ORTHO",
+      "ortho_scale": 1.2484129667282104
+    },
+    {
+      "name": "Camera \u2022 diagnostic 45 three-quarter",
+      "type": "ORTHO",
+      "ortho_scale": 1.2484129667282104
+    },
+    {
+      "name": "Camera \u2022 diagnostic 90 side",
+      "type": "ORTHO",
+      "ortho_scale": 1.2484129667282104
+    },
+    {
+      "name": "Camera \u2022 diagnostic 180 back",
+      "type": "ORTHO",
+      "ortho_scale": 1.2484129667282104
+    }
+  ],
+  "objects": [
+    {
+      "name": "Woman \u2022 continuous sculpted head neck torso and posed hands",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "01 \u2022 continuous skin and hands"
+      ],
+      "base_vertices": 9549,
+      "evaluated_vertices": 152481,
+      "evaluated_polygons": 152384,
+      "bounds": [
+        [
+          -0.4583173394203186,
+          -0.38545775413513184,
+          1.053611397743225
+        ],
+        [
+          0.4583173394203186,
+          0.060770001262426376,
+          1.6631869077682495
+        ]
+      ]
+    },
+    {
+      "name": "Right eye \u2022 complete scleral globe",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "02 \u2022 eyes lids brows lashes"
+      ],
+      "base_vertices": 1986,
+      "evaluated_vertices": 1986,
+      "evaluated_polygons": 2048,
+      "bounds": [
+        [
+          -0.07816033065319061,
+          -0.1497177928686142,
+          1.5183489322662354
+        ],
+        [
+          -0.03916031867265701,
+          -0.1107177883386612,
+          1.5573489665985107
+        ]
+      ]
+    },
+    {
+      "name": "Right iris \u2022 radial chestnut fibers",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "02 \u2022 eyes lids brows lashes"
+      ],
+      "base_vertices": 505,
+      "evaluated_vertices": 505,
+      "evaluated_polygons": 504,
+      "bounds": [
+        [
+          -0.06551850587129593,
+          -0.14983680844306946,
+          1.531796932220459
+        ],
+        [
+          -0.05373602360486984,
+          -0.13625949621200562,
+          1.5435947179794312
+        ]
+      ]
+    },
+    {
+      "name": "Right pupil",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "02 \u2022 eyes lids brows lashes"
+      ],
+      "base_vertices": 505,
+      "evaluated_vertices": 505,
+      "evaluated_polygons": 504,
+      "bounds": [
+        [
+          -0.062212053686380386,
+          -0.14983747899532318,
+          1.5351402759552002
+        ],
+        [
+          -0.05711963772773743,
+          -0.13291408121585846,
+          1.5402392148971558
+        ]
+      ]
+    },
+    {
+      "name": "Right cornea \u2022 transparent cap",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "02 \u2022 eyes lids brows lashes"
+      ],
+      "base_vertices": 505,
+      "evaluated_vertices": 505,
+      "evaluated_polygons": 504,
+      "bounds": [
+        [
+          -0.06597720831632614,
+          -0.1501668393611908,
+          1.5313454866409302
+        ],
+        [
+          -0.053296055644750595,
+          -0.13670888543128967,
+          1.5440430641174316
+        ]
+      ]
+    },
+    {
+      "name": "Right eyelids \u2022 sphere-wrapped almond aperture",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "02 \u2022 eyes lids brows lashes"
+      ],
+      "base_vertices": 504,
+      "evaluated_vertices": 1872,
+      "evaluated_polygons": 1728,
+      "bounds": [
+        [
+          -0.08487259596586227,
+          -0.14946740865707397,
+          1.5220054388046265
+        ],
+        [
+          -0.03290199860930443,
+          -0.11947725713253021,
+          1.5566887855529785
+        ]
+      ]
+    },
+    {
+      "name": "Left eye \u2022 complete scleral globe",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "02 \u2022 eyes lids brows lashes"
+      ],
+      "base_vertices": 1986,
+      "evaluated_vertices": 1986,
+      "evaluated_polygons": 2048,
+      "bounds": [
+        [
+          -0.017451433464884758,
+          -0.1529390662908554,
+          1.5279642343521118
+        ],
+        [
+          0.02154858037829399,
+          -0.1139390617609024,
+          1.5669642686843872
+        ]
+      ]
+    },
+    {
+      "name": "Left iris \u2022 radial chestnut fibers",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "02 \u2022 eyes lids brows lashes"
+      ],
+      "base_vertices": 505,
+      "evaluated_vertices": 505,
+      "evaluated_polygons": 504,
+      "bounds": [
+        [
+          -0.004809607286006212,
+          -0.15305808186531067,
+          1.5414122343063354
+        ],
+        [
+          0.006972876843065023,
+          -0.13948076963424683,
+          1.5532100200653076
+        ]
+      ]
+    },
+    {
+      "name": "Left pupil",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "02 \u2022 eyes lids brows lashes"
+      ],
+      "base_vertices": 505,
+      "evaluated_vertices": 505,
+      "evaluated_polygons": 504,
+      "bounds": [
+        [
+          -0.0015031574293971062,
+          -0.1530587524175644,
+          1.5447555780410767
+        ],
+        [
+          0.0035892603918910027,
+          -0.13613535463809967,
+          1.5498546361923218
+        ]
+      ]
+    },
+    {
+      "name": "Left cornea \u2022 transparent cap",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "02 \u2022 eyes lids brows lashes"
+      ],
+      "base_vertices": 505,
+      "evaluated_vertices": 505,
+      "evaluated_polygons": 504,
+      "bounds": [
+        [
+          -0.005268310662358999,
+          -0.153388112783432,
+          1.5409607887268066
+        ],
+        [
+          0.007412842009216547,
+          -0.13993015885353088,
+          1.553658366203308
+        ]
+      ]
+    },
+    {
+      "name": "Left eyelids \u2022 sphere-wrapped almond aperture",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "02 \u2022 eyes lids brows lashes"
+      ],
+      "base_vertices": 504,
+      "evaluated_vertices": 1872,
+      "evaluated_polygons": 1728,
+      "bounds": [
+        [
+          -0.02440524846315384,
+          -0.15269292891025543,
+          1.5310466289520264
+        ],
+        [
+          0.02805369906127453,
+          -0.12544551491737366,
+          1.566729187965393
+        ]
+      ]
+    },
+    {
+      "name": "Eyelashes \u2022 individually tapered upper lashes",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "02 \u2022 eyes lids brows lashes"
+      ],
+      "bounds": [
+        [
+          -0.07523030787706375,
+          -0.15380647778511047,
+          1.5371335744857788
+        ],
+        [
+          0.016122380271553993,
+          -0.14276689291000366,
+          1.5565470457077026
+        ]
+      ]
+    },
+    {
+      "name": "Eyebrows \u2022 fine combed individual hairs",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "02 \u2022 eyes lids brows lashes"
+      ],
+      "bounds": [
+        [
+          -0.0886388048529625,
+          -0.15207919478416443,
+          1.5522979497909546
+        ],
+        [
+          0.026038579642772675,
+          -0.11751934885978699,
+          1.5740938186645508
+        ]
+      ]
+    },
+    {
+      "name": "Smile \u2022 delicate closed lip seam",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "02 \u2022 eyes lids brows lashes"
+      ],
+      "bounds": [
+        [
+          -0.045563843101263046,
+          -0.15833084285259247,
+          1.4755902290344238
+        ],
+        [
+          0.007737461477518082,
+          -0.1407753825187683,
+          1.484114408493042
+        ]
+      ]
+    },
+    {
+      "name": "Hair \u2022 fitted scalp volume",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "03 \u2022 chestnut scalp locks and strands"
+      ],
+      "base_vertices": 9549,
+      "evaluated_vertices": 32040,
+      "evaluated_polygons": 13896,
+      "bounds": [
+        [
+          -0.42176082730293274,
+          -0.41143324971199036,
+          0.9775424599647522
+        ],
+        [
+          0.4959797263145447,
+          0.0701436996459961,
+          1.6672513484954834
+        ]
+      ]
+    },
+    {
+      "name": "Hair \u2022 560 scalp-combed fine strands",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "03 \u2022 chestnut scalp locks and strands"
+      ],
+      "bounds": [
+        [
+          -0.11275655031204224,
+          -0.1557576060295105,
+          1.4968774318695068
+        ],
+        [
+          0.05748705565929413,
+          0.04708781838417053,
+          1.6704955101013184
+        ]
+      ]
+    },
+    {
+      "name": "Bangs \u2022 light diagonal wispy strands",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "03 \u2022 chestnut scalp locks and strands"
+      ],
+      "bounds": [
+        [
+          -0.0920804962515831,
+          -0.16017846763134003,
+          1.5650752782821655
+        ],
+        [
+          0.02834482491016388,
+          -0.025354353711009026,
+          1.644113302230835
+        ]
+      ]
+    },
+    {
+      "name": "Hair \u2022 sculpted long wavy lock volumes",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "03 \u2022 chestnut scalp locks and strands"
+      ],
+      "base_vertices": 24960,
+      "evaluated_vertices": 98880,
+      "evaluated_polygons": 97920,
+      "bounds": [
+        [
+          -0.12510846555233002,
+          -0.12265992164611816,
+          1.0898714065551758
+        ],
+        [
+          0.15257041156291962,
+          0.08496641367673874,
+          1.6509801149368286
+        ]
+      ]
+    },
+    {
+      "name": "Hair \u2022 960 surface-following chestnut fibers",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "03 \u2022 chestnut scalp locks and strands"
+      ],
+      "bounds": [
+        [
+          -0.12546096742153168,
+          -0.1227991133928299,
+          1.0937821865081787
+        ],
+        [
+          0.15279747545719147,
+          0.08525557070970535,
+          1.6513087749481201
+        ]
+      ]
+    },
+    {
+      "name": "Hair \u2022 restrained fine flyaways",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "03 \u2022 chestnut scalp locks and strands"
+      ],
+      "bounds": [
+        [
+          -0.1415690928697586,
+          -0.04777204617857933,
+          1.3536772727966309
+        ],
+        [
+          0.11594855785369873,
+          0.0384177640080452,
+          1.6248570680618286
+        ]
+      ]
+    },
+    {
+      "name": "Sweater \u2022 continuous loose torso and bent sleeves",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "04 \u2022 dusty pink knitted sweater"
+      ],
+      "base_vertices": 9549,
+      "evaluated_vertices": 72702,
+      "evaluated_polygons": 57312,
+      "bounds": [
+        [
+          -0.47591671347618103,
+          -0.4012599289417267,
+          1.033471703529358
+        ],
+        [
+          0.47498515248298645,
+          0.07957343012094498,
+          1.678246259689331
+        ]
+      ]
+    },
+    {
+      "name": "Sweater \u2022 ribbed crew-neck collar",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "04 \u2022 dusty pink knitted sweater"
+      ],
+      "base_vertices": 960,
+      "evaluated_vertices": 960,
+      "evaluated_polygons": 960,
+      "bounds": [
+        [
+          -0.05650000274181366,
+          -0.05550000071525574,
+          1.3708181381225586
+        ],
+        [
+          0.05650000274181366,
+          0.03949999809265137,
+          1.3831818103790283
+        ]
+      ]
+    },
+    {
+      "name": "Sweater \u2022 soft lower rib hem",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "04 \u2022 dusty pink knitted sweater"
+      ],
+      "base_vertices": 960,
+      "evaluated_vertices": 960,
+      "evaluated_polygons": 960,
+      "bounds": [
+        [
+          -0.1459999978542328,
+          -0.14899998903274536,
+          1.1013426780700684
+        ],
+        [
+          0.1459999978542328,
+          0.05299999564886093,
+          1.1146574020385742
+        ]
+      ]
+    },
+    {
+      "name": "Right sleeve \u2022 ribbed wrist cuff",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "04 \u2022 dusty pink knitted sweater"
+      ],
+      "base_vertices": 960,
+      "evaluated_vertices": 960,
+      "evaluated_polygons": 960,
+      "bounds": [
+        [
+          -0.43479806184768677,
+          -0.22542649507522583,
+          1.109216332435608
+        ],
+        [
+          -0.3635849356651306,
+          -0.1866813600063324,
+          1.1919492483139038
+        ]
+      ]
+    },
+    {
+      "name": "Left sleeve \u2022 ribbed wrist cuff",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "04 \u2022 dusty pink knitted sweater"
+      ],
+      "base_vertices": 960,
+      "evaluated_vertices": 960,
+      "evaluated_polygons": 960,
+      "bounds": [
+        [
+          0.3635849356651306,
+          -0.22542649507522583,
+          1.109216332435608
+        ],
+        [
+          0.43479806184768677,
+          -0.1866813600063324,
+          1.1919492483139038
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 plaster wall",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 96,
+      "evaluated_polygons": 98,
+      "bounds": [
+        [
+          -1.2000000476837158,
+          0.8799999952316284,
+          0.7300000190734863
+        ],
+        [
+          1.2000000476837158,
+          0.9600000381469727,
+          2.2300000190734863
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 oak table behind sitter",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 96,
+      "evaluated_polygons": 98,
+      "bounds": [
+        [
+          -0.8999999761581421,
+          0.1199999749660492,
+          1.0124999284744263
+        ],
+        [
+          0.8999999761581421,
+          0.8400000333786011,
+          1.0575000047683716
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 floating oak shelf",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 96,
+      "evaluated_polygons": 98,
+      "bounds": [
+        [
+          -0.09999999403953552,
+          0.6899999976158142,
+          1.375999927520752
+        ],
+        [
+          0.7799999713897705,
+          0.89000004529953,
+          1.4040000438690186
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 floating oak shelf.001",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 96,
+      "evaluated_polygons": 98,
+      "bounds": [
+        [
+          -0.09999999403953552,
+          0.6899999976158142,
+          1.6359999179840088
+        ],
+        [
+          0.7799999713897705,
+          0.89000004529953,
+          1.6640000343322754
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 blurred cup",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 48,
+      "evaluated_vertices": 48,
+      "evaluated_polygons": 26,
+      "bounds": [
+        [
+          -0.007153240963816643,
+          0.6928467750549316,
+          1.3849754333496094
+        ],
+        [
+          0.04715324193239212,
+          0.7471532821655273,
+          1.465024471282959
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 blurred cup.001",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 48,
+      "evaluated_vertices": 48,
+      "evaluated_polygons": 26,
+      "bounds": [
+        [
+          0.10032051801681519,
+          0.6853205561637878,
+          1.3896406888961792
+        ],
+        [
+          0.16967949271202087,
+          0.7546795010566711,
+          1.4603592157363892
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 blurred cup.002",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 48,
+      "evaluated_vertices": 48,
+      "evaluated_polygons": 26,
+      "bounds": [
+        [
+          0.21519608795642853,
+          0.6851961016654968,
+          1.3782742023468018
+        ],
+        [
+          0.28480392694473267,
+          0.7548039555549622,
+          1.4717257022857666
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 blurred cup.003",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 48,
+      "evaluated_vertices": 48,
+      "evaluated_polygons": 26,
+      "bounds": [
+        [
+          0.3308287262916565,
+          0.6858287453651428,
+          1.3704880475997925
+        ],
+        [
+          0.39917129278182983,
+          0.7541713118553162,
+          1.4795118570327759
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 blurred cup.004",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 48,
+      "evaluated_vertices": 48,
+      "evaluated_polygons": 26,
+      "bounds": [
+        [
+          -0.011272825300693512,
+          0.6887272000312805,
+          1.6401350498199463
+        ],
+        [
+          0.05127282440662384,
+          0.7512728571891785,
+          1.7298648357391357
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 blurred cup.005",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 48,
+      "evaluated_vertices": 48,
+      "evaluated_polygons": 26,
+      "bounds": [
+        [
+          0.10326454788446426,
+          0.6882645487785339,
+          1.6480414867401123
+        ],
+        [
+          0.1667354702949524,
+          0.751735508441925,
+          1.7219583988189697
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 blurred cup.006",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 48,
+      "evaluated_vertices": 48,
+      "evaluated_polygons": 26,
+      "bounds": [
+        [
+          0.22213231027126312,
+          0.6921323537826538,
+          1.6343499422073364
+        ],
+        [
+          0.2778676748275757,
+          0.7478677034378052,
+          1.7356499433517456
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 window mullion",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 96,
+      "evaluated_polygons": 98,
+      "bounds": [
+        [
+          -0.6290000081062317,
+          0.824999988079071,
+          0.949999988079071
+        ],
+        [
+          -0.6110000014305115,
+          0.8549999594688416,
+          2.049999952316284
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 window mullion.001",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 96,
+      "evaluated_polygons": 98,
+      "bounds": [
+        [
+          -0.3790000081062317,
+          0.824999988079071,
+          0.949999988079071
+        ],
+        [
+          -0.3610000014305115,
+          0.8549999594688416,
+          2.049999952316284
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 defocused plant leaf",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 1986,
+      "evaluated_vertices": 1986,
+      "evaluated_polygons": 2048,
+      "bounds": [
+        [
+          -0.5197823643684387,
+          0.6598491668701172,
+          1.5327284336090088
+        ],
+        [
+          -0.44986462593078613,
+          0.7297669053077698,
+          1.6026461124420166
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 defocused plant leaf.001",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 1986,
+      "evaluated_vertices": 1986,
+      "evaluated_polygons": 2048,
+      "bounds": [
+        [
+          -0.6268405914306641,
+          0.5597445964813232,
+          1.5329203605651855
+        ],
+        [
+          -0.5520588159561157,
+          0.6345263719558716,
+          1.6077020168304443
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 defocused plant leaf.002",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 1986,
+      "evaluated_vertices": 1986,
+      "evaluated_polygons": 2048,
+      "bounds": [
+        [
+          -0.5867868065834045,
+          0.6371461153030396,
+          1.5270922183990479
+        ],
+        [
+          -0.5053156018257141,
+          0.71861732006073,
+          1.6085634231567383
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 defocused plant leaf.003",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 1986,
+      "evaluated_vertices": 1986,
+      "evaluated_polygons": 2048,
+      "bounds": [
+        [
+          -0.6235668063163757,
+          0.6277361512184143,
+          1.4341686964035034
+        ],
+        [
+          -0.5434690117835999,
+          0.7078339457511902,
+          1.5142666101455688
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 defocused plant leaf.004",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 1986,
+      "evaluated_vertices": 1986,
+      "evaluated_polygons": 2048,
+      "bounds": [
+        [
+          -0.5087905526161194,
+          0.6576303243637085,
+          1.615180253982544
+        ],
+        [
+          -0.44107165932655334,
+          0.7253493070602417,
+          1.6828992366790771
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 defocused plant leaf.005",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 1986,
+      "evaluated_vertices": 1986,
+      "evaluated_polygons": 2048,
+      "bounds": [
+        [
+          -0.6174058318138123,
+          0.6340154409408569,
+          1.6853662729263306
+        ],
+        [
+          -0.5496099591255188,
+          0.7018113136291504,
+          1.7531620264053345
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 defocused plant leaf.006",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 1986,
+      "evaluated_vertices": 1986,
+      "evaluated_polygons": 2048,
+      "bounds": [
+        [
+          -0.5412745475769043,
+          0.565698504447937,
+          1.3073605298995972
+        ],
+        [
+          -0.4532751441001892,
+          0.6536979079246521,
+          1.3953601121902466
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 defocused plant leaf.007",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 1986,
+      "evaluated_vertices": 1986,
+      "evaluated_polygons": 2048,
+      "bounds": [
+        [
+          -0.6753955483436584,
+          0.6189857721328735,
+          1.318701148033142
+        ],
+        [
+          -0.6222878098487854,
+          0.6720935106277466,
+          1.3718088865280151
+        ]
+      ]
+    },
+    {
+      "name": "Cafe \u2022 defocused plant leaf.008",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "05 \u2022 cafe geometry"
+      ],
+      "base_vertices": 1986,
+      "evaluated_vertices": 1986,
+      "evaluated_polygons": 2048,
+      "bounds": [
+        [
+          -0.5842729806900024,
+          0.5576100945472717,
+          1.3906501531600952
+        ],
+        [
+          -0.4902315139770508,
+          0.6516515612602234,
+          1.4846917390823364
+        ]
+      ]
+    },
+    {
+      "name": "Key \u2022 large soft window",
+      "type": "LIGHT",
+      "hidden_render": false,
+      "collections": [
+        "06 \u2022 soft photographic lighting"
+      ]
+    },
+    {
+      "name": "Fill \u2022 cafe bounce",
+      "type": "LIGHT",
+      "hidden_render": false,
+      "collections": [
+        "06 \u2022 soft photographic lighting"
+      ]
+    },
+    {
+      "name": "Rim \u2022 warm hair separation",
+      "type": "LIGHT",
+      "hidden_render": false,
+      "collections": [
+        "06 \u2022 soft photographic lighting"
+      ]
+    },
+    {
+      "name": "Focus \u2022 eyes",
+      "type": "EMPTY",
+      "hidden_render": false,
+      "collections": [
+        "07 \u2022 cameras"
+      ]
+    },
+    {
+      "name": "Camera \u2022 beauty selfie",
+      "type": "CAMERA",
+      "hidden_render": false,
+      "collections": [
+        "07 \u2022 cameras"
+      ]
+    },
+    {
+      "name": "Camera \u2022 diagnostic 0 front",
+      "type": "CAMERA",
+      "hidden_render": false,
+      "collections": [
+        "07 \u2022 cameras"
+      ]
+    },
+    {
+      "name": "Camera \u2022 diagnostic 45 three-quarter",
+      "type": "CAMERA",
+      "hidden_render": false,
+      "collections": [
+        "07 \u2022 cameras"
+      ]
+    },
+    {
+      "name": "Camera \u2022 diagnostic 90 side",
+      "type": "CAMERA",
+      "hidden_render": false,
+      "collections": [
+        "07 \u2022 cameras"
+      ]
+    },
+    {
+      "name": "Camera \u2022 diagnostic 180 back",
+      "type": "CAMERA",
+      "hidden_render": false,
+      "collections": [
+        "07 \u2022 cameras"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "Viewer Node",
+      "size": [
+        256,
+        256
+      ],
+      "packed": false,
+      "source": "VIEWER",
+      "file_exists": true
+    }
+  ],
+  "total_evaluated_mesh_vertices": 389475,
+  "native_hair_objects": [],
+  "limits": {
+    "all_images_at_most_2048": true,
+    "resources_resolve": true
+  },
+  "actual_evaluated_character_bounds": {
+    "min": [
+      -0.47591671347618103,
+      -0.41143324971199036,
+      0.9775424599647522
+    ],
+    "max": [
+      0.4959797263145447,
+      0.08525557070970535,
+      1.678246259689331
+    ],
+    "method": "World coordinates of evaluated mesh vertices, including converted curve geometry."
+  },
+  "diagnostic_projection_bounds": [
+    {
+      "camera": "Camera \u2022 diagnostic 0 front",
+      "normalized_min": [
+        0.118782639503479,
+        0.2074819803237915
+      ],
+      "normalized_max": [
+        0.8972881734371185,
+        0.7705524265766144
+      ],
+      "all_character_vertices_in_frame": true
+    },
+    {
+      "camera": "Camera \u2022 diagnostic 45 three-quarter",
+      "normalized_min": [
+        0.037037044763565063,
+        0.21047866344451904
+      ],
+      "normalized_max": [
+        0.7141349762678146,
+        0.7706729173660278
+      ],
+      "all_character_vertices_in_frame": true
+    },
+    {
+      "camera": "Camera \u2022 diagnostic 90 side",
+      "normalized_min": [
+        0.18621408939361572,
+        0.21297869086265564
+      ],
+      "normalized_max": [
+        0.5891322791576385,
+        0.7709319293498993
+      ],
+      "all_character_vertices_in_frame": true
+    },
+    {
+      "camera": "Camera \u2022 diagnostic 180 back",
+      "normalized_min": [
+        0.10271209478378296,
+        0.21182319521903992
+      ],
+      "normalized_max": [
+        0.8812175989151001,
+        0.7712929844856262
+      ],
+      "all_character_vertices_in_frame": true
+    }
+  ],
+  "glb_export": {
+    "path": "character.glb",
+    "selected_objects": [
+      "Right iris \u2022 radial chestnut fibers",
+      "Left iris \u2022 radial chestnut fibers",
+      "Smile \u2022 delicate closed lip seam",
+      "Sweater \u2022 ribbed crew-neck collar",
+      "Hair \u2022 960 surface-following chestnut fibers",
+      "Left sleeve \u2022 ribbed wrist cuff",
+      "Left eyelids \u2022 sphere-wrapped almond aperture",
+      "Bangs \u2022 light diagonal wispy strands",
+      "Right eyelids \u2022 sphere-wrapped almond aperture",
+      "Hair \u2022 sculpted long wavy lock volumes",
+      "Eyelashes \u2022 individually tapered upper lashes",
+      "Right sleeve \u2022 ribbed wrist cuff",
+      "Right eye \u2022 complete scleral globe",
+      "Woman \u2022 continuous sculpted head neck torso and posed hands",
+      "Hair \u2022 restrained fine flyaways",
+      "Left eye \u2022 complete scleral globe",
+      "Right cornea \u2022 transparent cap",
+      "Left pupil",
+      "Right pupil",
+      "Left cornea \u2022 transparent cap",
+      "Hair \u2022 560 scalp-combed fine strands",
+      "Hair \u2022 fitted scalp volume",
+      "Eyebrows \u2022 fine combed individual hairs",
+      "Sweater \u2022 continuous loose torso and bent sleeves",
+      "Sweater \u2022 soft lower rib hem"
+    ],
+    "curves_converted_for_export_only": [
+      "Smile \u2022 delicate closed lip seam",
+      "Hair \u2022 960 surface-following chestnut fibers",
+      "Bangs \u2022 light diagonal wispy strands",
+      "Eyelashes \u2022 individually tapered upper lashes",
+      "Hair \u2022 restrained fine flyaways",
+      "Hair \u2022 560 scalp-combed fine strands",
+      "Eyebrows \u2022 fine combed individual hairs"
+    ],
+    "procedural_material_fallbacks": [
+      {
+        "source_material": "Sweater \u2022 dusty rose knitted wool",
+        "base_color_linear": [
+          0.577580451965332,
+          0.27049779891967773,
+          0.28314873576164246,
+          1.0
+        ],
+        "reason": "Unsupported procedural base-color graph; retained the material author's own swatch for GLB only."
+      }
+    ],
+    "bytes": 25890128,
+    "sha256": "cfad84822239f56faeecb71db423603dc07b4af1c23f48dd38365ef06bb3b42d",
+    "note": "Procedural Blender shaders and lighting can differ in GLB. The source .blend was not saved or modified."
+  },
+  "source_sha256_after": "ebea808a5eeb52ed41fe9a483a23a7ddc84a5380d905b8efe4c2cbdf1ad41ac5",
+  "source_unchanged": true
+}
