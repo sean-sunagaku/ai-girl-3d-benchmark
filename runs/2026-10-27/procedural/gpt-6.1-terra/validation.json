@@ -1,0 +1,2590 @@
+{
+  "scene": "character.blend",
+  "source_sha256_before": "3ec6fe63d1107f799a2d710409df8ca2140088ed05dd9ed290dfdcbc32eaedee",
+  "reopened_successfully": true,
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "cycles_device": "CPU",
+  "threads_mode": "FIXED",
+  "threads": 3,
+  "samples": 32,
+  "denoising": true,
+  "camera": "Beauty camera",
+  "cameras": [
+    {
+      "name": "Beauty camera",
+      "type": "PERSP",
+      "ortho_scale": null
+    }
+  ],
+  "objects": [
+    {
+      "name": "Face and neck | sculpted CC0 topology",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "base_vertices": 4236,
+      "evaluated_vertices": 67485,
+      "evaluated_polygons": 67392,
+      "bounds": [
+        [
+          -0.13711360096931458,
+          -0.1680700033903122,
+          1.4074746370315552
+        ],
+        [
+          0.08459275215864182,
+          0.039159998297691345,
+          1.677910566329956
+        ]
+      ]
+    },
+    {
+      "name": "Head tilt | editable pivot",
+      "type": "EMPTY",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ]
+    },
+    {
+      "name": "Neck | tapered anatomical bridge",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "base_vertices": 384,
+      "evaluated_vertices": 5376,
+      "evaluated_polygons": 5120,
+      "bounds": [
+        [
+          -0.059483204036951065,
+          -0.07500000298023224,
+          1.3550209999084473
+        ],
+        [
+          0.04836973920464516,
+          0.014999999664723873,
+          1.4580068588256836
+        ]
+      ]
+    },
+    {
+      "name": "Right eye | sclera",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "base_vertices": 1106,
+      "evaluated_vertices": 1106,
+      "evaluated_polygons": 1152,
+      "bounds": [
+        [
+          -0.07777360081672668,
+          -0.14080001413822174,
+          1.5197038650512695
+        ],
+        [
+          -0.04278821498155594,
+          -0.11059997975826263,
+          1.5546891689300537
+        ]
+      ]
+    },
+    {
+      "name": "Right eye | iris and pupil",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "base_vertices": 576,
+      "evaluated_vertices": 576,
+      "evaluated_polygons": 480,
+      "bounds": [
+        [
+          -0.06752126663923264,
+          -0.14098000526428223,
+          1.5299561023712158
+        ],
+        [
+          -0.05304054543375969,
+          -0.13962581753730774,
+          1.5444368124008179
+        ]
+      ]
+    },
+    {
+      "name": "R eye | clear corneal shell",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "base_vertices": 448,
+      "evaluated_vertices": 448,
+      "evaluated_polygons": 384,
+      "bounds": [
+        [
+          -0.06839010119438171,
+          -0.14149999618530273,
+          1.5290873050689697
+        ],
+        [
+          -0.0521717332303524,
+          -0.1393294632434845,
+          1.5453057289123535
+        ]
+      ]
+    },
+    {
+      "name": "R upper | sculpted lid",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "base_vertices": 164,
+      "evaluated_vertices": 567,
+      "evaluated_polygons": 480,
+      "bounds": [
+        [
+          -0.0754864290356636,
+          -0.14001677930355072,
+          1.5347480773925781
+        ],
+        [
+          -0.04639511555433273,
+          -0.13000370562076569,
+          1.547129511833191
+        ]
+      ]
+    },
+    {
+      "name": "R lower | sculpted lid",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "base_vertices": 164,
+      "evaluated_vertices": 567,
+      "evaluated_polygons": 480,
+      "bounds": [
+        [
+          -0.0741666927933693,
+          -0.14001677930355072,
+          1.5272635221481323
+        ],
+        [
+          -0.04507540911436081,
+          -0.13000370562076569,
+          1.5396449565887451
+        ]
+      ]
+    },
+    {
+      "name": "R | upper lid edge",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.07526751607656479,
+          -0.14052017033100128,
+          1.534609079360962
+        ],
+        [
+          -0.04614565894007683,
+          -0.13102547824382782,
+          1.5446120500564575
+        ]
+      ]
+    },
+    {
+      "name": "R | lower lid edge",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.07444491982460022,
+          -0.14055891335010529,
+          1.529738426208496
+        ],
+        [
+          -0.04526215419173241,
+          -0.13100458681583405,
+          1.5398070812225342
+        ]
+      ]
+    },
+    {
+      "name": "R | upper lashes",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.07546992599964142,
+          -0.14109468460083008,
+          1.5372432470321655
+        ],
+        [
+          -0.04714275151491165,
+          -0.13467596471309662,
+          1.5487807989120483
+        ]
+      ]
+    },
+    {
+      "name": "Left eye | sclera",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "base_vertices": 1106,
+      "evaluated_vertices": 1106,
+      "evaluated_polygons": 1152,
+      "bounds": [
+        [
+          -0.01632160320878029,
+          -0.14080001413822174,
+          1.5305395126342773
+        ],
+        [
+          0.018663786351680756,
+          -0.11059997975826263,
+          1.5655248165130615
+        ]
+      ]
+    },
+    {
+      "name": "Left eye | iris and pupil",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "base_vertices": 576,
+      "evaluated_vertices": 576,
+      "evaluated_polygons": 480,
+      "bounds": [
+        [
+          -0.006069261580705643,
+          -0.14098000526428223,
+          1.5407917499542236
+        ],
+        [
+          0.008411459624767303,
+          -0.13962581753730774,
+          1.5552724599838257
+        ]
+      ]
+    },
+    {
+      "name": "L eye | clear corneal shell",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "base_vertices": 448,
+      "evaluated_vertices": 448,
+      "evaluated_polygons": 384,
+      "bounds": [
+        [
+          -0.006938103586435318,
+          -0.14149999618530273,
+          1.5399229526519775
+        ],
+        [
+          0.009280268102884293,
+          -0.1393294632434845,
+          1.5561413764953613
+        ]
+      ]
+    },
+    {
+      "name": "L upper | sculpted lid",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "base_vertices": 164,
+      "evaluated_vertices": 567,
+      "evaluated_polygons": 480,
+      "bounds": [
+        [
+          -0.01403442770242691,
+          -0.14001677930355072,
+          1.545583724975586
+        ],
+        [
+          0.015056885778903961,
+          -0.13000370562076569,
+          1.5579651594161987
+        ]
+      ]
+    },
+    {
+      "name": "L lower | sculpted lid",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "base_vertices": 164,
+      "evaluated_vertices": 567,
+      "evaluated_polygons": 480,
+      "bounds": [
+        [
+          -0.012714691460132599,
+          -0.14001677930355072,
+          1.5380991697311401
+        ],
+        [
+          0.016376592218875885,
+          -0.13000370562076569,
+          1.550480604171753
+        ]
+      ]
+    },
+    {
+      "name": "L | upper lid edge",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.013815511018037796,
+          -0.14052017033100128,
+          1.5454447269439697
+        ],
+        [
+          0.015306346118450165,
+          -0.13102547824382782,
+          1.5554476976394653
+        ]
+      ]
+    },
+    {
+      "name": "L | lower lid edge",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.012992922216653824,
+          -0.14055891335010529,
+          1.540574073791504
+        ],
+        [
+          0.016189847141504288,
+          -0.13100458681583405,
+          1.550642728805542
+        ]
+      ]
+    },
+    {
+      "name": "L | upper lashes",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.014001784846186638,
+          -0.14109468460083008,
+          1.5480777025222778
+        ],
+        [
+          0.014309462159872055,
+          -0.13467596471309662,
+          1.5595250129699707
+        ]
+      ]
+    },
+    {
+      "name": "Nose | nostril creases",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.034255094826221466,
+          -0.16202791035175323,
+          1.4983066320419312
+        ],
+        [
+          -0.010262063704431057,
+          -0.15297208726406097,
+          1.5041629076004028
+        ]
+      ]
+    },
+    {
+      "name": "Mouth | gentle closed smile crease",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.04314715415239334,
+          -0.16022498905658722,
+          1.4779800176620483
+        ],
+        [
+          0.004762209951877594,
+          -0.14995016157627106,
+          1.489711880683899
+        ]
+      ]
+    },
+    {
+      "name": "R | eyebrow hairs",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.09033085405826569,
+          -0.15168558061122894,
+          1.552836537361145
+        ],
+        [
+          -0.04990360885858536,
+          -0.1401320844888687,
+          1.570085048675537
+        ]
+      ]
+    },
+    {
+      "name": "L | eyebrow hairs",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.01808011531829834,
+          -0.15171536803245544,
+          1.5661776065826416
+        ],
+        [
+          0.021896179765462875,
+          -0.14023052155971527,
+          1.5821067094802856
+        ]
+      ]
+    },
+    {
+      "name": "Hair | scalp cap",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "base_vertices": 2500,
+      "evaluated_vertices": 9800,
+      "evaluated_polygons": 9600,
+      "bounds": [
+        [
+          -0.14263010025024414,
+          -0.14046676456928253,
+          1.474966049194336
+        ],
+        [
+          0.0590362548828125,
+          0.06993972510099411,
+          1.6952722072601318
+        ]
+      ]
+    },
+    {
+      "name": "Hair | flowing back and shoulder underlayer",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "base_vertices": 2639,
+      "evaluated_vertices": 10317,
+      "evaluated_polygons": 10080,
+      "bounds": [
+        [
+          -0.17781782150268555,
+          -0.15366122126579285,
+          1.0560051202774048
+        ],
+        [
+          0.19268523156642914,
+          0.13699999451637268,
+          1.609677791595459
+        ]
+      ]
+    },
+    {
+      "name": "Hair | long strands 00",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.20241042971611023,
+          -0.1550089418888092,
+          0.9864240288734436
+        ],
+        [
+          0.21132953464984894,
+          0.14394359290599823,
+          1.711822509765625
+        ]
+      ]
+    },
+    {
+      "name": "Hair | long strands 01",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.20235224068164825,
+          -0.15485592186450958,
+          0.9869577288627625
+        ],
+        [
+          0.21143071353435516,
+          0.14383463561534882,
+          1.7117369174957275
+        ]
+      ]
+    },
+    {
+      "name": "Hair | long strands 02",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.20210841298103333,
+          -0.15499143302440643,
+          0.9876106381416321
+        ],
+        [
+          0.21101132035255432,
+          0.14357727766036987,
+          1.7114531993865967
+        ]
+      ]
+    },
+    {
+      "name": "Hair | long strands 03",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.20047524571418762,
+          -0.15624262392520905,
+          0.9862011671066284
+        ],
+        [
+          0.21020416915416718,
+          0.1436467319726944,
+          1.711463212966919
+        ]
+      ]
+    },
+    {
+      "name": "Hair | long strands 04",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.2000921219587326,
+          -0.15229228138923645,
+          0.991091787815094
+        ],
+        [
+          0.20985712110996246,
+          0.14214420318603516,
+          1.7105391025543213
+        ]
+      ]
+    },
+    {
+      "name": "Hair | front scalp fibres 00",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.13123548030853271,
+          -0.14194545149803162,
+          1.5583813190460205
+        ],
+        [
+          0.04106082022190094,
+          -0.0664840042591095,
+          1.6957696676254272
+        ]
+      ]
+    },
+    {
+      "name": "Hair | front scalp fibres 01",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.13036403059959412,
+          -0.1419837921857834,
+          1.558609127998352
+        ],
+        [
+          0.040880702435970306,
+          -0.06674866378307343,
+          1.695663571357727
+        ]
+      ]
+    },
+    {
+      "name": "Hair | front scalp fibres 02",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.13072693347930908,
+          -0.14202778041362762,
+          1.5584988594055176
+        ],
+        [
+          0.04171184450387955,
+          -0.06633790582418442,
+          1.6957333087921143
+        ]
+      ]
+    },
+    {
+      "name": "Hair | wispy fringe 01",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.10636459290981293,
+          -0.1573607325553894,
+          1.56267511844635
+        ],
+        [
+          0.010442383587360382,
+          -0.10422489792108536,
+          1.6814717054367065
+        ]
+      ]
+    },
+    {
+      "name": "Hair | wispy fringe 02",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.10672296583652496,
+          -0.15736089646816254,
+          1.5624490976333618
+        ],
+        [
+          0.010003093630075455,
+          -0.10417705029249191,
+          1.681036353111267
+        ]
+      ]
+    },
+    {
+      "name": "Hair | wispy fringe 03",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.10652284324169159,
+          -0.157344788312912,
+          1.5625101327896118
+        ],
+        [
+          0.009877126663923264,
+          -0.10424825549125671,
+          1.6810206174850464
+        ]
+      ]
+    },
+    {
+      "name": "Hair | left swept volume",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "base_vertices": 1025,
+      "evaluated_vertices": 1025,
+      "evaluated_polygons": 960,
+      "bounds": [
+        [
+          -0.20915718376636505,
+          -0.1550000011920929,
+          1.0408378839492798
+        ],
+        [
+          -0.012345559895038605,
+          -0.1080000028014183,
+          1.5554322004318237
+        ]
+      ]
+    },
+    {
+      "name": "Hair | swept fibres 00",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.20905371010303497,
+          -0.1570056825876236,
+          1.0407919883728027
+        ],
+        [
+          -0.012420497834682465,
+          -0.10811261087656021,
+          1.5552479028701782
+        ]
+      ]
+    },
+    {
+      "name": "Hair | swept fibres 01",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.209078848361969,
+          -0.15700757503509521,
+          1.0407812595367432
+        ],
+        [
+          -0.012235686182975769,
+          -0.10809203237295151,
+          1.555434226989746
+        ]
+      ]
+    },
+    {
+      "name": "Hair | swept fibres 02",
+      "type": "CURVE",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "bounds": [
+        [
+          -0.20910167694091797,
+          -0.15699979662895203,
+          1.0407719612121582
+        ],
+        [
+          -0.01243714988231659,
+          -0.1081007793545723,
+          1.5552291870117188
+        ]
+      ]
+    },
+    {
+      "name": "Sweater | shaped body",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "base_vertices": 1056,
+      "evaluated_vertices": 15744,
+      "evaluated_polygons": 15360,
+      "bounds": [
+        [
+          -0.2324143797159195,
+          -0.15085485577583313,
+          0.9635003209114075
+        ],
+        [
+          0.23378399014472961,
+          0.1258663386106491,
+          1.3754998445510864
+        ]
+      ]
+    },
+    {
+      "name": "Sweater | ribbed crew neck",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "base_vertices": 720,
+      "evaluated_vertices": 720,
+      "evaluated_polygons": 576,
+      "bounds": [
+        [
+          -0.061650000512599945,
+          -0.08065000176429749,
+          1.36899995803833
+        ],
+        [
+          0.061650000512599945,
+          0.01665000058710575,
+          1.3830000162124634
+        ]
+      ]
+    },
+    {
+      "name": "Right sleeve | reaching forward",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "base_vertices": 2234,
+      "evaluated_vertices": 36290,
+      "evaluated_polygons": 36288,
+      "bounds": [
+        [
+          -0.35773324966430664,
+          -0.5223277807235718,
+          0.9972914457321167
+        ],
+        [
+          -0.07525386661291122,
+          0.041337382048368454,
+          1.345960259437561
+        ]
+      ]
+    },
+    {
+      "name": "Left sleeve | reaching forward",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Character"
+      ],
+      "base_vertices": 2234,
+      "evaluated_vertices": 36290,
+      "evaluated_polygons": 36288,
+      "bounds": [
+        [
+          0.07525386661291122,
+          -0.5234842896461487,
+          0.9972125291824341
+        ],
+        [
+          0.35762566328048706,
+          0.041337382048368454,
+          1.345960259437561
+        ]
+      ]
+    },
+    {
+      "name": "Cafe wall",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 8,
+      "evaluated_polygons": 6,
+      "bounds": [
+        [
+          -2.5,
+          1.4600000381469727,
+          -0.10000002384185791
+        ],
+        [
+          2.5,
+          1.5399999618530273,
+          3.0999999046325684
+        ]
+      ]
+    },
+    {
+      "name": "Cafe shelf",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 8,
+      "evaluated_polygons": 6,
+      "bounds": [
+        [
+          -0.5199999809265137,
+          1.100000023841858,
+          1.222499966621399
+        ],
+        [
+          1.4800000190734863,
+          1.399999976158142,
+          1.2575000524520874
+        ]
+      ]
+    },
+    {
+      "name": "Cafe shelf.001",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 8,
+      "evaluated_polygons": 6,
+      "bounds": [
+        [
+          -0.5199999809265137,
+          1.100000023841858,
+          1.6024999618530273
+        ],
+        [
+          1.4800000190734863,
+          1.399999976158142,
+          1.6375000476837158
+        ]
+      ]
+    },
+    {
+      "name": "Cafe shelf.002",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 8,
+      "evaluated_polygons": 6,
+      "bounds": [
+        [
+          -0.5199999809265137,
+          1.100000023841858,
+          1.972499966621399
+        ],
+        [
+          1.4800000190734863,
+          1.399999976158142,
+          2.007499933242798
+        ]
+      ]
+    },
+    {
+      "name": "Cafe jars 00",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 8,
+      "evaluated_polygons": 6,
+      "bounds": [
+        [
+          0.02250000089406967,
+          1.2000000476837158,
+          1.2400000095367432
+        ],
+        [
+          0.07750000059604645,
+          1.2599999904632568,
+          1.3199999332427979
+        ]
+      ]
+    },
+    {
+      "name": "Cafe jars 01",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 8,
+      "evaluated_polygons": 6,
+      "bounds": [
+        [
+          0.17249999940395355,
+          1.2000000476837158,
+          1.2324999570846558
+        ],
+        [
+          0.22750000655651093,
+          1.2599999904632568,
+          1.3274999856948853
+        ]
+      ]
+    },
+    {
+      "name": "Cafe jars 02",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 8,
+      "evaluated_polygons": 6,
+      "bounds": [
+        [
+          0.32249999046325684,
+          1.2000000476837158,
+          1.225000023841858
+        ],
+        [
+          0.3774999976158142,
+          1.2599999904632568,
+          1.334999918937683
+        ]
+      ]
+    },
+    {
+      "name": "Cafe jars 03",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 8,
+      "evaluated_polygons": 6,
+      "bounds": [
+        [
+          0.4724999964237213,
+          1.2000000476837158,
+          1.2400000095367432
+        ],
+        [
+          0.5274999737739563,
+          1.2599999904632568,
+          1.3199999332427979
+        ]
+      ]
+    },
+    {
+      "name": "Cafe jars 04",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 8,
+      "evaluated_polygons": 6,
+      "bounds": [
+        [
+          0.6225000023841858,
+          1.2000000476837158,
+          1.2324999570846558
+        ],
+        [
+          0.6774999499320984,
+          1.2599999904632568,
+          1.3274999856948853
+        ]
+      ]
+    },
+    {
+      "name": "Cafe jars 05",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 8,
+      "evaluated_polygons": 6,
+      "bounds": [
+        [
+          0.7725000381469727,
+          1.2000000476837158,
+          1.225000023841858
+        ],
+        [
+          0.8274999856948853,
+          1.2599999904632568,
+          1.334999918937683
+        ]
+      ]
+    },
+    {
+      "name": "Cafe jars 06",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 8,
+      "evaluated_polygons": 6,
+      "bounds": [
+        [
+          0.9225000143051147,
+          1.2000000476837158,
+          1.2400000095367432
+        ],
+        [
+          0.9774999618530273,
+          1.2599999904632568,
+          1.3199999332427979
+        ]
+      ]
+    },
+    {
+      "name": "Cafe jars 07",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 8,
+      "evaluated_polygons": 6,
+      "bounds": [
+        [
+          0.02250000089406967,
+          1.2000000476837158,
+          1.6124999523162842
+        ],
+        [
+          0.07750000059604645,
+          1.2599999904632568,
+          1.7074999809265137
+        ]
+      ]
+    },
+    {
+      "name": "Cafe jars 08",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 8,
+      "evaluated_polygons": 6,
+      "bounds": [
+        [
+          0.17249999940395355,
+          1.2000000476837158,
+          1.6050000190734863
+        ],
+        [
+          0.22750000655651093,
+          1.2599999904632568,
+          1.7149999141693115
+        ]
+      ]
+    },
+    {
+      "name": "Cafe jars 09",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 8,
+      "evaluated_polygons": 6,
+      "bounds": [
+        [
+          0.32249999046325684,
+          1.2000000476837158,
+          1.6200000047683716
+        ],
+        [
+          0.3774999976158142,
+          1.2599999904632568,
+          1.6999999284744263
+        ]
+      ]
+    },
+    {
+      "name": "Cafe jars 10",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 8,
+      "evaluated_polygons": 6,
+      "bounds": [
+        [
+          0.4724999964237213,
+          1.2000000476837158,
+          1.6124999523162842
+        ],
+        [
+          0.5274999737739563,
+          1.2599999904632568,
+          1.7074999809265137
+        ]
+      ]
+    },
+    {
+      "name": "Cafe jars 11",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 8,
+      "evaluated_polygons": 6,
+      "bounds": [
+        [
+          0.6225000023841858,
+          1.2000000476837158,
+          1.6050000190734863
+        ],
+        [
+          0.6774999499320984,
+          1.2599999904632568,
+          1.7149999141693115
+        ]
+      ]
+    },
+    {
+      "name": "Cafe jars 12",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 8,
+      "evaluated_polygons": 6,
+      "bounds": [
+        [
+          0.7725000381469727,
+          1.2000000476837158,
+          1.6200000047683716
+        ],
+        [
+          0.8274999856948853,
+          1.2599999904632568,
+          1.6999999284744263
+        ]
+      ]
+    },
+    {
+      "name": "Cafe jars 13",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 8,
+      "evaluated_polygons": 6,
+      "bounds": [
+        [
+          0.9225000143051147,
+          1.2000000476837158,
+          1.6124999523162842
+        ],
+        [
+          0.9774999618530273,
+          1.2599999904632568,
+          1.7074999809265137
+        ]
+      ]
+    },
+    {
+      "name": "Cafe table",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 8,
+      "evaluated_vertices": 8,
+      "evaluated_polygons": 6,
+      "bounds": [
+        [
+          -0.004999995231628418,
+          0.39500004053115845,
+          1.022499918937683
+        ],
+        [
+          1.2450000047683716,
+          1.0450000762939453,
+          1.0774999856948853
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -0.9802703857421875,
+          0.9473104476928711,
+          1.3099510669708252
+        ],
+        [
+          -0.7497403621673584,
+          0.9973104000091553,
+          1.545835018157959
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.001",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -0.7493841052055359,
+          0.9291795492172241,
+          1.5242395401000977
+        ],
+        [
+          -0.588381826877594,
+          0.9791795015335083,
+          1.7646126747131348
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.002",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -1.2113817930221558,
+          1.1030921936035156,
+          1.9740220308303833
+        ],
+        [
+          -1.0964404344558716,
+          1.1530921459197998,
+          2.196450710296631
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.003",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -0.8645981550216675,
+          0.8715329170227051,
+          1.493238091468811
+        ],
+        [
+          -0.6496913433074951,
+          0.9215328693389893,
+          1.7369509935379028
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.004",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -0.9657739996910095,
+          0.9262863993644714,
+          1.236847162246704
+        ],
+        [
+          -0.8065276741981506,
+          0.9762863516807556,
+          1.4767191410064697
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.005",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -0.7623231410980225,
+          0.8529770374298096,
+          2.0086069107055664
+        ],
+        [
+          -0.5595979690551758,
+          0.9029769897460938,
+          2.2543625831604004
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.006",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -0.9305649995803833,
+          1.0810924768447876,
+          1.863547921180725
+        ],
+        [
+          -0.7580958604812622,
+          1.1310924291610718,
+          2.1067447662353516
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.007",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -0.9643387794494629,
+          0.8631327748298645,
+          1.9445757865905762
+        ],
+        [
+          -0.7347713708877563,
+          0.9131327271461487,
+          2.181216239929199
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.008",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -1.1439895629882812,
+          0.9865307807922363,
+          1.858903408050537
+        ],
+        [
+          -0.8982195258140564,
+          1.0365307331085205,
+          2.0614306926727295
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.009",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -1.2008864879608154,
+          0.8450605273246765,
+          1.8586697578430176
+        ],
+        [
+          -0.9580488204956055,
+          0.8950604796409607,
+          2.0764081478118896
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.010",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -0.7940943241119385,
+          1.064321756362915,
+          1.5793499946594238
+        ],
+        [
+          -0.5762237310409546,
+          1.1143217086791992,
+          1.8221421241760254
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.011",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -0.8795979619026184,
+          0.9418380856513977,
+          1.6613349914550781
+        ],
+        [
+          -0.642139732837677,
+          0.9918380379676819,
+          1.8897838592529297
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.012",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -0.9697012305259705,
+          0.8569109439849854,
+          2.029496431350708
+        ],
+        [
+          -0.8529005646705627,
+          0.9069108963012695,
+          2.2528164386749268
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.013",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -0.9973306655883789,
+          0.8773328065872192,
+          1.6046655178070068
+        ],
+        [
+          -0.8123551607131958,
+          0.9273327589035034,
+          1.8499200344085693
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.014",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -1.0456537008285522,
+          0.8257110714912415,
+          1.2422610521316528
+        ],
+        [
+          -0.8344754576683044,
+          0.8757110238075256,
+          1.4868696928024292
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.015",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -0.8463850021362305,
+          1.043104648590088,
+          1.506991982460022
+        ],
+        [
+          -0.6577588319778442,
+          1.093104600906372,
+          1.7526096105575562
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.016",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -1.2224897146224976,
+          1.1058149337768555,
+          1.9944530725479126
+        ],
+        [
+          -0.9765298962593079,
+          1.1558148860931396,
+          2.190056562423706
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.017",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -0.9749768972396851,
+          1.0145455598831177,
+          1.7000411748886108
+        ],
+        [
+          -0.8268311023712158,
+          1.0645455121994019,
+          1.936367154121399
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.018",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -1.0316740274429321,
+          0.9362696409225464,
+          1.7579478025436401
+        ],
+        [
+          -0.8612900376319885,
+          0.9862695932388306,
+          2.00069260597229
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.019",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -0.8245992064476013,
+          0.8674409985542297,
+          1.3910366296768188
+        ],
+        [
+          -0.5810781121253967,
+          0.9174409508705139,
+          1.6066161394119263
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.020",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -1.090936541557312,
+          0.9058451056480408,
+          1.279311180114746
+        ],
+        [
+          -0.8959826231002808,
+          0.955845057964325,
+          1.5252602100372314
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.021",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -1.0902942419052124,
+          0.9848363399505615,
+          1.8048804998397827
+        ],
+        [
+          -0.8975587487220764,
+          1.0348362922668457,
+          2.0507590770721436
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.022",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -0.7833645343780518,
+          0.8896284699440002,
+          1.779047966003418
+        ],
+        [
+          -0.5594487190246582,
+          0.9396284222602844,
+          2.019256114959717
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.023",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -1.010059118270874,
+          0.9855383634567261,
+          1.2921184301376343
+        ],
+        [
+          -0.78681480884552,
+          1.0355383157730103,
+          1.5326679944992065
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.024",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -1.2967348098754883,
+          1.1007325649261475,
+          1.6558520793914795
+        ],
+        [
+          -1.0510244369506836,
+          1.1507325172424316,
+          1.8591654300689697
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.025",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -1.0762051343917847,
+          1.0343372821807861,
+          1.8731002807617188
+        ],
+        [
+          -0.8310131430625916,
+          1.0843372344970703,
+          2.080963611602783
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.026",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -1.2204768657684326,
+          1.0194953680038452,
+          2.0162880420684814
+        ],
+        [
+          -1.1045291423797607,
+          1.0694953203201294,
+          2.2392008304595947
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.027",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -1.1978464126586914,
+          0.9079858064651489,
+          1.4938980340957642
+        ],
+        [
+          -0.9551818370819092,
+          0.9579857587814331,
+          1.712133765220642
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.028",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -0.9874119162559509,
+          1.0561636686325073,
+          1.206382155418396
+        ],
+        [
+          -0.8298192620277405,
+          1.1061636209487915,
+          1.445766568183899
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.029",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -1.1101373434066772,
+          0.9349918961524963,
+          1.8740947246551514
+        ],
+        [
+          -0.9002221822738647,
+          0.9849918484687805,
+          2.118947744369507
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.030",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -1.1472450494766235,
+          1.0330147743225098,
+          1.849498987197876
+        ],
+        [
+          -0.9920641183853149,
+          1.083014726638794,
+          2.088146209716797
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.031",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -0.8946130871772766,
+          0.8782400488853455,
+          1.8771343231201172
+        ],
+        [
+          -0.6815528273582458,
+          0.9282400012016296,
+          2.1213247776031494
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.032",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -1.237796664237976,
+          0.8397717475891113,
+          1.3448138236999512
+        ],
+        [
+          -1.0031532049179077,
+          0.8897716999053955,
+          1.5767922401428223
+        ]
+      ]
+    },
+    {
+      "name": "Cafe greenery.033",
+      "type": "MESH",
+      "hidden_render": false,
+      "collections": [
+        "Cafe suggestion"
+      ],
+      "base_vertices": 86,
+      "evaluated_vertices": 86,
+      "evaluated_polygons": 96,
+      "bounds": [
+        [
+          -1.2496248483657837,
+          0.9408488273620605,
+          1.3961715698242188
+        ],
+        [
+          -1.1061500310897827,
+          0.9908487796783447,
+          1.6308238506317139
+        ]
+      ]
+    },
+    {
+      "name": "Key | large window",
+      "type": "LIGHT",
+      "hidden_render": false,
+      "collections": [
+        "Lights"
+      ]
+    },
+    {
+      "name": "Fill | camera side",
+      "type": "LIGHT",
+      "hidden_render": false,
+      "collections": [
+        "Lights"
+      ]
+    },
+    {
+      "name": "Hair rim",
+      "type": "LIGHT",
+      "hidden_render": false,
+      "collections": [
+        "Lights"
+      ]
+    },
+    {
+      "name": "Cafe | reflected window",
+      "type": "LIGHT",
+      "hidden_render": false,
+      "collections": [
+        "Lights"
+      ]
+    },
+    {
+      "name": "Beauty camera",
+      "type": "CAMERA",
+      "hidden_render": false,
+      "collections": [
+        "Cameras"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "Generated knit relief 512",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true,
+      "source": "FILE",
+      "file_exists": true
+    },
+    {
+      "name": "Viewer Node",
+      "size": [
+        256,
+        256
+      ],
+      "packed": false,
+      "source": "VIEWER",
+      "file_exists": true
+    }
+  ],
+  "total_evaluated_mesh_vertices": 192651,
+  "native_hair_objects": [],
+  "limits": {
+    "all_images_at_most_2048": true,
+    "resources_resolve": true
+  },
+  "actual_evaluated_character_bounds": {
+    "min": [
+      -0.357078492641449,
+      -0.5180190205574036,
+      0.963526725769043
+    ],
+    "max": [
+      0.35676097869873047,
+      0.14394359290599823,
+      1.6869245767593384
+    ],
+    "method": "World coordinates of evaluated mesh vertices, including converted curve geometry."
+  },
+  "diagnostic_projection_bounds": [],
+  "glb_export": {
+    "path": "character.glb",
+    "selected_objects": [
+      "L | lower lid edge",
+      "Right eye | iris and pupil",
+      "R lower | sculpted lid",
+      "L | upper lid edge",
+      "L eye | clear corneal shell",
+      "Mouth | gentle closed smile crease",
+      "R | eyebrow hairs",
+      "Hair | long strands 00",
+      "Hair | long strands 04",
+      "Hair | front scalp fibres 02",
+      "Hair | long strands 01",
+      "Hair | scalp cap",
+      "R eye | clear corneal shell",
+      "L | eyebrow hairs",
+      "R | upper lid edge",
+      "Hair | long strands 03",
+      "Hair | front scalp fibres 01",
+      "Hair | swept fibres 01",
+      "Sweater | ribbed crew neck",
+      "Left sleeve | reaching forward",
+      "Hair | swept fibres 02",
+      "Head tilt | editable pivot",
+      "Sweater | shaped body",
+      "Face and neck | sculpted CC0 topology",
+      "R | upper lashes",
+      "Left eye | sclera",
+      "L upper | sculpted lid",
+      "Nose | nostril creases",
+      "Hair | long strands 02",
+      "Hair | front scalp fibres 00",
+      "Hair | swept fibres 00",
+      "Hair | wispy fringe 02",
+      "Hair | left swept volume",
+      "Hair | wispy fringe 01",
+      "Hair | wispy fringe 03",
+      "Right eye | sclera",
+      "Neck | tapered anatomical bridge",
+      "R upper | sculpted lid",
+      "R | lower lid edge",
+      "Left eye | iris and pupil",
+      "L | upper lashes",
+      "L lower | sculpted lid",
+      "Hair | flowing back and shoulder underlayer",
+      "Right sleeve | reaching forward"
+    ],
+    "curves_converted_for_export_only": [
+      "L | lower lid edge",
+      "L | upper lid edge",
+      "Mouth | gentle closed smile crease",
+      "R | eyebrow hairs",
+      "Hair | long strands 00",
+      "Hair | long strands 04",
+      "Hair | front scalp fibres 02",
+      "Hair | long strands 01",
+      "L | eyebrow hairs",
+      "R | upper lid edge",
+      "Hair | long strands 03",
+      "Hair | front scalp fibres 01",
+      "Hair | swept fibres 01",
+      "Hair | swept fibres 02",
+      "R | upper lashes",
+      "Nose | nostril creases",
+      "Hair | long strands 02",
+      "Hair | front scalp fibres 00",
+      "Hair | swept fibres 00",
+      "Hair | wispy fringe 02",
+      "Hair | wispy fringe 01",
+      "Hair | wispy fringe 03",
+      "R | lower lid edge",
+      "L | upper lashes"
+    ],
+    "procedural_material_fallbacks": [
+      {
+        "source_material": "Sweater | rose wool knit",
+        "base_color_linear": [
+          0.5799999833106995,
+          0.28999999165534973,
+          0.30000001192092896,
+          1.0
+        ],
+        "reason": "Unsupported procedural base-color graph; retained the material author's own swatch for GLB only."
+      }
+    ],
+    "bytes": 35916368,
+    "sha256": "00d39c3ae66214997a0409fbcff3261de193725ac63e31037fb299d3bcaa1aa0",
+    "note": "Procedural Blender shaders and lighting can differ in GLB. The source .blend was not saved or modified."
+  },
+  "source_sha256_after": "3ec6fe63d1107f799a2d710409df8ca2140088ed05dd9ed290dfdcbc32eaedee",
+  "source_unchanged": true,
+  "coordinator_checks": {
+    "input_sha256": [
+      {
+        "path": "inputs/reference.png",
+        "bytes": 2392839,
+        "sha256": "de6fee4cffe83bd5aec30647c318cd0da7ee42e0f99d81547d0f49119493a3fa",
+        "manifest_match": true
+      },
+      {
+        "path": "inputs/base.obj",
+        "bytes": 1749303,
+        "sha256": "8e761e6624b8f54536409135d1636da63b32486a90d4897f84e121d144f6fb4c",
+        "manifest_match": true
+      },
+      {
+        "path": "inputs/upper-body.obj",
+        "bytes": 350138,
+        "sha256": "4a2babcfe92c0b753c83c626c4b6deefddff6f549695a5cb756cc937026b10d5",
+        "manifest_match": true
+      },
+      {
+        "path": "inputs/ASSET-LICENSE.md",
+        "bytes": 472,
+        "sha256": "184de9bc357d547acd006dc975f9ddb014ac29946b69b70d7814cd23a95a195f",
+        "manifest_match": true
+      },
+      {
+        "path": "inputs/environment.json",
+        "bytes": 12886,
+        "sha256": "e02a7f801315b4cd0ec687360ffcee356094cc41f02bb1a65c527272af0c02ab",
+        "manifest_match": true
+      },
+      {
+        "path": "prompts/01-procedural.md",
+        "bytes": 6095,
+        "sha256": "8dab300d7beafc5425b63b63ad067ec4cecb827cc5f5cc9b5000a9208bfb1105",
+        "manifest_match": true
+      },
+      {
+        "path": "prompts/02-photo-textured.md",
+        "bytes": 6220,
+        "sha256": "7a0704e8596e2a35f2b0cc304d0e224c8e890478b728c042eadca879db971b34",
+        "manifest_match": true
+      },
+      {
+        "path": "workspace/input/reference.png",
+        "bytes": 2392839,
+        "sha256": "de6fee4cffe83bd5aec30647c318cd0da7ee42e0f99d81547d0f49119493a3fa",
+        "canonical_match": true
+      },
+      {
+        "path": "workspace/input/base.obj",
+        "bytes": 1749303,
+        "sha256": "8e761e6624b8f54536409135d1636da63b32486a90d4897f84e121d144f6fb4c",
+        "canonical_match": true
+      },
+      {
+        "path": "workspace/input/upper-body.obj",
+        "bytes": 350138,
+        "sha256": "4a2babcfe92c0b753c83c626c4b6deefddff6f549695a5cb756cc937026b10d5",
+        "canonical_match": true
+      },
+      {
+        "path": "workspace/input/ASSET-LICENSE.md",
+        "bytes": 472,
+        "sha256": "184de9bc357d547acd006dc975f9ddb014ac29946b69b70d7814cd23a95a195f",
+        "canonical_match": true
+      },
+      {
+        "path": "workspace/input/environment.json",
+        "bytes": 12886,
+        "sha256": "e02a7f801315b4cd0ec687360ffcee356094cc41f02bb1a65c527272af0c02ab",
+        "canonical_match": true
+      },
+      {
+        "path": "workspace/PROMPT.md",
+        "bytes": 6095,
+        "sha256": "8dab300d7beafc5425b63b63ad067ec4cecb827cc5f5cc9b5000a9208bfb1105",
+        "canonical_match": true,
+        "canonical_minus_final_newline_match": false
+      }
+    ],
+    "source_reopen": {
+      "exit_code": 0,
+      "source_unchanged": true,
+      "source_sha256": "3ec6fe63d1107f799a2d710409df8ca2140088ed05dd9ed290dfdcbc32eaedee",
+      "inspection_created": true
+    },
+    "reproduction_on_separate_copy": {
+      "steps": [
+        {
+          "step": "build",
+          "exit_code": 0,
+          "duration_seconds": 0.81
+        },
+        {
+          "step": "render",
+          "exit_code": 0,
+          "duration_seconds": 72.62
+        },
+        {
+          "step": "report",
+          "exit_code": 0,
+          "duration_seconds": 0.91
+        }
+      ],
+      "rebuilt_blend_sha256": "fec1ca53f2d8f25a9f3a2e773529b8f444271b263ba7409c00fdb14d97f3aa17",
+      "rebuilt_scene_report_matches_original_bytes": true,
+      "inspect_and_export": {
+        "exit_code": 0,
+        "duration_seconds": 2.12,
+        "source_unchanged": true,
+        "glb_created": true,
+        "validation_created": true
+      },
+      "render_checks": [
+        {
+          "view": "beauty",
+          "original_bytes": 1241332,
+          "reproduced_bytes": 1241336,
+          "dimensions": [
+            960,
+            1040
+          ],
+          "original_sha256": "4eade5bbc297fa31ab131265bce44a6442f640d58474462dc6ebac624976b434",
+          "reproduced_sha256": "9bb38b8f51d3a90f120ac8cab02ba4656e4381233535bc72e6aa870444b84ab0",
+          "byte_identical": false
+        },
+        {
+          "view": "front",
+          "original_bytes": 635326,
+          "reproduced_bytes": 635330,
+          "dimensions": [
+            768,
+            768
+          ],
+          "original_sha256": "75390d47102d1a06a2ac2bfeb20379d979aa2de1a0707a4fce2c7cfaf2c5828f",
+          "reproduced_sha256": "b8b73902b80aee3175cb88e3f4d158ff1c494fedfdab583c8907450ff9126bd2",
+          "byte_identical": false
+        },
+        {
+          "view": "three-quarter",
+          "original_bytes": 575114,
+          "reproduced_bytes": 575118,
+          "dimensions": [
+            768,
+            768
+          ],
+          "original_sha256": "b8ac2803c225dec9c5afbdfad61bb7295c924a9ae05750c5ab84f50f670e96c5",
+          "reproduced_sha256": "0be2069bf4b611f57f1f2a3a633db58f0f9bb9e13e84429f58d208e8062b9e46",
+          "byte_identical": false
+        },
+        {
+          "view": "side",
+          "original_bytes": 622577,
+          "reproduced_bytes": 622581,
+          "dimensions": [
+            768,
+            768
+          ],
+          "original_sha256": "537fc77566af7c99085cbf1d1ea788dbb5ea061929da1ee3964a97eb827896a8",
+          "reproduced_sha256": "8a32af165fd5721bd87e582be0872d2188b5e8adce928f3e6bb5e258c40ab8e4",
+          "byte_identical": false
+        },
+        {
+          "view": "back",
+          "original_bytes": 658853,
+          "reproduced_bytes": 658857,
+          "dimensions": [
+            768,
+            768
+          ],
+          "original_sha256": "6e2d69a35e2e8119b141cdd83d7cfdfbe053d356d3f71ec191a9feb317b5cc51",
+          "reproduced_sha256": "d0a4e0da951fe94573c4f4d6cb05ce2241a9a4f98d4e39b57cb881bb2bacd659",
+          "byte_identical": false
+        }
+      ],
+      "original_and_reproduced_pngs_visually_opened": true,
+      "appearance_scoring_performed": false
+    },
+    "publication": {
+      "character_blend_is_terra_original": true,
+      "character_glb_exported_from_original_blend_without_saving": true,
+      "personal_absolute_paths_in_collected_text_replaced": false,
+      "reason": "No personal absolute paths were found in collected text. Five PNG File metadata values contained a personal absolute path and were replaced with relative render paths; IDAT chunks were unchanged.",
+      "five_png_idat_payloads_match_terra_originals": true,
+      "png_file_metadata_absolute_paths_replaced": 5,
+      "png_metadata_redactions": [
+        {
+          "file": "renders/back.png",
+          "replaced_text_chunk": "File",
+          "replacement_value": "renders/back.png",
+          "original_sha256": "6e2d69a35e2e8119b141cdd83d7cfdfbe053d356d3f71ec191a9feb317b5cc51",
+          "published_sha256": "72877a71481745e0751810b04cb21bb3179b2fe41dbfada62704599d9f766c39",
+          "idat_sha256_unchanged": true,
+          "original_bytes": 658853,
+          "published_bytes": 658754
+        },
+        {
+          "file": "renders/beauty.png",
+          "replaced_text_chunk": "File",
+          "replacement_value": "renders/beauty.png",
+          "original_sha256": "4eade5bbc297fa31ab131265bce44a6442f640d58474462dc6ebac624976b434",
+          "published_sha256": "d1dac161173e6e7d82db7da8eba24e81f204ae1670a81b9682ba3bd404099125",
+          "idat_sha256_unchanged": true,
+          "original_bytes": 1241332,
+          "published_bytes": 1241235
+        },
+        {
+          "file": "renders/front.png",
+          "replaced_text_chunk": "File",
+          "replacement_value": "renders/front.png",
+          "original_sha256": "75390d47102d1a06a2ac2bfeb20379d979aa2de1a0707a4fce2c7cfaf2c5828f",
+          "published_sha256": "989cdafd79abdb126ff8acbbd0c9c388f6e9dab08f74c21bd333e42f9a0b2bdf",
+          "idat_sha256_unchanged": true,
+          "original_bytes": 635326,
+          "published_bytes": 635228
+        },
+        {
+          "file": "renders/side.png",
+          "replaced_text_chunk": "File",
+          "replacement_value": "renders/side.png",
+          "original_sha256": "537fc77566af7c99085cbf1d1ea788dbb5ea061929da1ee3964a97eb827896a8",
+          "published_sha256": "86365278673f95ed83417c486d6d5a48bd604dfacefc7929ee5238beee11675d",
+          "idat_sha256_unchanged": true,
+          "original_bytes": 622577,
+          "published_bytes": 622478
+        },
+        {
+          "file": "renders/three-quarter.png",
+          "replaced_text_chunk": "File",
+          "replacement_value": "renders/three-quarter.png",
+          "original_sha256": "b8ac2803c225dec9c5afbdfad61bb7295c924a9ae05750c5ab84f50f670e96c5",
+          "published_sha256": "9f6b7c77e7c1606940ff4f13530a47793571fc9fd9e769a2e5110c5249a8cbd6",
+          "idat_sha256_unchanged": true,
+          "original_bytes": 575114,
+          "published_bytes": 575024
+        }
+      ]
+    },
+    "glb_reimport_in_blender": {
+      "exit_code": 0,
+      "duration_seconds": 2.09,
+      "reimport_summary": {
+        "mesh_objects": 44,
+        "materials": 22,
+        "images": 3
+      }
+    }
+  }
+}

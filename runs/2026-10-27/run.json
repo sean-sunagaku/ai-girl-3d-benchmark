@@ -1,0 +1,73 @@
+{
+  "date_jst": "2026-10-27",
+  "status": "procedural_completed_photo_textured_not_executed",
+  "source_commit": "780f6fbdd569cd4bdd2fe7f0062e67348df9f915",
+  "requested_model": "GPT-6.1 Terra",
+  "model_id": "gpt-6.1-terra",
+  "harness": {
+    "name": "interactive Codex CLI",
+    "version": "0.164.0",
+    "reasoning_effort": "max",
+    "thread_id": "01a17b73-712c-7ca1-b653-ca30f63b4832",
+    "codex_exec_used": false,
+    "workspace_prepared_with": "scripts/prepare_case.py",
+    "ssh_disconnects": 1,
+    "continuation_instructions_sent": 1,
+    "continuation_text": "harness/continuation.md",
+    "task_prompt_file_matches_canonical_bytes": true,
+    "shell_delivered_text_trimmed_one_final_newline": true
+  },
+  "stages": {
+    "procedural": {
+      "status": "complete",
+      "path": "procedural/gpt-6.1-terra"
+    },
+    "photo-textured": {
+      "status": "not_executed",
+      "reason": "Only the initial procedural stage was requested for this run."
+    }
+  },
+  "generation": {
+    "external_image_or_3d_generation": false,
+    "additional_agents": false,
+    "coordinator_design_or_material_changes": false,
+    "coordinator_compatibility_code_changes": false
+  },
+  "verification": {
+    "input_manifest_checks": 7,
+    "input_manifest_all_match": true,
+    "workspace_input_and_prompt_all_match": true,
+    "source_blend_reopened": true,
+    "source_blend_unchanged": true,
+    "build_render_report_reproduced": true,
+    "original_and_reproduced_five_pngs_visually_opened": true,
+    "render_dimensions_all_expected": true,
+    "independent_scene_report": "procedural/gpt-6.1-terra/validation.json",
+    "glb_export_from_original_blend": true,
+    "appearance_scoring": false,
+    "viewer_checks": "viewer-checks.json",
+    "viewer_static_checks_passed": true,
+    "viewer_browser_ui_check": "blocked_by_browser_url_policy",
+    "glb_reimport_succeeded": true
+  },
+  "artifacts": {
+    "character_blend_bytes": 1875795,
+    "character_blend_sha256": "3ec6fe63d1107f799a2d710409df8ca2140088ed05dd9ed290dfdcbc32eaedee",
+    "character_glb_bytes": 35916368,
+    "character_glb_sha256": "00d39c3ae66214997a0409fbcff3261de193725ac63e31037fb299d3bcaa1aa0",
+    "glb_stored_in_git": true,
+    "large_file_policy": "GLB is 36 MB and the scene is 1.9 MB; both are tracked in Git, following the existing 26 MB Kimi GLB precedent."
+  },
+  "privacy": {
+    "personal_absolute_paths_found_in_original_png_metadata": true,
+    "png_file_metadata_paths_replaced_with_relative_paths": 5,
+    "png_pixel_payloads_unchanged": true,
+    "personal_absolute_paths_remaining_in_collected_files": false,
+    "intermediate_previews_blend_backups_and_caches_excluded": true
+  },
+  "publication": {
+    "branch": "terra-3d-girl",
+    "local_commit_only": true,
+    "push_merge_deploy_or_pr": false
+  }
+}

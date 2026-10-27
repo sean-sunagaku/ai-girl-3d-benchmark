@@ -3,6 +3,7 @@ const model = $('#model');
 const render = $('#render');
 const loading = $('#loading');
 const viewLabels = { '3d': 'INTERACTIVE 3D', beauty: 'ポートレート', front: '正面 · 0°', 'three-quarter': '斜め · 45°', side: '横 · 90°', back: '背面 · 180°' };
+let catalog;
 let record;
 let stage = 'procedural';
 let view = '3d';
@@ -22,7 +23,7 @@ function selectView(next) {
   loading.hidden = !is3d || modelLoaded;
   if (!is3d) {
     render.src = record.stages[stage].renders[view];
-    render.alt = `Kimi K3.1 Pro · ${stage === 'procedural' ? '初回' : '写真テクスチャ許可版'} · ${viewLabels[view]}`;
+    render.alt = `${record.model} · ${stage === 'procedural' ? '初回' : '写真テクスチャ許可版'} · ${viewLabels[view]}`;
   }
 }
 
@@ -32,11 +33,12 @@ function selectStage(next) {
   const entry = record.stages[stage];
   document.querySelectorAll('[data-stage]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.stage === stage)));
   $('#stage-number').textContent = stage === 'procedural' ? '01' : '02';
-  $('#stage-description').textContent = stage === 'procedural' ? '写真テクスチャを使わず、形の参照から制作。' : 'Kimi自身の初回モデルを引き継ぎ、写真由来のテクスチャも許可した仕上げ。';
+  $('#stage-description').textContent = stage === 'procedural' ? '写真テクスチャを使わず、形の参照から制作。' : '同じモデルの初回成果物を引き継ぎ、写真由来のテクスチャも許可した仕上げ。';
   modelLoaded = false;
   loading.textContent = '3Dモデルを読み込んでいます…';
   model.src = entry.glb;
   model.poster = entry.renders.beauty;
+  model.alt = `${record.model}が生成した上半身の3Dモデル。ドラッグまたは矢印キーで回転できます。`;
   model.cameraOrbit = initialOrbit(entry);
   document.querySelectorAll('[data-view] img').forEach(image => { image.src = entry.renders[image.closest('button').dataset.view]; });
   for (const [selector, key] of Object.entries({'#download-glb':'glb','#download-blend':'blend','#source-code':'code','#run-readme':'readme','#scene-report':'validation'})) {
@@ -45,7 +47,31 @@ function selectStage(next) {
   }
   $('#run-record').href = record.run_record;
   $('#cost').textContent = record.cost_note;
+  document.querySelectorAll('[data-stage]').forEach(button => {
+    const available = Boolean(record.stages[button.dataset.stage]);
+    button.disabled = !available;
+    button.textContent = available ? (button.dataset.stage === 'procedural' ? '初回' : '写真テクスチャ許可版') : '写真テクスチャ許可版 · 未実行';
+    button.title = available ? '' : record.pending_note;
+  });
+  $('#pending-stage').textContent = record.pending_note || '';
   selectView(view);
+}
+
+function selectModel(key) {
+  if (!catalog.models[key]) return;
+  record = catalog.models[key];
+  stage = 'procedural';
+  view = '3d';
+  document.title = `${record.model} — AI Girl 3D Benchmark`;
+  $('#model-title').textContent = record.model;
+  $('#run-date').textContent = record.run_date;
+  $('#run-harness').textContent = record.harness;
+  $('#model-id').textContent = record.model_id;
+  document.querySelectorAll('[data-model]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.model === key)));
+  const url = new URL(window.location.href);
+  url.searchParams.set('model', key);
+  window.history.replaceState(null, '', url);
+  selectStage(stage);
 }
 
 model.addEventListener('load', () => { modelLoaded = true; loading.hidden = true; });
@@ -56,6 +82,7 @@ model.addEventListener('error', () => {
 render.addEventListener('error', () => { loading.textContent = '画像を読み込めませんでした。制作記録からファイルを確認してください。'; loading.hidden = false; });
 $('#reset-camera').addEventListener('click', () => { if (!record) return; model.cameraOrbit = initialOrbit(record.stages[stage]); model.fieldOfView = 'auto'; model.jumpCameraToGoal(); });
 narrowScreen.addEventListener('change', () => { if (record) model.cameraOrbit = initialOrbit(record.stages[stage]); });
+document.querySelectorAll('[data-model]').forEach(button => button.addEventListener('click', () => { if (catalog) selectModel(button.dataset.model); }));
 document.querySelectorAll('[data-stage]').forEach(button => button.addEventListener('click', () => { if (record) selectStage(button.dataset.stage); }));
 document.querySelectorAll('[data-view]').forEach(button => button.addEventListener('click', () => { if (record) selectView(button.dataset.view); }));
 
@@ -64,17 +91,10 @@ async function init() {
   try {
     const response = await fetch('results.json');
     if (!response.ok) throw new Error('Result record unavailable');
-    record = await response.json();
-    selectStage(stage);
+    catalog = await response.json();
     document.querySelectorAll('button').forEach(button => { button.disabled = false; });
-    document.querySelectorAll('[data-stage]').forEach(button => {
-      if (!record.stages[button.dataset.stage]) {
-        button.disabled = true;
-        button.textContent = '写真テクスチャ許可版 · 未実行';
-        button.title = record.pending_note;
-      }
-    });
-    $('#pending-stage').textContent = record.pending_note || '';
+    const requested = new URL(window.location.href).searchParams.get('model');
+    selectModel(catalog.models[requested] ? requested : catalog.default_model);
     // A script failure still leaves all genuine render images available.
     setTimeout(() => { if (!customElements.get('model-viewer')) { loading.textContent = '3Dビューアーを読み込めませんでした。下のレンダー画像を選んでください。'; loading.hidden = view !== '3d'; } }, 15000);
   } catch {

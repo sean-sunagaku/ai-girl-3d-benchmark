@@ -100,5 +100,27 @@
       "publication_policy": "Current files copied as-is; no rerender, repair, or revalidation for publication.",
       "existing_web_glb": true
     }
+  ],
+  "additional_runs": [
+    {
+      "id": "kimi-k3.1-pro",
+      "date_jst": "2026-10-25",
+      "stage": "procedural",
+      "requested_model": "kimi-k3.1-pro",
+      "path": "runs/2026-10-25/procedural/kimi-k3.1-pro",
+      "run_record": "runs/2026-10-25/run.json",
+      "technical_validation": "runs/2026-10-25/procedural/kimi-k3.1-pro/validation.json",
+      "existing_web_glb": true
+    },
+    {
+      "id": "gpt-6.1-terra",
+      "date_jst": "2026-10-27",
+      "stage": "procedural",
+      "requested_model": "gpt-6.1-terra",
+      "path": "runs/2026-10-27/procedural/gpt-6.1-terra",
+      "run_record": "runs/2026-10-27/run.json",
+      "technical_validation": "runs/2026-10-27/procedural/gpt-6.1-terra/validation.json",
+      "existing_web_glb": true
+    }
   ]
 }

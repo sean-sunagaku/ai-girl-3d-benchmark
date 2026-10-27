@@ -1,0 +1,134 @@
+{
+  "blender_version": "5.1.1",
+  "blender_build_hash": "b70da489d7f4",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "samples": 32,
+  "denoising": true,
+  "threads": 3,
+  "beauty_camera": "Beauty camera",
+  "important_objects": [
+    "Face and neck | sculpted CC0 topology",
+    "Neck | tapered anatomical bridge",
+    "Right eye | sclera",
+    "Right eye | iris and pupil",
+    "R eye | clear corneal shell",
+    "R upper | sculpted lid",
+    "R lower | sculpted lid",
+    "R | upper lid edge",
+    "R | lower lid edge",
+    "R | upper lashes",
+    "Left eye | sclera",
+    "Left eye | iris and pupil",
+    "L eye | clear corneal shell",
+    "L upper | sculpted lid",
+    "L lower | sculpted lid",
+    "L | upper lid edge",
+    "L | lower lid edge",
+    "L | upper lashes",
+    "Nose | nostril creases",
+    "Mouth | gentle closed smile crease",
+    "R | eyebrow hairs",
+    "L | eyebrow hairs",
+    "Hair | scalp cap",
+    "Hair | flowing back and shoulder underlayer",
+    "Hair | long strands 00",
+    "Hair | long strands 01",
+    "Hair | long strands 02",
+    "Hair | long strands 03",
+    "Hair | long strands 04",
+    "Hair | front scalp fibres 00",
+    "Hair | front scalp fibres 01",
+    "Hair | front scalp fibres 02",
+    "Hair | wispy fringe 01",
+    "Hair | wispy fringe 02",
+    "Hair | wispy fringe 03",
+    "Hair | left swept volume",
+    "Hair | swept fibres 00",
+    "Hair | swept fibres 01",
+    "Hair | swept fibres 02",
+    "Sweater | shaped body",
+    "Sweater | ribbed crew neck",
+    "Right sleeve | reaching forward",
+    "Left sleeve | reaching forward"
+  ],
+  "character_bounds_meters": {
+    "min": [
+      -0.357078,
+      -0.518019,
+      0.963527
+    ],
+    "max": [
+      0.356761,
+      0.143944,
+      1.686925
+    ]
+  },
+  "character_geometry": {
+    "base_mesh_vertices": 21944,
+    "base_mesh_faces": 21068,
+    "curve_splines": 4285,
+    "curve_control_points": 83185,
+    "evaluated_vertices": 688685,
+    "evaluated_faces": 661016
+  },
+  "packed_images": [
+    {
+      "name": "Generated knit relief 512",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    }
+  ],
+  "generated_texture_descriptions": [
+    "512 x 512 original repeatable procedural knitted yarn relief packed in the blend; used for sweater colour and bump",
+    "procedural noise bump for skin micro-roughness and hair volume; no photographic character texture"
+  ],
+  "renders": [
+    {
+      "file": "renders/beauty.png",
+      "dimensions": [
+        960,
+        1040
+      ]
+    },
+    {
+      "file": "renders/front.png",
+      "dimensions": [
+        768,
+        768
+      ]
+    },
+    {
+      "file": "renders/three-quarter.png",
+      "dimensions": [
+        768,
+        768
+      ]
+    },
+    {
+      "file": "renders/side.png",
+      "dimensions": [
+        768,
+        768
+      ]
+    },
+    {
+      "file": "renders/back.png",
+      "dimensions": [
+        768,
+        768
+      ]
+    }
+  ],
+  "remaining_limitations": [
+    "The face, expression, skin, lashes and eye surfaces are procedural approximations and remain visibly stylized; a close photorealistic likeness was not achieved.",
+    "Hair has thousands of editable strands but its broad underlying locks are simplified and straighter than the photograph; local overlap and styling artifacts remain.",
+    "The ears, neck, profile, back and hidden clothing are inferred from the supplied base and a single front photograph.",
+    "Sweater folds and knit are procedural rather than a cloth simulation; the forward sleeves terminate in covered caps with no hands.",
+    "The cafe is a deliberately simplified 3D suggestion. No identity, hair dynamics, production rig, or unseen lower body is reconstructed.",
+    "The cornea is an approximate curved transparent/glossy shell rather than a volumetric refractive anatomical model."
+  ]
+}
