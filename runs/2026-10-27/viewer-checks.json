@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "model_keys_match": true,
+    "stage_keys_match": true,
+    "view_keys_match": true,
+    "js_id_selectors_exist": true,
+    "camera_controls_present": true,
+    "vendor_present": true,
+    "kimi_original_record_preserved": true,
+    "gpt-6.1-terra_glb_container_valid": true,
+    "kimi-k3.1-pro_glb_container_valid": true,
+    "all_artifact_links_resolve": true,
+    "artifact_links_checked": 20,
+    "all_static_checks_passed": true
+  },
+  "local_server": "started_on_loopback_then_stopped",
+  "browser_ui_check": "blocked_by_browser_url_policy",
+  "runtime_orbit_zoom_and_mobile_layout_verified": false,
+  "note": "No alternate browser or raw CDP access was attempted after the policy rejection.",
+  "logic_simulation": {
+    "terra_default_selection": true,
+    "terra_back_png_selection": true,
+    "kimi_model_switch": true,
+    "kimi_front_png_selection": true,
+    "method": "Node.js DOM stub, not a real browser"
+  }
+}

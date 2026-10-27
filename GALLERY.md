@@ -1,10 +1,18 @@
-# 4モデルの3D制作結果
+# 2026-10-14の4モデルと追加実行の3D制作結果
 
 [READMEへ戻る](README.md) · [Blenderシーン一式](https://github.com/sean-sunagaku/ai-girl-3d-benchmark/releases/tag/as-published-2026-10-15)
 
 元の写真と各モデルの出力を、そのまま掲載しています。画像をクリックすると原寸で開けます。外見の採点・順位付けは行いません。
 
-2026-10-25の追加実行：[Kimi K3.1 Proの結果](runs/2026-10-25/README.md) · [HTMLビューアー](viewer/index.html)。以下は2026-10-14の4モデルの公開済み記録です。
+2026-10-27の追加実行：[GPT-6.1 Terraの結果](runs/2026-10-27/README.md)。
+2026-10-25の追加実行：[Kimi K3.1 Proの結果](runs/2026-10-25/README.md)。
+[HTMLビューアー](viewer/index.html)では両モデルを切り替えて、3Dと5方向の画像を確認できます。
+
+| GPT-6.1 Terra · 初回 | Kimi K3.1 Pro · 初回 |
+| --- | --- |
+| [![Terraの完成カット](runs/2026-10-27/procedural/gpt-6.1-terra/renders/beauty.png)](runs/2026-10-27/README.md) | [![Kimiの完成カット](runs/2026-10-25/procedural/kimi-k3.1-pro/renders/beauty.png)](runs/2026-10-25/README.md) |
+
+以下は2026-10-14の4モデルの公開済み記録です。
 
 ## 元の参照写真
 

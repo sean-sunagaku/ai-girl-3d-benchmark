@@ -1,24 +1,57 @@
 {
-  "model": "Kimi K3.1 Pro",
-  "model_id": "kimi-k3.1-pro",
-  "stages": {
-    "procedural": {
-      "glb": "../runs/2026-10-25/procedural/kimi-k3.1-pro/character.glb",
-      "blend": "../runs/2026-10-25/procedural/kimi-k3.1-pro/character.blend",
-      "code": "../runs/2026-10-25/procedural/kimi-k3.1-pro/build.py",
-      "readme": "../runs/2026-10-25/procedural/kimi-k3.1-pro/README.md",
-      "validation": "../runs/2026-10-25/procedural/kimi-k3.1-pro/validation.json",
-      "renders": {
-        "beauty": "../runs/2026-10-25/procedural/kimi-k3.1-pro/renders/beauty.png",
-        "front": "../runs/2026-10-25/procedural/kimi-k3.1-pro/renders/front.png",
-        "three-quarter": "../runs/2026-10-25/procedural/kimi-k3.1-pro/renders/three-quarter.png",
-        "side": "../runs/2026-10-25/procedural/kimi-k3.1-pro/renders/side.png",
-        "back": "../runs/2026-10-25/procedural/kimi-k3.1-pro/renders/back.png"
+  "default_model": "gpt-6.1-terra",
+  "models": {
+    "gpt-6.1-terra": {
+      "model": "GPT-6.1 Terra",
+      "model_id": "gpt-6.1-terra",
+      "run_date": "2026.10.27",
+      "harness": "Codex CLI 0.164.0（対話版）",
+      "stages": {
+        "procedural": {
+          "glb": "../runs/2026-10-27/procedural/gpt-6.1-terra/character.glb",
+          "blend": "../runs/2026-10-27/procedural/gpt-6.1-terra/character.blend",
+          "code": "../runs/2026-10-27/procedural/gpt-6.1-terra/build.py",
+          "readme": "../runs/2026-10-27/procedural/gpt-6.1-terra/README.md",
+          "validation": "../runs/2026-10-27/procedural/gpt-6.1-terra/validation.json",
+          "renders": {
+            "beauty": "../runs/2026-10-27/procedural/gpt-6.1-terra/renders/beauty.png",
+            "front": "../runs/2026-10-27/procedural/gpt-6.1-terra/renders/front.png",
+            "three-quarter": "../runs/2026-10-27/procedural/gpt-6.1-terra/renders/three-quarter.png",
+            "side": "../runs/2026-10-27/procedural/gpt-6.1-terra/renders/side.png",
+            "back": "../runs/2026-10-27/procedural/gpt-6.1-terra/renders/back.png"
+          },
+          "camera_orbit": "0deg 80deg 80%"
+        }
       },
-      "camera_orbit": "0deg 80deg 80%"
+      "run_record": "../runs/2026-10-27/run.json",
+      "pending_note": "写真テクスチャ許可版は今回の実行対象外です。",
+      "cost_note": "料金・トークン利用量は測定していません。"
+    },
+    "kimi-k3.1-pro": {
+      "model": "Kimi K3.1 Pro",
+      "model_id": "kimi-k3.1-pro",
+      "stages": {
+        "procedural": {
+          "glb": "../runs/2026-10-25/procedural/kimi-k3.1-pro/character.glb",
+          "blend": "../runs/2026-10-25/procedural/kimi-k3.1-pro/character.blend",
+          "code": "../runs/2026-10-25/procedural/kimi-k3.1-pro/build.py",
+          "readme": "../runs/2026-10-25/procedural/kimi-k3.1-pro/README.md",
+          "validation": "../runs/2026-10-25/procedural/kimi-k3.1-pro/validation.json",
+          "renders": {
+            "beauty": "../runs/2026-10-25/procedural/kimi-k3.1-pro/renders/beauty.png",
+            "front": "../runs/2026-10-25/procedural/kimi-k3.1-pro/renders/front.png",
+            "three-quarter": "../runs/2026-10-25/procedural/kimi-k3.1-pro/renders/three-quarter.png",
+            "side": "../runs/2026-10-25/procedural/kimi-k3.1-pro/renders/side.png",
+            "back": "../runs/2026-10-25/procedural/kimi-k3.1-pro/renders/back.png"
+          },
+          "camera_orbit": "0deg 80deg 80%"
+        }
+      },
+      "run_record": "../runs/2026-10-25/run.json",
+      "pending_note": "写真テクスチャ許可版は、Kimi公式APIの日次トークン上限に達したため未実行です。",
+      "cost_note": "追加購入なし。今回のAPI利用上限は、これまでの実行分を含めて$5。",
+      "run_date": "2026.10.25",
+      "harness": "OpenCode → Kimi公式API"
     }
-  },
-  "run_record": "../runs/2026-10-25/run.json",
-  "pending_note": "写真テクスチャ許可版は、Kimi公式APIの日次トークン上限に達したため未実行です。",
-  "cost_note": "追加購入なし。今回のAPI利用上限は、これまでの実行分を含めて$5。"
+  }
 }
