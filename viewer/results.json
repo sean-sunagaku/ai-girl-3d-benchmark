@@ -1,6 +1,47 @@
 {
-  "default_model": "gpt-6.1-terra",
+  "default_model": "claude-fable-5.2",
   "models": {
+    "claude-fable-5.2": {
+      "model": "Claude Fable 5.2",
+      "model_id": "claude-fable-5-2",
+      "run_date": "2026.11.10",
+      "harness": "Claude Code（デスクトップ版）",
+      "stages": {
+        "procedural": {
+          "glb": "../runs/2026-11-10/procedural/fable-5.2/character.glb",
+          "blend": "../runs/2026-11-10/procedural/fable-5.2/character.blend",
+          "code": "../runs/2026-11-10/procedural/fable-5.2/build.py",
+          "readme": "../runs/2026-11-10/procedural/fable-5.2/README.md",
+          "validation": "../runs/2026-11-10/procedural/fable-5.2/validation.json",
+          "renders": {
+            "beauty": "../runs/2026-11-10/procedural/fable-5.2/renders/beauty.png",
+            "front": "../runs/2026-11-10/procedural/fable-5.2/renders/front.png",
+            "three-quarter": "../runs/2026-11-10/procedural/fable-5.2/renders/three-quarter.png",
+            "side": "../runs/2026-11-10/procedural/fable-5.2/renders/side.png",
+            "back": "../runs/2026-11-10/procedural/fable-5.2/renders/back.png"
+          },
+          "camera_orbit": "0deg 80deg 80%"
+        },
+        "photo-textured": {
+          "glb": "../runs/2026-11-10/photo-textured/fable-5.2/character.glb",
+          "blend": "../runs/2026-11-10/photo-textured/fable-5.2/character.blend",
+          "code": "../runs/2026-11-10/photo-textured/fable-5.2/build.py",
+          "readme": "../runs/2026-11-10/photo-textured/fable-5.2/README.md",
+          "validation": "../runs/2026-11-10/photo-textured/fable-5.2/validation.json",
+          "renders": {
+            "beauty": "../runs/2026-11-10/photo-textured/fable-5.2/renders/beauty.png",
+            "front": "../runs/2026-11-10/photo-textured/fable-5.2/renders/front.png",
+            "three-quarter": "../runs/2026-11-10/photo-textured/fable-5.2/renders/three-quarter.png",
+            "side": "../runs/2026-11-10/photo-textured/fable-5.2/renders/side.png",
+            "back": "../runs/2026-11-10/photo-textured/fable-5.2/renders/back.png"
+          },
+          "camera_orbit": "0deg 80deg 80%"
+        }
+      },
+      "run_record": "../runs/2026-11-10/run.json",
+      "pending_note": "初回・写真テクスチャ許可版の2段階とも実行済みです。コーディネーターと参加モデルは同一セッションです（実行記録を参照）。",
+      "cost_note": "料金・トークン利用量は測定していません。"
+    },
     "gpt-6.1-terra": {
       "model": "GPT-6.1 Terra",
       "model_id": "gpt-6.1-terra",

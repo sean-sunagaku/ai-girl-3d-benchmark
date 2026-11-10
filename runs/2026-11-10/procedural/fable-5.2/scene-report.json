@@ -1,0 +1,362 @@
+{
+  "entrant": "Claude Fable 5.2 (claude-fable-5-2)",
+  "stage": "procedural (no photographic character textures)",
+  "blender_version": "5.1.1",
+  "blender_build_hash": "b70da489d7f4",
+  "render": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "threads_mode": "FIXED",
+    "threads": 3,
+    "samples": 32,
+    "denoising": true,
+    "denoiser": "OPENIMAGEDENOISE",
+    "view_transform": "AgX",
+    "look": "AgX - Punchy",
+    "gpu_used": false
+  },
+  "scene_file": "character.blend",
+  "active_camera": "Cam_Beauty",
+  "cameras": [
+    {
+      "name": "Cam_Beauty",
+      "type": "PERSP",
+      "lens_mm": 15.925,
+      "ortho_scale": null,
+      "dof": true,
+      "fstop": 2.6
+    },
+    {
+      "name": "Cam_diagnostic_front",
+      "type": "ORTHO",
+      "lens_mm": 50.0,
+      "ortho_scale": 0.893,
+      "dof": false,
+      "fstop": null
+    },
+    {
+      "name": "Cam_diagnostic_three-quarter",
+      "type": "ORTHO",
+      "lens_mm": 50.0,
+      "ortho_scale": 0.893,
+      "dof": false,
+      "fstop": null
+    },
+    {
+      "name": "Cam_diagnostic_side",
+      "type": "ORTHO",
+      "lens_mm": 50.0,
+      "ortho_scale": 0.893,
+      "dof": false,
+      "fstop": null
+    },
+    {
+      "name": "Cam_diagnostic_back",
+      "type": "ORTHO",
+      "lens_mm": 50.0,
+      "ortho_scale": 0.893,
+      "dof": false,
+      "fstop": null
+    }
+  ],
+  "collections": [
+    "Body",
+    "Cafe_Set",
+    "Cameras",
+    "Character",
+    "Eyes_Brows_Lashes",
+    "Hair",
+    "LightLink_No_Fill_On_Corneas",
+    "Lights_Diagnostic_Studio",
+    "Lights_Portrait",
+    "Sweater"
+  ],
+  "character_objects": [
+    {
+      "name": "Body",
+      "type": "MESH",
+      "collection": "Body",
+      "materials": [
+        "Skin"
+      ],
+      "base_vertices": 9517,
+      "evaluated_vertices": 151993,
+      "evaluated_faces": 151904,
+      "cycles_ray_visible": true
+    },
+    {
+      "name": "Eye_L",
+      "type": "MESH",
+      "collection": "Eyes_Brows_Lashes",
+      "materials": [
+        "Eye_Iris",
+        "Eye_Sclera"
+      ],
+      "base_vertices": 3458,
+      "evaluated_vertices": 3458,
+      "evaluated_faces": 3528,
+      "cycles_ray_visible": true
+    },
+    {
+      "name": "Eye_Cornea_L",
+      "type": "MESH",
+      "collection": "Eyes_Brows_Lashes",
+      "materials": [
+        "Eye_Cornea"
+      ],
+      "base_vertices": 2809,
+      "evaluated_vertices": 2809,
+      "evaluated_faces": 2808,
+      "cycles_ray_visible": true
+    },
+    {
+      "name": "Eye_Caruncle_L",
+      "type": "MESH",
+      "collection": "Eyes_Brows_Lashes",
+      "materials": [
+        "Eye_Caruncle"
+      ],
+      "base_vertices": 114,
+      "evaluated_vertices": 114,
+      "evaluated_faces": 128,
+      "cycles_ray_visible": true
+    },
+    {
+      "name": "Eye_R",
+      "type": "MESH",
+      "collection": "Eyes_Brows_Lashes",
+      "materials": [
+        "Eye_Iris",
+        "Eye_Sclera"
+      ],
+      "base_vertices": 3458,
+      "evaluated_vertices": 3458,
+      "evaluated_faces": 3528,
+      "cycles_ray_visible": true
+    },
+    {
+      "name": "Eye_Cornea_R",
+      "type": "MESH",
+      "collection": "Eyes_Brows_Lashes",
+      "materials": [
+        "Eye_Cornea"
+      ],
+      "base_vertices": 2809,
+      "evaluated_vertices": 2809,
+      "evaluated_faces": 2808,
+      "cycles_ray_visible": true
+    },
+    {
+      "name": "Eye_Caruncle_R",
+      "type": "MESH",
+      "collection": "Eyes_Brows_Lashes",
+      "materials": [
+        "Eye_Caruncle"
+      ],
+      "base_vertices": 114,
+      "evaluated_vertices": 114,
+      "evaluated_faces": 128,
+      "cycles_ray_visible": true
+    },
+    {
+      "name": "Eyelashes",
+      "type": "CURVES",
+      "collection": "Eyes_Brows_Lashes",
+      "materials": [
+        "Hair_Lashes"
+      ],
+      "authored_curves": 740,
+      "authored_points": 4440,
+      "evaluated_curves": 740,
+      "evaluated_curve_points": 4440
+    },
+    {
+      "name": "Eyebrows",
+      "type": "CURVES",
+      "collection": "Eyes_Brows_Lashes",
+      "materials": [
+        "Hair_Brows"
+      ],
+      "authored_curves": 840,
+      "authored_points": 4200,
+      "evaluated_curves": 840,
+      "evaluated_curve_points": 4200
+    },
+    {
+      "name": "Sweater",
+      "type": "MESH",
+      "collection": "Sweater",
+      "materials": [
+        "Knit_Stockinette",
+        "Knit_Rib"
+      ],
+      "base_vertices": 25390,
+      "evaluated_vertices": 101070,
+      "evaluated_faces": 100576,
+      "cycles_ray_visible": true
+    },
+    {
+      "name": "Sweater_Fuzz",
+      "type": "MESH",
+      "collection": "Sweater",
+      "materials": [
+        "Knit_Fuzz"
+      ],
+      "base_vertices": 0,
+      "evaluated_vertices": 0,
+      "evaluated_faces": 0,
+      "cycles_ray_visible": true,
+      "evaluated_curves": 260667,
+      "evaluated_curve_points": 1042668
+    },
+    {
+      "name": "Hair",
+      "type": "CURVES",
+      "collection": "Hair",
+      "materials": [
+        "Hair_Chestnut"
+      ],
+      "authored_curves": 10873,
+      "authored_points": 434920,
+      "evaluated_curves": 97857,
+      "evaluated_curve_points": 3914280
+    },
+    {
+      "name": "Hair_Export_Proxy",
+      "type": "MESH",
+      "collection": "Hair",
+      "materials": [
+        "Hair_Underlayer"
+      ],
+      "base_vertices": 130500,
+      "evaluated_vertices": 130500,
+      "evaluated_faces": 61625,
+      "cycles_ray_visible": false
+    }
+  ],
+  "character_bounds_m": {
+    "min": [
+      -0.3523,
+      -0.6496,
+      0.8801
+    ],
+    "max": [
+      0.3013,
+      0.1477,
+      1.6915
+    ],
+    "note": "world space; evaluated mesh vertices and authored curve points of every Character object"
+  },
+  "geometry": {
+    "character_base_mesh_vertices": 178169,
+    "character_evaluated_mesh_vertices_at_render_levels": 396325,
+    "native_curve_objects": [
+      "Eyelashes",
+      "Eyebrows",
+      "Sweater_Fuzz",
+      "Hair"
+    ],
+    "note": "hair, lashes, brows and knit fuzz are curves and are counted separately from mesh vertices"
+  },
+  "generated_images": [
+    {
+      "name": "Iris_Generated",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "Knit_Rib_Height_AO_Twist",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true,
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "Knit_Stockinette_Height_AO_Twist",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true,
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "Skin_Color_Generated",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "Skin_Data_Generated",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "colorspace": "Non-Color"
+    }
+  ],
+  "build": {
+    "script": "build.py",
+    "quick": false,
+    "skipped": [],
+    "seconds": 458.1,
+    "reopened_saved_file_before_rendering": true
+  },
+  "rendered_files": [
+    "renders/beauty.png",
+    "renders/front.png",
+    "renders/three-quarter.png",
+    "renders/side.png",
+    "renders/back.png"
+  ],
+  "details": {
+    "hair": {
+      "locks": 1675,
+      "authored_strands": 10873,
+      "children_per_strand": 9,
+      "points_per_strand": 40,
+      "rendered_strands": 97857,
+      "fringe_locks": 284
+    },
+    "pose": {
+      "lean": 3.0,
+      "torso_roll": 4.5,
+      "head_roll": -28.5,
+      "head_yaw": -6.0,
+      "head_pitch": -2.0,
+      "neck_share": 0.42,
+      "neck_roll_share": 0.82,
+      "r_clav_up": 7.0,
+      "l_clav_up": 3.0,
+      "clav_fwd": 10.0
+    },
+    "camera": {
+      "distance_to_eyes_m": 0.3505,
+      "vertical_fov_deg": 74.0
+    }
+  },
+  "notes": {
+    "reference_use": "The photograph was only looked at and measured (2D landmark positions, coarse region colour averages). No photo pixels are used in any texture, material, background or render.",
+    "inferred": "Side and back of the head, the ears, the hair behind the shoulders, the back and lower part of the sweater, the hands and everything outside the photo frame are inferred.",
+    "limitations": [
+      "The face is a smooth analytic re-shaping of the CC0 MakeHuman base: proportions follow the reference, but it reads as a stylised CG face, not a likeness.",
+      "Skin detail is painted procedurally at 2K; there are no real pores, fine wrinkles or asymmetries beyond a slightly lop-sided smile.",
+      "The fringe and long hair are combed/settled analytically (no physical simulation); the strand count is far below real hair and ends look thin in places.",
+      "The sweater is one structured raglan mesh posed with skin weights and settled against the body; stitches are a bump/colour tile, not yarn geometry, and folds are simplified.",
+      "Hands come from the same CC0 base and are only loosely posed; they are outside the beauty frame.",
+      "The cafe is a minimal set of boxes, cylinders and leaf cards meant to be seen out of focus.",
+      "Hair_Export_Proxy is a ribbon mesh that is invisible to every Cycles ray; it exists only for mesh-only exchange formats.",
+      "No production rig: the pose is baked into the meshes."
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 # AI Girl 3D Benchmark
 
-参照写真1枚から、2026-10-14の4モデルと、後日追加したKimi K3.1 Pro・GPT-6.1 Terraが実際のBlenderで制作した人物の上半身モデルを公開します。元の写真、渡した指示、生成コード、レンダー画像、編集可能なBlenderシーンを、誰でも見て使える形で収録しています。
+参照写真1枚から、2026-10-14の4モデルと、後日追加したKimi K3.1 Pro・GPT-6.1 Terra・Claude Fable 5.2が実際のBlenderで制作した人物の上半身モデルを公開します。元の写真、渡した指示、生成コード、レンダー画像、編集可能なBlenderシーンを、誰でも見て使える形で収録しています。
 
 **外見の採点・順位付けは行いません。元写真と成果物を見比べてください。**
 
@@ -10,6 +10,16 @@
 - [同じ入力で制作する・既存のモデルを開く](docs/REPRODUCE.md)
 - [実験条件と収録範囲](docs/PROTOCOL.md)
 - [AI向けの制作・閲覧手順スキル](skills/blender-character-benchmark/SKILL.md)
+
+## Claude Fable 5.2 の追加実行（2026-11-10）
+
+同じ元写真・共通ベース・共通プロンプトを使ったFable 5.2の結果を収録しました。初回（写真テクスチャ禁止）と
+追加版（写真テクスチャ許可）の2段階とも実行しています。
+[制作記録と各5方向の画像](runs/2026-11-10/README.md) から、編集可能なBlenderシーン・閲覧用GLB・制作コード・
+検査結果を開けます。
+**今回はコーディネーターと参加モデルが同一のClaude Codeセッションです。** 制作前にコーディネーター側の文書
+（追加版の課題文と検査スクリプトを含む）を読んでいた点など、他の実行との違いは
+[ハーネス記録](runs/2026-11-10/harness/README.md) に明記しています。他の参加モデルのコード・画像は見ていません。
 
 ## GPT-6.1 Terra の追加実行（2026-10-27）
 
@@ -27,7 +37,7 @@
 [編集可能なBlenderシーン](runs/2026-10-25/procedural/kimi-k3.1-pro/character.blend)、
 [閲覧用GLB](runs/2026-10-25/procedural/kimi-k3.1-pro/character.glb) を取得できます。
 
-[HTMLビューアー](viewer/index.html)ではTerraとKimiを切り替え、元写真、回転・拡大できるGLB、各5方向のPNGを表示します。
+[HTMLビューアー](viewer/index.html)ではFable 5.2・Terra・Kimiを切り替え、元写真、回転・拡大できるGLB、各5方向のPNGを表示します。
 リポジトリのルートで `python3 -m http.server 8765 --bind localhost` を実行し、
 `http://localhost:8765/viewer/` を開いてください。手順は [viewer/README.md](viewer/README.md) にあります。
 
@@ -64,7 +74,7 @@ OpenCodeでの継続指示、コード回収、Blender API互換修正、コー�
 
 ## 入手できるもの
 
-通常のGitには、元写真、共通ベースメッシュ、入力情報、プロンプト、2026-10-14の8件のコードと付属素材、元のPNGに加え、KimiとTerraのシーン・GLB・検査記録も収録しています。
+通常のGitには、元写真、共通ベースメッシュ、入力情報、プロンプト、2026-10-14の8件のコードと付属素材、元のPNGに加え、Kimi・Terra・Fable 5.2のシーン・GLB・検査記録も収録しています。
 
 `.blend` と既存のWeb用 `.glb` は、**このリポジトリのRelease**に置いています。`blender-scenes.zip` をリポジトリのルートに展開すると、8件の `character.blend` と追加版の `source-character.blend` が、それぞれのコードと同じディレクトリに揃います。新しくGit LFSを設定する必要はありません。
 
