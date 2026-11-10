@@ -74,14 +74,28 @@ if args.glb:
     if not selected:
         raise ValueError('No visible character geometry selected')
     actual_points=[]
+    native_curves=[]
     for obj in selected:
-        if obj.type in ('MESH','CURVE','CURVES','SURFACE','FONT'):
+        if obj.type=='CURVES':
+            # Native hair curves have no mesh form (to_mesh raises). Use their authored control points for the
+            # bounds and keep them out of the mesh-only GLB instead of converting millions of points to edges.
+            native_curves.append(obj.name)
+            data=obj.data
+            flat=[0.0]*(len(data.points)*3)
+            data.position_data.foreach_get('vector',flat)
+            world=obj.matrix_world
+            step=max(1,len(data.points)//200000)
+            actual_points.extend(world@Vector(flat[i*3:i*3+3]) for i in range(0,len(data.points),step))
+            continue
+        if obj.type in ('MESH','CURVE','SURFACE','FONT'):
             evaluated=obj.evaluated_get(depsgraph)
             mesh=evaluated.to_mesh()
             if mesh:
                 actual_points.extend(evaluated.matrix_world@v.co for v in mesh.vertices)
                 evaluated.to_mesh_clear()
-    report['actual_evaluated_character_bounds']={'min':[min(v[i] for v in actual_points) for i in range(3)],'max':[max(v[i] for v in actual_points) for i in range(3)],'method':'World coordinates of evaluated mesh vertices, including converted curve geometry.'}
+    selected={o for o in selected if o.type!='CURVES'}
+    report['actual_evaluated_character_bounds']={'min':[min(v[i] for v in actual_points) for i in range(3)],'max':[max(v[i] for v in actual_points) for i in range(3)],'method':'World coordinates of evaluated mesh vertices, including converted curve geometry; native Curves objects contribute their authored control points.'}
+    report['native_curves_not_exported']={'objects':sorted(native_curves),'reason':'Native Curves (hair) objects have no faces; glTF mesh export cannot carry them. They remain in the .blend and in the Cycles renders.'}
     projected=[]
     for cam in scene.objects:
         if cam.type!='CAMERA' or 'diagnostic' not in cam.name:
@@ -99,7 +113,7 @@ if args.glb:
     names=[o.name for o in selected]
     converted=[]
     for obj in list(selected):
-        if obj.type in ('CURVE','CURVES','SURFACE','FONT'):
+        if obj.type in ('CURVE','SURFACE','FONT'):
             bpy.ops.object.select_all(action='DESELECT')
             obj.hide_set(False)
             obj.select_set(True)

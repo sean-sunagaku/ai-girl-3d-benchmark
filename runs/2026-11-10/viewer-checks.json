@@ -1,0 +1,198 @@
+{
+  "checks": {
+    "model_keys_match": true,
+    "default_model_exists": true,
+    "stage_keys_match": true,
+    "view_keys_match": true,
+    "js_id_selectors_exist": true,
+    "camera_controls_present": true,
+    "vendor_present": true,
+    "kimi_and_terra_records_unchanged": true,
+    "claude-fable-5.2_procedural_glb_container_valid": true,
+    "claude-fable-5.2_photo-textured_glb_container_valid": true,
+    "gpt-6.1-terra_procedural_glb_container_valid": true,
+    "kimi-k3.1-pro_procedural_glb_container_valid": true,
+    "all_artifact_links_resolve": true,
+    "artifact_links_checked": 54,
+    "all_static_checks_passed": true
+  },
+  "local_server": "started_on_loopback_then_stopped",
+  "browser_ui_check": "passed_in_real_browser",
+  "runtime_orbit_zoom_and_mobile_layout_verified": true,
+  "browser": {
+    "kind": "Chromium-based browser pane built into the Claude desktop app",
+    "page": "http://localhost:8765/viewer/ served by `python3 -m http.server 8765 --bind localhost` from the repository root",
+    "pointer_input": "real drag, wheel and click events sent by the browser tool; state read back from the page",
+    "other_entrants": "While GPT-6.1 Terra or Kimi K3.1 Pro was selected, only load status, links and layout sizes were read by script. No screenshot of their models was taken."
+  },
+  "desktop_1440x1000": {
+    "default_model": "claude-fable-5.2",
+    "no_horizontal_overflow": true,
+    "fable_procedural": {
+      "glb_loaded": true,
+      "model_dimensions_m": [
+        0.651,
+        0.811,
+        0.795
+      ],
+      "render_buttons_natural_size_px": {
+        "beauty": [
+          960,
+          1040
+        ],
+        "front": [
+          768,
+          768
+        ],
+        "three-quarter": [
+          768,
+          768
+        ],
+        "side": [
+          768,
+          768
+        ],
+        "back": [
+          768,
+          768
+        ]
+      },
+      "returns_to_3d_view": true,
+      "drag_changes_orbit_theta_rad": [
+        0,
+        -3.176
+      ],
+      "wheel_changes_orbit_radius_m": [
+        1.652,
+        6.505
+      ],
+      "reset_button_restores_theta_and_radius": [
+        0,
+        1.652
+      ]
+    },
+    "fable_photo_textured": {
+      "stage_selector_enabled": true,
+      "glb_load_event": "load",
+      "model_dimensions_m": [
+        0.651,
+        0.811,
+        0.795
+      ],
+      "render_buttons_natural_size_px": {
+        "beauty": [
+          960,
+          1040
+        ],
+        "front": [
+          768,
+          768
+        ],
+        "three-quarter": [
+          768,
+          768
+        ],
+        "side": [
+          768,
+          768
+        ],
+        "back": [
+          768,
+          768
+        ]
+      },
+      "returns_to_3d_view": true,
+      "download_and_record_links_switch_to_this_stage": true,
+      "drag_changes_orbit_theta_rad": [
+        0,
+        -3.496
+      ],
+      "wheel_changes_orbit_radius_m": [
+        1.652,
+        6.505
+      ],
+      "wheel_did_not_scroll_the_page": true,
+      "reset_button_restores_theta_and_radius": [
+        0,
+        1.652
+      ]
+    },
+    "gpt-6.1-terra": {
+      "glb_load_event": "load",
+      "url_query_updated": true,
+      "second_stage_selector_disabled": true
+    },
+    "kimi-k3.1-pro": {
+      "glb_load_event": "load",
+      "url_query_updated": true,
+      "second_stage_selector_disabled": true
+    },
+    "switching_back_to_fable_returns_to_first_stage_and_loads": true,
+    "missing_glb": {
+      "message_shown": "3Dを読み込めませんでした。下の画像からレンダーを確認できます。",
+      "render_images_still_selectable": true,
+      "recovers_when_a_valid_stage_is_selected": true
+    }
+  },
+  "links_from_running_page": {
+    "method": "HEAD request from the page for every results.json artifact, page link, image, stylesheet and script on the same origin",
+    "checked": 54,
+    "failures": 0,
+    "glb_content_lengths": {
+      "claude-fable-5.2 procedural": 17943100,
+      "claude-fable-5.2 photo-textured": 18017380,
+      "gpt-6.1-terra procedural": 35916368,
+      "kimi-k3.1-pro procedural": 25890128
+    }
+  },
+  "mobile_375x812": {
+    "no_horizontal_overflow": true,
+    "columns_stacked": true,
+    "model_stage_view_buttons_and_download_links_inside_viewport": true,
+    "fable_procedural_glb_loaded": true,
+    "fable_photo_textured_glb_loaded": true,
+    "fable_photo_textured_render_buttons_natural_size_px": {
+      "beauty": [
+        960,
+        1040
+      ],
+      "front": [
+        768,
+        768
+      ],
+      "three-quarter": [
+        768,
+        768
+      ],
+      "side": [
+        768,
+        768
+      ],
+      "back": [
+        768,
+        768
+      ]
+    },
+    "viewer_size_px": [
+      335,
+      430
+    ]
+  },
+  "intermediate_widths": {
+    "widths_px": [
+      375,
+      768,
+      934,
+      1024,
+      1440
+    ],
+    "no_horizontal_overflow_for_all_three_models": true,
+    "harness_label_on_one_line_for_all_three_models": true,
+    "fix_made": "At 934 px the Fable harness label wrapped and split the \"実行方法\" caption. The label in results.json was shortened to \"Claude Code（デスクトップ版）\"; viewer.css and viewer.js are unchanged."
+  },
+  "notes": [
+    "The viewer shows GLB exports. Fable 5.2 hair appears as its ribbon proxy mesh; rendered strands, lashes, brows and knit fuzz are only in the .blend and the PNGs.",
+    "Load times were not measured. With the browser pane hidden the page ran as a background page and the mobile-width load of the second stage took over 30 seconds; with the pane visible the same load finished within a few seconds.",
+    "The first-stage pointer checks and the second-stage pointer checks were made at different times on the same day; the second-stage GLB was regenerated in between and came out byte-identical."
+  ]
+}

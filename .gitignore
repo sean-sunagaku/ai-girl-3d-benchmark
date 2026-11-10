@@ -9,6 +9,10 @@ __pycache__/
 !runs/2026-10-25/procedural/kimi-k3.1-pro/character.glb
 !runs/2026-10-27/procedural/gpt-6.1-terra/character.blend
 !runs/2026-10-27/procedural/gpt-6.1-terra/character.glb
+!runs/2026-11-10/procedural/fable-5.2/character.blend
+!runs/2026-11-10/procedural/fable-5.2/character.glb
+!runs/2026-11-10/photo-textured/fable-5.2/character.blend
+!runs/2026-11-10/photo-textured/fable-5.2/character.glb
 .env
 .env.*
 .work/

@@ -1,0 +1,200 @@
+{
+  "date_jst": "2026-11-10",
+  "status": "procedural_and_photo_textured_completed",
+  "source_commit": "bc7b8638ee617e7ee93aa40208a27ad8f2dd7141",
+  "requested_model": "Claude Fable 5.2",
+  "model_id": "claude-fable-5-2",
+  "harness": {
+    "name": "Claude Code desktop app (Code tab, Claude Agent SDK)",
+    "version": "2.1.321",
+    "entrypoint": "claude-desktop",
+    "cli_version_on_same_machine": "2.1.319",
+    "reasoning_effort": "max",
+    "session_id": "15d5dc02-80d2-4cfd-8d37-390d2f5a1f81",
+    "model_and_effort_same_for_every_response": true,
+    "coordinator_and_entrant_are_the_same_session": true,
+    "workspace_prepared_with": "scripts/prepare_case.py",
+    "task_prompt_files_match_canonical_bytes": true,
+    "task_prompt_delivered_through_shell_paste": false,
+    "user_messages_before_pull_request": 2,
+    "user_messages_after_pull_request": 3,
+    "user_messages_after_pull_request_note": "Operational requests only: start the local viewer server, push, merge. Artifacts and validation records were not changed by them.",
+    "continuation_instructions_sent": 1,
+    "continuation_text": "続き頼む！",
+    "continuation_cause": "A usage-limit notice stopped the session at 14:22 JST while the photo-textured final build was running; the entrant code had been final since 14:18 JST.",
+    "automatic_progress_reminders_from_app": true,
+    "context_compactions_before_this_record_was_written": 1,
+    "context_compaction_jst": "14:36",
+    "context_compaction_after_both_final_builds_and_entrant_readmes": true,
+    "record": "harness/README.md"
+  },
+  "dual_role_disclosures": {
+    "read_photo_textured_prompt_before_procedural_stage": true,
+    "knew_inspection_script_glb_export_and_viewer_before_procedural_stage": true,
+    "read_coordinator_side_records_of_earlier_additional_runs": true,
+    "read_other_entrants_code_readmes_renders_previews_reports_scenes_or_glbs": false,
+    "photo_projection_code_draft_started_during_procedural_final_build": true,
+    "photo_projection_code_draft_kept_outside_procedural_workspace_and_collection": true
+  },
+  "timeline_jst": {
+    "user_request_received": "11:33",
+    "procedural_workspace_prepared": "11:37",
+    "procedural_code_last_changed": "13:52",
+    "procedural_final_build": "13:53-14:01",
+    "procedural_final_build_seconds": 458,
+    "photo_projection_draft_started_outside_workspace": "13:57",
+    "photo_textured_workspace_prepared": "14:01",
+    "photo_textured_code_last_changed": "14:18",
+    "photo_textured_final_build": "14:18-14:26",
+    "photo_textured_final_build_seconds": 448,
+    "session_stopped_by_usage_limit_notice": "14:22",
+    "session_resumed_by_user_message": "14:24",
+    "note": "Other heavy processes were running on the same machine; durations are not comparable with other runs."
+  },
+  "stages": {
+    "procedural": {
+      "status": "complete",
+      "path": "procedural/fable-5.2"
+    },
+    "photo-textured": {
+      "status": "complete",
+      "path": "photo-textured/fable-5.2",
+      "previous_work": "procedural/fable-5.2",
+      "build_reads_previous_scene": false,
+      "source_character_blend_collected": false,
+      "source_character_blend_note": "Byte-identical to procedural/fable-5.2/character.blend and never read by build.py; kept out of the collection and out of the independent rebuild."
+    }
+  },
+  "generation": {
+    "external_image_or_3d_generation": false,
+    "additional_downloads": false,
+    "additional_agents": false,
+    "coordinator_design_or_material_changes": false,
+    "coordinator_compatibility_code_changes": false,
+    "shared_inspection_script_changed": true,
+    "shared_inspection_script_change": "scripts/inspect_scene.py: native Curves (hair) objects are measured by their control points, skipped for mesh conversion and listed under native_curves_not_exported instead of aborting the inspection. Earlier published results were not regenerated."
+  },
+  "verification": {
+    "input_manifest_checks": 7,
+    "input_manifest_all_match": true,
+    "validation_script": "harness/coordinator_validate.py",
+    "stages": {
+      "procedural": {
+        "workspace_input_and_prompt_all_match": true,
+        "independent_rebuild_from_published_code_and_inputs_only": true,
+        "independent_rebuild_exit_code": 0,
+        "independent_rebuild_seconds": 273.2,
+        "rebuilt_scene_and_scene_report_produced": true,
+        "render_dimensions_all_expected": true,
+        "rebuilt_five_pngs_pixel_data_identical_to_originals": true,
+        "rebuilt_five_pngs_file_bytes_identical_to_originals": false,
+        "source_blend_reopened": true,
+        "source_blend_unchanged": true,
+        "render_engine": "CYCLES",
+        "cycles_device": "CPU",
+        "threads": 3,
+        "samples": 32,
+        "denoising": true,
+        "active_camera": "Cam_Beauty",
+        "evaluated_mesh_vertices_at_viewport_level": 296581,
+        "all_images_at_most_2048_and_resolved": true,
+        "all_character_vertices_inside_all_four_diagnostic_frames": true,
+        "native_curves_not_exported_to_glb": [
+          "Eyebrows",
+          "Eyelashes",
+          "Hair"
+        ],
+        "glb_export_from_original_blend": true,
+        "glb_reimport_succeeded": true,
+        "glb_reimport_counts": {
+          "meshes": 9,
+          "vertices": 285693,
+          "materials": 8,
+          "images": 7
+        },
+        "independent_scene_report": "procedural/fable-5.2/validation.json"
+      },
+      "photo-textured": {
+        "workspace_input_and_prompt_all_match": true,
+        "independent_rebuild_from_published_code_and_inputs_only": true,
+        "independent_rebuild_exit_code": 0,
+        "independent_rebuild_seconds": 334.1,
+        "rebuilt_scene_and_scene_report_produced": true,
+        "render_dimensions_all_expected": true,
+        "rebuilt_five_pngs_pixel_data_identical_to_originals": true,
+        "rebuilt_five_pngs_file_bytes_identical_to_originals": false,
+        "source_blend_reopened": true,
+        "source_blend_unchanged": true,
+        "render_engine": "CYCLES",
+        "cycles_device": "CPU",
+        "threads": 3,
+        "samples": 32,
+        "denoising": true,
+        "active_camera": "Cam_Beauty",
+        "evaluated_mesh_vertices_at_viewport_level": 296581,
+        "all_images_at_most_2048_and_resolved": true,
+        "all_character_vertices_inside_all_four_diagnostic_frames": true,
+        "native_curves_not_exported_to_glb": [
+          "Eyebrows",
+          "Eyelashes",
+          "Hair"
+        ],
+        "glb_export_from_original_blend": true,
+        "glb_reimport_succeeded": true,
+        "glb_reimport_counts": {
+          "meshes": 9,
+          "vertices": 285693,
+          "materials": 8,
+          "images": 7
+        },
+        "independent_scene_report": "photo-textured/fable-5.2/validation.json"
+      }
+    },
+    "original_ten_pngs_opened_and_viewed_by_coordinator": true,
+    "appearance_scoring": false,
+    "viewer_checks": "viewer-checks.json",
+    "viewer_browser_ui_check": "passed_in_real_browser"
+  },
+  "artifacts": {
+    "stages": {
+      "procedural": {
+        "character_blend_bytes": 13522427,
+        "character_blend_sha256": "4da77ca46f09d4a5360ae14a356749e7fe3f75a43e89668a456016737ecf2071",
+        "character_glb_bytes": 17943100,
+        "character_glb_sha256": "5fed52d978c15a5b797a957285be2f20c3edf39ee00d47ec5e6ae0ffe48562cb",
+        "files_copied_from_workspace": 55,
+        "published_files_including_glb_and_validation": 57
+      },
+      "photo-textured": {
+        "character_blend_bytes": 13594085,
+        "character_blend_sha256": "3cd2cff615e67ca0cadd4df58ca8fc8bba2728fda4e4b4c4ae536061a4493e64",
+        "character_glb_bytes": 18017380,
+        "character_glb_sha256": "d237659a86b594c96dd6140e1862f567d8388b87ee62f430459199f69c596ec3",
+        "files_copied_from_workspace": 61,
+        "published_files_including_glb_and_validation": 63
+      }
+    },
+    "glb_stored_in_git": true,
+    "large_file_policy": "Each GLB is about 18 MB and each scene about 14 MB; all four are tracked in Git, following the Kimi and Terra precedent."
+  },
+  "privacy": {
+    "home_directory_found_in_blend_ui_data_during_production": true,
+    "removed_by_entrant_build_script_before_the_final_builds": true,
+    "blend_payloads_scanned_after_zstd_decompression": true,
+    "png_text_chunks_scanned": true,
+    "collected_files_scanned": {
+      "procedural": 56,
+      "photo-textured": 62
+    },
+    "personal_absolute_paths_or_secrets_remaining_in_collected_files": false,
+    "work_logs_blend_backups_and_caches_excluded": true
+  },
+  "publication": {
+    "branch": "fable-5.2-3d-girl",
+    "pull_request": 3,
+    "commit_push_and_pull_request": "By this session, as part of the original request.",
+    "merge": "Asked for by the repository owner in the same session after the pull request was open; carried out by this session with a merge commit.",
+    "deploy": false,
+    "force_push": false
+  }
+}

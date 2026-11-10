@@ -121,6 +121,26 @@
       "run_record": "runs/2026-10-27/run.json",
       "technical_validation": "runs/2026-10-27/procedural/gpt-6.1-terra/validation.json",
       "existing_web_glb": true
+    },
+    {
+      "id": "fable-5.2",
+      "date_jst": "2026-11-10",
+      "stage": "procedural",
+      "requested_model": "claude-fable-5-2",
+      "path": "runs/2026-11-10/procedural/fable-5.2",
+      "run_record": "runs/2026-11-10/run.json",
+      "technical_validation": "runs/2026-11-10/procedural/fable-5.2/validation.json",
+      "existing_web_glb": true
+    },
+    {
+      "id": "textured/fable-5.2",
+      "date_jst": "2026-11-10",
+      "stage": "photo-textured",
+      "requested_model": "claude-fable-5-2",
+      "path": "runs/2026-11-10/photo-textured/fable-5.2",
+      "run_record": "runs/2026-11-10/run.json",
+      "technical_validation": "runs/2026-11-10/photo-textured/fable-5.2/validation.json",
+      "existing_web_glb": true
     }
   ]
 }
