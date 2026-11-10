@@ -16,7 +16,9 @@
     "workspace_prepared_with": "scripts/prepare_case.py",
     "task_prompt_files_match_canonical_bytes": true,
     "task_prompt_delivered_through_shell_paste": false,
-    "user_messages_to_session": 2,
+    "user_messages_before_pull_request": 2,
+    "user_messages_after_pull_request": 3,
+    "user_messages_after_pull_request_note": "Operational requests only: start the local viewer server, push, merge. Artifacts and validation records were not changed by them.",
     "continuation_instructions_sent": 1,
     "continuation_text": "続き頼む！",
     "continuation_cause": "A usage-limit notice stopped the session at 14:22 JST while the photo-textured final build was running; the entrant code had been final since 14:18 JST.",
@@ -189,7 +191,10 @@
   },
   "publication": {
     "branch": "fable-5.2-3d-girl",
-    "planned_scope": "Commit, push and pull request by this session; merge and deploy are left to the repository owner.",
+    "pull_request": 3,
+    "commit_push_and_pull_request": "By this session, as part of the original request.",
+    "merge": "Asked for by the repository owner in the same session after the pull request was open; carried out by this session with a merge commit.",
+    "deploy": false,
     "force_push": false
   }
 }
