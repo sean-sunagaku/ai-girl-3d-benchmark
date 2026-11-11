@@ -1,0 +1,169 @@
+{
+  "blenderVersion": "5.1.1",
+  "renderEngine": "CYCLES",
+  "renderDevice": "CPU",
+  "samples": 32,
+  "denoiser": "OPENIMAGEDENOISE",
+  "threads": 3,
+  "importantObjects": {
+    "characterCollection": [
+      "Character_Head_Neck",
+      "Eye_Outer_L",
+      "Eye_Iris_L",
+      "Tear_Meniscus_L",
+      "Eye_Outer_R",
+      "Eye_Iris_R",
+      "Tear_Meniscus_R",
+      "Character_Eyebrows",
+      "Character_Eyelashes",
+      "Sweater_Torso",
+      "Sweater_Collar",
+      "Sweater_Sleeve_R",
+      "Sweater_Sleeve_L",
+      "Character_Hand_R",
+      "Character_Hand_L",
+      "Sweater_Wool_Fuzz",
+      "Hair_Volume_Core",
+      "Character_Hair_Bangs",
+      "Character_Hair_Cascade_Right",
+      "Character_Hair_Drape_Left",
+      "Character_Hair_Back",
+      "Character_Hair_Flyaways"
+    ],
+    "cafeCollection": [
+      "Cafe_Back_Wall",
+      "Cafe_Window_SunPanel",
+      "Cafe_Window_SidePanel",
+      "Cafe_Window_Mullion_V",
+      "Cafe_Window_Mullion_H",
+      "Cafe_Chair_Backrest",
+      "Cafe_Chair_Post_L",
+      "Cafe_Table_Foreground",
+      "Cafe_Table_Right",
+      "Cafe_Right_Chair_Back",
+      "Cafe_Flower_Vase",
+      "Cafe_Stem_0",
+      "... (113 total objects)"
+    ],
+    "lightingCollection": [
+      "Light_Window_Key",
+      "Light_Window_Rim",
+      "Light_Cafe_Front_Fill",
+      "Light_Table_Warm_Bounce",
+      "Light_Back_Soft_Fill",
+      "Light_Eye_Catchlight"
+    ],
+    "camerasCollection": [
+      "Beauty_Camera",
+      "Cam_Front",
+      "Cam_ThreeQuarter",
+      "Cam_Side",
+      "Cam_Back"
+    ]
+  },
+  "characterBounds": {
+    "min": [
+      -0.2779,
+      -0.5459,
+      0.9003
+    ],
+    "max": [
+      0.2816,
+      0.1685,
+      1.6814
+    ],
+    "dimensions": [
+      0.5595,
+      0.7144,
+      0.7811
+    ]
+  },
+  "meshAndCurveCounts": {
+    "baseMeshVertices": 37252,
+    "baseMeshFaces": 36658,
+    "evaluatedMeshVertices": 131115,
+    "evaluatedMeshFaces": 129984,
+    "hairAndFiberCurves": 23488,
+    "hairAndFiberControlPoints": 500542,
+    "totalEvaluatedVerticesAndPoints": 631657
+  },
+  "generatedTextures": [
+    {
+      "name": "iris_albedo.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "colorSpace": "sRGB",
+      "description": "Procedural warm chestnut-brown and golden-amber radial iris stroma fibers, pupil, collarette, crypts, and dark limbal ring."
+    },
+    {
+      "name": "iris_bump.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "colorSpace": "Non-Color",
+      "description": "Procedural height map of radial iris stroma fibers and crypt relief."
+    },
+    {
+      "name": "skin_micro_detail.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "colorSpace": "Non-Color",
+      "description": "Seamless tileable Voronoi polygonal skin-cell relief, follicular micro-pores, and roughness modulation."
+    },
+    {
+      "name": "sweater_knit_height.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "colorSpace": "Non-Color",
+      "description": "Seamless tileable fisherman-rib V-stitch wales, horizontal purl tuck bars, and 2-ply yarn twist height map driving true 3D Displace modifiers."
+    },
+    {
+      "name": "sweater_knit_normal.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "colorSpace": "Non-Color",
+      "description": "Tangent-space normal map derived from procedural fisherman-rib yarn loop geometry."
+    },
+    {
+      "name": "sweater_knit_albedo.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "colorSpace": "sRGB",
+      "description": "Dusty-pink yarn albedo with stitch-crevice ambient occlusion and subtle wool fiber mottling."
+    },
+    {
+      "name": "cafe_wood.png",
+      "resolution": [
+        512,
+        512
+      ],
+      "colorSpace": "sRGB",
+      "description": "Procedural warm honey-oak wood grain for cafe tables, chairs, counter, and shelves."
+    }
+  ],
+  "renderedFiles": [
+    "renders/beauty.png",
+    "renders/front.png",
+    "renders/three-quarter.png",
+    "renders/side.png",
+    "renders/back.png"
+  ],
+  "buildDurationSeconds": 181.97,
+  "limitations": [
+    "Unseen anatomy below the sweater, back of the head/hair, back of the sweater, and hands/cuffs outside the reference frame are inferred procedurally.",
+    "Facial likeness is sculpted via smooth anatomical deformation fields on subdivided MakeHuman CC0 topology rather than 3D scan data, so subtle individual micro-asymmetries remain an approximation.",
+    "Sweater drape and hair waves use static procedural splines and BVH collision projection rather than full dynamic cloth/hair physics simulation.",
+    "Cafe background props are simplified 3D architectural and tabletop forms designed for realistic out-of-focus portrait depth of field."
+  ]
+}

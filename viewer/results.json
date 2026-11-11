@@ -1,6 +1,32 @@
 {
-  "default_model": "claude-fable-5.2",
+  "default_model": "gemini-4-carbon",
   "models": {
+    "gemini-4-carbon": {
+      "model": "Gemini 4 Carbon",
+      "model_id": "gemini-4-carbon",
+      "run_date": "2026.11.11",
+      "harness": "Gemini CLI → Gemini API",
+      "stages": {
+        "procedural": {
+          "glb": "../runs/2026-11-11/procedural/gemini-4-carbon/character.glb",
+          "blend": "../runs/2026-11-11/procedural/gemini-4-carbon/character.blend",
+          "code": "../runs/2026-11-11/procedural/gemini-4-carbon/build.py",
+          "readme": "../runs/2026-11-11/procedural/gemini-4-carbon/README.md",
+          "validation": "../runs/2026-11-11/procedural/gemini-4-carbon/validation.json",
+          "renders": {
+            "beauty": "../runs/2026-11-11/procedural/gemini-4-carbon/renders/beauty.png",
+            "front": "../runs/2026-11-11/procedural/gemini-4-carbon/renders/front.png",
+            "three-quarter": "../runs/2026-11-11/procedural/gemini-4-carbon/renders/three-quarter.png",
+            "side": "../runs/2026-11-11/procedural/gemini-4-carbon/renders/side.png",
+            "back": "../runs/2026-11-11/procedural/gemini-4-carbon/renders/back.png"
+          },
+          "camera_orbit": "0deg 80deg 80%"
+        }
+      },
+      "run_record": "../runs/2026-11-11/run.json",
+      "pending_note": "写真テクスチャ許可版は未実施です（実施するかどうかは本人の判断待ち）。",
+      "cost_note": "API従量課金：約$8.1（コーディネーター集計の推定）。"
+    },
     "claude-fable-5.2": {
       "model": "Claude Fable 5.2",
       "model_id": "claude-fable-5-2",

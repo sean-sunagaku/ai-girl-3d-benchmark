@@ -141,6 +141,16 @@
       "run_record": "runs/2026-11-10/run.json",
       "technical_validation": "runs/2026-11-10/photo-textured/fable-5.2/validation.json",
       "existing_web_glb": true
+    },
+    {
+      "id": "gemini-4-carbon",
+      "date_jst": "2026-11-11",
+      "stage": "procedural",
+      "requested_model": "gemini-4-carbon",
+      "path": "runs/2026-11-11/procedural/gemini-4-carbon",
+      "run_record": "runs/2026-11-11/run.json",
+      "technical_validation": "runs/2026-11-11/procedural/gemini-4-carbon/validation.json",
+      "existing_web_glb": true
     }
   ]
 }

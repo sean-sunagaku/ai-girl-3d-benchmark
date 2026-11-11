@@ -4,6 +4,7 @@
 
 元の写真と各モデルの出力を、そのまま掲載しています。画像をクリックすると原寸で開けます。外見の採点・順位付けは行いません。
 
+2026-11-11の追加実行：[Gemini 4 Carbonの結果](runs/2026-11-11/README.md)（初回のみ）。
 2026-11-10の追加実行：[Claude Fable 5.2の結果](runs/2026-11-10/README.md)（初回・追加版の2段階）。
 2026-10-27の追加実行：[GPT-6.1 Terraの結果](runs/2026-10-27/README.md)。
 2026-10-25の追加実行：[Kimi K3.1 Proの結果](runs/2026-10-25/README.md)。
@@ -12,6 +13,10 @@
 | Claude Fable 5.2 · 初回 | Claude Fable 5.2 · 追加版 |
 | --- | --- |
 | [![Fable 5.2の初回の完成カット](runs/2026-11-10/procedural/fable-5.2/renders/beauty.png)](runs/2026-11-10/README.md) | [![Fable 5.2の追加版の完成カット](runs/2026-11-10/photo-textured/fable-5.2/renders/beauty.png)](runs/2026-11-10/README.md) |
+
+| Gemini 4 Carbon · 初回 |
+| --- |
+| [![Gemini 4 Carbonの初回の完成カット](runs/2026-11-11/procedural/gemini-4-carbon/renders/beauty.png)](runs/2026-11-11/README.md) |
 
 | GPT-6.1 Terra · 初回 | Kimi K3.1 Pro · 初回 |
 | --- | --- |
