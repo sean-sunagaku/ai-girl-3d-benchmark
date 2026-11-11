@@ -21,6 +21,16 @@
 （追加版の課題文と検査スクリプトを含む）を読んでいた点など、他の実行との違いは
 [ハーネス記録](runs/2026-11-10/harness/README.md) に明記しています。他の参加モデルのコード・画像は見ていません。
 
+## Gemini 4 Carbon の追加実行（2026-11-11）
+
+同じ元写真・共通ベース・共通プロンプトを使ったGemini 4 Carbonの結果を収録しました。初回（写真テクスチャ禁止）のみ
+実行しています。
+[制作記録と5方向の画像](runs/2026-11-11/README.md) から、編集可能なBlenderシーン・閲覧用GLB・制作コード・
+検査結果を開けます。
+**今回はコーディネーターと参加モデルが別のセッションです。** Gemini CLIのエージェント実行で制作し、
+コーディネーター（Muse）が準備・起動・検証を行いました。条件の詳細は
+[ハーネス記録](runs/2026-11-11/harness/README.md) に明記しています。
+
 ## GPT-6.1 Terra の追加実行（2026-10-27）
 
 同じ元写真・共通ベース・初回プロンプトを使ったTerraの結果を収録しました。
@@ -37,7 +47,7 @@
 [編集可能なBlenderシーン](runs/2026-10-25/procedural/kimi-k3.1-pro/character.blend)、
 [閲覧用GLB](runs/2026-10-25/procedural/kimi-k3.1-pro/character.glb) を取得できます。
 
-[HTMLビューアー](viewer/index.html)ではFable 5.2・Terra・Kimiを切り替え、元写真、回転・拡大できるGLB、各5方向のPNGを表示します。
+[HTMLビューアー](viewer/index.html)ではCarbon・Fable 5.2・Terra・Kimiを切り替え、元写真、回転・拡大できるGLB、各5方向のPNGを表示します。
 リポジトリのルートで `python3 -m http.server 8765 --bind localhost` を実行し、
 `http://localhost:8765/viewer/` を開いてください。手順は [viewer/README.md](viewer/README.md) にあります。
 

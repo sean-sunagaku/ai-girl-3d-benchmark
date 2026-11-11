@@ -13,6 +13,8 @@ __pycache__/
 !runs/2026-11-10/procedural/fable-5.2/character.glb
 !runs/2026-11-10/photo-textured/fable-5.2/character.blend
 !runs/2026-11-10/photo-textured/fable-5.2/character.glb
+!runs/2026-11-11/procedural/gemini-4-carbon/character.blend
+!runs/2026-11-11/procedural/gemini-4-carbon/character.glb
 .env
 .env.*
 .work/
