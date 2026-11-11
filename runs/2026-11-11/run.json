@@ -1,1 +1,133 @@
-{"artifacts":{"glb_stored_in_git":true,"large_file_policy":"The GLB is about 15 MB and the scene about 16 MB; both are tracked in Git, following the Kimi, Terra and Fable precedents (a .gitignore exception was added for this run's two files).","stages":{"procedural":{"character_blend_bytes":16476319,"character_blend_sha256":"e5cba1e04a3de5dd02da26904ac51190dbf272a7015093b2864c7761a2e3e529","character_glb_bytes":15309680,"character_glb_sha256":"be08b763ee5017d3db05e7a7e86a34b3351a9b4a61bf34e4523c58e2bb1aec3c","published_files_including_glb_and_validation":30}}},"date_jst":"2026-11-11","generation":{"additional_agents":false,"additional_downloads":false,"coordinator_compatibility_code_changes":false,"coordinator_design_or_material_changes":false,"external_image_or_3d_generation":false},"harness":{"auth":"Google AI Studio API key stored only in a protected file on the Mac (~/gemini-carbon-test/.api_key, mode 600); isolated HOME (~/gemini-carbon-test/fakehome) with gemini-api-key auth; the owner's existing Gemini CLI settings were not touched","continuation_instructions_sent":0,"coordinator":"Muse (separate session): prepared the workspace, launched and monitored the run, validated and collected the artifacts without changing the entrant's geometry, materials or code","coordinator_and_entrant_are_the_same_session":false,"mode":"non-interactive (-p), --yolo, --skip-trust, --output-format json","name":"Gemini CLI","record":"harness/README.md","task_prompt_delivered":"The full text of benchmarks/cafe-selfie-v1/prompts/01-procedural.md was passed verbatim as the -p argument; no summary or additional instructions","task_prompt_files_match_canonical_bytes":true,"version":"0.68.0","workspace_prepared_with":"scripts/prepare_case.py"},"model_id":"gemini-4-carbon","privacy":{"note":"The collected character.blend and the render PNGs' File text metadata contain an absolute path including the Mac account name (/Users/...), embedded by Blender at render/save time. The same kind of path is already present in the published Kimi and Terra collections; the artifacts are collected unmodified, as with those runs. The Fable 5.2 run has no such path because the entrant's own build script removed it before saving.","secrets_found":false,"work_logs_blend_backups_and_caches_excluded":true},"publication":{"branch":"gemini-4-carbon-3d-girl","commit_push_and_pull_request":"By the coordinator session, at the repository owner's instruction on 2026-11-11."},"requested_model":"Gemini 4 Carbon","source_commit":"86b55b74393a466514269a369eef57bee1da8218","stages":{"photo-textured":{"note":"Not executed in this run; whether to run the second stage is the owner's decision.","status":"not_run"},"procedural":{"path":"procedural/gemini-4-carbon","status":"complete"}},"status":"procedural_completed","timeline_jst":{"agent_exit_code":0,"agent_finished":"23:26:23","agent_seconds":4861,"agent_started":"22:05:22","tool_calls":143,"tool_calls_succeeded":141,"workspace_prepared":"21:57"},"usage_and_cost_estimate":{"gemini-4-carbon":{"estimated_usd":7.98,"input_tokens_cached":16232320,"input_tokens_non_cached":2012231,"output_tokens_candidates":162907,"output_tokens_thoughts":70661},"pricing_basis":"Introductory pricing until 2026-11-30: input $2 / output $10 / cached input $0.10 per 1M tokens; JPY at 158 per USD. Estimate computed by the coordinator from the Gemini CLI session stats.","total_estimated_jpy":1280,"total_estimated_usd":8.1,"utility_model_gemini-3-flash-preview":{"note":"Used internally by Gemini CLI; a few JPY at most."}},"verification":{"appearance_scoring":false,"input_manifest_all_match":true,"input_manifest_checks":7,"original_five_pngs_opened_and_viewed_by_coordinator":true,"stages":{"procedural":{"active_camera":"Beauty_Camera","all_images_at_most_2048_and_resolved":true,"cycles_device":"CPU","denoising":true,"evaluated_mesh_vertices":131115,"glb_export_from_original_blend":true,"glb_reimport_counts":{"images":7,"materials":8,"meshes":14,"vertices":144974},"glb_reimport_succeeded":true,"independent_rebuild_exit_code":0,"independent_rebuild_from_published_code_and_inputs_only":true,"independent_rebuild_seconds":202.1,"independent_scene_report":"procedural/gemini-4-carbon/validation.json","native_curves_not_exported_to_glb":["Character_Eyebrows","Character_Eyelashes","Character_Hair_Back","Character_Hair_Bangs","Character_Hair_Cascade_Right","Character_Hair_Drape_Left","Character_Hair_Flyaways","Sweater_Wool_Fuzz"],"rebuilt_five_pngs_note":"Rebuilt PNGs match the originals in dimensions and file size within 0.1%, but their IDAT pixel data is not byte-identical (render noise). This differs from the Fable 5.2 run, where pixel data was byte-identical.","rebuilt_five_pngs_pixel_data_identical_to_originals":false,"rebuilt_scene_and_scene_report_produced":true,"render_dimensions_all_expected":true,"render_engine":"CYCLES","samples":32,"source_blend_reopened":true,"source_blend_unchanged":true,"threads":3,"workspace_input_and_prompt_all_match":true}},"validation_first_attempt":"Aborted at the privacy-scan step because zstd was not on PATH; rerun with Homebrew on PATH completed all steps. No effect on the collected artifacts.","validation_script":"harness/coordinator_validate.py","viewer_checks":"All paths referenced by the gemini-4-carbon entry in viewer/results.json were verified to exist on disk; no real-browser UI check was performed for this run."}}
+{
+  "artifacts": {
+    "glb_stored_in_git": true,
+    "large_file_policy": "The GLB is about 15 MB and the scene about 16 MB; both are tracked in Git, following the Kimi, Terra and Fable precedents (a .gitignore exception was added for this run's two files).",
+    "stages": {
+      "procedural": {
+        "character_blend_bytes": 16476319,
+        "character_blend_sha256": "e5cba1e04a3de5dd02da26904ac51190dbf272a7015093b2864c7761a2e3e529",
+        "character_glb_bytes": 15309680,
+        "character_glb_sha256": "be08b763ee5017d3db05e7a7e86a34b3351a9b4a61bf34e4523c58e2bb1aec3c",
+        "published_files_including_glb_and_validation": 30
+      }
+    }
+  },
+  "date_jst": "2026-11-11",
+  "generation": {
+    "additional_agents": false,
+    "additional_downloads": false,
+    "coordinator_compatibility_code_changes": false,
+    "coordinator_design_or_material_changes": false,
+    "external_image_or_3d_generation": false
+  },
+  "harness": {
+    "auth": "Google AI Studio API key stored only in a protected file on the Mac (~/gemini-carbon-test/.api_key, mode 600); isolated HOME (~/gemini-carbon-test/fakehome) with gemini-api-key auth; the owner's existing Gemini CLI settings were not touched",
+    "continuation_instructions_sent": 0,
+    "coordinator": "Muse (separate session): prepared the workspace, launched and monitored the run, validated and collected the artifacts without changing the entrant's geometry, materials or code",
+    "coordinator_and_entrant_are_the_same_session": false,
+    "mode": "non-interactive (-p), --yolo, --skip-trust, --output-format json",
+    "name": "Gemini CLI",
+    "record": "harness/README.md",
+    "task_prompt_delivered": "The full text of benchmarks/cafe-selfie-v1/prompts/01-procedural.md was passed verbatim as the -p argument; no summary or additional instructions",
+    "task_prompt_files_match_canonical_bytes": true,
+    "version": "0.68.0",
+    "workspace_prepared_with": "scripts/prepare_case.py"
+  },
+  "model_id": "gemini-4-carbon",
+  "privacy": {
+    "note": "The collected character.blend and the render PNGs' File text metadata contain an absolute path including the Mac account name (/Users/...), embedded by Blender at render/save time. The same kind of path is already present in the published Kimi and Terra collections; the artifacts are collected unmodified, as with those runs. The Fable 5.2 run has no such path because the entrant's own build script removed it before saving.",
+    "secrets_found": false,
+    "work_logs_blend_backups_and_caches_excluded": true
+  },
+  "publication": {
+    "branch": "gemini-4-carbon-3d-girl",
+    "commit_push_and_pull_request": "By the coordinator session, at the repository owner's instruction on 2026-11-11."
+  },
+  "requested_model": "Gemini 4 Carbon",
+  "source_commit": "86b55b74393a466514269a369eef57bee1da8218",
+  "stages": {
+    "photo-textured": {
+      "note": "Not executed in this run; whether to run the second stage is the owner's decision.",
+      "status": "not_run"
+    },
+    "procedural": {
+      "path": "procedural/gemini-4-carbon",
+      "status": "complete"
+    }
+  },
+  "status": "procedural_completed",
+  "timeline_jst": {
+    "agent_exit_code": 0,
+    "agent_finished": "23:26:23",
+    "agent_seconds": 4861,
+    "agent_started": "22:05:22",
+    "tool_calls": 143,
+    "tool_calls_succeeded": 141,
+    "workspace_prepared": "21:57"
+  },
+  "usage_and_cost_estimate": {
+    "gemini-4-carbon": {
+      "estimated_usd": 7.98,
+      "input_tokens_cached": 16232320,
+      "input_tokens_non_cached": 2012231,
+      "output_tokens_candidates": 162907,
+      "output_tokens_thoughts": 70661
+    },
+    "pricing_basis": "Introductory pricing until 2026-11-30: input $2 / output $10 / cached input $0.10 per 1M tokens; JPY at 158 per USD. Estimate computed by the coordinator from the Gemini CLI session stats.",
+    "total_estimated_jpy": 1280,
+    "total_estimated_usd": 8.1,
+    "utility_model_gemini-3-flash-preview": {
+      "note": "Used internally by Gemini CLI; a few JPY at most."
+    }
+  },
+  "verification": {
+    "appearance_scoring": false,
+    "input_manifest_all_match": true,
+    "input_manifest_checks": 7,
+    "original_five_pngs_opened_and_viewed_by_coordinator": true,
+    "stages": {
+      "procedural": {
+        "active_camera": "Beauty_Camera",
+        "all_images_at_most_2048_and_resolved": true,
+        "cycles_device": "CPU",
+        "denoising": true,
+        "evaluated_mesh_vertices": 131115,
+        "glb_export_from_original_blend": true,
+        "glb_reimport_counts": {
+          "images": 7,
+          "materials": 8,
+          "meshes": 14,
+          "vertices": 144974
+        },
+        "glb_reimport_succeeded": true,
+        "independent_rebuild_exit_code": 0,
+        "independent_rebuild_from_published_code_and_inputs_only": true,
+        "independent_rebuild_seconds": 202.1,
+        "independent_scene_report": "procedural/gemini-4-carbon/validation.json",
+        "native_curves_not_exported_to_glb": [
+          "Character_Eyebrows",
+          "Character_Eyelashes",
+          "Character_Hair_Back",
+          "Character_Hair_Bangs",
+          "Character_Hair_Cascade_Right",
+          "Character_Hair_Drape_Left",
+          "Character_Hair_Flyaways",
+          "Sweater_Wool_Fuzz"
+        ],
+        "rebuilt_five_pngs_note": "Rebuilt PNGs match the originals in dimensions and file size within 0.1%, but their IDAT pixel data is not byte-identical (render noise). This differs from the Fable 5.2 run, where pixel data was byte-identical.",
+        "rebuilt_five_pngs_pixel_data_identical_to_originals": false,
+        "rebuilt_scene_and_scene_report_produced": true,
+        "render_dimensions_all_expected": true,
+        "render_engine": "CYCLES",
+        "samples": 32,
+        "source_blend_reopened": true,
+        "source_blend_unchanged": true,
+        "threads": 3,
+        "workspace_input_and_prompt_all_match": true
+      }
+    },
+    "validation_first_attempt": "Aborted at the privacy-scan step because zstd was not on PATH; rerun with Homebrew on PATH completed all steps. No effect on the collected artifacts.",
+    "validation_script": "harness/coordinator_validate.py",
+    "viewer_checks": "Static path check passed for every path referenced by the gemini-4-carbon entry in viewer/results.json. A real-browser UI check was added on 2026-11-12 (agent-browser/Chromium on the Mac, screenshots taken of the 3D and portrait views); see viewer-checks.json."
+  }
+}
