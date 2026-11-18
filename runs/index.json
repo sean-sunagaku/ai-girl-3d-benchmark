@@ -151,6 +151,46 @@
       "run_record": "runs/2026-11-11/run.json",
       "technical_validation": "runs/2026-11-11/procedural/gemini-4-carbon/validation.json",
       "existing_web_glb": true
+    },
+    {
+      "id": "gpt-6.2-astra",
+      "date_jst": "2026-11-18",
+      "stage": "procedural",
+      "requested_model": "gpt-6.2-astra",
+      "path": "runs/2026-11-18/procedural/gpt-6.2-astra",
+      "run_record": "runs/2026-11-18/run.json",
+      "technical_validation": "runs/2026-11-18/procedural/gpt-6.2-astra/validation.json",
+      "existing_web_glb": true
+    },
+    {
+      "id": "gpt-6.2-sol",
+      "date_jst": "2026-11-18",
+      "stage": "procedural",
+      "requested_model": "gpt-6.2-sol",
+      "path": "runs/2026-11-18/procedural/gpt-6.2-sol",
+      "run_record": "runs/2026-11-18/run.json",
+      "technical_validation": "runs/2026-11-18/procedural/gpt-6.2-sol/validation.json",
+      "existing_web_glb": true
+    },
+    {
+      "id": "gemini-4-carbon",
+      "date_jst": "2026-11-18",
+      "stage": "procedural",
+      "requested_model": "gemini-4-carbon",
+      "path": "runs/2026-11-18/procedural/gemini-4-carbon",
+      "run_record": "runs/2026-11-18/run.json",
+      "technical_validation": "runs/2026-11-18/procedural/gemini-4-carbon/validation.json",
+      "existing_web_glb": true
+    },
+    {
+      "id": "gemini-4-hydrogen",
+      "date_jst": "2026-11-18",
+      "stage": "procedural",
+      "requested_model": "gemini-4-hydrogen",
+      "path": "runs/2026-11-18/procedural/gemini-4-hydrogen",
+      "run_record": "runs/2026-11-18/run.json",
+      "technical_validation": "runs/2026-11-18/procedural/gemini-4-hydrogen/validation.json",
+      "existing_web_glb": true
     }
   ]
 }

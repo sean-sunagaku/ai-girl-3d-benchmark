@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-18",
-  "status": "procedural_completed_both_models",
+  "status": "procedural_completed_four_models",
   "source_commit": "886fe0c",
   "harness": {
     "name": "Codex CLI",
@@ -22,7 +22,9 @@
       "status": "complete",
       "models": [
         "gpt-6.2-astra",
-        "gpt-6.2-sol"
+        "gpt-6.2-sol",
+        "gemini-4-carbon",
+        "gemini-4-hydrogen"
       ]
     },
     "photo-textured": {
@@ -173,11 +175,140 @@
         },
         "privacy_scan_clean": false
       }
+    },
+    "gemini-4-carbon": {
+      "requested_model": "Gemini 4 Carbon",
+      "model_id": "gemini-4-carbon",
+      "path": "procedural/gemini-4-carbon",
+      "status": "complete",
+      "harness": {
+        "name": "Gemini CLI",
+        "version": "0.68.0",
+        "mode": "non-interactive (-p), --yolo --skip-trust; the full text of PROMPT.md passed verbatim as the -p argument",
+        "auth": "Google AI Studio API key (GEMINI_API_KEY) with an isolated HOME; the key itself is not recorded",
+        "workspace_prepared_with": "scripts/prepare_case.py",
+        "coordinator": "Muse (separate session): prepared the workspace, launched and monitored the run, validated and collected the artifacts without changing the entrant's geometry, materials or code",
+        "first_attempt_failed": "The first launch at 09:30:44 JST exited with code 41 before any API use: the coordinator's launcher read the API key through a path that broke under the isolated HOME. Fixed to an absolute path and relaunched at 09:31:34 JST; the failed attempt incurred no cost."
+      },
+      "timeline_jst": {
+        "agent_started": "2026-11-18T09:31:34+09:00",
+        "agent_finished": "2026-11-18T11:05:29+09:00",
+        "agent_seconds": 5635,
+        "agent_exit_code": 0
+      },
+      "usage": {
+        "counting": "Counted by the coordinator from the Gemini CLI session JSONL, deduplicated by message id. API calls are the completed model responses carrying token records; tool calls are the functionCall parts in the model messages.",
+        "api_calls": 72,
+        "tool_calls": 162,
+        "input_tokens": 16153607,
+        "cached_input_tokens": 13807278,
+        "non_cached_input_tokens": 2346329,
+        "output_tokens": 213407,
+        "total_tokens": 16430947
+      },
+      "cost_estimate": {
+        "basis": "Billed per API call against the Google AI Studio API key. The USD figure is an estimate computed from the recorded token usage at the introductory rates (valid until 2026-11-30).",
+        "introductory_rates_per_1m_usd": {
+          "input": 2,
+          "cached_input": 0.1,
+          "output": 10
+        },
+        "estimated_usd": 8.21,
+        "estimated_jpy_at_158_per_usd": 1297
+      },
+      "artifacts": {
+        "character_blend_bytes": 21634518,
+        "character_blend_sha256": "d30ff4045d315404061254ff0e97d1a06ca33bba34cbe2bdd567297888646963",
+        "character_glb_bytes": 30939684,
+        "character_glb_sha256": "36d46457e92521f32b75a30fc68d6d3768e3060c9a62aeb3868652f2bd94da38",
+        "published_files_including_glb_and_validation": 31
+      },
+      "verification": {
+        "manifest_and_workspace_inputs_match": true,
+        "independent_rebuild_exit_code": 0,
+        "independent_rebuild_seconds": 164.5,
+        "independent_rebuild_extra_steps": [],
+        "rebuilt_png_pixel_data_identical_to_originals": true,
+        "render_dimensions_all_expected": true,
+        "cycles": {
+          "engine": "CYCLES",
+          "device": "CPU",
+          "samples": 32,
+          "denoising": true
+        },
+        "total_evaluated_mesh_vertices_inspect": 153652,
+        "glb_reimport": {
+          "meshes": 3,
+          "vertices": 160476,
+          "materials": 4,
+          "images": 6
+        },
+        "privacy_scan_clean": false
+      }
+    },
+    "gemini-4-hydrogen": {
+      "requested_model": "Gemini 4 Hydrogen",
+      "model_id": "gemini-4-hydrogen",
+      "path": "procedural/gemini-4-hydrogen",
+      "status": "complete",
+      "harness": {
+        "name": "Antigravity CLI (agy)",
+        "version": "1.5.10",
+        "mode": "Interactive TUI in the user's own GUI session, operated by the coordinator via Computer Use. The model was set to Gemini 4 Hydrogen (XHigh) with /model before the task. The task was delivered as a single instruction to read PROMPT.md and follow it exactly, working only in the workspace; PROMPT.md is byte-identical to the canonical prompts/01-procedural.md (confirmed by the coordinator validation), so the delivery method differs from Carbon's verbatim -p argument while the prompt content is identical.",
+        "auth": "Google OAuth (personal account), Google AI Ultra plan",
+        "workspace_prepared_with": "scripts/prepare_case.py",
+        "coordinator": "Muse (separate session): prepared the workspace, started and monitored the run through the GUI, validated and collected the artifacts without changing the entrant's geometry, materials or code",
+        "interventions": "Twice during the run the agent paused at file-read permission prompts for its own preview images (scratch_previews/preview_34.png and preview_back.png); the coordinator approved them as safe reads of files inside the workspace. No other coordinator input was given."
+      },
+      "timeline_jst": {
+        "agent_started": "2026-11-18T09:35+09:00",
+        "agent_finished": "2026-11-18T11:11+09:00",
+        "agent_seconds": 5778,
+        "agent_seconds_note": "Start is the task submission observed by the coordinator in the TUI; finish is the last deliverable write (README.md at 11:11:18 JST). Both are approximate to the minute.",
+        "agent_exit_code": null,
+        "agent_exit_note": "Interactive TUI run: the agent printed its completion summary and returned to its input prompt; no process exit code exists."
+      },
+      "usage": {
+        "note": "Antigravity does not expose per-token usage; the run consumed Google AI Ultra plan quota instead of per-call API billing."
+      },
+      "cost_estimate": {
+        "basis": "Google AI Ultra subscription quota; no per-API-call charge."
+      },
+      "artifacts": {
+        "character_blend_bytes": 13666603,
+        "character_blend_sha256": "150fa734ac50c6250d2f2aba7bbbc2c11a53f525d243bd712f7e44cb7400d570",
+        "character_glb_bytes": 7208280,
+        "character_glb_sha256": "1191f9261731174023fd9d3e3a42b024eab25244d66b26808eb39899685db978",
+        "published_files_including_glb_and_validation": 33
+      },
+      "verification": {
+        "manifest_and_workspace_inputs_match": true,
+        "independent_rebuild_exit_code": 0,
+        "independent_rebuild_seconds": 80.9,
+        "independent_rebuild_extra_steps": [],
+        "rebuilt_png_pixel_data_identical_to_originals": false,
+        "rebuilt_png_note": "The rebuild completed with exit code 0 and all five renders at the expected dimensions, but the pixel data differs from the originals; the scene's procedural hair and fuzz elements do not reproduce pixel-for-pixel.",
+        "render_dimensions_all_expected": true,
+        "cycles": {
+          "engine": "CYCLES",
+          "device": "CPU",
+          "samples": 32,
+          "denoising": true
+        },
+        "total_evaluated_mesh_vertices_inspect": 72669,
+        "glb_reimport": {
+          "meshes": 10,
+          "vertices": 61340,
+          "materials": 6,
+          "images": 4
+        },
+        "privacy_scan_clean": false
+      }
     }
   },
   "privacy": {
     "secrets_found": false,
-    "note": "Astra: privacy scan clean (the entrant's build script scrubbed local paths before saving). Sol: character.blend and the five render PNGs contain the Mac account name in Blender's File metadata absolute path, the same as the published Kimi, Terra and Carbon collections; collected unmodified following those precedents. One additional Sol hit is a false positive: the '@' matrix operator in report_scene.py matched the e-mail pattern. No secrets in either run.",
+    "note": "Astra: privacy scan clean (the entrant's build script scrubbed local paths before saving). Sol: character.blend and the five render PNGs contain the Mac account name in Blender's File metadata absolute path, the same as the published Kimi, Terra and Carbon collections; collected unmodified following those precedents. One additional Sol hit is a false positive: the '@' matrix operator in report_scene.py matched the e-mail pattern. No secrets in either run. Gemini 4 Carbon and Gemini 4 Hydrogen: character.blend and the five render PNGs likewise contain the Mac account name in Blender's File metadata path; collected unmodified following the same precedent. No secrets in either Gemini run.",
     "work_logs_blend_backups_and_caches_excluded": true
   },
   "publication": {
