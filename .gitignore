@@ -19,6 +19,10 @@ __pycache__/
 !runs/2026-11-18/procedural/gpt-6.2-astra/character.glb
 !runs/2026-11-18/procedural/gpt-6.2-sol/character.blend
 !runs/2026-11-18/procedural/gpt-6.2-sol/character.glb
+!runs/2026-11-18/procedural/gemini-4-carbon/character.blend
+!runs/2026-11-18/procedural/gemini-4-carbon/character.glb
+!runs/2026-11-18/procedural/gemini-4-hydrogen/character.blend
+!runs/2026-11-18/procedural/gemini-4-hydrogen/character.glb
 .env
 .env.*
 .work/

@@ -1,0 +1,268 @@
+{
+  "blenderVersion": "5.1.1",
+  "renderEngine": "CYCLES",
+  "renderDevice": "CPU",
+  "threads": 3,
+  "samples": 32,
+  "denoiser": "OPENIMAGEDENOISE",
+  "colorManagement": {
+    "viewTransform": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "exposure": -0.08
+  },
+  "importantObjects": {
+    "characterBody": "Character_Body",
+    "armature": "Character_Armature",
+    "sweater": "Character_Sweater",
+    "eyes": [
+      "Eyeball_Inner_L",
+      "Eyeball_Cornea_L",
+      "Eye_Caruncle_L",
+      "Eye_TearLine_L",
+      "Eyeball_Inner_R",
+      "Eyeball_Cornea_R",
+      "Eye_Caruncle_R",
+      "Eye_TearLine_R"
+    ],
+    "hairAndFacialHair": [
+      "Hair_Underlayer",
+      "Hair_Main_Waves",
+      "Hair_Wispy_Bangs",
+      "Hair_Framing_Tendrils",
+      "Hair_Flyaways",
+      "Character_Eyebrows",
+      "Character_Eyelashes"
+    ],
+    "cameras": [
+      "Cam_Beauty",
+      "Cam_Front",
+      "Cam_ThreeQuarter",
+      "Cam_Side",
+      "Cam_Back"
+    ]
+  },
+  "characterBounds": {
+    "minMeters": [
+      -0.24891,
+      -0.47509,
+      0.98914
+    ],
+    "maxMeters": [
+      0.23236,
+      0.10517,
+      1.66203
+    ],
+    "dimensionsMeters": [
+      0.48127,
+      0.58026,
+      0.67288
+    ]
+  },
+  "geometryCounts": {
+    "characterBaseMeshVertices": 19316,
+    "characterBaseMeshFaces": 19558,
+    "characterEvaluatedMeshVertices": 149232,
+    "characterEvaluatedMeshFaces": 149208,
+    "characterHairStrands": 14138,
+    "characterHairControlPoints": 280205,
+    "cafeEnvironmentEvaluatedVertices": 3314,
+    "totalEvaluatedVerticesAndCurvePoints": 432751,
+    "perObject": {
+      "Character_Body": {
+        "type": "MESH",
+        "baseVertices": 6239,
+        "baseFaces": 6190,
+        "evaluatedVertices": 99239,
+        "evaluatedFaces": 99040
+      },
+      "Character_Armature": {
+        "type": "ARMATURE",
+        "bones": 12
+      },
+      "Character_Sweater": {
+        "type": "MESH",
+        "baseVertices": 2453,
+        "baseFaces": 2480,
+        "evaluatedVertices": 39369,
+        "evaluatedFaces": 39280
+      },
+      "Eyeball_Inner_L": {
+        "type": "MESH",
+        "baseVertices": 2498,
+        "baseFaces": 2560,
+        "evaluatedVertices": 2498,
+        "evaluatedFaces": 2560
+      },
+      "Eyeball_Cornea_L": {
+        "type": "MESH",
+        "baseVertices": 2498,
+        "baseFaces": 2560,
+        "evaluatedVertices": 2498,
+        "evaluatedFaces": 2560
+      },
+      "Eye_Caruncle_L": {
+        "type": "MESH",
+        "baseVertices": 178,
+        "baseFaces": 192,
+        "evaluatedVertices": 178,
+        "evaluatedFaces": 192
+      },
+      "Eye_TearLine_L": {
+        "type": "MESH",
+        "baseVertices": 138,
+        "baseFaces": 132,
+        "evaluatedVertices": 138,
+        "evaluatedFaces": 132
+      },
+      "Eyeball_Inner_R": {
+        "type": "MESH",
+        "baseVertices": 2498,
+        "baseFaces": 2560,
+        "evaluatedVertices": 2498,
+        "evaluatedFaces": 2560
+      },
+      "Eyeball_Cornea_R": {
+        "type": "MESH",
+        "baseVertices": 2498,
+        "baseFaces": 2560,
+        "evaluatedVertices": 2498,
+        "evaluatedFaces": 2560
+      },
+      "Eye_Caruncle_R": {
+        "type": "MESH",
+        "baseVertices": 178,
+        "baseFaces": 192,
+        "evaluatedVertices": 178,
+        "evaluatedFaces": 192
+      },
+      "Eye_TearLine_R": {
+        "type": "MESH",
+        "baseVertices": 138,
+        "baseFaces": 132,
+        "evaluatedVertices": 138,
+        "evaluatedFaces": 132
+      },
+      "Hair_Underlayer": {
+        "type": "CURVES",
+        "strands": 4560,
+        "controlPoints": 82080
+      },
+      "Hair_Main_Waves": {
+        "type": "CURVES",
+        "strands": 6240,
+        "controlPoints": 149760
+      },
+      "Hair_Wispy_Bangs": {
+        "type": "CURVES",
+        "strands": 540,
+        "controlPoints": 8640
+      },
+      "Hair_Framing_Tendrils": {
+        "type": "CURVES",
+        "strands": 810,
+        "controlPoints": 17820
+      },
+      "Hair_Flyaways": {
+        "type": "CURVES",
+        "strands": 650,
+        "controlPoints": 11703
+      },
+      "Character_Eyebrows": {
+        "type": "CURVES",
+        "strands": 920,
+        "controlPoints": 6440
+      },
+      "Character_Eyelashes": {
+        "type": "CURVES",
+        "strands": 418,
+        "controlPoints": 3762
+      }
+    }
+  },
+  "generatedTextures": [
+    {
+      "name": "iris_albedo_1k",
+      "file": "textures/iris_albedo_1k.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "packed": true,
+      "description": "Procedural warm chestnut-amber radial iris stroma, crypts, collarette, dark limbal ring, pupil, and warm ivory sclera transition."
+    },
+    {
+      "name": "iris_bump_1k",
+      "file": "textures/iris_bump_1k.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "packed": true,
+      "description": "Procedural Non-Color radial iris fiber and collarette relief height map."
+    },
+    {
+      "name": "skin_micro_2k",
+      "file": "textures/skin_micro_2k.png",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "description": "Procedural 2048x2048 tileable skin cellular micro-pore height, Langer sulcus micro-roughness, and subsurface variation channels."
+    },
+    {
+      "name": "knit_albedo_2k",
+      "file": "textures/knit_albedo_2k.png",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "description": "Procedural 2048x2048 dusty-pink interlocking V-stitch knitwear albedo with heathered rose yarn plies and stitch-valley ambient occlusion."
+    },
+    {
+      "name": "knit_height_2k",
+      "file": "textures/knit_height_2k.png",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "description": "Procedural 2048x2048 Non-Color stockinette V-loop and 2-ply yarn twist height map used for both 3D Displace modifier and shader bump."
+    },
+    {
+      "name": "knit_roughness_1k",
+      "file": "textures/knit_roughness_1k.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "packed": true,
+      "description": "Procedural 1024x1024 yarn micro-roughness map."
+    },
+    {
+      "name": "rib_knit_height_1k",
+      "file": "textures/rib_knit_height_1k.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "packed": true,
+      "description": "Procedural 1024x1024 chunky 1x1 vertical rib-knit height map for crew-neck collar, sleeve cuffs, and waistband hem."
+    }
+  ],
+  "renderedFiles": [
+    "renders/beauty.png",
+    "renders/front.png",
+    "renders/three-quarter.png",
+    "renders/side.png",
+    "renders/back.png"
+  ],
+  "remainingLimitations": [
+    "Lower body below the ribbed sweater waistband (Z < ~1.00 m) is omitted because this is an upper-body portrait asset; the hem interior is cleanly capped.",
+    "Side profile, posterior skull/hair styling, sweater back drape, and hand curl near the camera edges are anatomically inferred from a single frontal selfie photograph.",
+    "Facial sculpting is performed procedurally over subdivided MakeHuman hm08 quad topology rather than high-resolution photogrammetric scan data, so micro-asymmetries and individual pore placement are stylized approximations.",
+    "Cycles CPU rendering is capped at 32 samples with OpenImageDenoise per shared benchmark constraints, which slightly softens ultra-fine hair flyaways and micro-pore grain compared to high-sample offline renders.",
+    "Cafe background props (chairs, tables, ficus plant, counter, shelves, flower vase) are simplified 3D architectural/prop approximations designed to reproduce the reference bokeh and warm bounce lighting."
+  ]
+}

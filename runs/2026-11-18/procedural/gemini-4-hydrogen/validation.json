@@ -1,0 +1,3092 @@
+{
+  "stage": "procedural",
+  "entrant": "gemini-4-hydrogen",
+  "checked_on_jst": "2026-11-18T11:27:30+0900",
+  "appearance_scoring": false,
+  "note": "Technical validation by the coordinator; not an appearance evaluation.",
+  "manifest_checks": [
+    {
+      "path": "inputs/reference.png",
+      "sha256_matches": true
+    },
+    {
+      "path": "inputs/base.obj",
+      "sha256_matches": true
+    },
+    {
+      "path": "inputs/upper-body.obj",
+      "sha256_matches": true
+    },
+    {
+      "path": "inputs/ASSET-LICENSE.md",
+      "sha256_matches": true
+    },
+    {
+      "path": "inputs/environment.json",
+      "sha256_matches": true
+    },
+    {
+      "path": "prompts/01-procedural.md",
+      "sha256_matches": true
+    },
+    {
+      "path": "prompts/02-photo-textured.md",
+      "sha256_matches": true
+    }
+  ],
+  "workspace_input_checks": [
+    {
+      "path": "PROMPT.md",
+      "byte_identical_to": "prompts/01-procedural.md",
+      "matches": true
+    },
+    {
+      "path": "input/ASSET-LICENSE.md",
+      "matches": true
+    },
+    {
+      "path": "input/base.obj",
+      "matches": true
+    },
+    {
+      "path": "input/environment.json",
+      "matches": true
+    },
+    {
+      "path": "input/reference.png",
+      "matches": true
+    },
+    {
+      "path": "input/upper-body.obj",
+      "matches": true
+    }
+  ],
+  "collected": {
+    "path": "runs/2026-11-18/procedural/gemini-4-hydrogen",
+    "files": [
+      "PROMPT.md",
+      "README.md",
+      "build.py",
+      "cafe_scene.py",
+      "character.blend",
+      "character_mesh.py",
+      "generated_textures/cafe_oak_wood.png",
+      "generated_textures/iris_eye.png",
+      "generated_textures/knit_albedo.png",
+      "generated_textures/knit_height.png",
+      "generated_textures/knit_rib_albedo.png",
+      "generated_textures/knit_rib_height.png",
+      "generated_textures/knit_roughness.png",
+      "generated_textures/skin_albedo.png",
+      "generated_textures/skin_bump.png",
+      "generated_textures/skin_roughness.png",
+      "hair_builder.py",
+      "input/ASSET-LICENSE.md",
+      "input/base.obj",
+      "input/environment.json",
+      "input/reference.png",
+      "input/upper-body.obj",
+      "renders/back.png",
+      "renders/beauty.png",
+      "renders/front.png",
+      "renders/side.png",
+      "renders/three-quarter.png",
+      "rig_and_pose.py",
+      "scene-report.json",
+      "sweater_builder.py",
+      "textures.py"
+    ],
+    "character_blend": {
+      "bytes": 13666603,
+      "sha256": "150fa734ac50c6250d2f2aba7bbbc2c11a53f525d243bd712f7e44cb7400d570",
+      "identical_to_workspace": true,
+      "sha256_after_inspection": "150fa734ac50c6250d2f2aba7bbbc2c11a53f525d243bd712f7e44cb7400d570",
+      "unchanged_by_inspection": true
+    }
+  },
+  "original_renders": {
+    "beauty.png": {
+      "sha256": "026a11ac6be976ad11c0609dcdd6858350758d47dba86925fbffe71448de23c0",
+      "width": 960,
+      "height": 1040,
+      "text_chunks": {
+        "File": "/Users/babashunsuke/AiWorkspace/ai-verification/ai-girl-3d-benchmark/.work/gemini-4-hydrogen-procedural/character.blend",
+        "Date": "2026/11/18 11:09:20",
+        "Time": "00:00:00:01",
+        "Frame": "001",
+        "Camera": "Beauty_Camera",
+        "Scene": "Scene",
+        "RenderTime": "00:43.52",
+        "cycles.ViewLayer.samples": "32",
+        "cycles.ViewLayer.total_time": "00:43.51",
+        "cycles.ViewLayer.render_time": "00:42.88",
+        "cycles.ViewLayer.synchronization_time": "00:00.63"
+      },
+      "idat_sha256": "662ed281fe7403c071c7837ef1cad1ddd881887a5f0d135cd5e3e9c21f745894",
+      "expected": [
+        960,
+        1040
+      ],
+      "dimensions_ok": true
+    },
+    "front.png": {
+      "sha256": "581e18f5d5b26fd6ff8098c87318b323d02518b0f384f42857dad76c9e7332cf",
+      "width": 768,
+      "height": 768,
+      "text_chunks": {
+        "File": "/Users/babashunsuke/AiWorkspace/ai-verification/ai-girl-3d-benchmark/.work/gemini-4-hydrogen-procedural/character.blend",
+        "Date": "2026/11/18 11:09:28",
+        "Time": "00:00:00:01",
+        "Frame": "001",
+        "Camera": "Cam_Front",
+        "Scene": "Scene",
+        "RenderTime": "00:08.21",
+        "cycles.ViewLayer.samples": "32",
+        "cycles.ViewLayer.total_time": "00:08.21",
+        "cycles.ViewLayer.render_time": "00:07.57",
+        "cycles.ViewLayer.synchronization_time": "00:00.63"
+      },
+      "idat_sha256": "96235967f1ceca5a7ee63dcf664e669838ea71d0acbde7b3b45f3ef0550a16c3",
+      "expected": [
+        768,
+        768
+      ],
+      "dimensions_ok": true
+    },
+    "three-quarter.png": {
+      "sha256": "5f47fe2e3c6f07671d8d9300f365fe65d855fc33789eba282d16a3544eb20a19",
+      "width": 768,
+      "height": 768,
+      "text_chunks": {
+        "File": "/Users/babashunsuke/AiWorkspace/ai-verification/ai-girl-3d-benchmark/.work/gemini-4-hydrogen-procedural/character.blend",
+        "Date": "2026/11/18 11:09:36",
+        "Time": "00:00:00:01",
+        "Frame": "001",
+        "Camera": "Cam_ThreeQuarter",
+        "Scene": "Scene",
+        "RenderTime": "00:08.12",
+        "cycles.ViewLayer.samples": "32",
+        "cycles.ViewLayer.total_time": "00:08.12",
+        "cycles.ViewLayer.render_time": "00:07.50",
+        "cycles.ViewLayer.synchronization_time": "00:00.62"
+      },
+      "idat_sha256": "f164ed37605a4ebdf5a5dd938a0322a1b5135e61e6aba24126ca8bc0002997c2",
+      "expected": [
+        768,
+        768
+      ],
+      "dimensions_ok": true
+    },
+    "side.png": {
+      "sha256": "2bf023323369f6d969111da779a11db7e0224757d6fee5b26bca902cb569f357",
+      "width": 768,
+      "height": 768,
+      "text_chunks": {
+        "File": "/Users/babashunsuke/AiWorkspace/ai-verification/ai-girl-3d-benchmark/.work/gemini-4-hydrogen-procedural/character.blend",
+        "Date": "2026/11/18 11:09:44",
+        "Time": "00:00:00:01",
+        "Frame": "001",
+        "Camera": "Cam_Side",
+        "Scene": "Scene",
+        "RenderTime": "00:07.47",
+        "cycles.ViewLayer.samples": "32",
+        "cycles.ViewLayer.total_time": "00:07.47",
+        "cycles.ViewLayer.render_time": "00:06.85",
+        "cycles.ViewLayer.synchronization_time": "00:00.61"
+      },
+      "idat_sha256": "858d2051f40fdd62672c3210f071c65cef8fe0a1a065dfa46745bdd107d77bc9",
+      "expected": [
+        768,
+        768
+      ],
+      "dimensions_ok": true
+    },
+    "back.png": {
+      "sha256": "93efcecfd1aebb6a9062d65d8fe140baf27d6be59751a9535843abec97b96c1c",
+      "width": 768,
+      "height": 768,
+      "text_chunks": {
+        "File": "/Users/babashunsuke/AiWorkspace/ai-verification/ai-girl-3d-benchmark/.work/gemini-4-hydrogen-procedural/character.blend",
+        "Date": "2026/11/18 11:09:52",
+        "Time": "00:00:00:01",
+        "Frame": "001",
+        "Camera": "Cam_Back",
+        "Scene": "Scene",
+        "RenderTime": "00:08.55",
+        "cycles.ViewLayer.samples": "32",
+        "cycles.ViewLayer.total_time": "00:08.55",
+        "cycles.ViewLayer.render_time": "00:07.93",
+        "cycles.ViewLayer.synchronization_time": "00:00.62"
+      },
+      "idat_sha256": "85b78d4a581192d6b1a99454988b19e3812aa8509f2705a4a2004557899412eb",
+      "expected": [
+        768,
+        768
+      ],
+      "dimensions_ok": true
+    }
+  },
+  "independent_rebuild": {
+    "command": "Blender --background --factory-startup --threads 3 --python build.py",
+    "exit_code": 0,
+    "seconds": 80.9,
+    "produced_character_blend": true,
+    "produced_scene_report": true,
+    "extra_steps": [],
+    "renders": {
+      "beauty.png": {
+        "sha256": "6230cb776668f9ec269b289fbd440cdc628997434538cfb03b177039cfff0023",
+        "width": 960,
+        "height": 1040,
+        "dimensions_ok": true,
+        "byte_identical_to_original": false,
+        "pixel_data_identical_to_original": false
+      },
+      "front.png": {
+        "sha256": "fb670b7d4b9bd4005bf40cbf9dd22691468a6681796e86d252a3792e1f7729f1",
+        "width": 768,
+        "height": 768,
+        "dimensions_ok": true,
+        "byte_identical_to_original": false,
+        "pixel_data_identical_to_original": false
+      },
+      "three-quarter.png": {
+        "sha256": "c1a31a68d2f473acdae72b67e6493276651656a31d807d9f4a9e3539e15418ae",
+        "width": 768,
+        "height": 768,
+        "dimensions_ok": true,
+        "byte_identical_to_original": false,
+        "pixel_data_identical_to_original": false
+      },
+      "side.png": {
+        "sha256": "8653688df936deace97fcf67a4119656ec85353db3d9e506217d36656db61da6",
+        "width": 768,
+        "height": 768,
+        "dimensions_ok": true,
+        "byte_identical_to_original": false,
+        "pixel_data_identical_to_original": false
+      },
+      "back.png": {
+        "sha256": "c3bc6050622ffca291276668b8b9fce7fbcdf173175e44983c8d62f096a28848",
+        "width": 768,
+        "height": 768,
+        "dimensions_ok": true,
+        "byte_identical_to_original": false,
+        "pixel_data_identical_to_original": false
+      }
+    },
+    "all_five_expected_dimensions": true
+  },
+  "inspect_scene": {
+    "exit_code": 0,
+    "script": "scripts/inspect_scene.py",
+    "include": [
+      "Character"
+    ]
+  },
+  "scene": {
+    "scene": "character.blend",
+    "source_sha256_before": "150fa734ac50c6250d2f2aba7bbbc2c11a53f525d243bd712f7e44cb7400d570",
+    "reopened_successfully": true,
+    "blender_version": "5.1.1",
+    "render_engine": "CYCLES",
+    "cycles_device": "CPU",
+    "threads_mode": "FIXED",
+    "threads": 3,
+    "samples": 32,
+    "denoising": true,
+    "camera": "Beauty_Camera",
+    "cameras": [
+      {
+        "name": "Beauty_Camera",
+        "type": "PERSP",
+        "ortho_scale": null
+      },
+      {
+        "name": "Cam_Front",
+        "type": "PERSP",
+        "ortho_scale": null
+      },
+      {
+        "name": "Cam_ThreeQuarter",
+        "type": "PERSP",
+        "ortho_scale": null
+      },
+      {
+        "name": "Cam_Side",
+        "type": "PERSP",
+        "ortho_scale": null
+      },
+      {
+        "name": "Cam_Back",
+        "type": "PERSP",
+        "ortho_scale": null
+      }
+    ],
+    "objects": [
+      {
+        "name": "Character_Body",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Character"
+        ],
+        "base_vertices": 6714,
+        "evaluated_vertices": 26996,
+        "evaluated_polygons": 27104,
+        "bounds": [
+          [
+            -0.2775503396987915,
+            -0.5053133368492126,
+            0.9706652164459229
+          ],
+          [
+            0.28213754296302795,
+            0.046301163733005524,
+            1.6533936262130737
+          ]
+        ]
+      },
+      {
+        "name": "Eye_Inner_L",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Character"
+        ],
+        "base_vertices": 1490,
+        "evaluated_vertices": 6050,
+        "evaluated_polygons": 6048,
+        "bounds": [
+          [
+            -0.061110612004995346,
+            -0.1762937754392624,
+            1.5191574096679688
+          ],
+          [
+            -0.023412270471453667,
+            -0.14422707259655,
+            1.5573420524597168
+          ]
+        ]
+      },
+      {
+        "name": "Eye_Cornea_L",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Character"
+        ],
+        "base_vertices": 1490,
+        "evaluated_vertices": 6050,
+        "evaluated_polygons": 6048,
+        "bounds": [
+          [
+            -0.06142919883131981,
+            -0.17777016758918762,
+            1.518802285194397
+          ],
+          [
+            -0.02319508045911789,
+            -0.14403966069221497,
+            1.5575621128082275
+          ]
+        ]
+      },
+      {
+        "name": "Eye_TearLine_L",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Character"
+        ],
+        "base_vertices": 57,
+        "evaluated_vertices": 57,
+        "evaluated_polygons": 36,
+        "bounds": [
+          [
+            -0.04863763973116875,
+            -0.17529207468032837,
+            1.529634714126587
+          ],
+          [
+            -0.03618643805384636,
+            -0.17129242420196533,
+            1.5365355014801025
+          ]
+        ]
+      },
+      {
+        "name": "Eye_Caruncle_L",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Character"
+        ],
+        "base_vertices": 128,
+        "evaluated_vertices": 128,
+        "evaluated_polygons": 140,
+        "bounds": [
+          [
+            -0.055534664541482925,
+            -0.16865146160125732,
+            1.5303369760513306
+          ],
+          [
+            -0.05051460489630699,
+            -0.16492584347724915,
+            1.5347803831100464
+          ]
+        ]
+      },
+      {
+        "name": "Eye_Inner_R",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Character"
+        ],
+        "base_vertices": 1490,
+        "evaluated_vertices": 6050,
+        "evaluated_polygons": 6048,
+        "bounds": [
+          [
+            -0.118038110435009,
+            -0.16629497706890106,
+            1.4991792440414429
+          ],
+          [
+            -0.08133678883314133,
+            -0.13662627339363098,
+            1.5364482402801514
+          ]
+        ]
+      },
+      {
+        "name": "Eye_Cornea_R",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Character"
+        ],
+        "base_vertices": 1490,
+        "evaluated_vertices": 6050,
+        "evaluated_polygons": 6048,
+        "bounds": [
+          [
+            -0.11824945360422134,
+            -0.16776514053344727,
+            1.4988855123519897
+          ],
+          [
+            -0.08107319474220276,
+            -0.13645264506340027,
+            1.5366629362106323
+          ]
+        ]
+      },
+      {
+        "name": "Eye_TearLine_R",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Character"
+        ],
+        "base_vertices": 57,
+        "evaluated_vertices": 57,
+        "evaluated_polygons": 36,
+        "bounds": [
+          [
+            -0.10603408515453339,
+            -0.16649369895458221,
+            1.5092095136642456
+          ],
+          [
+            -0.093582883477211,
+            -0.16249404847621918,
+            1.5161103010177612
+          ]
+        ]
+      },
+      {
+        "name": "Eye_Caruncle_R",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Character"
+        ],
+        "base_vertices": 128,
+        "evaluated_vertices": 128,
+        "evaluated_polygons": 140,
+        "bounds": [
+          [
+            -0.09241720288991928,
+            -0.16299769282341003,
+            1.5172119140625
+          ],
+          [
+            -0.08739715069532394,
+            -0.15927207469940186,
+            1.5216553211212158
+          ]
+        ]
+      },
+      {
+        "name": "Character_Rig",
+        "type": "ARMATURE",
+        "hidden_render": false,
+        "collections": [
+          "Character"
+        ]
+      },
+      {
+        "name": "Sweater",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Sweater"
+        ],
+        "base_vertices": 3474,
+        "evaluated_vertices": 13778,
+        "evaluated_polygons": 13608,
+        "bounds": [
+          [
+            -0.29705145955085754,
+            -0.40467122197151184,
+            0.9873363375663757
+          ],
+          [
+            0.30368074774742126,
+            0.05574634671211243,
+            1.4197027683258057
+          ]
+        ]
+      },
+      {
+        "name": "Sweater_Fuzz",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "Sweater"
+        ],
+        "bounds": [
+          [
+            -0.3015033006668091,
+            -0.40733981132507324,
+            0.9822986721992493
+          ],
+          [
+            0.3067781329154968,
+            0.057752110064029694,
+            1.417750597000122
+          ]
+        ]
+      },
+      {
+        "name": "Hair_VolumeCap",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Hair"
+        ],
+        "base_vertices": 721,
+        "evaluated_vertices": 2881,
+        "evaluated_polygons": 2840,
+        "bounds": [
+          [
+            -0.15299192070960999,
+            -0.16460998356342316,
+            1.5056146383285522
+          ],
+          [
+            0.0014650747179985046,
+            0.008309520781040192,
+            1.653183102607727
+          ]
+        ]
+      },
+      {
+        "name": "Hair_Main",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "Hair"
+        ],
+        "bounds": [
+          [
+            -0.23793832957744598,
+            -0.2862129807472229,
+            0.9582617282867432
+          ],
+          [
+            0.14411258697509766,
+            0.19167694449424744,
+            1.6575499773025513
+          ]
+        ]
+      },
+      {
+        "name": "Hair_Bangs_Sheer",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "Hair"
+        ],
+        "bounds": [
+          [
+            -0.14971688389778137,
+            -0.19061493873596191,
+            1.4906325340270996
+          ],
+          [
+            0.03272193670272827,
+            -0.07710015028715134,
+            1.6517084836959839
+          ]
+        ]
+      },
+      {
+        "name": "Hair_FaceFraming",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "Hair"
+        ],
+        "bounds": [
+          [
+            -0.19805309176445007,
+            -0.19723007082939148,
+            1.2330330610275269
+          ],
+          [
+            0.02642064541578293,
+            -0.06265269964933395,
+            1.6389416456222534
+          ]
+        ]
+      },
+      {
+        "name": "Hair_Flyaways",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "Hair"
+        ],
+        "bounds": [
+          [
+            -0.21586973965168,
+            -0.1488894373178482,
+            1.259332537651062
+          ],
+          [
+            0.06625322997570038,
+            0.06809677928686142,
+            1.6541681289672852
+          ]
+        ]
+      },
+      {
+        "name": "Eyebrows_3D",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "Hair"
+        ],
+        "bounds": [
+          [
+            -0.12768319249153137,
+            -0.18419146537780762,
+            1.5279759168624878
+          ],
+          [
+            -0.031039122492074966,
+            -0.1586828976869583,
+            1.5674837827682495
+          ]
+        ]
+      },
+      {
+        "name": "Eyelashes_3D",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "Hair"
+        ],
+        "bounds": [
+          [
+            -0.11322208493947983,
+            -0.18403030931949615,
+            1.510380506515503
+          ],
+          [
+            -0.032258640974760056,
+            -0.16097117960453033,
+            1.5474579334259033
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Chair_Back",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 144,
+        "evaluated_vertices": 564,
+        "evaluated_polygons": 552,
+        "bounds": [
+          [
+            -0.36472874879837036,
+            0.21481993794441223,
+            1.323409914970398
+          ],
+          [
+            0.12472876161336899,
+            0.2749404013156891,
+            1.3690375089645386
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Chair_Post_R",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            -0.22599999606609344,
+            0.23399999737739563,
+            0.8249999284744263
+          ],
+          [
+            -0.1939999908208847,
+            0.26600000262260437,
+            1.274999976158142
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Chair_Post_L",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.1939999908208847,
+            0.23399999737739563,
+            0.8249999284744263
+          ],
+          [
+            0.22599999606609344,
+            0.26600000262260437,
+            1.274999976158142
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Foreground_Table",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 8,
+        "evaluated_polygons": 6,
+        "bounds": [
+          [
+            -0.22499999403953552,
+            -0.6749999523162842,
+            0.9440000057220459
+          ],
+          [
+            0.7250000238418579,
+            -0.025000005960464478,
+            0.9759999513626099
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Back_Wall",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 4,
+        "evaluated_vertices": 4,
+        "evaluated_polygons": 1,
+        "bounds": [
+          [
+            -2.4000000953674316,
+            2.749999761581421,
+            -1.5
+          ],
+          [
+            3.5999999046325684,
+            2.750000238418579,
+            4.5
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Sunlit_Window",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 4,
+        "evaluated_vertices": 4,
+        "evaluated_polygons": 1,
+        "bounds": [
+          [
+            -2.6126949787139893,
+            2.253115177154541,
+            0.5499999523162842
+          ],
+          [
+            -0.2873051166534424,
+            2.8468847274780273,
+            2.950000047683716
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Window_Mullion_-1.4",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 8,
+        "evaluated_polygons": 6,
+        "bounds": [
+          [
+            -1.4725000858306885,
+            2.375,
+            0.6499999761581421
+          ],
+          [
+            -1.4275000095367432,
+            2.4250001907348633,
+            2.8499999046325684
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Window_Mullion_-0.8",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 8,
+        "evaluated_polygons": 6,
+        "bounds": [
+          [
+            -0.8725000023841858,
+            2.375,
+            0.6499999761581421
+          ],
+          [
+            -0.82750004529953,
+            2.4250001907348633,
+            2.8499999046325684
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Window_Mullion_-0.3",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 8,
+        "evaluated_polygons": 6,
+        "bounds": [
+          [
+            -0.3725000023841858,
+            2.375,
+            0.6499999761581421
+          ],
+          [
+            -0.32749998569488525,
+            2.4250001907348633,
+            2.8499999046325684
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Pot",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            -0.7199999690055847,
+            1.409999966621399,
+            1.2699999809265137
+          ],
+          [
+            -0.4399999976158142,
+            1.6899999380111694,
+            1.4900000095367432
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_0",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.5991858243942261,
+            1.3373222351074219,
+            1.5948816537857056
+          ],
+          [
+            -0.49309417605400085,
+            1.467839241027832,
+            1.657784104347229
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_1",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.6408541798591614,
+            1.413216471672058,
+            1.6588188409805298
+          ],
+          [
+            -0.48748281598091125,
+            1.5919784307479858,
+            1.7495304346084595
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_2",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.603962242603302,
+            1.5297632217407227,
+            1.9356768131256104
+          ],
+          [
+            -0.40732893347740173,
+            1.7300941944122314,
+            2.069288969039917
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_3",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.6024830937385559,
+            1.4356024265289307,
+            1.6387323141098022
+          ],
+          [
+            -0.4626893401145935,
+            1.5736775398254395,
+            1.7285321950912476
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_4",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.5655499696731567,
+            1.6583690643310547,
+            1.4860293865203857
+          ],
+          [
+            -0.43985509872436523,
+            1.8020308017730713,
+            1.5649909973144531
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_5",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.6110463738441467,
+            1.5107415914535522,
+            1.927493929862976
+          ],
+          [
+            -0.4847966134548187,
+            1.6282142400741577,
+            2.0069966316223145
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_6",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.6246012449264526,
+            1.3308113813400269,
+            1.8282849788665771
+          ],
+          [
+            -0.4559817314147949,
+            1.527441382408142,
+            1.9366669654846191
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_7",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.5570822358131409,
+            1.5308643579483032,
+            1.5298486948013306
+          ],
+          [
+            -0.37355533242225647,
+            1.701121211051941,
+            1.6237460374832153
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_8",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.5500187277793884,
+            1.5285977125167847,
+            1.955992579460144
+          ],
+          [
+            -0.36856329441070557,
+            1.6869257688522339,
+            2.0680580139160156
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_9",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.7467866539955139,
+            1.4938591718673706,
+            1.5109676122665405
+          ],
+          [
+            -0.5865758061408997,
+            1.6170700788497925,
+            1.6193958520889282
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_10",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.5799955129623413,
+            1.4242444038391113,
+            1.8927416801452637
+          ],
+          [
+            -0.466974139213562,
+            1.543351173400879,
+            1.9695754051208496
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_11",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.8877807855606079,
+            1.5691204071044922,
+            1.9894481897354126
+          ],
+          [
+            -0.7073390483856201,
+            1.730006217956543,
+            2.093630313873291
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_12",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.6342717409133911,
+            1.3662152290344238,
+            1.9805290699005127
+          ],
+          [
+            -0.5162109136581421,
+            1.539832592010498,
+            2.128471612930298
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_13",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.6265297532081604,
+            1.581465244293213,
+            1.9801461696624756
+          ],
+          [
+            -0.5238388180732727,
+            1.7176012992858887,
+            2.036799669265747
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_14",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.8019410967826843,
+            1.5056644678115845,
+            1.727174997329712
+          ],
+          [
+            -0.6109721064567566,
+            1.6478146314620972,
+            1.878563642501831
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_15",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.6207555532455444,
+            1.4420500993728638,
+            1.5941132307052612
+          ],
+          [
+            -0.5147219896316528,
+            1.5797041654586792,
+            1.7056983709335327
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_16",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.5755262970924377,
+            1.3759897947311401,
+            1.4884732961654663
+          ],
+          [
+            -0.4353277087211609,
+            1.5228761434555054,
+            1.5643657445907593
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_17",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.8729050159454346,
+            1.5693074464797974,
+            1.7214338779449463
+          ],
+          [
+            -0.7676951885223389,
+            1.6572505235671997,
+            1.7609646320343018
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_18",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.6498717069625854,
+            1.5408430099487305,
+            2.0489118099212646
+          ],
+          [
+            -0.550477147102356,
+            1.6534993648529053,
+            2.096642255783081
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_19",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.540647029876709,
+            1.3396565914154053,
+            1.4844787120819092
+          ],
+          [
+            -0.44127142429351807,
+            1.448890209197998,
+            1.5531764030456543
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_20",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.5934889912605286,
+            1.5489225387573242,
+            1.669149398803711
+          ],
+          [
+            -0.4932587742805481,
+            1.6582379341125488,
+            1.7423744201660156
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_21",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.7667520046234131,
+            1.3349908590316772,
+            2.0380215644836426
+          ],
+          [
+            -0.6539058685302734,
+            1.4520634412765503,
+            2.121522903442383
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_22",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.7286801934242249,
+            1.5003676414489746,
+            1.908589243888855
+          ],
+          [
+            -0.6120348572731018,
+            1.5816638469696045,
+            1.9962047338485718
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_23",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.5861539244651794,
+            1.3125529289245605,
+            1.7831225395202637
+          ],
+          [
+            -0.4383302628993988,
+            1.4607656002044678,
+            1.9272139072418213
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_24",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.7531822323799133,
+            1.3142668008804321,
+            1.5420001745224
+          ],
+          [
+            -0.5763881802558899,
+            1.5079783201217651,
+            1.6770504713058472
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_25",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.518728494644165,
+            1.6124221086502075,
+            1.6663527488708496
+          ],
+          [
+            -0.3312492072582245,
+            1.7979289293289185,
+            1.7607319355010986
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_26",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.7924044132232666,
+            1.4240554571151733,
+            1.7248609066009521
+          ],
+          [
+            -0.6271661520004272,
+            1.5555592775344849,
+            1.8648278713226318
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_27",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.5356248021125793,
+            1.263556957244873,
+            1.8752940893173218
+          ],
+          [
+            -0.3477379381656647,
+            1.4613714218139648,
+            1.964746117591858
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_28",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.7761065363883972,
+            1.4365673065185547,
+            1.5444918870925903
+          ],
+          [
+            -0.5793611407279968,
+            1.5949759483337402,
+            1.689001441001892
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_29",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.5183805823326111,
+            1.4808121919631958,
+            1.5893924236297607
+          ],
+          [
+            -0.37233975529670715,
+            1.5907646417617798,
+            1.6531267166137695
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_30",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.6401194930076599,
+            1.2900488376617432,
+            1.892883539199829
+          ],
+          [
+            -0.5642015337944031,
+            1.3854682445526123,
+            1.9650466442108154
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_31",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.5703654885292053,
+            1.427477240562439,
+            1.8555552959442139
+          ],
+          [
+            -0.4214063584804535,
+            1.5652164220809937,
+            1.9363634586334229
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_32",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.5989895462989807,
+            1.320717453956604,
+            1.7859461307525635
+          ],
+          [
+            -0.48400384187698364,
+            1.4621425867080688,
+            1.8801863193511963
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Plant_Leaf_33",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            -0.5673409104347229,
+            1.5195449590682983,
+            1.5556550025939941
+          ],
+          [
+            -0.4256649911403656,
+            1.6409090757369995,
+            1.6207447052001953
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Counter",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 8,
+        "evaluated_polygons": 6,
+        "bounds": [
+          [
+            -0.09999996423721313,
+            1.975000023841858,
+            0.824999988079071
+          ],
+          [
+            2.0,
+            2.5250000953674316,
+            1.4749999046325684
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Shelf_1.78",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 8,
+        "evaluated_polygons": 6,
+        "bounds": [
+          [
+            0.1499999761581421,
+            2.4099998474121094,
+            1.7649999856948853
+          ],
+          [
+            1.9499999284744263,
+            2.690000057220459,
+            1.7949999570846558
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Mug_1.78_0",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.35500001907348633,
+            2.4749999046325684,
+            1.7950000762939453
+          ],
+          [
+            0.4449999928474426,
+            2.565000057220459,
+            1.9049999713897705
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Mug_1.78_1",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.6349999904632568,
+            2.4749999046325684,
+            1.7950000762939453
+          ],
+          [
+            0.7250000238418579,
+            2.565000057220459,
+            1.9049999713897705
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Mug_1.78_2",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.9149999618530273,
+            2.4749999046325684,
+            1.7950000762939453
+          ],
+          [
+            1.0049999952316284,
+            2.565000057220459,
+            1.9049999713897705
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Mug_1.78_3",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            1.1950000524520874,
+            2.4749999046325684,
+            1.7950000762939453
+          ],
+          [
+            1.284999966621399,
+            2.565000057220459,
+            1.9049999713897705
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Mug_1.78_4",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            1.475000023841858,
+            2.4749999046325684,
+            1.7950000762939453
+          ],
+          [
+            1.5649999380111694,
+            2.565000057220459,
+            1.9049999713897705
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Shelf_2.08",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 8,
+        "evaluated_polygons": 6,
+        "bounds": [
+          [
+            0.1499999761581421,
+            2.4099998474121094,
+            2.06499981880188
+          ],
+          [
+            1.9499999284744263,
+            2.690000057220459,
+            2.0950000286102295
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Mug_2.08_0",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.35500001907348633,
+            2.4749999046325684,
+            2.0950000286102295
+          ],
+          [
+            0.4449999928474426,
+            2.565000057220459,
+            2.205000162124634
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Mug_2.08_1",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.6349999904632568,
+            2.4749999046325684,
+            2.0950000286102295
+          ],
+          [
+            0.7250000238418579,
+            2.565000057220459,
+            2.205000162124634
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Mug_2.08_2",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.9149999618530273,
+            2.4749999046325684,
+            2.0950000286102295
+          ],
+          [
+            1.0049999952316284,
+            2.565000057220459,
+            2.205000162124634
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Mug_2.08_3",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            1.1950000524520874,
+            2.4749999046325684,
+            2.0950000286102295
+          ],
+          [
+            1.284999966621399,
+            2.565000057220459,
+            2.205000162124634
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Mug_2.08_4",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            1.475000023841858,
+            2.4749999046325684,
+            2.0950000286102295
+          ],
+          [
+            1.5649999380111694,
+            2.565000057220459,
+            2.205000162124634
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Back_Table",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 8,
+        "evaluated_polygons": 6,
+        "bounds": [
+          [
+            0.3050000071525574,
+            0.9750000238418579,
+            1.03249990940094
+          ],
+          [
+            1.0550000667572021,
+            1.524999976158142,
+            1.0674999952316284
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Flower_Vase",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.5199999809265137,
+            1.1800000667572021,
+            1.0699999332427979
+          ],
+          [
+            0.6000000238418579,
+            1.2599999904632568,
+            1.2100000381469727
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_FlowerStem_0",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.5547490119934082,
+            1.2170000076293945,
+            1.12112295627594
+          ],
+          [
+            0.5902509689331055,
+            1.2230000495910645,
+            1.2388769388198853
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Flower_0",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            0.5707340836524963,
+            1.2050000429153442,
+            1.225000023841858
+          ],
+          [
+            0.5992658734321594,
+            1.2350000143051147,
+            1.2549999952316284
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_FlowerStem_1",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.5612055659294128,
+            1.2208367586135864,
+            1.1424764394760132
+          ],
+          [
+            0.5888271927833557,
+            1.2470744848251343,
+            1.2608569860458374
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Flower_1",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            0.575766921043396,
+            1.2329111099243164,
+            1.246666669845581
+          ],
+          [
+            0.6042987108230591,
+            1.262911081314087,
+            1.2766666412353516
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_FlowerStem_2",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.5580082535743713,
+            1.2307111024856567,
+            1.1644034385681152
+          ],
+          [
+            0.5661603808403015,
+            1.2661362886428833,
+            1.2822632789611816
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Flower_2",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            0.5499026775360107,
+            1.2618473768234253,
+            1.2683333158493042
+          ],
+          [
+            0.5784344673156738,
+            1.2918473482131958,
+            1.2983332872390747
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_FlowerStem_3",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.5565084218978882,
+            1.214795708656311,
+            1.1859737634658813
+          ],
+          [
+            0.5690546035766602,
+            1.2495774030685425,
+            1.3040262460708618
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Flower_3",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            0.551297128200531,
+            1.2293732166290283,
+            1.2899999618530273
+          ],
+          [
+            0.5798289179801941,
+            1.2593731880187988,
+            1.3199999332427979
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_FlowerStem_4",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.5393627285957336,
+            1.221932053565979,
+            1.1208442449569702
+          ],
+          [
+            0.5601088404655457,
+            1.2535585165023804,
+            1.239155650138855
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Flower_4",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            0.525205671787262,
+            1.2404906749725342,
+            1.225000023841858
+          ],
+          [
+            0.553737461566925,
+            1.2704906463623047,
+            1.2549999952316284
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_FlowerStem_5",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.5156196355819702,
+            1.220970630645752,
+            1.142605185508728
+          ],
+          [
+            0.5498858690261841,
+            1.2357432842254639,
+            1.2607282400131226
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Flower_5",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            0.49123963713645935,
+            1.2217137813568115,
+            1.246666669845581
+          ],
+          [
+            0.5197713971138,
+            1.251713752746582,
+            1.2766666412353516
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_FlowerStem_6",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.5324193239212036,
+            1.2159457206726074,
+            1.1642060279846191
+          ],
+          [
+            0.5650564432144165,
+            1.2349014282226562,
+            1.2824606895446777
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Flower_6",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            0.5232098698616028,
+            1.215847134590149,
+            1.2683333158493042
+          ],
+          [
+            0.5517416596412659,
+            1.2458471059799194,
+            1.2983332872390747
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_FlowerStem_7",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.5232928991317749,
+            1.2065212726593018,
+            1.1859372854232788
+          ],
+          [
+            0.5575382709503174,
+            1.2213623523712158,
+            1.3040627241134644
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Flower_7",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            0.5065653324127197,
+            1.1928837299346924,
+            1.2899999618530273
+          ],
+          [
+            0.5350971221923828,
+            1.222883701324463,
+            1.3199999332427979
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_FlowerStem_8",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.5354472398757935,
+            1.1794648170471191,
+            1.1208449602127075
+          ],
+          [
+            0.5561318397521973,
+            1.2111260890960693,
+            1.2391549348831177
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Flower_8",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            0.5173131823539734,
+            1.1555910110473633,
+            1.225000023841858
+          ],
+          [
+            0.5458449721336365,
+            1.1855909824371338,
+            1.2549999952316284
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_FlowerStem_9",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.5400151610374451,
+            1.1956312656402588,
+            1.1424814462661743
+          ],
+          [
+            0.5643976330757141,
+            1.224822998046875,
+            1.2608519792556763
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Flower_9",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            0.5301468372344971,
+            1.185454249382019,
+            1.246666669845581
+          ],
+          [
+            0.5586786270141602,
+            1.2154542207717896,
+            1.2766666412353516
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_FlowerStem_10",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.5574370622634888,
+            1.1818485260009766,
+            1.1644017696380615
+          ],
+          [
+            0.5656596422195435,
+            1.217268466949463,
+            1.2822649478912354
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Flower_10",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            0.5488307476043701,
+            1.1641170978546143,
+            1.2683333158493042
+          ],
+          [
+            0.5773625373840332,
+            1.1941170692443848,
+            1.2983332872390747
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_FlowerStem_11",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.5670878887176514,
+            1.1875555515289307,
+            1.185809850692749
+          ],
+          [
+            0.594758152961731,
+            1.2137415409088135,
+            1.3041901588439941
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Flower_11",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            0.5875800848007202,
+            1.1662970781326294,
+            1.2899999618530273
+          ],
+          [
+            0.6161118745803833,
+            1.1962970495224,
+            1.3199999332427979
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_FlowerStem_12",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.5556023716926575,
+            1.1956312656402588,
+            1.1208146810531616
+          ],
+          [
+            0.5799848437309265,
+            1.224822998046875,
+            1.2391852140426636
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Flower_12",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            0.5613213777542114,
+            1.185454249382019,
+            1.225000023841858
+          ],
+          [
+            0.5898531675338745,
+            1.2154542207717896,
+            1.2549999952316284
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_FlowerStem_13",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 64,
+        "evaluated_vertices": 64,
+        "evaluated_polygons": 34,
+        "bounds": [
+          [
+            0.5626639723777771,
+            1.2117397785186768,
+            1.1426892280578613
+          ],
+          [
+            0.5978829264640808,
+            1.222182035446167,
+            1.2606441974639893
+          ]
+        ]
+      },
+      {
+        "name": "Cafe_Flower_13",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "CafeScenery"
+        ],
+        "base_vertices": 42,
+        "evaluated_vertices": 42,
+        "evaluated_polygons": 80,
+        "bounds": [
+          [
+            0.5862810611724854,
+            1.198921799659729,
+            1.246666669845581
+          ],
+          [
+            0.6148128509521484,
+            1.2289217710494995,
+            1.2766666412353516
+          ]
+        ]
+      },
+      {
+        "name": "Key_CafeWindow",
+        "type": "LIGHT",
+        "hidden_render": false,
+        "collections": [
+          "Lights"
+        ]
+      },
+      {
+        "name": "Fill_CafeInterior",
+        "type": "LIGHT",
+        "hidden_render": false,
+        "collections": [
+          "Lights"
+        ]
+      },
+      {
+        "name": "Rim_BackWindow",
+        "type": "LIGHT",
+        "hidden_render": false,
+        "collections": [
+          "Lights"
+        ]
+      },
+      {
+        "name": "Fill_TopBounce",
+        "type": "LIGHT",
+        "hidden_render": false,
+        "collections": [
+          "Lights"
+        ]
+      },
+      {
+        "name": "Beauty_Camera",
+        "type": "CAMERA",
+        "hidden_render": false,
+        "collections": [
+          "Cameras"
+        ]
+      },
+      {
+        "name": "Cam_Front",
+        "type": "CAMERA",
+        "hidden_render": false,
+        "collections": [
+          "Cameras"
+        ]
+      },
+      {
+        "name": "Cam_ThreeQuarter",
+        "type": "CAMERA",
+        "hidden_render": false,
+        "collections": [
+          "Cameras"
+        ]
+      },
+      {
+        "name": "Cam_Side",
+        "type": "CAMERA",
+        "hidden_render": false,
+        "collections": [
+          "Cameras"
+        ]
+      },
+      {
+        "name": "Cam_Back",
+        "type": "CAMERA",
+        "hidden_render": false,
+        "collections": [
+          "Cameras"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "name": "cafe_oak_wood",
+        "size": [
+          512,
+          512
+        ],
+        "packed": true,
+        "source": "FILE",
+        "file_exists": true
+      },
+      {
+        "name": "iris_eye",
+        "size": [
+          1024,
+          1024
+        ],
+        "packed": true,
+        "source": "FILE",
+        "file_exists": true
+      },
+      {
+        "name": "knit_albedo",
+        "size": [
+          1024,
+          1024
+        ],
+        "packed": true,
+        "source": "FILE",
+        "file_exists": true
+      },
+      {
+        "name": "knit_height",
+        "size": [
+          1024,
+          1024
+        ],
+        "packed": true,
+        "source": "FILE",
+        "file_exists": true
+      },
+      {
+        "name": "knit_rib_albedo",
+        "size": [
+          1024,
+          1024
+        ],
+        "packed": true,
+        "source": "FILE",
+        "file_exists": true
+      },
+      {
+        "name": "knit_rib_height",
+        "size": [
+          1024,
+          1024
+        ],
+        "packed": true,
+        "source": "FILE",
+        "file_exists": true
+      },
+      {
+        "name": "knit_roughness",
+        "size": [
+          1024,
+          1024
+        ],
+        "packed": true,
+        "source": "FILE",
+        "file_exists": true
+      },
+      {
+        "name": "skin_albedo",
+        "size": [
+          2048,
+          2048
+        ],
+        "packed": true,
+        "source": "FILE",
+        "file_exists": true
+      },
+      {
+        "name": "skin_bump",
+        "size": [
+          2048,
+          2048
+        ],
+        "packed": true,
+        "source": "FILE",
+        "file_exists": true
+      },
+      {
+        "name": "skin_roughness",
+        "size": [
+          2048,
+          2048
+        ],
+        "packed": true,
+        "source": "FILE",
+        "file_exists": true
+      }
+    ],
+    "total_evaluated_mesh_vertices": 72669,
+    "native_hair_objects": [
+      "Sweater_Fuzz",
+      "Hair_Main",
+      "Hair_Bangs_Sheer",
+      "Hair_FaceFraming",
+      "Hair_Flyaways",
+      "Eyebrows_3D",
+      "Eyelashes_3D"
+    ],
+    "limits": {
+      "all_images_at_most_2048": true,
+      "resources_resolve": true
+    },
+    "actual_evaluated_character_bounds": {
+      "min": [
+        -0.27670344710350037,
+        -0.5046842694282532,
+        0.9714246392250061
+      ],
+      "max": [
+        0.2804354429244995,
+        0.0449981652200222,
+        1.6516551971435547
+      ],
+      "method": "World coordinates of evaluated mesh vertices, including converted curve geometry; native Curves objects contribute their authored control points."
+    },
+    "native_curves_not_exported": {
+      "objects": [],
+      "reason": "Native Curves (hair) objects have no faces; glTF mesh export cannot carry them. They remain in the .blend and in the Cycles renders."
+    },
+    "diagnostic_projection_bounds": [],
+    "glb_export": {
+      "path": "character.glb",
+      "selected_objects": [
+        "Eye_Caruncle_L",
+        "Character_Body",
+        "Eye_TearLine_L",
+        "Eye_Cornea_L",
+        "Eye_Inner_L",
+        "Eye_Inner_R",
+        "Eye_Cornea_R",
+        "Eye_TearLine_R",
+        "Eye_Caruncle_R",
+        "Character_Rig"
+      ],
+      "curves_converted_for_export_only": [],
+      "procedural_material_fallbacks": [],
+      "bytes": 7208280,
+      "sha256": "1191f9261731174023fd9d3e3a42b024eab25244d66b26808eb39899685db978",
+      "note": "Procedural Blender shaders and lighting can differ in GLB. The source .blend was not saved or modified."
+    },
+    "source_sha256_after": "150fa734ac50c6250d2f2aba7bbbc2c11a53f525d243bd712f7e44cb7400d570",
+    "source_unchanged": true
+  },
+  "glb": {
+    "path": "character.glb",
+    "bytes": 7208280,
+    "sha256": "1191f9261731174023fd9d3e3a42b024eab25244d66b26808eb39899685db978",
+    "container_magic_ok": true,
+    "container_version": 2,
+    "reimport": {
+      "meshes": 10,
+      "vertices": 61340,
+      "materials": 6,
+      "images": 4
+    },
+    "reimport_succeeded": true
+  },
+  "privacy_scan": {
+    "files_scanned": 32,
+    "personal_strings_checked": 5,
+    "hits": [
+      {
+        "file": "character.blend",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "character.blend",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "character.blend",
+        "payload": "raw",
+        "kind": "pattern",
+        "pattern": "/Users/[A-Za-z0-9_.-]+"
+      },
+      {
+        "file": "character.blend",
+        "payload": "zstd-decompressed",
+        "kind": "personal-string"
+      },
+      {
+        "file": "character.blend",
+        "payload": "zstd-decompressed",
+        "kind": "personal-string"
+      },
+      {
+        "file": "character.blend",
+        "payload": "zstd-decompressed",
+        "kind": "pattern",
+        "pattern": "/Users/[A-Za-z0-9_.-]+"
+      },
+      {
+        "file": "renders/back.png",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "renders/back.png",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "renders/back.png",
+        "payload": "raw",
+        "kind": "pattern",
+        "pattern": "/Users/[A-Za-z0-9_.-]+"
+      },
+      {
+        "file": "renders/beauty.png",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "renders/beauty.png",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "renders/beauty.png",
+        "payload": "raw",
+        "kind": "pattern",
+        "pattern": "/Users/[A-Za-z0-9_.-]+"
+      },
+      {
+        "file": "renders/front.png",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "renders/front.png",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "renders/front.png",
+        "payload": "raw",
+        "kind": "pattern",
+        "pattern": "/Users/[A-Za-z0-9_.-]+"
+      },
+      {
+        "file": "renders/side.png",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "renders/side.png",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "renders/side.png",
+        "payload": "raw",
+        "kind": "pattern",
+        "pattern": "/Users/[A-Za-z0-9_.-]+"
+      },
+      {
+        "file": "renders/three-quarter.png",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "renders/three-quarter.png",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "renders/three-quarter.png",
+        "payload": "raw",
+        "kind": "pattern",
+        "pattern": "/Users/[A-Za-z0-9_.-]+"
+      }
+    ],
+    "clean": false
+  }
+}

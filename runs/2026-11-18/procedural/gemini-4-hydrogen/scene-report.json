@@ -1,0 +1,167 @@
+{
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "samples": 32,
+  "denoising": true,
+  "view_transform": "AgX",
+  "important_objects": [
+    "Character_Body",
+    "Eye_Inner_L",
+    "Eye_Cornea_L",
+    "Eye_TearLine_L",
+    "Eye_Caruncle_L",
+    "Eye_Inner_R",
+    "Eye_Cornea_R",
+    "Eye_TearLine_R",
+    "Eye_Caruncle_R",
+    "Character_Rig",
+    "Sweater",
+    "Sweater_Fuzz",
+    "Hair_VolumeCap",
+    "Hair_Main",
+    "Hair_Bangs_Sheer",
+    "Hair_FaceFraming",
+    "Hair_Flyaways",
+    "Eyebrows_3D",
+    "Eyelashes_3D",
+    "Character_Rig",
+    "Beauty_Camera",
+    "Cam_Front",
+    "Cam_ThreeQuarter",
+    "Cam_Side",
+    "Cam_Back"
+  ],
+  "character_bounds": {
+    "min": [
+      -0.3015,
+      -0.5047,
+      0.9583
+    ],
+    "max": [
+      0.3068,
+      0.1916,
+      1.6573
+    ],
+    "size": [
+      0.6083,
+      0.6963,
+      0.699
+    ]
+  },
+  "mesh_counts": {
+    "base_vertices": 17239,
+    "base_faces": 17438,
+    "evaluated_vertices": 68225,
+    "evaluated_faces": 68096
+  },
+  "hair_curve_counts": {
+    "total_curves": 18550,
+    "total_control_points": 331404
+  },
+  "generated_textures": [
+    {
+      "name": "skin_albedo.png",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "colorspace": "sRGB",
+      "description": "Procedural warm fair porcelain-peach face/neck albedo with landmark-registered cheek blush, coral-rose lip gradient, subtle lash-line warmth, and fine mottled melanin variation."
+    },
+    {
+      "name": "skin_roughness.png",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "colorspace": "Non-Color",
+      "description": "Facial roughness map with dewy T-zone/cheekbone highlights, moist lower-lip sheen, and micro-pore roughness variation."
+    },
+    {
+      "name": "skin_bump.png",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "colorspace": "Non-Color",
+      "description": "Restrained multi-scale skin pore heightmap and vertical lip micro-creases."
+    },
+    {
+      "name": "iris_eye.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB",
+      "description": "Warm chestnut-brown iris with radial collagen striations, amber peripupillary collarette, dark limbal ring, and soft off-white sclera."
+    },
+    {
+      "name": "knit_albedo.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB",
+      "description": "Tileable dusty rose-pink melange stockinette V-stitch yarn color map."
+    },
+    {
+      "name": "knit_height.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color",
+      "description": "Tileable stockinette V-stitch heightmap for yarn relief bump shading."
+    },
+    {
+      "name": "knit_roughness.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color",
+      "description": "Tileable matte-wool knit yarn roughness map with fiber noise."
+    },
+    {
+      "name": "knit_rib_albedo.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB",
+      "description": "Tileable dusty rose-pink 2x2 ribbed knit albedo for crew-neck collar, cuffs, and waist hem."
+    },
+    {
+      "name": "knit_rib_height.png",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color",
+      "description": "Tileable 2x2 ribbed knit heightmap."
+    },
+    {
+      "name": "cafe_oak_wood.png",
+      "resolution": [
+        512,
+        512
+      ],
+      "colorspace": "sRGB",
+      "description": "Procedural oak wood grain texture for cafe chair, foreground table, and counter."
+    }
+  ],
+  "rendered_files": [
+    "renders/beauty.png",
+    "renders/front.png",
+    "renders/three-quarter.png",
+    "renders/side.png",
+    "renders/back.png"
+  ],
+  "limitations": [
+    "Face likeness and soft closed-mouth smile are sculpted procedurally from the CC0 MakeHuman hm08 upper-body base topology rather than photogrammetry or manual digital sculpting.",
+    "Unseen anatomy (lower torso, lower back hair length, back of sweater, and relaxed hands extending past the ribbed cuffs) is inferred consistently for turnaround inspection.",
+    "Hair waves and wispy bangs are constructed from procedural guide curves with BVH surface sliding rather than baked physics cloth/hair simulation.",
+    "Cafe background furniture, window, plant, and flower vase are low-detail background props designed to sit softly out of focus behind the portrait."
+  ]
+}

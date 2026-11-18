@@ -70,3 +70,37 @@ GPT-6.2 Sol（`gpt-6.2-sol`）の追加実行です。どちらも Codex CLI（0
 両モデルの制作メモにあるとおり、見てCGと分かる仕上がりで、写真の人物の再現ではありません。
 顔はCC0ベースを手続き的に変形したもので、横顔・背面・手などは1枚の写真からの推定です。
 制作向けのリグや下半身は含まれません。
+
+## Gemini 4 Carbon / Gemini 4 Hydrogen（同日追加）
+
+同じ共通入力・共通プロンプトで、Gemini 4 Carbon と Gemini 4 Hydrogen の初回（写真テクスチャ禁止）も同日に実行しました。コーディネーターは GPT-6.2 実行とは別の Muse セッションで、実行条件の詳細は[Gemini分のハーネス記録](harness/README-gemini.md)にまとめています。外見の採点・順位付けは行いません。
+
+### Gemini 4 Carbon
+
+- 初回: [Blenderシーン](procedural/gemini-4-carbon/character.blend) / [閲覧用GLB](procedural/gemini-4-carbon/character.glb) / [制作コード](procedural/gemini-4-carbon/build.py) / [Carbon の制作メモ](procedural/gemini-4-carbon/README.md) / [コーディネーターの検査結果](procedural/gemini-4-carbon/validation.json)
+- 実行時間: 09:31:34 → 11:05:29 JST（5,635秒）、exit_code 0
+- コスト: API従量課金。トークン実績（入力 16,153,607＝うちキャッシュ 13,807,278、出力 213,407）から導入期レートで換算した推定で約 $8.21。
+- 再ビルド（164.5秒、終了コード0）で再生成した5画像の画素データは元レンダーと全て一致しました。
+
+| 元写真 | 初回の完成カット |
+| --- | --- |
+| ![元写真](../../benchmarks/cafe-selfie-v1/inputs/reference.png) | ![Gemini 4 Carbonの初回レンダー](procedural/gemini-4-carbon/renders/beauty.png) |
+
+| 正面 | 斜め | 横 | 背面 |
+| --- | --- | --- | --- |
+| ![正面](procedural/gemini-4-carbon/renders/front.png) | ![斜め](procedural/gemini-4-carbon/renders/three-quarter.png) | ![横](procedural/gemini-4-carbon/renders/side.png) | ![背面](procedural/gemini-4-carbon/renders/back.png) |
+
+### Gemini 4 Hydrogen
+
+- 初回: [Blenderシーン](procedural/gemini-4-hydrogen/character.blend) / [閲覧用GLB](procedural/gemini-4-hydrogen/character.glb) / [制作コード](procedural/gemini-4-hydrogen/build.py) / [Hydrogen の制作メモ](procedural/gemini-4-hydrogen/README.md) / [コーディネーターの検査結果](procedural/gemini-4-hydrogen/validation.json)
+- 実行時間: 09:35頃 → 11:11頃 JST（約96分、対話TUIのため終了コードなし）
+- コスト: Google AI Ultra プランの利用枠での実行（API直接課金なし）。トークン使用量は取得できません。
+- 再ビルド（80.9秒、終了コード0）で5画像とも指定寸法で再生成されましたが、画素データは元レンダーと一致しませんでした（手続き的な毛髪・ファズ要素が画素単位で再現しないため）。
+
+| 元写真 | 初回の完成カット |
+| --- | --- |
+| ![元写真](../../benchmarks/cafe-selfie-v1/inputs/reference.png) | ![Gemini 4 Hydrogenの初回レンダー](procedural/gemini-4-hydrogen/renders/beauty.png) |
+
+| 正面 | 斜め | 横 | 背面 |
+| --- | --- | --- | --- |
+| ![正面](procedural/gemini-4-hydrogen/renders/front.png) | ![斜め](procedural/gemini-4-hydrogen/renders/three-quarter.png) | ![横](procedural/gemini-4-hydrogen/renders/side.png) | ![背面](procedural/gemini-4-hydrogen/renders/back.png) |
