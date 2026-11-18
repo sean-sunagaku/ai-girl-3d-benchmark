@@ -1,0 +1,2463 @@
+{
+  "stage": "procedural",
+  "entrant": "gpt-6.2-astra",
+  "checked_on_jst": "2026-11-18T09:33:44+0900",
+  "appearance_scoring": false,
+  "note": "Technical validation by the coordinator; not an appearance evaluation.",
+  "manifest_checks": [
+    {
+      "path": "inputs/reference.png",
+      "sha256_matches": true
+    },
+    {
+      "path": "inputs/base.obj",
+      "sha256_matches": true
+    },
+    {
+      "path": "inputs/upper-body.obj",
+      "sha256_matches": true
+    },
+    {
+      "path": "inputs/ASSET-LICENSE.md",
+      "sha256_matches": true
+    },
+    {
+      "path": "inputs/environment.json",
+      "sha256_matches": true
+    },
+    {
+      "path": "prompts/01-procedural.md",
+      "sha256_matches": true
+    },
+    {
+      "path": "prompts/02-photo-textured.md",
+      "sha256_matches": true
+    }
+  ],
+  "workspace_input_checks": [
+    {
+      "path": "PROMPT.md",
+      "byte_identical_to": "prompts/01-procedural.md",
+      "matches": true
+    },
+    {
+      "path": "input/ASSET-LICENSE.md",
+      "matches": true
+    },
+    {
+      "path": "input/base.obj",
+      "matches": true
+    },
+    {
+      "path": "input/environment.json",
+      "matches": true
+    },
+    {
+      "path": "input/reference.png",
+      "matches": true
+    },
+    {
+      "path": "input/upper-body.obj",
+      "matches": true
+    }
+  ],
+  "collected": {
+    "path": "runs/2026-11-18/procedural/gpt-6.2-astra",
+    "files": [
+      "PROMPT.md",
+      "README.md",
+      "atelier.py",
+      "build.py",
+      "character.blend",
+      "face.py",
+      "groom.py",
+      "hands.py",
+      "input/ASSET-LICENSE.md",
+      "input/base.obj",
+      "input/environment.json",
+      "input/reference.png",
+      "input/upper-body.obj",
+      "knit.py",
+      "previews/back.png",
+      "previews/beauty.png",
+      "previews/front.png",
+      "previews/side.png",
+      "previews/three-quarter.png",
+      "render.py",
+      "renders/back.png",
+      "renders/beauty.png",
+      "renders/front.png",
+      "renders/side.png",
+      "renders/three-quarter.png",
+      "report.py",
+      "room.py",
+      "scene-report.json",
+      "validation.json"
+    ],
+    "character_blend": {
+      "bytes": 11888766,
+      "sha256": "7619d23f9148706ca52ec4c3181db0c33489e8db94e992b711b03694ba4c4150",
+      "identical_to_workspace": true,
+      "sha256_after_inspection": "7619d23f9148706ca52ec4c3181db0c33489e8db94e992b711b03694ba4c4150",
+      "unchanged_by_inspection": true
+    }
+  },
+  "original_renders": {
+    "beauty.png": {
+      "sha256": "2e483fdaf22bb50004e8106d9a2b5ea4296ce57e8406858157c3bc0c3e10a09a",
+      "width": 960,
+      "height": 1040,
+      "text_chunks": {
+        "Date": "2026/11/18 09:28:16",
+        "Time": "00:00:00:01",
+        "Frame": "001",
+        "Camera": "Portrait â¢ window seat",
+        "Scene": "Window seat â¢ portrait",
+        "RenderTime": "01:09.52",
+        "cycles.ViewLayer.samples": "32",
+        "cycles.ViewLayer.total_time": "01:09.52",
+        "cycles.ViewLayer.render_time": "01:09.15",
+        "cycles.ViewLayer.synchronization_time": "00:00.36"
+      },
+      "idat_sha256": "09877cdc4e3472d1094bf7798cc83591d41946dbfc30482825d637c24238a3f0",
+      "expected": [
+        960,
+        1040
+      ],
+      "dimensions_ok": true
+    },
+    "front.png": {
+      "sha256": "464986cb1d969f429dc36a5411c3e45b5ff94fc56e962b24a63e13009e485e95",
+      "width": 768,
+      "height": 768,
+      "text_chunks": {
+        "Date": "2026/11/18 09:28:31",
+        "Time": "00:00:00:01",
+        "Frame": "001",
+        "Camera": "diagnostic â¢ front",
+        "Scene": "Window seat â¢ portrait",
+        "RenderTime": "00:14.93",
+        "cycles.ViewLayer.samples": "32",
+        "cycles.ViewLayer.total_time": "00:14.93",
+        "cycles.ViewLayer.render_time": "00:14.58",
+        "cycles.ViewLayer.synchronization_time": "00:00.35"
+      },
+      "idat_sha256": "de514ee6175702b5a6ab54387b3b22bd80f54e0f1223d3ced5b8b866b41656d9",
+      "expected": [
+        768,
+        768
+      ],
+      "dimensions_ok": true
+    },
+    "three-quarter.png": {
+      "sha256": "f65133abe6b8492d8f0a1f16c134d6bbf612d28d643af7ce232a44b05e5f1a5a",
+      "width": 768,
+      "height": 768,
+      "text_chunks": {
+        "Date": "2026/11/18 09:28:48",
+        "Time": "00:00:00:01",
+        "Frame": "001",
+        "Camera": "diagnostic â¢ three-quarter",
+        "Scene": "Window seat â¢ portrait",
+        "RenderTime": "00:16.16",
+        "cycles.ViewLayer.samples": "32",
+        "cycles.ViewLayer.total_time": "00:16.15",
+        "cycles.ViewLayer.render_time": "00:15.81",
+        "cycles.ViewLayer.synchronization_time": "00:00.33"
+      },
+      "idat_sha256": "ca0f25a9ed657ba1ec1868f751c35d11a56e8f94b6a48bd7636ef832d8bbb750",
+      "expected": [
+        768,
+        768
+      ],
+      "dimensions_ok": true
+    },
+    "side.png": {
+      "sha256": "bed892b25ff3cb7d78482f3653a6c5fe00c00f4beeb6d131120a16b1038884c7",
+      "width": 768,
+      "height": 768,
+      "text_chunks": {
+        "Date": "2026/11/18 09:29:04",
+        "Time": "00:00:00:01",
+        "Frame": "001",
+        "Camera": "diagnostic â¢ side",
+        "Scene": "Window seat â¢ portrait",
+        "RenderTime": "00:16.85",
+        "cycles.ViewLayer.samples": "32",
+        "cycles.ViewLayer.total_time": "00:16.85",
+        "cycles.ViewLayer.render_time": "00:16.52",
+        "cycles.ViewLayer.synchronization_time": "00:00.33"
+      },
+      "idat_sha256": "356749d357fcb76f69afe2786c20f53272f23908d2d14743e841a3fb3ca45244",
+      "expected": [
+        768,
+        768
+      ],
+      "dimensions_ok": true
+    },
+    "back.png": {
+      "sha256": "3eb069b943bb85517321dbd4988c9da3f31e8f65f4f6ab0a13042b1905233751",
+      "width": 768,
+      "height": 768,
+      "text_chunks": {
+        "Date": "2026/11/18 09:29:28",
+        "Time": "00:00:00:01",
+        "Frame": "001",
+        "Camera": "diagnostic â¢ back",
+        "Scene": "Window seat â¢ portrait",
+        "RenderTime": "00:23.78",
+        "cycles.ViewLayer.samples": "32",
+        "cycles.ViewLayer.total_time": "00:23.78",
+        "cycles.ViewLayer.render_time": "00:23.42",
+        "cycles.ViewLayer.synchronization_time": "00:00.36"
+      },
+      "idat_sha256": "e5d60d351e633dea1b1c1cda1cec39aba1c8aa1f634aaaf1a65e75a206cb45cc",
+      "expected": [
+        768,
+        768
+      ],
+      "dimensions_ok": true
+    }
+  },
+  "independent_rebuild": {
+    "command": "Blender --background --factory-startup --threads 3 --python build.py",
+    "exit_code": 0,
+    "seconds": 147.1,
+    "produced_character_blend": true,
+    "produced_scene_report": false,
+    "extra_steps": [
+      {
+        "step": "render.py",
+        "exit_code": 0
+      },
+      {
+        "step": "report.py",
+        "exit_code": 0
+      }
+    ],
+    "renders": {
+      "beauty.png": {
+        "sha256": "dc2e86f89c36f12b034deea1bf018c968e391c6fcc410c271dd4011a5f046409",
+        "width": 960,
+        "height": 1040,
+        "dimensions_ok": true,
+        "byte_identical_to_original": false,
+        "pixel_data_identical_to_original": true
+      },
+      "front.png": {
+        "sha256": "f2dfb6f54331395b1f712ed706fd633d8cf1a0747f77bf24959d8cdc2ae3cd7e",
+        "width": 768,
+        "height": 768,
+        "dimensions_ok": true,
+        "byte_identical_to_original": false,
+        "pixel_data_identical_to_original": true
+      },
+      "three-quarter.png": {
+        "sha256": "a79ac7df404aa08c61393c1402d20ff4a97307f5b2356d075968f24ff5d953d6",
+        "width": 768,
+        "height": 768,
+        "dimensions_ok": true,
+        "byte_identical_to_original": false,
+        "pixel_data_identical_to_original": true
+      },
+      "side.png": {
+        "sha256": "a83673cfa19a0a92fd12a7c9726a8b1356207b7b5dd44915f740b9ba4906e125",
+        "width": 768,
+        "height": 768,
+        "dimensions_ok": true,
+        "byte_identical_to_original": false,
+        "pixel_data_identical_to_original": true
+      },
+      "back.png": {
+        "sha256": "5c754df02f50f68b714028ebb72e62162452b0af92c984dd23fc82398f9a1f8b",
+        "width": 768,
+        "height": 768,
+        "dimensions_ok": true,
+        "byte_identical_to_original": false,
+        "pixel_data_identical_to_original": true
+      }
+    },
+    "all_five_expected_dimensions": true
+  },
+  "inspect_scene": {
+    "exit_code": 0,
+    "script": "scripts/inspect_scene.py",
+    "include": [
+      "Character"
+    ]
+  },
+  "scene": {
+    "scene": "character.blend",
+    "source_sha256_before": "7619d23f9148706ca52ec4c3181db0c33489e8db94e992b711b03694ba4c4150",
+    "reopened_successfully": true,
+    "blender_version": "5.1.1",
+    "render_engine": "CYCLES",
+    "cycles_device": "CPU",
+    "threads_mode": "FIXED",
+    "threads": 3,
+    "samples": 32,
+    "denoising": true,
+    "camera": "Portrait • window seat",
+    "cameras": [
+      {
+        "name": "Portrait • window seat",
+        "type": "PERSP",
+        "ortho_scale": null
+      },
+      {
+        "name": "diagnostic • front",
+        "type": "ORTHO",
+        "ortho_scale": 0.7919999957084656
+      },
+      {
+        "name": "diagnostic • three-quarter",
+        "type": "ORTHO",
+        "ortho_scale": 0.7919999957084656
+      },
+      {
+        "name": "diagnostic • side",
+        "type": "ORTHO",
+        "ortho_scale": 0.7919999957084656
+      },
+      {
+        "name": "diagnostic • back",
+        "type": "ORTHO",
+        "ortho_scale": 0.7919999957084656
+      }
+    ],
+    "objects": [
+      {
+        "name": "01 • Facial sculpt and neckline",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "base_vertices": 4610,
+        "evaluated_vertices": 73469,
+        "evaluated_polygons": 73376,
+        "bounds": [
+          [
+            -0.16186343133449554,
+            -0.16743427515029907,
+            1.3560999631881714
+          ],
+          [
+            0.06837619841098785,
+            0.04899999871850014,
+            1.6313401460647583
+          ]
+        ]
+      },
+      {
+        "name": "02 • Sclera.R",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "base_vertices": 2960,
+        "evaluated_vertices": 2960,
+        "evaluated_polygons": 2880,
+        "bounds": [
+          [
+            -0.11821398138999939,
+            -0.13834795355796814,
+            1.4829870462417603
+          ],
+          [
+            -0.08402795344591141,
+            -0.1055191159248352,
+            1.5144778490066528
+          ]
+        ]
+      },
+      {
+        "name": "03 • Iris and pupil.R",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "base_vertices": 5104,
+        "evaluated_vertices": 5104,
+        "evaluated_polygons": 4928,
+        "bounds": [
+          [
+            -0.106864795088768,
+            -0.13849666714668274,
+            1.4934272766113281
+          ],
+          [
+            -0.09296449273824692,
+            -0.13507135212421417,
+            1.50664222240448
+          ]
+        ]
+      },
+      {
+        "name": "04 • Corneal meniscus.R",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "base_vertices": 1040,
+        "evaluated_vertices": 1040,
+        "evaluated_polygons": 960,
+        "bounds": [
+          [
+            -0.10767915099859238,
+            -0.1396869570016861,
+            1.4926424026489258
+          ],
+          [
+            -0.09212448447942734,
+            -0.13417650759220123,
+            1.5074418783187866
+          ]
+        ]
+      },
+      {
+        "name": "05 • Lacrimal caruncle.R",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "base_vertices": 126,
+        "evaluated_vertices": 126,
+        "evaluated_polygons": 104,
+        "bounds": [
+          [
+            -0.0912332832813263,
+            -0.13585081696510315,
+            1.5010751485824585
+          ],
+          [
+            -0.0879819467663765,
+            -0.13501320779323578,
+            1.5037401914596558
+          ]
+        ]
+      },
+      {
+        "name": "02 • Sclera.L",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "base_vertices": 2960,
+        "evaluated_vertices": 2960,
+        "evaluated_polygons": 2880,
+        "bounds": [
+          [
+            -0.062314506620168686,
+            -0.14406023919582367,
+            1.5099793672561646
+          ],
+          [
+            -0.029066195711493492,
+            -0.11151343584060669,
+            1.542194128036499
+          ]
+        ]
+      },
+      {
+        "name": "03 • Iris and pupil.L",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "base_vertices": 5104,
+        "evaluated_vertices": 5104,
+        "evaluated_polygons": 4928,
+        "bounds": [
+          [
+            -0.05234735831618309,
+            -0.14419153332710266,
+            1.5201501846313477
+          ],
+          [
+            -0.03911421075463295,
+            -0.14112138748168945,
+            1.5340441465377808
+          ]
+        ]
+      },
+      {
+        "name": "04 • Corneal meniscus.L",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "base_vertices": 1040,
+        "evaluated_vertices": 1040,
+        "evaluated_polygons": 960,
+        "bounds": [
+          [
+            -0.05311275273561478,
+            -0.1453665792942047,
+            1.5193289518356323
+          ],
+          [
+            -0.0382867157459259,
+            -0.14019842445850372,
+            1.5348504781723022
+          ]
+        ]
+      },
+      {
+        "name": "05 • Lacrimal caruncle.L",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "base_vertices": 126,
+        "evaluated_vertices": 126,
+        "evaluated_polygons": 104,
+        "bounds": [
+          [
+            -0.0592004656791687,
+            -0.13921189308166504,
+            1.516697883605957
+          ],
+          [
+            -0.05623061582446098,
+            -0.13823577761650085,
+            1.5195436477661133
+          ]
+        ]
+      },
+      {
+        "name": "Upper lash bed.R",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "bounds": [
+          [
+            -0.11579470336437225,
+            -0.13852635025978088,
+            1.4936327934265137
+          ],
+          [
+            -0.08935956656932831,
+            -0.1323697566986084,
+            1.5043295621871948
+          ]
+        ]
+      },
+      {
+        "name": "Upper lashes.R",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "bounds": [
+          [
+            -0.12014937400817871,
+            -0.14041663706302643,
+            1.493719458580017
+          ],
+          [
+            -0.0908811017870903,
+            -0.13256561756134033,
+            1.5092546939849854
+          ]
+        ]
+      },
+      {
+        "name": "Lower wet margin.R",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "bounds": [
+          [
+            -0.11517778038978577,
+            -0.1389366090297699,
+            1.4914556741714478
+          ],
+          [
+            -0.08834314346313477,
+            -0.13204434514045715,
+            1.5022869110107422
+          ]
+        ]
+      },
+      {
+        "name": "Lower lashes.R",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "bounds": [
+          [
+            -0.11613542586565018,
+            -0.14182940125465393,
+            1.4891681671142578
+          ],
+          [
+            -0.08795226365327835,
+            -0.13214287161827087,
+            1.501024603843689
+          ]
+        ]
+      },
+      {
+        "name": "Brow root shading.R",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "base_vertices": 531,
+        "evaluated_vertices": 531,
+        "evaluated_polygons": 464,
+        "bounds": [
+          [
+            -0.12909331917762756,
+            -0.14570632576942444,
+            1.5024338960647583
+          ],
+          [
+            -0.09345220774412155,
+            -0.11962716281414032,
+            1.5211374759674072
+          ]
+        ]
+      },
+      {
+        "name": "Brows • individually swept hairs.R",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "bounds": [
+          [
+            -0.1311042159795761,
+            -0.14561963081359863,
+            1.5001240968704224
+          ],
+          [
+            -0.09483497589826584,
+            -0.11440121382474899,
+            1.52336585521698
+          ]
+        ]
+      },
+      {
+        "name": "Upper lash bed.L",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "bounds": [
+          [
+            -0.05887400358915329,
+            -0.1445212960243225,
+            1.5182828903198242
+          ],
+          [
+            -0.034953050315380096,
+            -0.1399153172969818,
+            1.53471839427948
+          ]
+        ]
+      },
+      {
+        "name": "Upper lashes.L",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "bounds": [
+          [
+            -0.05987038090825081,
+            -0.1469239741563797,
+            1.519315481185913
+          ],
+          [
+            -0.034849099814891815,
+            -0.14039988815784454,
+            1.5406420230865479
+          ]
+        ]
+      },
+      {
+        "name": "Lower wet margin.L",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "bounds": [
+          [
+            -0.05855230242013931,
+            -0.14506742358207703,
+            1.5165607929229736
+          ],
+          [
+            -0.03468795120716095,
+            -0.1394188106060028,
+            1.5328463315963745
+          ]
+        ]
+      },
+      {
+        "name": "Lower lashes.L",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "bounds": [
+          [
+            -0.05720644071698189,
+            -0.14847339689731598,
+            1.5152034759521484
+          ],
+          [
+            -0.031857650727033615,
+            -0.13956288993358612,
+            1.5320416688919067
+          ]
+        ]
+      },
+      {
+        "name": "Brow root shading.L",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "base_vertices": 531,
+        "evaluated_vertices": 531,
+        "evaluated_polygons": 464,
+        "bounds": [
+          [
+            -0.07096649706363678,
+            -0.14823782444000244,
+            1.5300198793411255
+          ],
+          [
+            -0.031887006014585495,
+            -0.12979952991008759,
+            1.5509716272354126
+          ]
+        ]
+      },
+      {
+        "name": "Brows • individually swept hairs.L",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "bounds": [
+          [
+            -0.0700867548584938,
+            -0.14843951165676117,
+            1.5307062864303589
+          ],
+          [
+            -0.028129417449235916,
+            -0.12568604946136475,
+            1.5515018701553345
+          ]
+        ]
+      },
+      {
+        "name": "12 • Reaching hand.R",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "base_vertices": 1535,
+        "evaluated_vertices": 6011,
+        "evaluated_polygons": 5946,
+        "bounds": [
+          [
+            -0.16654323041439056,
+            -0.5706318020820618,
+            1.1823925971984863
+          ],
+          [
+            -0.06330883502960205,
+            -0.38788947463035583,
+            1.2681550979614258
+          ]
+        ]
+      },
+      {
+        "name": "13 • Nail plates.R",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "base_vertices": 500,
+        "evaluated_vertices": 1800,
+        "evaluated_polygons": 1600,
+        "bounds": [
+          [
+            -0.12540185451507568,
+            -0.5710025429725647,
+            1.188170313835144
+          ],
+          [
+            -0.07013359665870667,
+            -0.4961145222187042,
+            1.258785605430603
+          ]
+        ]
+      },
+      {
+        "name": "12 • Reaching hand.L",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "base_vertices": 1535,
+        "evaluated_vertices": 6011,
+        "evaluated_polygons": 5946,
+        "bounds": [
+          [
+            -0.02350142039358616,
+            -0.5437249541282654,
+            1.1689198017120361
+          ],
+          [
+            0.09968983381986618,
+            -0.3694456219673157,
+            1.2590535879135132
+          ]
+        ]
+      },
+      {
+        "name": "13 • Nail plates.L",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "01 • Skin and eyes"
+        ],
+        "base_vertices": 500,
+        "evaluated_vertices": 1800,
+        "evaluated_polygons": 1600,
+        "bounds": [
+          [
+            -0.01741897501051426,
+            -0.5442698001861572,
+            1.174306869506836
+          ],
+          [
+            0.03581293299794197,
+            -0.4707144498825073,
+            1.250238060951233
+          ]
+        ]
+      },
+      {
+        "name": "20 • Scalp | shaped hairline and part",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "02 • Chestnut groom"
+        ],
+        "base_vertices": 5984,
+        "evaluated_vertices": 5984,
+        "evaluated_polygons": 5808,
+        "bounds": [
+          [
+            -0.1618482768535614,
+            -0.14975540339946747,
+            1.4584614038467407
+          ],
+          [
+            0.012960619293153286,
+            0.046972714364528656,
+            1.6363133192062378
+          ]
+        ]
+      },
+      {
+        "name": "21 • Lengths | R • over shoulder | outer layer",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "02 • Chestnut groom"
+        ],
+        "bounds": [
+          [
+            -0.20813420414924622,
+            -0.22396981716156006,
+            1.0373055934906006
+          ],
+          [
+            0.032173965126276016,
+            0.12587502598762512,
+            1.631137728691101
+          ]
+        ]
+      },
+      {
+        "name": "21 • Lengths | R • over shoulder | inner layer",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "02 • Chestnut groom"
+        ],
+        "bounds": [
+          [
+            -0.2059546560049057,
+            -0.21719026565551758,
+            1.0576046705245972
+          ],
+          [
+            0.0261800829321146,
+            0.11921738088130951,
+            1.6285409927368164
+          ]
+        ]
+      },
+      {
+        "name": "21 • Lengths | L • tucked | outer layer",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "02 • Chestnut groom"
+        ],
+        "bounds": [
+          [
+            -0.13719108700752258,
+            -0.16884298622608185,
+            1.0696808099746704
+          ],
+          [
+            0.1633119285106659,
+            0.14073489606380463,
+            1.6501878499984741
+          ]
+        ]
+      },
+      {
+        "name": "21 • Lengths | L • tucked | inner layer",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "02 • Chestnut groom"
+        ],
+        "bounds": [
+          [
+            -0.13565297424793243,
+            -0.16448602080345154,
+            1.076999306678772
+          ],
+          [
+            0.1587829738855362,
+            0.13259068131446838,
+            1.6469101905822754
+          ]
+        ]
+      },
+      {
+        "name": "24 • Occipital sweep | continuous back waves",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "02 • Chestnut groom"
+        ],
+        "bounds": [
+          [
+            -0.1357153356075287,
+            -0.019166648387908936,
+            1.0646225214004517
+          ],
+          [
+            0.11743128299713135,
+            0.12494375556707382,
+            1.6170095205307007
+          ]
+        ]
+      },
+      {
+        "name": "25 • Underlayer | behind the tilted jaw",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "02 • Chestnut groom"
+        ],
+        "bounds": [
+          [
+            -0.17807242274284363,
+            -0.18366500735282898,
+            1.137344241142273
+          ],
+          [
+            -0.05320483073592186,
+            -0.011505001224577427,
+            1.5739003419876099
+          ]
+        ]
+      },
+      {
+        "name": "22 • Fringe | tapered curtain and brow-skimming wisps",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "02 • Chestnut groom"
+        ],
+        "bounds": [
+          [
+            -0.16428235173225403,
+            -0.16814295947551727,
+            1.4518872499465942
+          ],
+          [
+            -0.00759874377399683,
+            -0.07394937425851822,
+            1.6066282987594604
+          ]
+        ]
+      },
+      {
+        "name": "23 • Free lengths | ear tendrils and separated waves",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "02 • Chestnut groom"
+        ],
+        "bounds": [
+          [
+            -0.17525917291641235,
+            -0.21922536194324493,
+            1.0885655879974365
+          ],
+          [
+            0.10748190432786942,
+            -0.057321179658174515,
+            1.5701158046722412
+          ]
+        ]
+      },
+      {
+        "name": "23 • Flyaways | loose temple and back fibres",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "02 • Chestnut groom"
+        ],
+        "bounds": [
+          [
+            -0.2098190039396286,
+            -0.20765815675258636,
+            1.0697358846664429
+          ],
+          [
+            0.15198317170143127,
+            0.12641751766204834,
+            1.6561377048492432
+          ]
+        ]
+      },
+      {
+        "name": "10 • Sweater | joined shoulder and forward sleeves",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "03 • Dusty rose knit"
+        ],
+        "base_vertices": 20995,
+        "evaluated_vertices": 83656,
+        "evaluated_polygons": 83328,
+        "bounds": [
+          [
+            -0.25656065344810486,
+            -0.43005484342575073,
+            0.9671000242233276
+          ],
+          [
+            0.23807299137115479,
+            0.06886681914329529,
+            1.410325527191162
+          ]
+        ]
+      },
+      {
+        "name": "15 • Mattress stitch | shoulder and sleeve caps",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "03 • Dusty rose knit"
+        ],
+        "bounds": [
+          [
+            -0.18194891512393951,
+            -0.07310040295124054,
+            1.2499651908874512
+          ],
+          [
+            0.18247711658477783,
+            0.01312964502722025,
+            1.4087879657745361
+          ]
+        ]
+      },
+      {
+        "name": "11 • Crew neck | 104 knitted ribs",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "03 • Dusty rose knit"
+        ],
+        "base_vertices": 6656,
+        "evaluated_vertices": 25600,
+        "evaluated_polygons": 24576,
+        "bounds": [
+          [
+            -0.08019395917654037,
+            -0.10459999740123749,
+            1.3444000482559204
+          ],
+          [
+            0.08020000159740448,
+            0.058000002056360245,
+            1.393510341644287
+          ]
+        ]
+      },
+      {
+        "name": "14 • Sweater | loose wool fibres",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "03 • Dusty rose knit"
+        ],
+        "bounds": [
+          [
+            -0.2576805651187897,
+            -0.4296067953109741,
+            0.9661572575569153
+          ],
+          [
+            0.23820149898529053,
+            0.06941881030797958,
+            1.4084478616714478
+          ]
+        ]
+      },
+      {
+        "name": "Limewash • rear wall",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 8,
+        "evaluated_polygons": 6,
+        "bounds": [
+          [
+            -2.0,
+            1.4824999570846558,
+            -0.18000000715255737
+          ],
+          [
+            2.0,
+            1.5575000047683716,
+            3.2200000286102295
+          ]
+        ]
+      },
+      {
+        "name": "Window • diffusing pane",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 8,
+        "evaluated_polygons": 6,
+        "bounds": [
+          [
+            -1.559999942779541,
+            1.402500033378601,
+            0.3499999940395355
+          ],
+          [
+            -0.05999999865889549,
+            1.4375,
+            2.950000047683716
+          ]
+        ]
+      },
+      {
+        "name": "Window • narrow upright 0",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -1.3630000352859497,
+            1.3674999475479126,
+            0.33500000834465027
+          ],
+          [
+            -1.3370000123977661,
+            1.412500023841858,
+            2.884999990463257
+          ]
+        ]
+      },
+      {
+        "name": "Window • narrow upright 1",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.8029999732971191,
+            1.3674999475479126,
+            0.33500000834465027
+          ],
+          [
+            -0.7770000100135803,
+            1.412500023841858,
+            2.884999990463257
+          ]
+        ]
+      },
+      {
+        "name": "Window • narrow upright 2",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.15299999713897705,
+            1.3674999475479126,
+            0.33500000834465027
+          ],
+          [
+            -0.12700000405311584,
+            1.412500023841858,
+            2.884999990463257
+          ]
+        ]
+      },
+      {
+        "name": "Window • cross rail",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -1.440000057220459,
+            1.3695000410079956,
+            1.531499981880188
+          ],
+          [
+            -0.11999999731779099,
+            1.4105000495910645,
+            1.5484999418258667
+          ]
+        ]
+      },
+      {
+        "name": "Oak shelving 0",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.05999999865889549,
+            1.1950000524520874,
+            1.375499963760376
+          ],
+          [
+            1.1799999475479126,
+            1.4450000524520874,
+            1.4045000076293945
+          ]
+        ]
+      },
+      {
+        "name": "Oak shelving 1",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.05999999865889549,
+            1.1950000524520874,
+            1.6655000448226929
+          ],
+          [
+            1.1799999475479126,
+            1.4450000524520874,
+            1.6944999694824219
+          ]
+        ]
+      },
+      {
+        "name": "Oak shelving 2",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.05999999865889549,
+            1.1950000524520874,
+            1.9754999876022339
+          ],
+          [
+            1.1799999475479126,
+            1.4450000524520874,
+            2.004499912261963
+          ]
+        ]
+      },
+      {
+        "name": "Shelf pottery 1",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 224,
+        "evaluated_vertices": 224,
+        "evaluated_polygons": 192,
+        "bounds": [
+          [
+            -0.04652184993028641,
+            1.2106553316116333,
+            1.4049999713897705
+          ],
+          [
+            0.04169582948088646,
+            1.2988730669021606,
+            1.4883657693862915
+          ]
+        ]
+      },
+      {
+        "name": "Shelf pottery 2",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 224,
+        "evaluated_vertices": 224,
+        "evaluated_polygons": 192,
+        "bounds": [
+          [
+            0.12604723870754242,
+            1.2443721294403076,
+            1.4049999713897705
+          ],
+          [
+            0.19356919825077057,
+            1.3118940591812134,
+            1.5060460567474365
+          ]
+        ]
+      },
+      {
+        "name": "Shelf pottery 3",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 224,
+        "evaluated_vertices": 224,
+        "evaluated_polygons": 192,
+        "bounds": [
+          [
+            0.28441107273101807,
+            1.2397607564926147,
+            1.4049999713897705
+          ],
+          [
+            0.36378243565559387,
+            1.3191320896148682,
+            1.4970149993896484
+          ]
+        ]
+      },
+      {
+        "name": "Shelf pottery 4",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 224,
+        "evaluated_vertices": 224,
+        "evaluated_polygons": 192,
+        "bounds": [
+          [
+            0.4402431547641754,
+            1.248998761177063,
+            1.4049999713897705
+          ],
+          [
+            0.5090230107307434,
+            1.3177785873413086,
+            1.4987612962722778
+          ]
+        ]
+      },
+      {
+        "name": "Shelf pottery 5",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 224,
+        "evaluated_vertices": 224,
+        "evaluated_polygons": 192,
+        "bounds": [
+          [
+            0.5649949312210083,
+            1.2114789485931396,
+            1.4049999713897705
+          ],
+          [
+            0.6297962665557861,
+            1.276280164718628,
+            1.5397288799285889
+          ]
+        ]
+      },
+      {
+        "name": "Shelf pottery 6",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 224,
+        "evaluated_vertices": 224,
+        "evaluated_polygons": 192,
+        "bounds": [
+          [
+            0.7084348797798157,
+            1.2508360147476196,
+            1.4049999713897705
+          ],
+          [
+            0.7902663946151733,
+            1.332667589187622,
+            1.4833836555480957
+          ]
+        ]
+      },
+      {
+        "name": "Shelf pottery 7",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 224,
+        "evaluated_vertices": 224,
+        "evaluated_polygons": 192,
+        "bounds": [
+          [
+            0.8943778872489929,
+            1.2462031841278076,
+            1.4049999713897705
+          ],
+          [
+            0.9536160826683044,
+            1.3054413795471191,
+            1.5157129764556885
+          ]
+        ]
+      },
+      {
+        "name": "Shelf pottery 8",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 224,
+        "evaluated_vertices": 224,
+        "evaluated_polygons": 192,
+        "bounds": [
+          [
+            -0.04833470284938812,
+            1.2582826614379883,
+            1.6950000524520874
+          ],
+          [
+            0.039340633898973465,
+            1.3459579944610596,
+            1.8294059038162231
+          ]
+        ]
+      },
+      {
+        "name": "Shelf pottery 9",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 224,
+        "evaluated_vertices": 224,
+        "evaluated_polygons": 192,
+        "bounds": [
+          [
+            0.11464117467403412,
+            1.233657717704773,
+            1.6950000524520874
+          ],
+          [
+            0.17901109158992767,
+            1.2980276346206665,
+            1.8417880535125732
+          ]
+        ]
+      },
+      {
+        "name": "Shelf pottery 10",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 224,
+        "evaluated_vertices": 224,
+        "evaluated_polygons": 192,
+        "bounds": [
+          [
+            0.283823698759079,
+            1.2329378128051758,
+            1.6950000524520874
+          ],
+          [
+            0.3622663915157318,
+            1.3113805055618286,
+            1.809705376625061
+          ]
+        ]
+      },
+      {
+        "name": "Shelf pottery 11",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 224,
+        "evaluated_vertices": 224,
+        "evaluated_polygons": 192,
+        "bounds": [
+          [
+            0.42191627621650696,
+            1.2612887620925903,
+            1.6950000524520874
+          ],
+          [
+            0.4935491681098938,
+            1.3329216241836548,
+            1.7692222595214844
+          ]
+        ]
+      },
+      {
+        "name": "Shelf pottery 12",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 224,
+        "evaluated_vertices": 224,
+        "evaluated_polygons": 192,
+        "bounds": [
+          [
+            0.5793825387954712,
+            1.255912184715271,
+            1.6950000524520874
+          ],
+          [
+            0.6663599014282227,
+            1.3428895473480225,
+            1.8398911952972412
+          ]
+        ]
+      },
+      {
+        "name": "Shelf pottery 13",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 224,
+        "evaluated_vertices": 224,
+        "evaluated_polygons": 192,
+        "bounds": [
+          [
+            0.7398968935012817,
+            1.210625171661377,
+            1.6950000524520874
+          ],
+          [
+            0.8168036937713623,
+            1.2875319719314575,
+            1.7901105880737305
+          ]
+        ]
+      },
+      {
+        "name": "Shelf pottery 14",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 224,
+        "evaluated_vertices": 224,
+        "evaluated_polygons": 192,
+        "bounds": [
+          [
+            0.870424747467041,
+            1.2033041715621948,
+            1.6950000524520874
+          ],
+          [
+            0.9602064490318298,
+            1.2930858135223389,
+            1.7749862670898438
+          ]
+        ]
+      },
+      {
+        "name": "Shelf pottery 15",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 224,
+        "evaluated_vertices": 224,
+        "evaluated_polygons": 192,
+        "bounds": [
+          [
+            -0.007724713534116745,
+            1.2639756202697754,
+            2.005000114440918
+          ],
+          [
+            0.05599541589617729,
+            1.3276958465576172,
+            2.080551862716675
+          ]
+        ]
+      },
+      {
+        "name": "Shelf pottery 16",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 224,
+        "evaluated_vertices": 224,
+        "evaluated_polygons": 192,
+        "bounds": [
+          [
+            0.10821208357810974,
+            1.246799111366272,
+            2.005000114440918
+          ],
+          [
+            0.19445569813251495,
+            1.3330427408218384,
+            2.11665940284729
+          ]
+        ]
+      },
+      {
+        "name": "Shelf pottery 17",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 224,
+        "evaluated_vertices": 224,
+        "evaluated_polygons": 192,
+        "bounds": [
+          [
+            0.28873997926712036,
+            1.2643593549728394,
+            2.005000114440918
+          ],
+          [
+            0.36586156487464905,
+            1.3414808511734009,
+            2.1248350143432617
+          ]
+        ]
+      },
+      {
+        "name": "Shelf pottery 18",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 224,
+        "evaluated_vertices": 224,
+        "evaluated_polygons": 192,
+        "bounds": [
+          [
+            0.42898163199424744,
+            1.2488876581192017,
+            2.005000114440918
+          ],
+          [
+            0.5241517424583435,
+            1.3440577983856201,
+            2.085958480834961
+          ]
+        ]
+      },
+      {
+        "name": "Shelf pottery 19",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 224,
+        "evaluated_vertices": 224,
+        "evaluated_polygons": 192,
+        "bounds": [
+          [
+            0.5749966502189636,
+            1.2373467683792114,
+            2.005000114440918
+          ],
+          [
+            0.6677195429801941,
+            1.330069661140442,
+            2.153691053390503
+          ]
+        ]
+      },
+      {
+        "name": "Side table",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.18000000715255737,
+            0.33000001311302185,
+            1.096500039100647
+          ],
+          [
+            0.7599999904632568,
+            0.8500000238418579,
+            1.1334999799728394
+          ]
+        ]
+      },
+      {
+        "name": "Chair • curved-back rail",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.07999999821186066,
+            0.6664999723434448,
+            1.093500018119812
+          ],
+          [
+            0.5600000023841858,
+            0.7135000228881836,
+            1.1764999628067017
+          ]
+        ]
+      },
+      {
+        "name": "Chair • oak stile",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.11249999701976776,
+            0.6710000038146973,
+            0.6200000047683716
+          ],
+          [
+            0.14749999344348907,
+            0.7089999914169312,
+            1.159999966621399
+          ]
+        ]
+      },
+      {
+        "name": "Chair • oak stile.001",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.4925000071525574,
+            0.6710000038146973,
+            0.6200000047683716
+          ],
+          [
+            0.5274999737739563,
+            0.7089999914169312,
+            1.159999966621399
+          ]
+        ]
+      },
+      {
+        "name": "Window banquette",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -1.059999942779541,
+            0.6050000190734863,
+            0.8324999809265137
+          ],
+          [
+            -0.20000000298023224,
+            0.8949999809265137,
+            0.887499988079071
+          ]
+        ]
+      },
+      {
+        "name": "Espresso machine • feet and tray",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.08250000327825546,
+            1.1260000467300415,
+            1.4079999923706055
+          ],
+          [
+            0.2874999940395355,
+            1.2940000295639038,
+            1.4299999475479126
+          ]
+        ]
+      },
+      {
+        "name": "Espresso machine • back",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.08250000327825546,
+            1.2489999532699585,
+            1.4144999980926514
+          ],
+          [
+            0.2874999940395355,
+            1.2949999570846558,
+            1.5434999465942383
+          ]
+        ]
+      },
+      {
+        "name": "Espresso machine • boiler hood",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.0754999965429306,
+            1.1404999494552612,
+            1.5180000066757202
+          ],
+          [
+            0.2944999933242798,
+            1.2894999980926514,
+            1.5820000171661377
+          ]
+        ]
+      },
+      {
+        "name": "Espresso machine • portafilter -1",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 72,
+        "evaluated_vertices": 72,
+        "evaluated_polygons": 48,
+        "bounds": [
+          [
+            0.10700000077486038,
+            1.1440000534057617,
+            1.4900000095367432
+          ],
+          [
+            0.15700000524520874,
+            1.194000005722046,
+            1.5149999856948853
+          ]
+        ]
+      },
+      {
+        "name": "Espresso machine • portafilter 1",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 72,
+        "evaluated_vertices": 72,
+        "evaluated_polygons": 48,
+        "bounds": [
+          [
+            0.21299999952316284,
+            1.1440000534057617,
+            1.4900000095367432
+          ],
+          [
+            0.2630000114440918,
+            1.194000005722046,
+            1.5149999856948853
+          ]
+        ]
+      },
+      {
+        "name": "Table • bud vase",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 280,
+        "evaluated_vertices": 280,
+        "evaluated_polygons": 240,
+        "bounds": [
+          [
+            0.21299999952316284,
+            0.5809999704360962,
+            1.1339999437332153
+          ],
+          [
+            0.29100000858306885,
+            0.6589999794960022,
+            1.2790000438690186
+          ]
+        ]
+      },
+      {
+        "name": "Table flowers • stems",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "bounds": [
+          [
+            0.19488897919654846,
+            0.5891748070716858,
+            1.239150047302246
+          ],
+          [
+            0.32061684131622314,
+            0.6591595411300659,
+            1.498363971710205
+          ]
+        ]
+      },
+      {
+        "name": "Table flowers • petals",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 300,
+        "evaluated_vertices": 300,
+        "evaluated_polygons": 75,
+        "bounds": [
+          [
+            0.19035884737968445,
+            0.5853490829467773,
+            1.3665434122085571
+          ],
+          [
+            0.32515475153923035,
+            0.6639916896820068,
+            1.5016590356826782
+          ]
+        ]
+      },
+      {
+        "name": "Window planter",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 280,
+        "evaluated_vertices": 280,
+        "evaluated_polygons": 240,
+        "bounds": [
+          [
+            -0.5720000267028809,
+            0.6380000114440918,
+            0.8899999856948853
+          ],
+          [
+            -0.3880000114440918,
+            0.8220000267028809,
+            1.062999963760376
+          ]
+        ]
+      },
+      {
+        "name": "Window plant • wood stems",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "bounds": [
+          [
+            -0.8395563364028931,
+            0.6060537695884705,
+            1.0339000225067139
+          ],
+          [
+            -0.2840908169746399,
+            0.857058584690094,
+            1.8976446390151978
+          ]
+        ]
+      },
+      {
+        "name": "Window plant • leaf blades",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set"
+        ],
+        "base_vertices": 2310,
+        "evaluated_vertices": 2310,
+        "evaluated_polygons": 1848,
+        "bounds": [
+          [
+            -0.8627269864082336,
+            0.5794529318809509,
+            1.1793010234832764
+          ],
+          [
+            -0.25545239448547363,
+            0.8695023059844971,
+            1.9230283498764038
+          ]
+        ]
+      },
+      {
+        "name": "Daylight • broad left window",
+        "type": "LIGHT",
+        "hidden_render": false,
+        "collections": [
+          "Window lighting"
+        ]
+      },
+      {
+        "name": "Bounce • cream card",
+        "type": "LIGHT",
+        "hidden_render": false,
+        "collections": [
+          "Window lighting"
+        ]
+      },
+      {
+        "name": "Hair light • high rear window",
+        "type": "LIGHT",
+        "hidden_render": false,
+        "collections": [
+          "Window lighting"
+        ]
+      },
+      {
+        "name": "Back wall bounce",
+        "type": "LIGHT",
+        "hidden_render": false,
+        "collections": [
+          "Window lighting"
+        ]
+      },
+      {
+        "name": "Eyes • small reflected window",
+        "type": "LIGHT",
+        "hidden_render": false,
+        "collections": [
+          "Window lighting"
+        ]
+      },
+      {
+        "name": "Portrait • window seat",
+        "type": "CAMERA",
+        "hidden_render": false,
+        "collections": [
+          "Cameras"
+        ]
+      },
+      {
+        "name": "diagnostic • front",
+        "type": "CAMERA",
+        "hidden_render": false,
+        "collections": [
+          "Cameras"
+        ]
+      },
+      {
+        "name": "diagnostic • three-quarter",
+        "type": "CAMERA",
+        "hidden_render": false,
+        "collections": [
+          "Cameras"
+        ]
+      },
+      {
+        "name": "diagnostic • side",
+        "type": "CAMERA",
+        "hidden_render": false,
+        "collections": [
+          "Cameras"
+        ]
+      },
+      {
+        "name": "diagnostic • back",
+        "type": "CAMERA",
+        "hidden_render": false,
+        "collections": [
+          "Cameras"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "name": "Stockinette • four wales × four courses",
+        "size": [
+          384,
+          384
+        ],
+        "packed": true,
+        "source": "FILE",
+        "file_exists": true
+      }
+    ],
+    "total_evaluated_mesh_vertices": 232879,
+    "native_hair_objects": [
+      "Upper lash bed.R",
+      "Upper lashes.R",
+      "Lower wet margin.R",
+      "Lower lashes.R",
+      "Brows • individually swept hairs.R",
+      "Upper lash bed.L",
+      "Upper lashes.L",
+      "Lower wet margin.L",
+      "Lower lashes.L",
+      "Brows • individually swept hairs.L",
+      "21 • Lengths | R • over shoulder | outer layer",
+      "21 • Lengths | R • over shoulder | inner layer",
+      "21 • Lengths | L • tucked | outer layer",
+      "21 • Lengths | L • tucked | inner layer",
+      "24 • Occipital sweep | continuous back waves",
+      "25 • Underlayer | behind the tilted jaw",
+      "22 • Fringe | tapered curtain and brow-skimming wisps",
+      "23 • Free lengths | ear tendrils and separated waves",
+      "23 • Flyaways | loose temple and back fibres",
+      "15 • Mattress stitch | shoulder and sleeve caps",
+      "14 • Sweater | loose wool fibres",
+      "Table flowers • stems",
+      "Window plant • wood stems"
+    ],
+    "limits": {
+      "all_images_at_most_2048": true,
+      "resources_resolve": true
+    },
+    "actual_evaluated_character_bounds": {
+      "min": [
+        -0.25767838954925537,
+        -0.5709548592567444,
+        0.9661610722541809
+      ],
+      "max": [
+        0.2381991744041443,
+        0.1406409591436386,
+        1.656039834022522
+      ],
+      "method": "World coordinates of evaluated mesh vertices, including converted curve geometry; native Curves objects contribute their authored control points."
+    },
+    "native_curves_not_exported": {
+      "objects": [
+        "14 • Sweater | loose wool fibres",
+        "15 • Mattress stitch | shoulder and sleeve caps",
+        "21 • Lengths | L • tucked | inner layer",
+        "21 • Lengths | L • tucked | outer layer",
+        "21 • Lengths | R • over shoulder | inner layer",
+        "21 • Lengths | R • over shoulder | outer layer",
+        "22 • Fringe | tapered curtain and brow-skimming wisps",
+        "23 • Flyaways | loose temple and back fibres",
+        "23 • Free lengths | ear tendrils and separated waves",
+        "24 • Occipital sweep | continuous back waves",
+        "25 • Underlayer | behind the tilted jaw",
+        "Brows • individually swept hairs.L",
+        "Brows • individually swept hairs.R",
+        "Lower lashes.L",
+        "Lower lashes.R",
+        "Lower wet margin.L",
+        "Lower wet margin.R",
+        "Upper lash bed.L",
+        "Upper lash bed.R",
+        "Upper lashes.L",
+        "Upper lashes.R"
+      ],
+      "reason": "Native Curves (hair) objects have no faces; glTF mesh export cannot carry them. They remain in the .blend and in the Cycles renders."
+    },
+    "diagnostic_projection_bounds": [
+      {
+        "camera": "diagnostic • front",
+        "normalized_min": [
+          0.18096163868904114,
+          0.07582700252532959
+        ],
+        "normalized_max": [
+          0.8070696890354156,
+          0.9508461654186249
+        ],
+        "all_character_vertices_in_frame": true
+      },
+      {
+        "camera": "diagnostic • three-quarter",
+        "normalized_min": [
+          0.10766386985778809,
+          0.07285812497138977
+        ],
+        "normalized_max": [
+          0.9183640778064728,
+          0.9507295787334442
+        ],
+        "all_character_vertices_in_frame": true
+      },
+      {
+        "camera": "diagnostic • side",
+        "normalized_min": [
+          0.06318840384483337,
+          0.06317171454429626
+        ],
+        "normalized_max": [
+          0.9616679847240448,
+          0.9450278878211975
+        ],
+        "all_character_vertices_in_frame": true
+      },
+      {
+        "camera": "diagnostic • back",
+        "normalized_min": [
+          0.1929306983947754,
+          0.055721789598464966
+        ],
+        "normalized_max": [
+          0.8190387785434723,
+          0.9305649995803833
+        ],
+        "all_character_vertices_in_frame": true
+      }
+    ],
+    "glb_export": {
+      "path": "character.glb",
+      "selected_objects": [
+        "04 • Corneal meniscus.L",
+        "05 • Lacrimal caruncle.R",
+        "04 • Corneal meniscus.R",
+        "12 • Reaching hand.R",
+        "02 • Sclera.R",
+        "02 • Sclera.L",
+        "12 • Reaching hand.L",
+        "01 • Facial sculpt and neckline",
+        "03 • Iris and pupil.R",
+        "Brow root shading.R",
+        "05 • Lacrimal caruncle.L",
+        "20 • Scalp | shaped hairline and part",
+        "Brow root shading.L",
+        "10 • Sweater | joined shoulder and forward sleeves",
+        "11 • Crew neck | 104 knitted ribs",
+        "13 • Nail plates.L",
+        "03 • Iris and pupil.L",
+        "13 • Nail plates.R"
+      ],
+      "curves_converted_for_export_only": [],
+      "procedural_material_fallbacks": [
+        {
+          "source_material": "Skin | apricot, rose and vermilion",
+          "base_color_linear": [
+            0.6899999976158142,
+            0.38999998569488525,
+            0.3100000023841858,
+            1.0
+          ],
+          "reason": "Unsupported procedural base-color graph; retained the material author's own swatch for GLB only."
+        },
+        {
+          "source_material": "Knit | dusty rose lambswool",
+          "base_color_linear": [
+            0.5600000023841858,
+            0.24500000476837158,
+            0.2709999978542328,
+            1.0
+          ],
+          "reason": "Unsupported procedural base-color graph; retained the material author's own swatch for GLB only."
+        },
+        {
+          "source_material": "Knit | ribbed neck, hem and cuffs",
+          "base_color_linear": [
+            0.5600000023841858,
+            0.24500000476837158,
+            0.2709999978542328,
+            1.0
+          ],
+          "reason": "Unsupported procedural base-color graph; retained the material author's own swatch for GLB only."
+        }
+      ],
+      "bytes": 14186272,
+      "sha256": "ea814b659afe12097ecdd8019457014cfe1e57378c6cf67229a2c13622e053da",
+      "note": "Procedural Blender shaders and lighting can differ in GLB. The source .blend was not saved or modified."
+    },
+    "source_sha256_after": "7619d23f9148706ca52ec4c3181db0c33489e8db94e992b711b03694ba4c4150",
+    "source_unchanged": true
+  },
+  "glb": {
+    "path": "character.glb",
+    "bytes": 14186272,
+    "sha256": "ea814b659afe12097ecdd8019457014cfe1e57378c6cf67229a2c13622e053da",
+    "container_magic_ok": true,
+    "container_version": 2,
+    "reimport": {
+      "meshes": 18,
+      "vertices": 231420,
+      "materials": 11,
+      "images": 1
+    },
+    "reimport_succeeded": true
+  },
+  "privacy_scan": {
+    "files_scanned": 30,
+    "personal_strings_checked": 5,
+    "hits": [],
+    "clean": true
+  }
+}

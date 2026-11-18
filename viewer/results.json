@@ -1,6 +1,58 @@
 {
-  "default_model": "gemini-4-carbon",
+  "default_model": "gpt-6.2-astra",
   "models": {
+    "gpt-6.2-astra": {
+      "model": "GPT-6.2 Astra",
+      "model_id": "gpt-6.2-astra",
+      "run_date": "2026.11.18",
+      "harness": "Codex CLI 0.167.2（codex exec）",
+      "stages": {
+        "procedural": {
+          "glb": "../runs/2026-11-18/procedural/gpt-6.2-astra/character.glb",
+          "blend": "../runs/2026-11-18/procedural/gpt-6.2-astra/character.blend",
+          "code": "../runs/2026-11-18/procedural/gpt-6.2-astra/build.py",
+          "readme": "../runs/2026-11-18/procedural/gpt-6.2-astra/README.md",
+          "validation": "../runs/2026-11-18/procedural/gpt-6.2-astra/validation.json",
+          "renders": {
+            "beauty": "../runs/2026-11-18/procedural/gpt-6.2-astra/renders/beauty.png",
+            "front": "../runs/2026-11-18/procedural/gpt-6.2-astra/renders/front.png",
+            "three-quarter": "../runs/2026-11-18/procedural/gpt-6.2-astra/renders/three-quarter.png",
+            "side": "../runs/2026-11-18/procedural/gpt-6.2-astra/renders/side.png",
+            "back": "../runs/2026-11-18/procedural/gpt-6.2-astra/renders/back.png"
+          },
+          "camera_orbit": "0deg 80deg 80%"
+        }
+      },
+      "run_record": "../runs/2026-11-18/run.json",
+      "pending_note": "写真テクスチャ許可版は未実施です（実施するかどうかは本人の判断待ち）。",
+      "cost_note": "Codex利用枠での実行（API直接課金なし）。トークン実績からFastのAPIレートで換算した推定：約$25.98。"
+    },
+    "gpt-6.2-sol": {
+      "model": "GPT-6.2 Sol",
+      "model_id": "gpt-6.2-sol",
+      "run_date": "2026.11.18",
+      "harness": "Codex CLI 0.167.2（codex exec）",
+      "stages": {
+        "procedural": {
+          "glb": "../runs/2026-11-18/procedural/gpt-6.2-sol/character.glb",
+          "blend": "../runs/2026-11-18/procedural/gpt-6.2-sol/character.blend",
+          "code": "../runs/2026-11-18/procedural/gpt-6.2-sol/build.py",
+          "readme": "../runs/2026-11-18/procedural/gpt-6.2-sol/README.md",
+          "validation": "../runs/2026-11-18/procedural/gpt-6.2-sol/validation.json",
+          "renders": {
+            "beauty": "../runs/2026-11-18/procedural/gpt-6.2-sol/renders/beauty.png",
+            "front": "../runs/2026-11-18/procedural/gpt-6.2-sol/renders/front.png",
+            "three-quarter": "../runs/2026-11-18/procedural/gpt-6.2-sol/renders/three-quarter.png",
+            "side": "../runs/2026-11-18/procedural/gpt-6.2-sol/renders/side.png",
+            "back": "../runs/2026-11-18/procedural/gpt-6.2-sol/renders/back.png"
+          },
+          "camera_orbit": "0deg 80deg 80%"
+        }
+      },
+      "run_record": "../runs/2026-11-18/run.json",
+      "pending_note": "写真テクスチャ許可版は未実施です（実施するかどうかは本人の判断待ち）。",
+      "cost_note": "Codex利用枠での実行（API直接課金なし）。トークン実績からFastのAPIレートで換算した推定：約$4.30。"
+    },
     "gemini-4-carbon": {
       "model": "Gemini 4 Carbon",
       "model_id": "gemini-4-carbon",

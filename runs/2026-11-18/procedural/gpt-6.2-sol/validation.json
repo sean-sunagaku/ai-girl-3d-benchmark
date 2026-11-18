@@ -1,0 +1,4572 @@
+{
+  "stage": "procedural",
+  "entrant": "gpt-6.2-sol",
+  "checked_on_jst": "2026-11-18T09:57:42+0900",
+  "appearance_scoring": false,
+  "note": "Technical validation by the coordinator; not an appearance evaluation.",
+  "manifest_checks": [
+    {
+      "path": "inputs/reference.png",
+      "sha256_matches": true
+    },
+    {
+      "path": "inputs/base.obj",
+      "sha256_matches": true
+    },
+    {
+      "path": "inputs/upper-body.obj",
+      "sha256_matches": true
+    },
+    {
+      "path": "inputs/ASSET-LICENSE.md",
+      "sha256_matches": true
+    },
+    {
+      "path": "inputs/environment.json",
+      "sha256_matches": true
+    },
+    {
+      "path": "prompts/01-procedural.md",
+      "sha256_matches": true
+    },
+    {
+      "path": "prompts/02-photo-textured.md",
+      "sha256_matches": true
+    }
+  ],
+  "workspace_input_checks": [
+    {
+      "path": "PROMPT.md",
+      "byte_identical_to": "prompts/01-procedural.md",
+      "matches": true
+    },
+    {
+      "path": "input/ASSET-LICENSE.md",
+      "matches": true
+    },
+    {
+      "path": "input/base.obj",
+      "matches": true
+    },
+    {
+      "path": "input/environment.json",
+      "matches": true
+    },
+    {
+      "path": "input/reference.png",
+      "matches": true
+    },
+    {
+      "path": "input/upper-body.obj",
+      "matches": true
+    }
+  ],
+  "collected": {
+    "path": "runs/2026-11-18/procedural/gpt-6.2-sol",
+    "files": [
+      "PROMPT.md",
+      "README.md",
+      "build.py",
+      "character.blend",
+      "input/ASSET-LICENSE.md",
+      "input/base.obj",
+      "input/environment.json",
+      "input/reference.png",
+      "input/upper-body.obj",
+      "portrait_common.py",
+      "portrait_face.py",
+      "portrait_hair.py",
+      "portrait_set.py",
+      "portrait_wardrobe.py",
+      "render.py",
+      "renders/back.png",
+      "renders/beauty.png",
+      "renders/front.png",
+      "renders/side.png",
+      "renders/three-quarter.png",
+      "report_scene.py",
+      "scene-report.json"
+    ],
+    "character_blend": {
+      "bytes": 13222899,
+      "sha256": "79a45d76f85223b0bb231b12e34095c6978cbf02c58e8a391c69ed675de90030",
+      "identical_to_workspace": true,
+      "sha256_after_inspection": "79a45d76f85223b0bb231b12e34095c6978cbf02c58e8a391c69ed675de90030",
+      "unchanged_by_inspection": true
+    }
+  },
+  "original_renders": {
+    "beauty.png": {
+      "sha256": "23bf3bdaa35efcbc6989dc0d42064d1e830e0672eaab80ba342dabe818dee951",
+      "width": 960,
+      "height": 1040,
+      "text_chunks": {
+        "File": "/Users/babashunsuke/AiWorkspace/ai-verification/ai-girl-3d-benchmark/.work/gpt-6.2-sol-procedural/character.blend",
+        "Date": "2026/11/18 09:55:48",
+        "Time": "00:00:00:01",
+        "Frame": "001",
+        "Camera": "Beauty â¢ cafÃ© selfie",
+        "Scene": "Chestnut and rose â¢ cafÃ© portrait",
+        "RenderTime": "00:54.92",
+        "cycles.ViewLayer.samples": "32",
+        "cycles.ViewLayer.total_time": "00:54.87",
+        "cycles.ViewLayer.render_time": "00:54.60",
+        "cycles.ViewLayer.synchronization_time": "00:00.26"
+      },
+      "idat_sha256": "e07fb4450e65315e2a94f28874eb6ddc9480259720a8b13f041485cfde822bbf",
+      "expected": [
+        960,
+        1040
+      ],
+      "dimensions_ok": true
+    },
+    "front.png": {
+      "sha256": "49e2a5a1119ae93ca859afee72ea0b87275fbd4d6c9d5f702391f71c660be48a",
+      "width": 768,
+      "height": 768,
+      "text_chunks": {
+        "File": "/Users/babashunsuke/AiWorkspace/ai-verification/ai-girl-3d-benchmark/.work/gpt-6.2-sol-procedural/character.blend",
+        "Date": "2026/11/18 09:55:55",
+        "Time": "00:00:00:01",
+        "Frame": "001",
+        "Camera": "diagnostic â¢ front",
+        "Scene": "Chestnut and rose â¢ cafÃ© portrait",
+        "RenderTime": "00:07.58",
+        "cycles.ViewLayer.samples": "32",
+        "cycles.ViewLayer.total_time": "00:07.53",
+        "cycles.ViewLayer.render_time": "00:07.29",
+        "cycles.ViewLayer.synchronization_time": "00:00.24"
+      },
+      "idat_sha256": "b5f172c2e4861275df9cc932692a1c635a1423db04c2aab6cb758b76f69456bd",
+      "expected": [
+        768,
+        768
+      ],
+      "dimensions_ok": true
+    },
+    "three-quarter.png": {
+      "sha256": "eb4e708abf488aa23bf6c39e2ac8af3974670e9a329f94a122644f9e7591f082",
+      "width": 768,
+      "height": 768,
+      "text_chunks": {
+        "File": "/Users/babashunsuke/AiWorkspace/ai-verification/ai-girl-3d-benchmark/.work/gpt-6.2-sol-procedural/character.blend",
+        "Date": "2026/11/18 09:56:03",
+        "Time": "00:00:00:01",
+        "Frame": "001",
+        "Camera": "diagnostic â¢ three-quarter",
+        "Scene": "Chestnut and rose â¢ cafÃ© portrait",
+        "RenderTime": "00:07.64",
+        "cycles.ViewLayer.samples": "32",
+        "cycles.ViewLayer.total_time": "00:07.60",
+        "cycles.ViewLayer.render_time": "00:07.37",
+        "cycles.ViewLayer.synchronization_time": "00:00.23"
+      },
+      "idat_sha256": "734d04517ef20caaa951ca2807cffd3a77c273a72f2f4763faded0de909b1fab",
+      "expected": [
+        768,
+        768
+      ],
+      "dimensions_ok": true
+    },
+    "side.png": {
+      "sha256": "cdecab85ab14989cb5bbf7381d85b64a3291eab52434ce5f6522c91ba3df666a",
+      "width": 768,
+      "height": 768,
+      "text_chunks": {
+        "File": "/Users/babashunsuke/AiWorkspace/ai-verification/ai-girl-3d-benchmark/.work/gpt-6.2-sol-procedural/character.blend",
+        "Date": "2026/11/18 09:56:10",
+        "Time": "00:00:00:01",
+        "Frame": "001",
+        "Camera": "diagnostic â¢ side",
+        "Scene": "Chestnut and rose â¢ cafÃ© portrait",
+        "RenderTime": "00:07.06",
+        "cycles.ViewLayer.samples": "32",
+        "cycles.ViewLayer.total_time": "00:07.03",
+        "cycles.ViewLayer.render_time": "00:06.79",
+        "cycles.ViewLayer.synchronization_time": "00:00.23"
+      },
+      "idat_sha256": "97dd316f2be1ba09289f8dced338e9cbace634674f218dbef3d4da0752fcd544",
+      "expected": [
+        768,
+        768
+      ],
+      "dimensions_ok": true
+    },
+    "back.png": {
+      "sha256": "ac57a971f427e4ccd90a82ad36663ec1d89ef6a49b76f2f753a055e703255dae",
+      "width": 768,
+      "height": 768,
+      "text_chunks": {
+        "File": "/Users/babashunsuke/AiWorkspace/ai-verification/ai-girl-3d-benchmark/.work/gpt-6.2-sol-procedural/character.blend",
+        "Date": "2026/11/18 09:56:18",
+        "Time": "00:00:00:01",
+        "Frame": "001",
+        "Camera": "diagnostic â¢ back",
+        "Scene": "Chestnut and rose â¢ cafÃ© portrait",
+        "RenderTime": "00:08.09",
+        "cycles.ViewLayer.samples": "32",
+        "cycles.ViewLayer.total_time": "00:08.06",
+        "cycles.ViewLayer.render_time": "00:07.82",
+        "cycles.ViewLayer.synchronization_time": "00:00.23"
+      },
+      "idat_sha256": "42edd24c14bb31dc800778cc09c3d48d332b488646600cb899148529717aea37",
+      "expected": [
+        768,
+        768
+      ],
+      "dimensions_ok": true
+    }
+  },
+  "independent_rebuild": {
+    "command": "Blender --background --factory-startup --threads 3 --python build.py",
+    "exit_code": 0,
+    "seconds": 91.3,
+    "produced_character_blend": true,
+    "produced_scene_report": true,
+    "extra_steps": [
+      {
+        "step": "render.py",
+        "exit_code": 0
+      },
+      {
+        "step": "report_scene.py",
+        "exit_code": 0
+      }
+    ],
+    "renders": {
+      "beauty.png": {
+        "sha256": "3943d413b7eae85b87338b5f08ec94ad81b2c31633c0da94c981b2422efee5ab",
+        "width": 960,
+        "height": 1040,
+        "dimensions_ok": true,
+        "byte_identical_to_original": false,
+        "pixel_data_identical_to_original": true
+      },
+      "front.png": {
+        "sha256": "f2e1fbf55c44d0a12b4bbeba4ce8060bf1a96d5688e61780fed04dc47970d67e",
+        "width": 768,
+        "height": 768,
+        "dimensions_ok": true,
+        "byte_identical_to_original": false,
+        "pixel_data_identical_to_original": true
+      },
+      "three-quarter.png": {
+        "sha256": "ace2ab01705cf55e9ca01a27d1f8330cc84b43a9330015c135d55f23d8c6285d",
+        "width": 768,
+        "height": 768,
+        "dimensions_ok": true,
+        "byte_identical_to_original": false,
+        "pixel_data_identical_to_original": true
+      },
+      "side.png": {
+        "sha256": "90620b7c35b8eb4212facd622bd0419bc2befe465935b7a0924de1881fd2869d",
+        "width": 768,
+        "height": 768,
+        "dimensions_ok": true,
+        "byte_identical_to_original": false,
+        "pixel_data_identical_to_original": true
+      },
+      "back.png": {
+        "sha256": "0a27c661c0564053131103d85caeb876a909af4786f389af8b91c46c653374ce",
+        "width": 768,
+        "height": 768,
+        "dimensions_ok": true,
+        "byte_identical_to_original": false,
+        "pixel_data_identical_to_original": true
+      }
+    },
+    "all_five_expected_dimensions": true
+  },
+  "inspect_scene": {
+    "exit_code": 0,
+    "script": "scripts/inspect_scene.py",
+    "include": [
+      "Character"
+    ]
+  },
+  "scene": {
+    "scene": "character.blend",
+    "source_sha256_before": "79a45d76f85223b0bb231b12e34095c6978cbf02c58e8a391c69ed675de90030",
+    "reopened_successfully": true,
+    "blender_version": "5.1.1",
+    "render_engine": "CYCLES",
+    "cycles_device": "CPU",
+    "threads_mode": "FIXED",
+    "threads": 3,
+    "samples": 32,
+    "denoising": true,
+    "camera": "Beauty • café selfie",
+    "cameras": [
+      {
+        "name": "Beauty • café selfie",
+        "type": "PERSP",
+        "ortho_scale": null
+      },
+      {
+        "name": "diagnostic • front",
+        "type": "ORTHO",
+        "ortho_scale": 0.9290000200271606
+      },
+      {
+        "name": "diagnostic • three-quarter",
+        "type": "ORTHO",
+        "ortho_scale": 0.9290000200271606
+      },
+      {
+        "name": "diagnostic • side",
+        "type": "ORTHO",
+        "ortho_scale": 0.9290000200271606
+      },
+      {
+        "name": "diagnostic • back",
+        "type": "ORTHO",
+        "ortho_scale": 0.9290000200271606
+      }
+    ],
+    "objects": [
+      {
+        "name": "Face, ears and neck • continuous sculpt",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Face and eyes"
+        ],
+        "base_vertices": 4583,
+        "evaluated_vertices": 72857,
+        "evaluated_polygons": 72704,
+        "bounds": [
+          [
+            -0.13965889811515808,
+            -0.1594841182231903,
+            1.2234400510787964
+          ],
+          [
+            0.1189839318394661,
+            0.049871399998664856,
+            1.6528717279434204
+          ]
+        ]
+      },
+      {
+        "name": "Globe, iris and corneal dome • image left",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Face and eyes"
+        ],
+        "base_vertices": 11954,
+        "evaluated_vertices": 11954,
+        "evaluated_polygons": 12096,
+        "bounds": [
+          [
+            -0.09816498309373856,
+            -0.13480961322784424,
+            1.5107791423797607
+          ],
+          [
+            -0.06303795427083969,
+            -0.10446180403232574,
+            1.541717529296875
+          ]
+        ]
+      },
+      {
+        "name": "Globe, iris and corneal dome • image right",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Face and eyes"
+        ],
+        "base_vertices": 11954,
+        "evaluated_vertices": 11954,
+        "evaluated_polygons": 12096,
+        "bounds": [
+          [
+            -0.04021842032670975,
+            -0.13765618205070496,
+            1.538072109222412
+          ],
+          [
+            -0.005041729658842087,
+            -0.10724838078022003,
+            1.5690771341323853
+          ]
+        ]
+      },
+      {
+        "name": "Upper lashes • individually curled",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "Face and eyes"
+        ],
+        "bounds": [
+          [
+            -0.100363589823246,
+            -0.14134185016155243,
+            1.5216671228408813
+          ],
+          [
+            -0.008583842776715755,
+            -0.13115152716636658,
+            1.567312479019165
+          ]
+        ]
+      },
+      {
+        "name": "Lower lashes • individually curled",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "Face and eyes"
+        ],
+        "bounds": [
+          [
+            -0.09322771430015564,
+            -0.1402374804019928,
+            1.5140515565872192
+          ],
+          [
+            -0.006962452549487352,
+            -0.13041745126247406,
+            1.5566297769546509
+          ]
+        ]
+      },
+      {
+        "name": "Upper lash beds",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "Face and eyes"
+        ],
+        "bounds": [
+          [
+            -0.09499692171812057,
+            -0.13753361999988556,
+            1.5216106176376343
+          ],
+          [
+            -0.010931115597486496,
+            -0.1308392733335495,
+            1.5621943473815918
+          ]
+        ]
+      },
+      {
+        "name": "Lower tear margins",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "Face and eyes"
+        ],
+        "bounds": [
+          [
+            -0.09267496317625046,
+            -0.13800819218158722,
+            1.5168410539627075
+          ],
+          [
+            -0.008820024318993092,
+            -0.13014359772205353,
+            1.5567055940628052
+          ]
+        ]
+      },
+      {
+        "name": "Brows • feathered strands",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "Face and eyes"
+        ],
+        "bounds": [
+          [
+            -0.11320018023252487,
+            -0.14180122315883636,
+            1.5272153615951538
+          ],
+          [
+            -0.001351086189970374,
+            -0.09950533509254456,
+            1.5834128856658936
+          ]
+        ]
+      },
+      {
+        "name": "Lip contact • recessed closure",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Face and eyes"
+        ],
+        "base_vertices": 170,
+        "evaluated_vertices": 170,
+        "evaluated_polygons": 84,
+        "bounds": [
+          [
+            -0.05266357958316803,
+            -0.1510341763496399,
+            1.4813672304153442
+          ],
+          [
+            -0.008392684161663055,
+            -0.13922181725502014,
+            1.5044136047363281
+          ]
+        ]
+      },
+      {
+        "name": "Ribbed cuff • image right",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Knitwear and hands"
+        ],
+        "base_vertices": 4992,
+        "evaluated_vertices": 19968,
+        "evaluated_polygons": 19968,
+        "bounds": [
+          [
+            0.07787475734949112,
+            -0.6036252975463867,
+            1.2698650360107422
+          ],
+          [
+            0.17588017880916595,
+            -0.5102885961532593,
+            1.359443187713623
+          ]
+        ]
+      },
+      {
+        "name": "Ribbed cuff • image left",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Knitwear and hands"
+        ],
+        "base_vertices": 4992,
+        "evaluated_vertices": 19968,
+        "evaluated_polygons": 19968,
+        "bounds": [
+          [
+            -0.1488601714372635,
+            -0.5890935659408569,
+            1.2997562885284424
+          ],
+          [
+            -0.0522175095975399,
+            -0.49605676531791687,
+            1.3917160034179688
+          ]
+        ]
+      },
+      {
+        "name": "Sweater • torso and continuous set-in sleeves",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Knitwear and hands"
+        ],
+        "base_vertices": 13066,
+        "evaluated_vertices": 52694,
+        "evaluated_polygons": 52272,
+        "bounds": [
+          [
+            -0.2595701515674591,
+            -0.5467069149017334,
+            1.018654227256775
+          ],
+          [
+            0.28207188844680786,
+            0.07886999100446701,
+            1.409059762954712
+          ]
+        ]
+      },
+      {
+        "name": "Crew neck • raised ribbed binding",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Knitwear and hands"
+        ],
+        "base_vertices": 4560,
+        "evaluated_vertices": 18240,
+        "evaluated_polygons": 18240,
+        "bounds": [
+          [
+            -0.09855464845895767,
+            -0.09458010643720627,
+            1.3741111755371094
+          ],
+          [
+            0.10049546509981155,
+            0.05047277733683586,
+            1.4167253971099854
+          ]
+        ]
+      },
+      {
+        "name": "Sweater hem • ribbed welt",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Knitwear and hands"
+        ],
+        "base_vertices": 5120,
+        "evaluated_vertices": 20480,
+        "evaluated_polygons": 20480,
+        "bounds": [
+          [
+            -0.1754138022661209,
+            -0.10246509313583374,
+            1.0073047876358032
+          ],
+          [
+            0.16913053393363953,
+            0.08233505487442017,
+            1.0358422994613647
+          ]
+        ]
+      },
+      {
+        "name": "Inward-facing sweater hem finish",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Knitwear and hands"
+        ],
+        "base_vertices": 128,
+        "evaluated_vertices": 128,
+        "evaluated_polygons": 1,
+        "bounds": [
+          [
+            -0.16761331260204315,
+            -0.0966859981417656,
+            1.0133047103881836
+          ],
+          [
+            0.16317959129810333,
+            0.07638135552406311,
+            1.0133048295974731
+          ]
+        ]
+      },
+      {
+        "name": "Relaxed hand • image right",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Knitwear and hands"
+        ],
+        "base_vertices": 1658,
+        "evaluated_vertices": 26381,
+        "evaluated_polygons": 26336,
+        "bounds": [
+          [
+            0.03098652884364128,
+            -0.662522554397583,
+            1.298173427581787
+          ],
+          [
+            0.1228279396891594,
+            -0.5492050647735596,
+            1.3729304075241089
+          ]
+        ]
+      },
+      {
+        "name": "Relaxed hand • image left",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Knitwear and hands"
+        ],
+        "base_vertices": 1658,
+        "evaluated_vertices": 26381,
+        "evaluated_polygons": 26336,
+        "bounds": [
+          [
+            -0.11613798141479492,
+            -0.6346743106842041,
+            1.3315927982330322
+          ],
+          [
+            -0.010168511420488358,
+            -0.5479061007499695,
+            1.4264402389526367
+          ]
+        ]
+      },
+      {
+        "name": "Scalp underlayer • left sweep",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Chestnut groom"
+        ],
+        "base_vertices": 6579,
+        "evaluated_vertices": 6579,
+        "evaluated_polygons": 6400,
+        "bounds": [
+          [
+            -0.1497100442647934,
+            -0.13775964081287384,
+            1.4756592512130737
+          ],
+          [
+            -0.03929542750120163,
+            0.053494349122047424,
+            1.6323164701461792
+          ]
+        ]
+      },
+      {
+        "name": "Scalp underlayer • right sweep",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Chestnut groom"
+        ],
+        "base_vertices": 6579,
+        "evaluated_vertices": 6579,
+        "evaluated_polygons": 6400,
+        "bounds": [
+          [
+            -0.11793570965528488,
+            -0.13755325973033905,
+            1.5113414525985718
+          ],
+          [
+            0.041311558336019516,
+            0.05350537225604057,
+            1.662600040435791
+          ]
+        ]
+      },
+      {
+        "name": "Crown • combed individual hairs",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "Chestnut groom"
+        ],
+        "bounds": [
+          [
+            -0.15203775465488434,
+            -0.13873139023780823,
+            1.4754383563995361
+          ],
+          [
+            0.04055427014827728,
+            0.055922627449035645,
+            1.664989709854126
+          ]
+        ]
+      },
+      {
+        "name": "Long waves • draped over shoulders",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "Chestnut groom"
+        ],
+        "bounds": [
+          [
+            -0.18514731526374817,
+            -0.20016750693321228,
+            1.0762094259262085
+          ],
+          [
+            0.21372781693935394,
+            0.0541379339993,
+            1.664703130722046
+          ]
+        ]
+      },
+      {
+        "name": "Nape and back • layered hair volume",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Chestnut groom"
+        ],
+        "base_vertices": 17958,
+        "evaluated_vertices": 17958,
+        "evaluated_polygons": 17956,
+        "bounds": [
+          [
+            -0.13403703272342682,
+            0.003819219069555402,
+            1.1489404439926147
+          ],
+          [
+            0.1294190138578415,
+            0.121956005692482,
+            1.642432451248169
+          ]
+        ]
+      },
+      {
+        "name": "Back waves • individually combed fibers",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "Chestnut groom"
+        ],
+        "bounds": [
+          [
+            -0.13586129248142242,
+            0.0038024322129786015,
+            1.1244431734085083
+          ],
+          [
+            0.13118502497673035,
+            0.12893831729888916,
+            1.6424838304519653
+          ]
+        ]
+      },
+      {
+        "name": "Fringe • separated wispy bangs",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "Chestnut groom"
+        ],
+        "bounds": [
+          [
+            -0.14294643700122833,
+            -0.15101507306098938,
+            1.4708796739578247
+          ],
+          [
+            0.03369545191526413,
+            -0.02919340319931507,
+            1.6250851154327393
+          ]
+        ]
+      },
+      {
+        "name": "Temple sweeps • crown-to-length transitions",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "Chestnut groom"
+        ],
+        "bounds": [
+          [
+            -0.13964493572711945,
+            -0.13263483345508575,
+            1.401064395904541
+          ],
+          [
+            0.09037560224533081,
+            0.024602161720395088,
+            1.6600275039672852
+          ]
+        ]
+      },
+      {
+        "name": "Flyaways • crown and loose ends",
+        "type": "CURVES",
+        "hidden_render": false,
+        "collections": [
+          "Chestnut groom"
+        ],
+        "bounds": [
+          [
+            -0.20069682598114014,
+            -0.17038220167160034,
+            1.2836105823516846
+          ],
+          [
+            0.16490714251995087,
+            0.06778375804424286,
+            1.677345871925354
+          ]
+        ]
+      },
+      {
+        "name": "Beauty • café selfie",
+        "type": "CAMERA",
+        "hidden_render": false,
+        "collections": [
+          "Cameras"
+        ]
+      },
+      {
+        "name": "diagnostic • front",
+        "type": "CAMERA",
+        "hidden_render": false,
+        "collections": [
+          "Cameras"
+        ]
+      },
+      {
+        "name": "diagnostic • three-quarter",
+        "type": "CAMERA",
+        "hidden_render": false,
+        "collections": [
+          "Cameras"
+        ]
+      },
+      {
+        "name": "diagnostic • side",
+        "type": "CAMERA",
+        "hidden_render": false,
+        "collections": [
+          "Cameras"
+        ]
+      },
+      {
+        "name": "diagnostic • back",
+        "type": "CAMERA",
+        "hidden_render": false,
+        "collections": [
+          "Cameras"
+        ]
+      },
+      {
+        "name": "Limewashed wall",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.4699999690055847,
+            0.8374999761581421,
+            -0.06500005722045898
+          ],
+          [
+            1.5499999523162842,
+            0.9325000047683716,
+            2.825000047683716
+          ]
+        ]
+      },
+      {
+        "name": "Window glass • diffused sky",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -1.1449999809265137,
+            0.800000011920929,
+            0.12999999523162842
+          ],
+          [
+            -0.20500001311302185,
+            0.8399999737739563,
+            2.8499999046325684
+          ]
+        ]
+      },
+      {
+        "name": "Window vertical mullion",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -1.162500023841858,
+            0.7515000104904175,
+            0.19499993324279785
+          ],
+          [
+            -1.1374999284744263,
+            0.8005000352859497,
+            2.825000047683716
+          ]
+        ]
+      },
+      {
+        "name": "Window vertical mullion.001",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.8524999618530273,
+            0.7515000104904175,
+            0.19499993324279785
+          ],
+          [
+            -0.8274999856948853,
+            0.8005000352859497,
+            2.825000047683716
+          ]
+        ]
+      },
+      {
+        "name": "Window vertical mullion.002",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.5324999690055847,
+            0.7515000104904175,
+            0.19499993324279785
+          ],
+          [
+            -0.5074999928474426,
+            0.8005000352859497,
+            2.825000047683716
+          ]
+        ]
+      },
+      {
+        "name": "Window vertical mullion.003",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.2615000009536743,
+            0.7515000104904175,
+            0.19499993324279785
+          ],
+          [
+            -0.23649999499320984,
+            0.8005000352859497,
+            2.825000047683716
+          ]
+        ]
+      },
+      {
+        "name": "Window horizontal mullion",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -1.1675000190734863,
+            0.7465000152587891,
+            0.6490000486373901
+          ],
+          [
+            -0.23249998688697815,
+            0.7875000238418579,
+            0.6710000038146973
+          ]
+        ]
+      },
+      {
+        "name": "Window horizontal mullion.001",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -1.1675000190734863,
+            0.7465000152587891,
+            1.2389999628067017
+          ],
+          [
+            -0.23249998688697815,
+            0.7875000238418579,
+            1.2610000371932983
+          ]
+        ]
+      },
+      {
+        "name": "Window horizontal mullion.002",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -1.1675000190734863,
+            0.7465000152587891,
+            2.069000005722046
+          ],
+          [
+            -0.23249998688697815,
+            0.7875000238418579,
+            2.0909998416900635
+          ]
+        ]
+      },
+      {
+        "name": "Terrazzo café floor",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -3.0,
+            -1.6699999570846558,
+            0.5239999890327454
+          ],
+          [
+            3.0,
+            2.3299999237060547,
+            0.6159999966621399
+          ]
+        ]
+      },
+      {
+        "name": "Counter carcass",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.210999995470047,
+            0.4390000104904175,
+            0.6180000305175781
+          ],
+          [
+            1.1990000009536743,
+            0.8090000152587891,
+            1.2580000162124634
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.19249999523162842,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            -0.17149999737739563,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.001",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.1655000001192093,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            -0.1445000022649765,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.002",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.13850000500679016,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            -0.11750000715255737,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.003",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.11150000244379044,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            -0.09050000458955765,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.004",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.08449999988079071,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            -0.06350000202655792,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.005",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.057499997317790985,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            -0.0364999994635582,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.006",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.030499998480081558,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            -0.009499999694526196,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.007",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.0034999996423721313,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.017500000074505806,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.008",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.023500002920627594,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.04450000077486038,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.009",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.05050000175833702,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.07150000333786011,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.010",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.07750000059604645,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.09849999845027924,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.011",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.10450000315904617,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.12550000846385956,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.012",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.1315000057220459,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.1525000035762787,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.013",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.15850000083446503,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.17949999868869781,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.014",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.18549999594688416,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.20649999380111694,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.015",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.21250000596046448,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.23350000381469727,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.016",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.2395000010728836,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.2605000138282776,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.017",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.26649999618530273,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.2875000238418579,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.018",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.29349997639656067,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.31450000405311584,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.019",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.320499986410141,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.34150001406669617,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.020",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.3474999964237213,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.3685000240802765,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.021",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.37449997663497925,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.3955000042915344,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.022",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.40149998664855957,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.42250001430511475,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.023",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.4284999966621399,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.44950002431869507,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.024",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.4554999768733978,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.476500004529953,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.025",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.48249998688697815,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.5034999847412109,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.026",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.5094999670982361,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.5304999947547913,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.027",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.5364999771118164,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.5575000047683716,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.028",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.5634999871253967,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.5845000147819519,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.029",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.590499997138977,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.6115000247955322,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.030",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.6175000071525574,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.6385000348091125,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.031",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.6444999575614929,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.6654999852180481,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.032",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.6714999675750732,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.6924999952316284,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.033",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.6984999775886536,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.7195000052452087,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.034",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.7254999876022339,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.7465000152587891,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.035",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.7524999976158142,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.7735000252723694,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.036",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.7795000076293945,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.8005000352859497,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.037",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.8064999580383301,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.8274999856948853,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.038",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.8334999680519104,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.8544999957084656,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.039",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.8604999780654907,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.8815000057220459,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.040",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.887499988079071,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.9085000157356262,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.041",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.9144999980926514,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.9355000257492065,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.042",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.9415000081062317,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.9625000357627869,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.043",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.9684999585151672,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            0.9894999861717224,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.044",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.9955000281333923,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            1.0164999961853027,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.045",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            1.0225000381469727,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            1.0434999465942383,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.046",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            1.0494999885559082,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            1.0704998970031738,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.047",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            1.0765000581741333,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            1.097499966621399,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.048",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            1.1035000085830688,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            1.1244999170303345,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Fluted bar facing.049",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            1.130500078201294,
+            0.4284999966621399,
+            0.6480000019073486
+          ],
+          [
+            1.1514999866485596,
+            0.4415000081062317,
+            1.2480000257492065
+          ]
+        ]
+      },
+      {
+        "name": "Bar counter • thick oak top",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.24000000953674316,
+            0.35999998450279236,
+            1.2285000085830688
+          ],
+          [
+            1.2400000095367432,
+            0.809999942779541,
+            1.2975000143051147
+          ]
+        ]
+      },
+      {
+        "name": "Oak wall shelf",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.04000002145767212,
+            0.5894999504089355,
+            1.4555000066757202
+          ],
+          [
+            1.1600000858306885,
+            0.8485000133514404,
+            1.4964998960494995
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            -0.01830616034567356,
+            0.6673938632011414,
+            1.496000051498413
+          ],
+          [
+            0.0332680344581604,
+            0.7189680933952332,
+            1.56803297996521
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.001",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.03683583065867424,
+            0.6428971886634827,
+            1.496000051498413
+          ],
+          [
+            0.08742913603782654,
+            0.6934905052185059,
+            1.624735713005066
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.002",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.11709871143102646,
+            0.6848177313804626,
+            1.496000051498413
+          ],
+          [
+            0.16117949783802032,
+            0.7288985252380371,
+            1.5866239070892334
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.003",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.2143837958574295,
+            0.6806641817092896,
+            1.496000051498413
+          ],
+          [
+            0.2655145823955536,
+            0.7317949533462524,
+            1.5497546195983887
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.004",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.27383047342300415,
+            0.6483268141746521,
+            1.496000051498413
+          ],
+          [
+            0.3239382803440094,
+            0.6984346508979797,
+            1.5810580253601074
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.005",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.3930486738681793,
+            0.6089218854904175,
+            1.496000051498413
+          ],
+          [
+            0.4402333199977875,
+            0.6561064720153809,
+            1.6237789392471313
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.006",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.45580992102622986,
+            0.6156993508338928,
+            1.496000051498413
+          ],
+          [
+            0.5137925148010254,
+            0.673681914806366,
+            1.545560359954834
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.007",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.5309087634086609,
+            0.6665451526641846,
+            1.496000051498413
+          ],
+          [
+            0.5871884822845459,
+            0.7228248715400696,
+            1.6195859909057617
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.008",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.610105037689209,
+            0.6924505829811096,
+            1.496000051498413
+          ],
+          [
+            0.6616406440734863,
+            0.743986189365387,
+            1.6041553020477295
+          ]
+        ]
+      },
+      {
+        "name": "Oak wall shelf.001",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.04000002145767212,
+            0.5894999504089355,
+            1.6785000562667847
+          ],
+          [
+            1.1600000858306885,
+            0.8485000133514404,
+            1.719499945640564
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.009",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            -0.04033507779240608,
+            0.689544677734375,
+            1.718999981880188
+          ],
+          [
+            0.01595296896994114,
+            0.7458327412605286,
+            1.850157380104065
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.010",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.04417530447244644,
+            0.6520366668701172,
+            1.718999981880188
+          ],
+          [
+            0.09343120455741882,
+            0.7012925744056702,
+            1.8222792148590088
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.011",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.1363617479801178,
+            0.6322259902954102,
+            1.718999981880188
+          ],
+          [
+            0.19803185760974884,
+            0.6938961148262024,
+            1.7916100025177002
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.012",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.21607625484466553,
+            0.6370087265968323,
+            1.718999981880188
+          ],
+          [
+            0.27000167965888977,
+            0.6909341812133789,
+            1.8177051544189453
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.013",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.2802736759185791,
+            0.6545373201370239,
+            1.718999981880188
+          ],
+          [
+            0.3364730179309845,
+            0.7107366323471069,
+            1.7940701246261597
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.014",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.3883323669433594,
+            0.6429436206817627,
+            1.718999981880188
+          ],
+          [
+            0.44197359681129456,
+            0.6965848803520203,
+            1.8452917337417603
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.015",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.44917091727256775,
+            0.6620814204216003,
+            1.718999981880188
+          ],
+          [
+            0.5151308178901672,
+            0.7280413508415222,
+            1.8531688451766968
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.016",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.5454767346382141,
+            0.6532353162765503,
+            1.718999981880188
+          ],
+          [
+            0.5942107439041138,
+            0.7019692659378052,
+            1.7734787464141846
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.017",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.6235264539718628,
+            0.658761203289032,
+            1.718999981880188
+          ],
+          [
+            0.681476354598999,
+            0.716711163520813,
+            1.797515630722046
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.018",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.6975529789924622,
+            0.6102619171142578,
+            1.718999981880188
+          ],
+          [
+            0.7616208791732788,
+            0.6743298172950745,
+            1.7685284614562988
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.019",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.7895011901855469,
+            0.6720360517501831,
+            1.718999981880188
+          ],
+          [
+            0.8353990316390991,
+            0.7179338335990906,
+            1.8014286756515503
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.020",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.8384360671043396,
+            0.6808050870895386,
+            1.718999981880188
+          ],
+          [
+            0.8960008025169373,
+            0.7383698225021362,
+            1.821942925453186
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.021",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.9140910506248474,
+            0.6177956461906433,
+            1.718999981880188
+          ],
+          [
+            0.9787427186965942,
+            0.6824473142623901,
+            1.8200777769088745
+          ]
+        ]
+      },
+      {
+        "name": "Oak wall shelf.002",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.04000002145767212,
+            0.5894999504089355,
+            1.9065001010894775
+          ],
+          [
+            1.1600000858306885,
+            0.8485000133514404,
+            1.9474999904632568
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.022",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            -0.048905983567237854,
+            0.6070698499679565,
+            1.9470000267028809
+          ],
+          [
+            0.004089889582246542,
+            0.6600657105445862,
+            2.025055170059204
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.023",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.06822008639574051,
+            0.6436514258384705,
+            1.9470000267028809
+          ],
+          [
+            0.12150584161281586,
+            0.6969371438026428,
+            2.0075438022613525
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.024",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.1396331638097763,
+            0.645146369934082,
+            1.9470000267028809
+          ],
+          [
+            0.20315290987491608,
+            0.7086660861968994,
+            2.0576171875
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.025",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.2066338062286377,
+            0.618116557598114,
+            1.9470000267028809
+          ],
+          [
+            0.2626053988933563,
+            0.6740881204605103,
+            2.015368938446045
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.026",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.29737624526023865,
+            0.678298830986023,
+            1.9470000267028809
+          ],
+          [
+            0.3464308977127075,
+            0.7273535132408142,
+            2.041409492492676
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.027",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.3874046802520752,
+            0.6350279450416565,
+            1.9470000267028809
+          ],
+          [
+            0.43419161438941956,
+            0.6818148493766785,
+            2.025517225265503
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.028",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.4489544928073883,
+            0.6421913504600525,
+            1.9470000267028809
+          ],
+          [
+            0.49750345945358276,
+            0.6907402873039246,
+            2.002314567565918
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.029",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.5083332657814026,
+            0.6371270418167114,
+            1.9470000267028809
+          ],
+          [
+            0.5679319500923157,
+            0.6967257261276245,
+            2.024765729904175
+          ]
+        ]
+      },
+      {
+        "name": "Shelf ware • ceramic jars and cups.030",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.6081733703613281,
+            0.678284227848053,
+            1.9470000267028809
+          ],
+          [
+            0.6685527563095093,
+            0.7386636734008789,
+            2.0693576335906982
+          ]
+        ]
+      },
+      {
+        "name": "Café counter vessels",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.19448143243789673,
+            0.5424814224243164,
+            1.2970000505447388
+          ],
+          [
+            0.24551856517791748,
+            0.5935185551643372,
+            1.3981038331985474
+          ]
+        ]
+      },
+      {
+        "name": "Café counter vessels.001",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.2850840985774994,
+            0.5410841107368469,
+            1.2970000505447388
+          ],
+          [
+            0.3389159142971039,
+            0.5949159264564514,
+            1.4532785415649414
+          ]
+        ]
+      },
+      {
+        "name": "Café counter vessels.002",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.37028512358665466,
+            0.5342851281166077,
+            1.2970000505447388
+          ],
+          [
+            0.4377148747444153,
+            0.6017149090766907,
+            1.4823004007339478
+          ]
+        ]
+      },
+      {
+        "name": "Café counter vessels.003",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.46031469106674194,
+            0.532314658164978,
+            1.2970000505447388
+          ],
+          [
+            0.5316852927207947,
+            0.6036853194236755,
+            1.392773151397705
+          ]
+        ]
+      },
+      {
+        "name": "Café counter vessels.004",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.5614073872566223,
+            0.5414074063301086,
+            1.2970000505447388
+          ],
+          [
+            0.6145926117897034,
+            0.5945926308631897,
+            1.4739477634429932
+          ]
+        ]
+      },
+      {
+        "name": "Café counter vessels.005",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 336,
+        "evaluated_vertices": 336,
+        "evaluated_polygons": 290,
+        "bounds": [
+          [
+            0.6443735957145691,
+            0.5323736071586609,
+            1.2970000505447388
+          ],
+          [
+            0.7156263589859009,
+            0.6036263704299927,
+            1.4432700872421265
+          ]
+        ]
+      },
+      {
+        "name": "Chair • tapered side rail",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.40950000286102295,
+            0.045033134520053864,
+            0.6399824619293213
+          ],
+          [
+            -0.36650002002716064,
+            0.17096686363220215,
+            1.272017478942871
+          ]
+        ]
+      },
+      {
+        "name": "Chair • tapered side rail.001",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.09349999576807022,
+            0.045033134520053864,
+            0.6399824619293213
+          ],
+          [
+            -0.05049999803304672,
+            0.17096686363220215,
+            1.272017478942871
+          ]
+        ]
+      },
+      {
+        "name": "Chair • curved top rail",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.4106808602809906,
+            0.05450000241398811,
+            1.2187137603759766
+          ],
+          [
+            -0.04931914806365967,
+            0.101500004529953,
+            1.30928635597229
+          ]
+        ]
+      },
+      {
+        "name": "Chair • second slat",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.3865000009536743,
+            0.07050000131130219,
+            1.1354999542236328
+          ],
+          [
+            -0.07350000739097595,
+            0.101500004529953,
+            1.1584999561309814
+          ]
+        ]
+      },
+      {
+        "name": "Chair • tapered side rail.002",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.2535000145435333,
+            0.06003313511610031,
+            0.6399824619293213
+          ],
+          [
+            0.29649999737739563,
+            0.1859668642282486,
+            1.272017478942871
+          ]
+        ]
+      },
+      {
+        "name": "Chair • tapered side rail.003",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.5695000290870667,
+            0.06003313511610031,
+            0.6399824619293213
+          ],
+          [
+            0.612500011920929,
+            0.1859668642282486,
+            1.272017478942871
+          ]
+        ]
+      },
+      {
+        "name": "Chair • curved top rail.001",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.2527235448360443,
+            0.06949999928474426,
+            1.2213703393936157
+          ],
+          [
+            0.6132764220237732,
+            0.11650000512599945,
+            1.3066297769546509
+          ]
+        ]
+      },
+      {
+        "name": "Chair • second slat.001",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.27649998664855957,
+            0.08550000190734863,
+            1.1354999542236328
+          ],
+          [
+            0.5895000100135803,
+            0.11650000512599945,
+            1.1584999561309814
+          ]
+        ]
+      },
+      {
+        "name": "Rear café table",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            0.1470000147819519,
+            -0.06100000441074371,
+            1.0924999713897705
+          ],
+          [
+            0.8370000123977661,
+            0.48900002241134644,
+            1.1375000476837158
+          ]
+        ]
+      },
+      {
+        "name": "Near table edge",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8,
+        "evaluated_vertices": 96,
+        "evaluated_polygons": 98,
+        "bounds": [
+          [
+            -0.4505000114440918,
+            -0.7179999947547913,
+            0.9895000457763672
+          ],
+          [
+            0.5485000014305115,
+            -0.16200000047683716,
+            1.0264999866485596
+          ]
+        ]
+      },
+      {
+        "name": "Window fig • planter",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 384,
+        "evaluated_vertices": 384,
+        "evaluated_polygons": 338,
+        "bounds": [
+          [
+            -0.4970000088214874,
+            0.23800000548362732,
+            0.7590000033378601
+          ],
+          [
+            -0.2930000126361847,
+            0.44200000166893005,
+            0.9139999747276306
+          ]
+        ]
+      },
+      {
+        "name": "Window fig • stem",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            -0.6330248713493347,
+            0.3360067307949066,
+            0.8885369300842285
+          ],
+          [
+            -0.4277137815952301,
+            0.35038095712661743,
+            1.604030966758728
+          ]
+        ]
+      },
+      {
+        "name": "Window fig • stem.001",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            -0.48598745465278625,
+            0.3624507784843445,
+            0.8883463740348816
+          ],
+          [
+            -0.4041826128959656,
+            0.5144802927970886,
+            1.487190842628479
+          ]
+        ]
+      },
+      {
+        "name": "Window fig • stem.002",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            -0.5061675310134888,
+            0.1991126537322998,
+            0.8889688849449158
+          ],
+          [
+            -0.40720686316490173,
+            0.3228430449962616,
+            1.7687608003616333
+          ]
+        ]
+      },
+      {
+        "name": "Window fig • stem.003",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            -0.5616424679756165,
+            0.34205007553100586,
+            0.8892850875854492
+          ],
+          [
+            -0.41613706946372986,
+            0.38824185729026794,
+            1.9742172956466675
+          ]
+        ]
+      },
+      {
+        "name": "Window fig • stem.004",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            -0.6446751356124878,
+            0.3390886187553406,
+            0.8884592652320862
+          ],
+          [
+            -0.42961713671684265,
+            0.3696460723876953,
+            1.5928997993469238
+          ]
+        ]
+      },
+      {
+        "name": "Window fig • stem.005",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            -0.4474576413631439,
+            0.24294833838939667,
+            0.8892917633056641
+          ],
+          [
+            -0.39781105518341064,
+            0.3298512101173401,
+            1.674049735069275
+          ]
+        ]
+      },
+      {
+        "name": "Window fig • stem.006",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            -0.39937689900398254,
+            0.27698028087615967,
+            0.8895158171653748
+          ],
+          [
+            -0.38734784722328186,
+            0.3352798521518707,
+            1.6024118661880493
+          ]
+        ]
+      },
+      {
+        "name": "Window fig • stem.007",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            -0.3546915352344513,
+            0.32313770055770874,
+            0.8889458179473877
+          ],
+          [
+            -0.1084226742386818,
+            0.3427228629589081,
+            2.116511821746826
+          ]
+        ]
+      },
+      {
+        "name": "Window fig • stem.008",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            -0.4798944890499115,
+            0.35492175817489624,
+            0.8891869783401489
+          ],
+          [
+            -0.4030686914920807,
+            0.4685673415660858,
+            1.8532108068466187
+          ]
+        ]
+      },
+      {
+        "name": "Window fig • stem.009",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            -0.37233027815818787,
+            0.347125768661499,
+            0.8888096213340759
+          ],
+          [
+            -0.21885818243026733,
+            0.4199241101741791,
+            1.6444131135940552
+          ]
+        ]
+      },
+      {
+        "name": "Window fig • stem.010",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            -0.4423429071903229,
+            0.2685720920562744,
+            0.8896353840827942
+          ],
+          [
+            -0.3969951272010803,
+            0.333975225687027,
+            2.0843567848205566
+          ]
+        ]
+      },
+      {
+        "name": "Window fig • stem.011",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            -0.6273490786552429,
+            0.3382415175437927,
+            0.8888395428657532
+          ],
+          [
+            -0.42672863602638245,
+            0.364383727312088,
+            1.7733204364776611
+          ]
+        ]
+      },
+      {
+        "name": "Window fig • stem.012",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            -0.4835805594921112,
+            0.2901967465877533,
+            0.8893638253211975
+          ],
+          [
+            -0.4036158323287964,
+            0.3374529480934143,
+            1.6285011768341064
+          ]
+        ]
+      },
+      {
+        "name": "Window fig • curved leaves",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8775,
+        "evaluated_vertices": 8775,
+        "evaluated_polygons": 6240,
+        "bounds": [
+          [
+            -0.6909352540969849,
+            0.1498352736234665,
+            1.1055480241775513
+          ],
+          [
+            -0.082115039229393,
+            0.5621671676635742,
+            2.1326606273651123
+          ]
+        ]
+      },
+      {
+        "name": "Small counter greenery • planter",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 384,
+        "evaluated_vertices": 384,
+        "evaluated_polygons": 338,
+        "bounds": [
+          [
+            0.43799999356269836,
+            0.21699999272823334,
+            1.1339999437332153
+          ],
+          [
+            0.6420000195503235,
+            0.42100000381469727,
+            1.2890000343322754
+          ]
+        ]
+      },
+      {
+        "name": "Small counter greenery • stem",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            0.45439037680625916,
+            0.1335914582014084,
+            1.2608932256698608
+          ],
+          [
+            0.5317542552947998,
+            0.2932437062263489,
+            1.424848198890686
+          ]
+        ]
+      },
+      {
+        "name": "Small counter greenery • stem.001",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            0.40504753589630127,
+            0.34086647629737854,
+            1.2616345882415771
+          ],
+          [
+            0.523754358291626,
+            0.485882967710495,
+            1.5233370065689087
+          ]
+        ]
+      },
+      {
+        "name": "Small counter greenery • stem.002",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            0.5540581345558167,
+            0.3421958088874817,
+            1.2607221603393555
+          ],
+          [
+            0.659494936466217,
+            0.48940470814704895,
+            1.424556851387024
+          ]
+        ]
+      },
+      {
+        "name": "Small counter greenery • stem.003",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            0.5532118082046509,
+            0.25438910722732544,
+            1.2625781297683716
+          ],
+          [
+            0.6549073457717896,
+            0.314085990190506,
+            1.4966583251953125
+          ]
+        ]
+      },
+      {
+        "name": "Small counter greenery • stem.004",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            0.4135110378265381,
+            0.23964625597000122,
+            1.26138174533844
+          ],
+          [
+            0.5245846509933472,
+            0.31142425537109375,
+            1.4110462665557861
+          ]
+        ]
+      },
+      {
+        "name": "Small counter greenery • stem.005",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            0.46517711877822876,
+            0.3380357325077057,
+            1.2618396282196045
+          ],
+          [
+            0.533532977104187,
+            0.466890811920166,
+            1.4776557683944702
+          ]
+        ]
+      },
+      {
+        "name": "Small counter greenery • stem.006",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            0.5530709028244019,
+            0.29492804408073425,
+            1.2627755403518677
+          ],
+          [
+            0.6531686782836914,
+            0.3206985890865326,
+            1.4793431758880615
+          ]
+        ]
+      },
+      {
+        "name": "Small counter greenery • stem.007",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            0.3281690180301666,
+            0.31718045473098755,
+            1.2619184255599976
+          ],
+          [
+            0.5106274485588074,
+            0.34285634756088257,
+            1.5229275226593018
+          ]
+        ]
+      },
+      {
+        "name": "Small counter greenery • stem.008",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            0.3866174519062042,
+            0.334422767162323,
+            1.260897159576416
+          ],
+          [
+            0.5203146934509277,
+            0.44547203183174133,
+            1.425806999206543
+          ]
+        ]
+      },
+      {
+        "name": "Small counter greenery • stem.009",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            0.3551851511001587,
+            0.318517804145813,
+            1.2623203992843628
+          ],
+          [
+            0.5151688456535339,
+            0.35113710165023804,
+            1.5363645553588867
+          ]
+        ]
+      },
+      {
+        "name": "Small counter greenery • stem.010",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            0.4108613133430481,
+            0.32808759808540344,
+            1.2619320154190063
+          ],
+          [
+            0.524411678314209,
+            0.4087756276130676,
+            1.4740196466445923
+          ]
+        ]
+      },
+      {
+        "name": "Small counter greenery • stem.011",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            0.557273805141449,
+            0.2741977870464325,
+            1.262216329574585
+          ],
+          [
+            0.6777707934379578,
+            0.31737321615219116,
+            1.4601844549179077
+          ]
+        ]
+      },
+      {
+        "name": "Small counter greenery • stem.012",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 216,
+        "evaluated_vertices": 216,
+        "evaluated_polygons": 207,
+        "bounds": [
+          [
+            0.4133382737636566,
+            0.19682841002941132,
+            1.2616385221481323
+          ],
+          [
+            0.5249621272087097,
+            0.3044193983078003,
+            1.4756929874420166
+          ]
+        ]
+      },
+      {
+        "name": "Small counter greenery • curved leaves",
+        "type": "MESH",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ],
+        "base_vertices": 8775,
+        "evaluated_vertices": 8775,
+        "evaluated_polygons": 6240,
+        "bounds": [
+          [
+            0.29411572217941284,
+            0.08829540759325027,
+            1.2959390878677368
+          ],
+          [
+            0.7327259182929993,
+            0.552327036857605,
+            1.5563057661056519
+          ]
+        ]
+      },
+      {
+        "name": "Large window • warm daylight",
+        "type": "LIGHT",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ]
+      },
+      {
+        "name": "Room bounce • soft fill",
+        "type": "LIGHT",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ]
+      },
+      {
+        "name": "Back window • hair rim",
+        "type": "LIGHT",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ]
+      },
+      {
+        "name": "Shelf light",
+        "type": "LIGHT",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ]
+      },
+      {
+        "name": "Soft white catchlight",
+        "type": "LIGHT",
+        "hidden_render": false,
+        "collections": [
+          "Café set and beauty lighting"
+        ]
+      },
+      {
+        "name": "Studio • overhead",
+        "type": "LIGHT",
+        "hidden_render": false,
+        "collections": [
+          "Neutral orbit lighting"
+        ]
+      },
+      {
+        "name": "Studio • fill",
+        "type": "LIGHT",
+        "hidden_render": false,
+        "collections": [
+          "Neutral orbit lighting"
+        ]
+      },
+      {
+        "name": "Studio • rear",
+        "type": "LIGHT",
+        "hidden_render": false,
+        "collections": [
+          "Neutral orbit lighting"
+        ]
+      },
+      {
+        "name": "Studio • bounce",
+        "type": "LIGHT",
+        "hidden_render": false,
+        "collections": [
+          "Neutral orbit lighting"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "name": "Jersey knit • interlocked yarn height",
+        "size": [
+          384,
+          384
+        ],
+        "packed": true,
+        "source": "FILE",
+        "file_exists": true
+      }
+    ],
+    "total_evaluated_mesh_vertices": 355857,
+    "native_hair_objects": [
+      "Upper lashes • individually curled",
+      "Lower lashes • individually curled",
+      "Upper lash beds",
+      "Lower tear margins",
+      "Brows • feathered strands",
+      "Crown • combed individual hairs",
+      "Long waves • draped over shoulders",
+      "Back waves • individually combed fibers",
+      "Fringe • separated wispy bangs",
+      "Temple sweeps • crown-to-length transitions",
+      "Flyaways • crown and loose ends"
+    ],
+    "limits": {
+      "all_images_at_most_2048": true,
+      "resources_resolve": true
+    },
+    "actual_evaluated_character_bounds": {
+      "min": [
+        -0.2595701515674591,
+        -0.6621646881103516,
+        1.0074174404144287
+      ],
+      "max": [
+        0.28207188844680786,
+        0.12880319356918335,
+        1.6773197650909424
+      ],
+      "method": "World coordinates of evaluated mesh vertices, including converted curve geometry; native Curves objects contribute their authored control points."
+    },
+    "native_curves_not_exported": {
+      "objects": [
+        "Back waves • individually combed fibers",
+        "Brows • feathered strands",
+        "Crown • combed individual hairs",
+        "Flyaways • crown and loose ends",
+        "Fringe • separated wispy bangs",
+        "Long waves • draped over shoulders",
+        "Lower lashes • individually curled",
+        "Lower tear margins",
+        "Temple sweeps • crown-to-length transitions",
+        "Upper lash beds",
+        "Upper lashes • individually curled"
+      ],
+      "reason": "Native Curves (hair) objects have no faces; glTF mesh export cannot carry them. They remain in the .blend and in the Cycles renders."
+    },
+    "diagnostic_projection_bounds": [
+      {
+        "camera": "diagnostic • front",
+        "normalized_min": [
+          0.2184390127658844,
+          0.1419668197631836
+        ],
+        "normalized_max": [
+          0.8014767169952393,
+          0.8635483384132385
+        ],
+        "all_character_vertices_in_frame": true
+      },
+      {
+        "camera": "diagnostic • three-quarter",
+        "normalized_min": [
+          0.19573789834976196,
+          0.14001226425170898
+        ],
+        "normalized_max": [
+          0.9109543561935425,
+          0.8631341457366943
+        ],
+        "all_character_vertices_in_frame": true
+      },
+      {
+        "camera": "diagnostic • side",
+        "normalized_min": [
+          0.11015647649765015,
+          0.1362515091896057
+        ],
+        "normalized_max": [
+          0.9615750908851624,
+          0.8607860207557678
+        ],
+        "all_character_vertices_in_frame": true
+      },
+      {
+        "camera": "diagnostic • back",
+        "normalized_min": [
+          0.19852349162101746,
+          0.13287758827209473
+        ],
+        "normalized_max": [
+          0.7815611958503723,
+          0.8561165630817413
+        ],
+        "all_character_vertices_in_frame": true
+      }
+    ],
+    "glb_export": {
+      "path": "character.glb",
+      "selected_objects": [
+        "Lip contact • recessed closure",
+        "Globe, iris and corneal dome • image right",
+        "Crew neck • raised ribbed binding",
+        "Scalp underlayer • right sweep",
+        "Relaxed hand • image left",
+        "Sweater • torso and continuous set-in sleeves",
+        "Nape and back • layered hair volume",
+        "Ribbed cuff • image right",
+        "Sweater hem • ribbed welt",
+        "Face, ears and neck • continuous sculpt",
+        "Globe, iris and corneal dome • image left",
+        "Scalp underlayer • left sweep",
+        "Inward-facing sweater hem finish",
+        "Relaxed hand • image right",
+        "Ribbed cuff • image left"
+      ],
+      "curves_converted_for_export_only": [],
+      "procedural_material_fallbacks": [
+        {
+          "source_material": "Dusty rose • rib knit",
+          "base_color_linear": [
+            0.524080753326416,
+            0.16264718770980835,
+            0.17803508043289185,
+            1.0
+          ],
+          "reason": "Unsupported procedural base-color graph; retained the material author's own swatch for GLB only."
+        },
+        {
+          "source_material": "Skin | hands",
+          "base_color_linear": [
+            0.6738595366477966,
+            0.35221171379089355,
+            0.25602179765701294,
+            1.0
+          ],
+          "reason": "Unsupported procedural base-color graph; retained the material author's own swatch for GLB only."
+        },
+        {
+          "source_material": "Dusty rose • plain stockinette",
+          "base_color_linear": [
+            0.5303446054458618,
+            0.1610744744539261,
+            0.18646150827407837,
+            1.0
+          ],
+          "reason": "Unsupported procedural base-color graph; retained the material author's own swatch for GLB only."
+        },
+        {
+          "source_material": "Skin | warm peach, perfusion and pores",
+          "base_color_linear": [
+            0.6738595366477966,
+            0.35221171379089355,
+            0.25602179765701294,
+            1.0
+          ],
+          "reason": "Unsupported procedural base-color graph; retained the material author's own swatch for GLB only."
+        }
+      ],
+      "bytes": 14523144,
+      "sha256": "8b38b556485bdb3db6fa2d08a5048ac3e9fb243d63be2a7ecb3459b86c2fc6f4",
+      "note": "Procedural Blender shaders and lighting can differ in GLB. The source .blend was not saved or modified."
+    },
+    "source_sha256_after": "79a45d76f85223b0bb231b12e34095c6978cbf02c58e8a391c69ed675de90030",
+    "source_unchanged": true
+  },
+  "glb": {
+    "path": "character.glb",
+    "bytes": 14523144,
+    "sha256": "8b38b556485bdb3db6fa2d08a5048ac3e9fb243d63be2a7ecb3459b86c2fc6f4",
+    "container_magic_ok": true,
+    "container_version": 2,
+    "reimport": {
+      "meshes": 15,
+      "vertices": 319611,
+      "materials": 10,
+      "images": 1
+    },
+    "reimport_succeeded": true
+  },
+  "privacy_scan": {
+    "files_scanned": 23,
+    "personal_strings_checked": 5,
+    "hits": [
+      {
+        "file": "character.blend",
+        "payload": "zstd-decompressed",
+        "kind": "personal-string"
+      },
+      {
+        "file": "character.blend",
+        "payload": "zstd-decompressed",
+        "kind": "personal-string"
+      },
+      {
+        "file": "character.blend",
+        "payload": "zstd-decompressed",
+        "kind": "pattern",
+        "pattern": "/Users/[A-Za-z0-9_.-]+"
+      },
+      {
+        "file": "renders/back.png",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "renders/back.png",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "renders/back.png",
+        "payload": "raw",
+        "kind": "pattern",
+        "pattern": "/Users/[A-Za-z0-9_.-]+"
+      },
+      {
+        "file": "renders/beauty.png",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "renders/beauty.png",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "renders/beauty.png",
+        "payload": "raw",
+        "kind": "pattern",
+        "pattern": "/Users/[A-Za-z0-9_.-]+"
+      },
+      {
+        "file": "renders/front.png",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "renders/front.png",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "renders/front.png",
+        "payload": "raw",
+        "kind": "pattern",
+        "pattern": "/Users/[A-Za-z0-9_.-]+"
+      },
+      {
+        "file": "renders/side.png",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "renders/side.png",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "renders/side.png",
+        "payload": "raw",
+        "kind": "pattern",
+        "pattern": "/Users/[A-Za-z0-9_.-]+"
+      },
+      {
+        "file": "renders/three-quarter.png",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "renders/three-quarter.png",
+        "payload": "raw",
+        "kind": "personal-string"
+      },
+      {
+        "file": "renders/three-quarter.png",
+        "payload": "raw",
+        "kind": "pattern",
+        "pattern": "/Users/[A-Za-z0-9_.-]+"
+      },
+      {
+        "file": "report_scene.py",
+        "payload": "raw",
+        "kind": "pattern",
+        "pattern": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-"
+      }
+    ],
+    "clean": false
+  }
+}

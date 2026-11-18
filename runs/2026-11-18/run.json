@@ -1,0 +1,186 @@
+{
+  "date_jst": "2026-11-18",
+  "status": "procedural_completed_both_models",
+  "source_commit": "886fe0c",
+  "harness": {
+    "name": "Codex CLI",
+    "version": "0.167.2",
+    "mode": "non-interactive (codex exec), --json, prompt passed verbatim from PROMPT.md via $(cat PROMPT.md)",
+    "reasoning_effort": "max",
+    "service_tier": "fast",
+    "service_tier_recorded_in_session": "priority",
+    "service_tier_note": "The user explicitly requested the normal Fast Mode instead of the usual Ultrafast. -c service_tier=\"fast\" was passed on every run; the session record (thread_settings_applied) shows service_tier \"priority\", which is the Fast tier (catalogue: id \"priority\", name \"Fast\", 2x speed). The Mac's standing config service_tier = \"ultrafast\" was overridden per-invocation and not changed.",
+    "workspace_prepared_with": "scripts/prepare_case.py",
+    "coordinator": "Muse (separate session): prepared the workspaces, launched and monitored the runs, validated and collected the artifacts without changing the entrants' geometry, materials or code",
+    "coordinator_and_entrant_are_the_same_session": false,
+    "continuation_instructions_sent": 0,
+    "task_prompt_files_match_canonical_bytes": true,
+    "smoke_tests": "Before the main runs, one low-reasoning smoke turn per model confirmed the model IDs respond and that service_tier=fast records as priority (Astra input 27247 / output 7; Sol input 31360 / output 6). Smoke usage is not included in the run costs."
+  },
+  "stages": {
+    "procedural": {
+      "status": "complete",
+      "models": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    "photo-textured": {
+      "status": "not_run",
+      "note": "Not executed in this run; whether to run the second stage is the owner's decision."
+    }
+  },
+  "generation": {
+    "additional_agents": false,
+    "additional_downloads": false,
+    "coordinator_compatibility_code_changes": false,
+    "coordinator_design_or_material_changes": false,
+    "external_image_or_3d_generation": false
+  },
+  "models": {
+    "gpt-6.2-astra": {
+      "requested_model": "GPT-6.2 Astra",
+      "model_id": "gpt-6.2-astra",
+      "path": "procedural/gpt-6.2-astra",
+      "status": "complete",
+      "thread_id": "01a1ebcd-ea8d-7313-9a5c-f0d1d6bb6430",
+      "timeline_jst": {
+        "agent_started": "2026-11-18T08:18:22+09:00",
+        "agent_finished": "2026-11-18T09:31:15+09:00",
+        "agent_seconds": 4373,
+        "agent_exit_code": 0
+      },
+      "usage": {
+        "input_tokens": 17756547,
+        "cached_input_tokens": 17540096,
+        "non_cached_input_tokens": 216451,
+        "output_tokens": 106112,
+        "reasoning_output_tokens_included_in_output": 49840
+      },
+      "cost_estimate": {
+        "basis": "Codex CLI usage is billed against the ChatGPT/Codex plan, not per API call. USD figures are API-equivalent estimates computed from the recorded token usage. Fast tier = 2x Standard API rates.",
+        "standard_api_rates_per_1m_usd": {
+          "input": 8,
+          "cached_input": 0.4,
+          "output": 40
+        },
+        "fast_api_equivalent_usd": 25.98,
+        "codex_credits_estimate": 324.8
+      },
+      "artifacts": {
+        "character_blend_bytes": 11888766,
+        "character_blend_sha256": "7619d23f9148706ca52ec4c3181db0c33489e8db94e992b711b03694ba4c4150",
+        "character_glb_bytes": 14186272,
+        "character_glb_sha256": "ea814b659afe12097ecdd8019457014cfe1e57378c6cf67229a2c13622e053da",
+        "published_files_including_glb_and_validation": 29
+      },
+      "verification": {
+        "manifest_and_workspace_inputs_match": true,
+        "independent_rebuild_exit_code": 0,
+        "independent_rebuild_seconds": 147.1,
+        "independent_rebuild_extra_steps": [
+          {
+            "step": "render.py",
+            "exit_code": 0
+          },
+          {
+            "step": "report.py",
+            "exit_code": 0
+          }
+        ],
+        "rebuilt_png_pixel_data_identical_to_originals": true,
+        "render_dimensions_all_expected": true,
+        "cycles": {
+          "engine": "CYCLES",
+          "device": "CPU",
+          "samples": 32,
+          "denoising": true
+        },
+        "total_evaluated_mesh_vertices_inspect": 232879,
+        "glb_reimport": {
+          "meshes": 18,
+          "vertices": 231420,
+          "materials": 11,
+          "images": 1
+        },
+        "privacy_scan_clean": true
+      }
+    },
+    "gpt-6.2-sol": {
+      "requested_model": "GPT-6.2 Sol",
+      "model_id": "gpt-6.2-sol",
+      "path": "procedural/gpt-6.2-sol",
+      "status": "complete",
+      "thread_id": "01a1ec11-083a-7103-a9d0-41c2d8186e9e",
+      "timeline_jst": {
+        "agent_started": "2026-11-18T09:31:41+09:00",
+        "agent_finished": "2026-11-18T09:57:11+09:00",
+        "agent_seconds": 1530,
+        "agent_exit_code": 0
+      },
+      "usage": {
+        "input_tokens": 8603295,
+        "cached_input_tokens": 8414592,
+        "non_cached_input_tokens": 188703,
+        "output_tokens": 93196,
+        "reasoning_output_tokens_included_in_output": 45320
+      },
+      "cost_estimate": {
+        "basis": "Codex CLI usage is billed against the ChatGPT/Codex plan, not per API call. USD figures are API-equivalent estimates computed from the recorded token usage. Fast tier = 2x Standard API rates.",
+        "standard_api_rates_per_1m_usd": {
+          "input": 2,
+          "cached_input": 0.1,
+          "output": 10
+        },
+        "fast_api_equivalent_usd": 4.3,
+        "codex_credits_estimate": 53.8
+      },
+      "artifacts": {
+        "character_blend_bytes": 13222899,
+        "character_blend_sha256": "79a45d76f85223b0bb231b12e34095c6978cbf02c58e8a391c69ed675de90030",
+        "character_glb_bytes": 14523144,
+        "character_glb_sha256": "8b38b556485bdb3db6fa2d08a5048ac3e9fb243d63be2a7ecb3459b86c2fc6f4",
+        "published_files_including_glb_and_validation": 22
+      },
+      "verification": {
+        "manifest_and_workspace_inputs_match": true,
+        "independent_rebuild_exit_code": 0,
+        "independent_rebuild_seconds": 91.3,
+        "independent_rebuild_extra_steps": [
+          {
+            "step": "render.py",
+            "exit_code": 0
+          },
+          {
+            "step": "report_scene.py",
+            "exit_code": 0
+          }
+        ],
+        "rebuilt_png_pixel_data_identical_to_originals": true,
+        "render_dimensions_all_expected": true,
+        "cycles": {
+          "engine": "CYCLES",
+          "device": "CPU",
+          "samples": 32,
+          "denoising": true
+        },
+        "total_evaluated_mesh_vertices_inspect": 355857,
+        "glb_reimport": {
+          "meshes": 15,
+          "vertices": 319611,
+          "materials": 10,
+          "images": 1
+        },
+        "privacy_scan_clean": false
+      }
+    }
+  },
+  "privacy": {
+    "secrets_found": false,
+    "note": "Astra: privacy scan clean (the entrant's build script scrubbed local paths before saving). Sol: character.blend and the five render PNGs contain the Mac account name in Blender's File metadata absolute path, the same as the published Kimi, Terra and Carbon collections; collected unmodified following those precedents. One additional Sol hit is a false positive: the '@' matrix operator in report_scene.py matched the e-mail pattern. No secrets in either run.",
+    "work_logs_blend_backups_and_caches_excluded": true
+  },
+  "publication": {
+    "note": "Collected locally by the coordinator on 2026-11-18. Commit/push/PR follow the owner's instruction."
+  }
+}

@@ -4,11 +4,16 @@
 
 元の写真と各モデルの出力を、そのまま掲載しています。画像をクリックすると原寸で開けます。外見の採点・順位付けは行いません。
 
+2026-11-18の追加実行：[GPT-6.2 Astra / GPT-6.2 Solの結果](runs/2026-11-18/README.md)（初回のみ）。
 2026-11-11の追加実行：[Gemini 4 Carbonの結果](runs/2026-11-11/README.md)（初回のみ）。
 2026-11-10の追加実行：[Claude Fable 5.2の結果](runs/2026-11-10/README.md)（初回・追加版の2段階）。
 2026-10-27の追加実行：[GPT-6.1 Terraの結果](runs/2026-10-27/README.md)。
 2026-10-25の追加実行：[Kimi K3.1 Proの結果](runs/2026-10-25/README.md)。
 [HTMLビューアー](viewer/index.html)では3モデルを切り替えて、3Dと5方向の画像を確認できます。
+
+| GPT-6.2 Astra · 初回 | GPT-6.2 Sol · 初回 |
+| --- | --- |
+| [![GPT-6.2 Astraの初回の完成カット](runs/2026-11-18/procedural/gpt-6.2-astra/renders/beauty.png)](runs/2026-11-18/README.md) | [![GPT-6.2 Solの初回の完成カット](runs/2026-11-18/procedural/gpt-6.2-sol/renders/beauty.png)](runs/2026-11-18/README.md) |
 
 | Claude Fable 5.2 · 初回 | Claude Fable 5.2 · 追加版 |
 | --- | --- |
