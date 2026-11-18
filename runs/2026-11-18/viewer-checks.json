@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-11-18",
+  "method": "Local HTTP server (python3 -m http.server 8765, repo root) in Chromium via agent-browser, plus a static existence check of every path referenced from viewer/results.json.",
+  "static_path_check": {
+    "all_referenced_paths_exist": true,
+    "missing": []
+  },
+  "browser_checks": [
+    {
+      "model": "gpt-6.2-astra",
+      "url": "http://localhost:8765/viewer/?model=gpt-6.2-astra",
+      "page_title": "GPT-6.2 Astra — AI Girl 3D Benchmark",
+      "model_visible": true,
+      "portrait_view_selected_and_screenshotted": true
+    },
+    {
+      "model": "gpt-6.2-sol",
+      "url": "http://localhost:8765/viewer/?model=gpt-6.2-sol",
+      "page_title": "GPT-6.2 Sol — AI Girl 3D Benchmark",
+      "model_visible": true,
+      "portrait_view_selected_and_screenshotted": true
+    },
+    {
+      "model": "default (no query)",
+      "expected": "gpt-6.2-astra",
+      "note": "default_model in viewer/results.json is gpt-6.2-astra; the model picker in viewer/index.html now includes both new models."
+    }
+  ],
+  "screenshots": ".work/gpt-6.2-control/screenshots/ (astra-beauty-viewer.png, sol-beauty-viewer.png, plus 3D views)"
+}

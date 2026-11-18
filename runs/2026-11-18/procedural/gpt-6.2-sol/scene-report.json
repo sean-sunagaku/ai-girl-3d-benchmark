@@ -1,0 +1,338 @@
+{
+  "scene": "character.blend",
+  "scene_sha256": "79a45d76f85223b0bb231b12e34095c6978cbf02c58e8a391c69ed675de90030",
+  "reopened_successfully": true,
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "cycles_device": "CPU",
+  "threads": 3,
+  "samples": 32,
+  "denoising": true,
+  "saved_camera": "Beauty • café selfie",
+  "reference": {
+    "decoded_and_viewed": true,
+    "size_px": [
+      1205,
+      1306
+    ],
+    "render_scene_usage": "None. The photograph was used for visual comparison only.",
+    "file": "input/reference.png"
+  },
+  "character_bounds_m": {
+    "min": [
+      -0.2595701515674591,
+      -0.6621646881103516,
+      1.0074174404144287
+    ],
+    "max": [
+      0.28207188844680786,
+      0.12884840369224548,
+      1.677342176437378
+    ],
+    "method": "Actual world-space evaluated mesh positions and native strand control points with strand radii."
+  },
+  "diagnostic_framing": {
+    "back": {
+      "normalized_min": [
+        0.19852349162101746,
+        0.13287758827209473
+      ],
+      "normalized_max": [
+        0.7815611958503723,
+        0.856140673160553
+      ],
+      "full_asset_in_frame": true
+    },
+    "front": {
+      "normalized_min": [
+        0.2184390127658844,
+        0.1419668197631836
+      ],
+      "normalized_max": [
+        0.8014767169952393,
+        0.8635724186897278
+      ],
+      "full_asset_in_frame": true
+    },
+    "side": {
+      "normalized_min": [
+        0.11015647649765015,
+        0.1362515687942505
+      ],
+      "normalized_max": [
+        0.9616237282752991,
+        0.8608101010322571
+      ],
+      "full_asset_in_frame": true
+    },
+    "three-quarter": {
+      "normalized_min": [
+        0.19573792815208435,
+        0.14001226425170898
+      ],
+      "normalized_max": [
+        0.9109715819358826,
+        0.8631582856178284
+      ],
+      "full_asset_in_frame": true
+    }
+  },
+  "character_meshes": [
+    {
+      "name": "Crew neck • raised ribbed binding",
+      "base_vertices": 4560,
+      "base_faces": 4560,
+      "evaluated_vertices": 18240,
+      "evaluated_faces": 18240
+    },
+    {
+      "name": "Face, ears and neck • continuous sculpt",
+      "base_vertices": 4583,
+      "base_faces": 4544,
+      "evaluated_vertices": 72857,
+      "evaluated_faces": 72704
+    },
+    {
+      "name": "Globe, iris and corneal dome • image left",
+      "base_vertices": 11954,
+      "base_faces": 12096,
+      "evaluated_vertices": 11954,
+      "evaluated_faces": 12096
+    },
+    {
+      "name": "Globe, iris and corneal dome • image right",
+      "base_vertices": 11954,
+      "base_faces": 12096,
+      "evaluated_vertices": 11954,
+      "evaluated_faces": 12096
+    },
+    {
+      "name": "Inward-facing sweater hem finish",
+      "base_vertices": 128,
+      "base_faces": 1,
+      "evaluated_vertices": 128,
+      "evaluated_faces": 1
+    },
+    {
+      "name": "Lip contact • recessed closure",
+      "base_vertices": 170,
+      "base_faces": 84,
+      "evaluated_vertices": 170,
+      "evaluated_faces": 84
+    },
+    {
+      "name": "Nape and back • layered hair volume",
+      "base_vertices": 17958,
+      "base_faces": 17956,
+      "evaluated_vertices": 17958,
+      "evaluated_faces": 17956
+    },
+    {
+      "name": "Relaxed hand • image left",
+      "base_vertices": 1658,
+      "base_faces": 1646,
+      "evaluated_vertices": 26381,
+      "evaluated_faces": 26336
+    },
+    {
+      "name": "Relaxed hand • image right",
+      "base_vertices": 1658,
+      "base_faces": 1646,
+      "evaluated_vertices": 26381,
+      "evaluated_faces": 26336
+    },
+    {
+      "name": "Ribbed cuff • image left",
+      "base_vertices": 4992,
+      "base_faces": 4992,
+      "evaluated_vertices": 19968,
+      "evaluated_faces": 19968
+    },
+    {
+      "name": "Ribbed cuff • image right",
+      "base_vertices": 4992,
+      "base_faces": 4992,
+      "evaluated_vertices": 19968,
+      "evaluated_faces": 19968
+    },
+    {
+      "name": "Scalp underlayer • left sweep",
+      "base_vertices": 6579,
+      "base_faces": 6400,
+      "evaluated_vertices": 6579,
+      "evaluated_faces": 6400
+    },
+    {
+      "name": "Scalp underlayer • right sweep",
+      "base_vertices": 6579,
+      "base_faces": 6400,
+      "evaluated_vertices": 6579,
+      "evaluated_faces": 6400
+    },
+    {
+      "name": "Sweater hem • ribbed welt",
+      "base_vertices": 5120,
+      "base_faces": 5120,
+      "evaluated_vertices": 20480,
+      "evaluated_faces": 20480
+    },
+    {
+      "name": "Sweater • torso and continuous set-in sleeves",
+      "base_vertices": 13066,
+      "base_faces": 12856,
+      "evaluated_vertices": 52694,
+      "evaluated_faces": 52272
+    }
+  ],
+  "character_curves": [
+    {
+      "name": "Back waves • individually combed fibers",
+      "strands": 5900,
+      "control_points": 177000
+    },
+    {
+      "name": "Brows • feathered strands",
+      "strands": 930,
+      "control_points": 6510
+    },
+    {
+      "name": "Crown • combed individual hairs",
+      "strands": 5760,
+      "control_points": 126720
+    },
+    {
+      "name": "Flyaways • crown and loose ends",
+      "strands": 490,
+      "control_points": 16480
+    },
+    {
+      "name": "Fringe • separated wispy bangs",
+      "strands": 1165,
+      "control_points": 38445
+    },
+    {
+      "name": "Long waves • draped over shoulders",
+      "strands": 6676,
+      "control_points": 230177
+    },
+    {
+      "name": "Lower lashes • individually curled",
+      "strands": 38,
+      "control_points": 266
+    },
+    {
+      "name": "Lower tear margins",
+      "strands": 2,
+      "control_points": 38
+    },
+    {
+      "name": "Temple sweeps • crown-to-length transitions",
+      "strands": 943,
+      "control_points": 33080
+    },
+    {
+      "name": "Upper lash beds",
+      "strands": 2,
+      "control_points": 110
+    },
+    {
+      "name": "Upper lashes • individually curled",
+      "strands": 182,
+      "control_points": 1274
+    }
+  ],
+  "totals": {
+    "character_base_mesh_vertices": 95951,
+    "character_evaluated_mesh_vertices": 312291,
+    "scene_evaluated_mesh_vertices_including_cafe": 355857,
+    "character_native_strands": 22088,
+    "character_native_strand_control_points": 630100,
+    "hair_tessellated_vertices": null
+  },
+  "packed_images": [
+    {
+      "name": "Jersey knit • interlocked yarn height",
+      "size_px": [
+        384,
+        384
+      ],
+      "packed": true
+    }
+  ],
+  "generated_textures_and_attributes": [
+    "Periodic yarn relief tile traced from looping stitch paths. Knit color and fine fiber noise are Blender nodes.",
+    "Skin and lip masks, eye color and corneal gloss are authored vertex attributes.",
+    "Skin pores and pigment flecks, wood grain, and hair grooves are procedural Blender shaders."
+  ],
+  "renders": [
+    {
+      "file": "renders/beauty.png",
+      "dimensions_px": [
+        960,
+        1040
+      ],
+      "angle_degrees": null,
+      "source": "Raw Blender render from reopened character.blend",
+      "bytes": 1310944,
+      "sha256": "23bf3bdaa35efcbc6989dc0d42064d1e830e0672eaab80ba342dabe818dee951"
+    },
+    {
+      "file": "renders/front.png",
+      "dimensions_px": [
+        768,
+        768
+      ],
+      "angle_degrees": 0,
+      "source": "Raw Blender render from reopened character.blend",
+      "bytes": 631042,
+      "sha256": "49e2a5a1119ae93ca859afee72ea0b87275fbd4d6c9d5f702391f71c660be48a"
+    },
+    {
+      "file": "renders/three-quarter.png",
+      "dimensions_px": [
+        768,
+        768
+      ],
+      "angle_degrees": 45,
+      "source": "Raw Blender render from reopened character.blend",
+      "bytes": 621933,
+      "sha256": "eb4e708abf488aa23bf6c39e2ac8af3974670e9a329f94a122644f9e7591f082"
+    },
+    {
+      "file": "renders/side.png",
+      "dimensions_px": [
+        768,
+        768
+      ],
+      "angle_degrees": 90,
+      "source": "Raw Blender render from reopened character.blend",
+      "bytes": 603644,
+      "sha256": "cdecab85ab14989cb5bbf7381d85b64a3291eab52434ce5f6522c91ba3df666a"
+    },
+    {
+      "file": "renders/back.png",
+      "dimensions_px": [
+        768,
+        768
+      ],
+      "angle_degrees": 180,
+      "source": "Raw Blender render from reopened character.blend",
+      "bytes": 609098,
+      "sha256": "ac57a971f427e4ccd90a82ad36663ec1d89ef6a49b76f2f753a055e703255dae"
+    }
+  ],
+  "source_asset": {
+    "name": "MakeHuman hm08",
+    "license": "CC0",
+    "prepared_vertices": 6093,
+    "prepared_faces": 6044,
+    "source": "input/ASSET-LICENSE.md"
+  },
+  "limitations": [
+    "The face is an artistic likeness from a single image. Soft tissue shape, head profile, ears, and expression are approximate. The skin and hairline read as CG in the close-up.",
+    "The back of the head, rear and sides of the sweater, sleeve and hand pose, and hair arrangement away from the camera are inferred.",
+    "The sweater uses an authored drape and shader-based knit relief. Its presentation cut at the lower torso ends at the welt.",
+    "The portrait is a fixed pose. The editable strand groups use shaped support meshes. A narrow area of scalp is visible between swept temple locks in profile.",
+    "The café is a reconstructed suggestion using geometric props and simulated window lighting."
+  ]
+}

@@ -1,6 +1,6 @@
 # AI Girl 3D Benchmark
 
-参照写真1枚から、2026-10-14の4モデルと、後日追加したKimi K3.1 Pro・GPT-6.1 Terra・Claude Fable 5.2が実際のBlenderで制作した人物の上半身モデルを公開します。元の写真、渡した指示、生成コード、レンダー画像、編集可能なBlenderシーンを、誰でも見て使える形で収録しています。
+参照写真1枚から、2026-10-14の4モデルと、後日追加したKimi K3.1 Pro・GPT-6.1 Terra・Claude Fable 5.2・Gemini 4 Carbon・GPT-6.2 Astra・GPT-6.2 Solが実際のBlenderで制作した人物の上半身モデルを公開します。元の写真、渡した指示、生成コード、レンダー画像、編集可能なBlenderシーンを、誰でも見て使える形で収録しています。
 
 **外見の採点・順位付けは行いません。元写真と成果物を見比べてください。**
 
@@ -10,6 +10,17 @@
 - [同じ入力で制作する・既存のモデルを開く](docs/REPRODUCE.md)
 - [実験条件と収録範囲](docs/PROTOCOL.md)
 - [AI向けの制作・閲覧手順スキル](skills/blender-character-benchmark/SKILL.md)
+
+## GPT-6.2 Astra / GPT-6.2 Sol の追加実行（2026-11-18）
+
+同じ元写真・共通ベース・共通プロンプトを使ったGPT-6.2 AstraとGPT-6.2 Solの結果を収録しました。初回（写真テクスチャ禁止）のみ
+実行しています。
+[制作記録と各5方向の画像](runs/2026-11-18/README.md) から、編集可能なBlenderシーン・閲覧用GLB・制作コード・
+検査結果を開けます。
+**今回はコーディネーターと参加モデルが別のセッションです。** Codex CLIのエージェント実行で制作し、
+コーディネーター（Muse）が準備・起動・検証を行いました。サービスティアは指定により通常のFast
+（Ultrafastではない）を使っています。条件の詳細は
+[ハーネス記録](runs/2026-11-18/harness/README.md) に明記しています。
 
 ## Claude Fable 5.2 の追加実行（2026-11-10）
 
@@ -47,7 +58,7 @@
 [編集可能なBlenderシーン](runs/2026-10-25/procedural/kimi-k3.1-pro/character.blend)、
 [閲覧用GLB](runs/2026-10-25/procedural/kimi-k3.1-pro/character.glb) を取得できます。
 
-[HTMLビューアー](viewer/index.html)ではCarbon・Fable 5.2・Terra・Kimiを切り替え、元写真、回転・拡大できるGLB、各5方向のPNGを表示します。
+[HTMLビューアー](viewer/index.html)ではAstra・Sol・Carbon・Fable 5.2・Terra・Kimiを切り替え、元写真、回転・拡大できるGLB、各5方向のPNGを表示します。
 リポジトリのルートで `python3 -m http.server 8765 --bind localhost` を実行し、
 `http://localhost:8765/viewer/` を開いてください。手順は [viewer/README.md](viewer/README.md) にあります。
 

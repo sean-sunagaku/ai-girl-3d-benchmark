@@ -1,0 +1,394 @@
+{
+  "title": "Window seat",
+  "scene": "character.blend",
+  "source_sha256": "7619d23f9148706ca52ec4c3181db0c33489e8db94e992b711b03694ba4c4150",
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "device": "CPU",
+  "threads": 3,
+  "samples": 32,
+  "adaptive_sampling": true,
+  "denoiser": "OPENIMAGEDENOISE",
+  "denoiser_gpu": false,
+  "saved_beauty_camera": "Portrait • window seat",
+  "units": "metres, Z up; unposed face toward -Y",
+  "character_bounds": {
+    "min": [
+      -0.2576784,
+      -0.5709549,
+      0.9661611
+    ],
+    "max": [
+      0.2381992,
+      0.140641,
+      1.6560398
+    ],
+    "method": "Evaluated mesh vertices and native curve centreline control points in world space; microscopic fibre radii are excluded."
+  },
+  "character_mesh_totals": {
+    "base_vertices": 61837,
+    "evaluated_vertices": 223853,
+    "evaluated_polygons": 220852
+  },
+  "character_native_curves": {
+    "strands": 27617,
+    "control_points": 671077
+  },
+  "whole_scene_evaluated_mesh_vertices": 232879,
+  "character_meshes": [
+    {
+      "name": "01 • Facial sculpt and neckline",
+      "base_vertices": 4610,
+      "evaluated_vertices": 73469,
+      "evaluated_polygons": 73376
+    },
+    {
+      "name": "02 • Sclera.L",
+      "base_vertices": 2960,
+      "evaluated_vertices": 2960,
+      "evaluated_polygons": 2880
+    },
+    {
+      "name": "02 • Sclera.R",
+      "base_vertices": 2960,
+      "evaluated_vertices": 2960,
+      "evaluated_polygons": 2880
+    },
+    {
+      "name": "03 • Iris and pupil.L",
+      "base_vertices": 5104,
+      "evaluated_vertices": 5104,
+      "evaluated_polygons": 4928
+    },
+    {
+      "name": "03 • Iris and pupil.R",
+      "base_vertices": 5104,
+      "evaluated_vertices": 5104,
+      "evaluated_polygons": 4928
+    },
+    {
+      "name": "04 • Corneal meniscus.L",
+      "base_vertices": 1040,
+      "evaluated_vertices": 1040,
+      "evaluated_polygons": 960
+    },
+    {
+      "name": "04 • Corneal meniscus.R",
+      "base_vertices": 1040,
+      "evaluated_vertices": 1040,
+      "evaluated_polygons": 960
+    },
+    {
+      "name": "05 • Lacrimal caruncle.L",
+      "base_vertices": 126,
+      "evaluated_vertices": 126,
+      "evaluated_polygons": 104
+    },
+    {
+      "name": "05 • Lacrimal caruncle.R",
+      "base_vertices": 126,
+      "evaluated_vertices": 126,
+      "evaluated_polygons": 104
+    },
+    {
+      "name": "10 • Sweater | joined shoulder and forward sleeves",
+      "base_vertices": 20995,
+      "evaluated_vertices": 83656,
+      "evaluated_polygons": 83328
+    },
+    {
+      "name": "11 • Crew neck | 104 knitted ribs",
+      "base_vertices": 6656,
+      "evaluated_vertices": 25600,
+      "evaluated_polygons": 24576
+    },
+    {
+      "name": "12 • Reaching hand.L",
+      "base_vertices": 1535,
+      "evaluated_vertices": 6011,
+      "evaluated_polygons": 5946
+    },
+    {
+      "name": "12 • Reaching hand.R",
+      "base_vertices": 1535,
+      "evaluated_vertices": 6011,
+      "evaluated_polygons": 5946
+    },
+    {
+      "name": "13 • Nail plates.L",
+      "base_vertices": 500,
+      "evaluated_vertices": 1800,
+      "evaluated_polygons": 1600
+    },
+    {
+      "name": "13 • Nail plates.R",
+      "base_vertices": 500,
+      "evaluated_vertices": 1800,
+      "evaluated_polygons": 1600
+    },
+    {
+      "name": "20 • Scalp | shaped hairline and part",
+      "base_vertices": 5984,
+      "evaluated_vertices": 5984,
+      "evaluated_polygons": 5808
+    },
+    {
+      "name": "Brow root shading.L",
+      "base_vertices": 531,
+      "evaluated_vertices": 531,
+      "evaluated_polygons": 464
+    },
+    {
+      "name": "Brow root shading.R",
+      "base_vertices": 531,
+      "evaluated_vertices": 531,
+      "evaluated_polygons": 464
+    }
+  ],
+  "character_curve_objects": [
+    {
+      "name": "14 • Sweater | loose wool fibres",
+      "strands": 6800,
+      "control_points": 20400
+    },
+    {
+      "name": "15 • Mattress stitch | shoulder and sleeve caps",
+      "strands": 242,
+      "control_points": 968
+    },
+    {
+      "name": "21 • Lengths | L • tucked | inner layer",
+      "strands": 1464,
+      "control_points": 45384
+    },
+    {
+      "name": "21 • Lengths | L • tucked | outer layer",
+      "strands": 4256,
+      "control_points": 157472
+    },
+    {
+      "name": "21 • Lengths | R • over shoulder | inner layer",
+      "strands": 1464,
+      "control_points": 45384
+    },
+    {
+      "name": "21 • Lengths | R • over shoulder | outer layer",
+      "strands": 4240,
+      "control_points": 156880
+    },
+    {
+      "name": "22 • Fringe | tapered curtain and brow-skimming wisps",
+      "strands": 2180,
+      "control_points": 56220
+    },
+    {
+      "name": "23 • Flyaways | loose temple and back fibres",
+      "strands": 409,
+      "control_points": 12579
+    },
+    {
+      "name": "23 • Free lengths | ear tendrils and separated waves",
+      "strands": 588,
+      "control_points": 23184
+    },
+    {
+      "name": "24 • Occipital sweep | continuous back waves",
+      "strands": 3550,
+      "control_points": 113600
+    },
+    {
+      "name": "25 • Underlayer | behind the tilted jaw",
+      "strands": 1056,
+      "control_points": 31680
+    },
+    {
+      "name": "Brows • individually swept hairs.L",
+      "strands": 555,
+      "control_points": 2775
+    },
+    {
+      "name": "Brows • individually swept hairs.R",
+      "strands": 555,
+      "control_points": 2775
+    },
+    {
+      "name": "Lower lashes.L",
+      "strands": 44,
+      "control_points": 264
+    },
+    {
+      "name": "Lower lashes.R",
+      "strands": 44,
+      "control_points": 264
+    },
+    {
+      "name": "Lower wet margin.L",
+      "strands": 1,
+      "control_points": 63
+    },
+    {
+      "name": "Lower wet margin.R",
+      "strands": 1,
+      "control_points": 63
+    },
+    {
+      "name": "Upper lash bed.L",
+      "strands": 1,
+      "control_points": 63
+    },
+    {
+      "name": "Upper lash bed.R",
+      "strands": 1,
+      "control_points": 63
+    },
+    {
+      "name": "Upper lashes.L",
+      "strands": 83,
+      "control_points": 498
+    },
+    {
+      "name": "Upper lashes.R",
+      "strands": 83,
+      "control_points": 498
+    }
+  ],
+  "diagnostic_camera_coverage": [
+    {
+      "view": "front",
+      "lower_left_uv": [
+        0.180962,
+        0.075827
+      ],
+      "upper_right_uv": [
+        0.80707,
+        0.950846
+      ],
+      "fully_in_frame": true
+    },
+    {
+      "view": "three-quarter",
+      "lower_left_uv": [
+        0.107664,
+        0.072858
+      ],
+      "upper_right_uv": [
+        0.918364,
+        0.95073
+      ],
+      "fully_in_frame": true
+    },
+    {
+      "view": "side",
+      "lower_left_uv": [
+        0.063188,
+        0.063172
+      ],
+      "upper_right_uv": [
+        0.961668,
+        0.945028
+      ],
+      "fully_in_frame": true
+    },
+    {
+      "view": "back",
+      "lower_left_uv": [
+        0.192931,
+        0.055722
+      ],
+      "upper_right_uv": [
+        0.819039,
+        0.930565
+      ],
+      "fully_in_frame": true
+    }
+  ],
+  "generated_textures": [
+    {
+      "name": "Stockinette • four wales × four courses",
+      "dimensions": [
+        384,
+        384
+      ],
+      "packed": true,
+      "channels": {
+        "R": "Overlapping yarn relief",
+        "G": "Marl and yarn values",
+        "B": "Ply phase"
+      },
+      "source": "Deterministic distance fields around overlapping curved yarn legs in a four-stitch by four-row repeat."
+    },
+    {
+      "name": "Complexion, hydration and pigment region",
+      "dimensions": null,
+      "source": "Sculpt-aligned paintable attributes control circulation, hydration and vermilion. The shader evaluates pores, uneven pigment, sparse melanin flecks and directional lip furrows."
+    },
+    {
+      "name": "Stroma",
+      "dimensions": null,
+      "source": "Radial mesh pigment attributes with collarette, limbal falloff and azimuthal variation."
+    }
+  ],
+  "external_image_textures": [],
+  "rendered_files": [
+    {
+      "file": "renders/beauty.png",
+      "width": 960,
+      "height": 1040,
+      "camera": "Portrait • window seat",
+      "cycles_samples_metadata": 32,
+      "bytes": 1329700,
+      "sha256": "2e483fdaf22bb50004e8106d9a2b5ea4296ce57e8406858157c3bc0c3e10a09a"
+    },
+    {
+      "file": "renders/front.png",
+      "width": 768,
+      "height": 768,
+      "camera": "diagnostic • front",
+      "cycles_samples_metadata": 32,
+      "bytes": 659684,
+      "sha256": "464986cb1d969f429dc36a5411c3e45b5ff94fc56e962b24a63e13009e485e95"
+    },
+    {
+      "file": "renders/three-quarter.png",
+      "width": 768,
+      "height": 768,
+      "camera": "diagnostic • three-quarter",
+      "cycles_samples_metadata": 32,
+      "bytes": 666860,
+      "sha256": "f65133abe6b8492d8f0a1f16c134d6bbf612d28d643af7ce232a44b05e5f1a5a"
+    },
+    {
+      "file": "renders/side.png",
+      "width": 768,
+      "height": 768,
+      "camera": "diagnostic • side",
+      "cycles_samples_metadata": 32,
+      "bytes": 648018,
+      "sha256": "bed892b25ff3cb7d78482f3653a6c5fe00c00f4beeb6d131120a16b1038884c7"
+    },
+    {
+      "file": "renders/back.png",
+      "width": 768,
+      "height": 768,
+      "camera": "diagnostic • back",
+      "cycles_samples_metadata": 32,
+      "bytes": 621205,
+      "sha256": "3eb069b943bb85517321dbd4988c9da3f31e8f65f4f6ab0a13042b1905233751"
+    }
+  ],
+  "independent_technical_inspection": "validation.json",
+  "artist_observations": {
+    "reference_access": "The decoded input photograph was viewed directly. It is not loaded into Blender.",
+    "limitations": [
+      "The single photograph gives no depth measurements. Facial identity, ear angles, profile, back, hands and garment construction are interpretations.",
+      "The fringe and long waves form deliberately grouped clumps; individual placement and translucency differ from the photograph. The direction change at the nape is visible from behind.",
+      "The skin, irises and brows are procedural. Pores and very fine hair detail soften at portrait scale under denoising.",
+      "The garment is shaped for this pose. The knit relief repeats, the bust terminates at the sweater hem and the scene has no animation rig or cloth simulation.",
+      "The café furniture, plant and ceramics are inferred from the visible setting."
+    ]
+  },
+  "head_hair_strands": 19207,
+  "character_mesh_vertices_plus_curve_control_points": 894930,
+  "scene_image_count_excluding_render_result": 1,
+  "compositor_group": null
+}
