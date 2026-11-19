@@ -191,6 +191,16 @@
       "run_record": "runs/2026-11-18/run.json",
       "technical_validation": "runs/2026-11-18/procedural/gemini-4-hydrogen/validation.json",
       "existing_web_glb": true
+    },
+    {
+      "id": "gemini-4-neon",
+      "date_jst": "2026-11-19",
+      "stage": "procedural",
+      "requested_model": "gemini-4-neon",
+      "path": "runs/2026-11-19/procedural/gemini-4-neon",
+      "run_record": "runs/2026-11-19/run.json",
+      "technical_validation": "runs/2026-11-19/procedural/gemini-4-neon/validation.json",
+      "existing_web_glb": true
     }
   ]
 }

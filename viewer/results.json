@@ -105,6 +105,32 @@
       "pending_note": "写真テクスチャ許可版は未実施です（実施するかどうかは本人の判断待ち）。",
       "cost_note": "Google AI Ultraプランの利用枠での実行（API直接課金なし）。"
     },
+    "gemini-4-neon": {
+      "model": "Gemini 4 Neon",
+      "model_id": "gemini-4-neon",
+      "run_date": "2026.11.19",
+      "harness": "Gemini CLI 0.68.0 → Gemini API",
+      "stages": {
+        "procedural": {
+          "glb": "../runs/2026-11-19/procedural/gemini-4-neon/character.glb",
+          "blend": "../runs/2026-11-19/procedural/gemini-4-neon/character.blend",
+          "code": "../runs/2026-11-19/procedural/gemini-4-neon/build.py",
+          "readme": "../runs/2026-11-19/procedural/gemini-4-neon/README.md",
+          "validation": "../runs/2026-11-19/procedural/gemini-4-neon/validation.json",
+          "renders": {
+            "beauty": "../runs/2026-11-19/procedural/gemini-4-neon/renders/beauty.png",
+            "front": "../runs/2026-11-19/procedural/gemini-4-neon/renders/front.png",
+            "three-quarter": "../runs/2026-11-19/procedural/gemini-4-neon/renders/three-quarter.png",
+            "side": "../runs/2026-11-19/procedural/gemini-4-neon/renders/side.png",
+            "back": "../runs/2026-11-19/procedural/gemini-4-neon/renders/back.png"
+          },
+          "camera_orbit": "0deg 80deg 80%"
+        }
+      },
+      "run_record": "../runs/2026-11-19/run.json",
+      "pending_note": "写真テクスチャ許可版は未実施です（実施するかどうかは本人の判断待ち）。",
+      "cost_note": "API従量課金：約$4.8（コーディネーター集計の推定。Neon単独のレート表が未確認のため、Carbonと同じ導入期レートで換算）。"
+    },
     "claude-fable-5.2": {
       "model": "Claude Fable 5.2",
       "model_id": "claude-fable-5-2",
