@@ -23,6 +23,8 @@ __pycache__/
 !runs/2026-11-18/procedural/gemini-4-carbon/character.glb
 !runs/2026-11-18/procedural/gemini-4-hydrogen/character.blend
 !runs/2026-11-18/procedural/gemini-4-hydrogen/character.glb
+!runs/2026-11-19/procedural/gemini-4-neon/character.blend
+!runs/2026-11-19/procedural/gemini-4-neon/character.glb
 .env
 .env.*
 .work/

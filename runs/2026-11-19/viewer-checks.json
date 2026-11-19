@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-11-19",
+  "method": "Local HTTP server (python3 -m http.server 8765, repo root) in Chromium via agent-browser, plus a static existence check of every path referenced from viewer/results.json.",
+  "static_path_check": {
+    "all_referenced_paths_exist": true,
+    "missing": []
+  },
+  "browser_checks": [
+    {
+      "model": "gemini-4-neon",
+      "url": "http://localhost:8765/viewer/?model=gemini-4-neon",
+      "page_title": "Gemini 4 Neon — AI Girl 3D Benchmark",
+      "model_visible": true,
+      "portrait_view_selected_and_screenshotted": true
+    }
+  ]
+}

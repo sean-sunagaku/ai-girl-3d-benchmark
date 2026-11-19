@@ -1,0 +1,133 @@
+{
+  "date_jst": "2026-11-19",
+  "status": "procedural_completed_one_model",
+  "source_commit": "37b8b73",
+  "harness": {
+    "name": "Gemini CLI",
+    "version": "0.68.0",
+    "mode": "non-interactive (-p), --yolo --skip-trust; the full text of PROMPT.md passed verbatim as the -p argument on the first attempt; continuations used --resume on the same session",
+    "auth": "Google AI Studio API key (GEMINI_API_KEY) with an isolated HOME; the key itself is not recorded",
+    "workspace_prepared_with": "scripts/prepare_case.py",
+    "coordinator": "Muse (separate session): prepared the workspace, launched and monitored the run, validated and collected the artifacts without changing the entrant's geometry, materials or code",
+    "coordinator_and_entrant_are_the_same_session": false,
+    "continuation_instructions_sent": 2,
+    "task_prompt_files_match_canonical_bytes": true
+  },
+  "stages": {
+    "procedural": {
+      "status": "complete",
+      "models": [
+        "gemini-4-neon"
+      ]
+    },
+    "photo-textured": {
+      "status": "not_run",
+      "note": "Not executed in this run; whether to run the second stage is the owner's decision."
+    }
+  },
+  "generation": {
+    "additional_agents": false,
+    "additional_downloads": false,
+    "coordinator_compatibility_code_changes": false,
+    "coordinator_design_or_material_changes": false,
+    "external_image_or_3d_generation": false
+  },
+  "models": {
+    "gemini-4-neon": {
+      "requested_model": "Gemini 4 Neon",
+      "model_id": "gemini-4-neon",
+      "path": "procedural/gemini-4-neon",
+      "status": "complete",
+      "session_id": "c09aa295-27d5-4d44-900d-0e541ee72a86",
+      "timeline_jst": {
+        "agent_started": "2026-11-19T10:14:58+09:00",
+        "agent_finished": "2026-11-19T11:08:34+09:00",
+        "agent_seconds_total": 3148,
+        "attempts": [
+          {
+            "attempt": 1,
+            "started": "2026-11-19T10:14:58+09:00",
+            "finished": "2026-11-19T10:25:44+09:00",
+            "seconds": 646,
+            "exit_code": 0,
+            "note": "Ended early: after writing the module drafts (sculpt.py, materials.py, textures.py) and one preview, the API returned an empty model response and the CLI treated it as the end of the turn and exited 0 with the deliverables incomplete. Not a model decision to stop."
+          },
+          {
+            "attempt": 2,
+            "started": "2026-11-19T10:26:28+09:00",
+            "finished": "2026-11-19T10:32:55+09:00",
+            "seconds": 387,
+            "exit_code": 0,
+            "note": "Resumed the same session (--resume) with a coordinator instruction to continue and complete all deliverables. Wrote the remaining modules (cafe_env.py, hair.py, sweater.py), then ended the same way on an empty model response."
+          },
+          {
+            "attempt": 3,
+            "started": "2026-11-19T10:33:19+09:00",
+            "finished": "2026-11-19T11:08:34+09:00",
+            "seconds": 2115,
+            "exit_code": 0,
+            "note": "Resumed the same session again with a coordinator instruction naming the remaining deliverables (build.py, character.blend, the five renders, README.md, scene-report.json). The model completed all deliverables in this attempt."
+          }
+        ]
+      },
+      "usage": {
+        "counting": "Counted by the coordinator from the Gemini CLI session JSONL (the single session shared by all three attempts), deduplicated by message id. API calls are the completed model responses carrying token records; tool calls are the functionCall parts in the model messages.",
+        "api_calls": 65,
+        "tool_calls": 114,
+        "input_tokens": 11216943,
+        "cached_input_tokens": 10048536,
+        "non_cached_input_tokens": 1168407,
+        "output_tokens": 147928,
+        "thoughts_tokens_recorded_separately": 34094,
+        "total_tokens": 11364871
+      },
+      "cost_estimate": {
+        "basis": "Billed per API call against the Google AI Studio API key. The USD figure is an estimate computed from the recorded token usage at the introductory rates documented for Gemini 4 Carbon (valid until 2026-11-30); a separate rate card for Gemini 4 Neon was not confirmed, so the Carbon introductory rates are applied and labelled as an assumption. Thoughts tokens are recorded separately and excluded, matching the Carbon counting convention.",
+        "introductory_rates_per_1m_usd": {
+          "input": 2,
+          "cached_input": 0.1,
+          "output": 10
+        },
+        "estimated_usd": 4.82,
+        "estimated_jpy_at_158_per_usd": 762
+      },
+      "artifacts": {
+        "character_blend_bytes": 10323581,
+        "character_blend_sha256": "cbe5b096de1f73233e89ffbc035ec2490689a73c034fda647fa72612fc4df009",
+        "character_glb_bytes": 16980388,
+        "character_glb_sha256": "acb6c1cd7f8e10997182e89cce1277c0cea2097c4e9815c15aa155b56ff19658",
+        "published_files_including_glb_and_validation": 29
+      },
+      "verification": {
+        "manifest_and_workspace_inputs_match": true,
+        "independent_rebuild_exit_code": 0,
+        "independent_rebuild_seconds": 119.8,
+        "independent_rebuild_extra_steps": [],
+        "rebuilt_png_pixel_data_identical_to_originals": true,
+        "render_dimensions_all_expected": true,
+        "cycles": {
+          "engine": "CYCLES",
+          "device": "CPU",
+          "samples": 32,
+          "denoising": true
+        },
+        "total_evaluated_mesh_vertices_inspect": 245775,
+        "glb_reimport": {
+          "meshes": 14,
+          "vertices": 262781,
+          "materials": 9,
+          "images": 8
+        },
+        "privacy_scan_clean": false
+      }
+    }
+  },
+  "privacy": {
+    "secrets_found": false,
+    "note": "Gemini 4 Neon: no secrets detected. character.blend and the render/preview PNGs contain the Mac account name in Blender File metadata absolute paths, the same as the published Sol, Carbon and Hydrogen collections; collected unmodified following those precedents.",
+    "work_logs_blend_backups_and_caches_excluded": true
+  },
+  "publication": {
+    "note": "Collected locally by the coordinator on 2026-11-19. Commit/push/PR follow the owner's instruction."
+  }
+}

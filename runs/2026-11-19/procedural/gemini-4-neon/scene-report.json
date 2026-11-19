@@ -1,0 +1,143 @@
+{
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "samples": 32,
+  "denoiser": "OPENIMAGEDENOISE",
+  "important_objects": [
+    "Character_Body",
+    "Eyeball_L",
+    "Cornea_L",
+    "Caruncle_L",
+    "Eyeball_R",
+    "Cornea_R",
+    "Caruncle_R",
+    "TearLine_L",
+    "TearLine_R",
+    "Sweater_Torso",
+    "Sweater_Collar",
+    "Sweater_Sleeve_R",
+    "Sweater_Sleeve_L",
+    "Sweater_WoolFuzz",
+    "Hair_Scalp_Cap",
+    "Hair_Main_Volume",
+    "Hair_Front_Cascade",
+    "Hair_Bangs_Wispy",
+    "Hair_Flyaways",
+    "Eyebrows_Curves",
+    "Eyelashes_Curves"
+  ],
+  "character_bounds_meters": {
+    "min": [
+      -0.3146,
+      -0.4097,
+      0.9847
+    ],
+    "max": [
+      0.2974,
+      0.1162,
+      1.6643
+    ],
+    "size": [
+      0.6119,
+      0.5259,
+      0.6797
+    ]
+  },
+  "mesh_counts": {
+    "base_vertices": 21503,
+    "base_polygons": 21628,
+    "evaluated_vertices": 243703,
+    "evaluated_polygons": 243360,
+    "hair_curve_strands": 19596,
+    "hair_curve_control_points": 331472
+  },
+  "generated_textures": [
+    {
+      "name": "Eye_Iris_Albedo",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB",
+      "packed": true
+    },
+    {
+      "name": "Knit_Color",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB",
+      "packed": true
+    },
+    {
+      "name": "Knit_Height",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color",
+      "packed": true
+    },
+    {
+      "name": "Knit_Rib_Height",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color",
+      "packed": true
+    },
+    {
+      "name": "Skin_Albedo",
+      "resolution": [
+        1536,
+        1536
+      ],
+      "colorspace": "sRGB",
+      "packed": true
+    },
+    {
+      "name": "Skin_Bump",
+      "resolution": [
+        1536,
+        1536
+      ],
+      "colorspace": "Non-Color",
+      "packed": true
+    },
+    {
+      "name": "Skin_LipMask",
+      "resolution": [
+        1536,
+        1536
+      ],
+      "colorspace": "Non-Color",
+      "packed": true
+    },
+    {
+      "name": "Skin_Roughness",
+      "resolution": [
+        1536,
+        1536
+      ],
+      "colorspace": "Non-Color",
+      "packed": true
+    }
+  ],
+  "rendered_files": [
+    "renders/beauty.png",
+    "renders/front.png",
+    "renders/three-quarter.png",
+    "renders/side.png",
+    "renders/back.png"
+  ],
+  "remaining_limitations": [
+    "Procedural sculpting approximates the reference likeness from a single 2D selfie photograph; unseen side/back skull, ear, neck, hair, and sweater shapes are inferred.",
+    "Lower arms end in closed chunky ribbed cuffs without modeled hands or unseen lower torso/legs.",
+    "Hair strands are generated via procedural guide curves and BVH collision rather than cloth/strand physics simulation, so close inspection of dense curl intersections shows simplified wave regularity.",
+    "Skin pore and micro-color detail are procedurally synthesized in 3D-to-UV space rather than photogrammetry scans.",
+    "Cafe background props are intentionally simplified 3D bokeh silhouettes so character quality remains the priority."
+  ]
+}
